@@ -10,7 +10,7 @@
     <body>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-                <a class="navbar-brand" href="#">LOGO </a>
+                <a class="navbar-brand" href="/">LOGO </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -18,7 +18,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">NomDuSite <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">NomDuSite <span class="sr-only">(current)</span></a>
                         </li>
                     
                         <li class="nav-item dropdown">
@@ -35,15 +35,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Artisans</a>
+                            <a class="nav-link" href="{{path('artisans')}}">Artisans</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">L'équipe</a>
+                            <a class="nav-link" href="{{path('team')}}">L'équipe</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nous contacter</a>
+                            <a class="nav-link" href="{{path('contact')}}">Nous contacter</a>
                         </li>
 
 
@@ -52,8 +52,8 @@
                         <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Trouver</button>
                     </form>
-                    <span class="log"><a href=""><img src="{{asset('img/log.png')}}" width="50" alt=""></a></span>
-                    <span class="cart"><img src="{{asset('img/cart.png')}}" width="50" alt=""></span>
+                    <span class="log"><a href="{{path('log')}}"><img src="{{asset('img/log.png')}}" width="50" alt=""></a></span>
+                    <span class="cart"><a href="{{path('cart')}}"><img src="{{asset('img/cart.png')}}" width="50" alt=""></a></span>
                 </div>
             </nav>
 
@@ -62,7 +62,7 @@
             {% block body %}{% endblock %}
 
             <footer>
-                <div class="row foot bg-secondary d-flex justify-content-center">
+                <div class="row foot bg-secondary d-flex justify-content-center ">
                     <div class="col d-flex flex-column">
                         <a href="">Contactez-nous</a>
                         <a href="">L'équipe</a>
