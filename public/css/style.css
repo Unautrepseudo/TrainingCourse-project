@@ -24,3 +24,7 @@ body {
 .foot {
     height: 20vh;
 }
+
+a {
+    text-decoration: none;
+}
