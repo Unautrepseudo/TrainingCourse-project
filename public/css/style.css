@@ -1,29 +1,26 @@
-body{
-    background-image: url(body.jpg);  
-    background-repeat: no-repeat ;
+body {
+    background-image: url(body.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-
-.clear{
+.clear {
     height: 25vh;
 }
 
-.clear2{
+.clear2 {
     height: 15vh;
 }
 
-.lighText{
-    font-size:10vh;
+.lighText {
+    font-size: 10vh;
 }
 
-.nameArt{
-    font-size:8vh;
+.nameArt {
+    font-size: 8vh;
 }
 
-.foot{
-
-height:20vh;
-
+.foot {
+    height: 20vh;
 }
