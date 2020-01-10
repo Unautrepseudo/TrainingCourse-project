@@ -25,13 +25,14 @@ a {
 }
 
 .clear {
-    height: 25vh;
+    height: 10vh;
 }
 
 .clear2 {
     height: 15vh;
 }
 
+/***************************HOME*******************************/
 /********NAV**************/
 
 nav{
@@ -149,7 +150,10 @@ nav{
     color:black;
     font-size: 1.1vw
 
+}
 
+.foot a:hover{
+    color:rgba(255, 255, 255, 0.808);
 }
 
 .logos img, .home{
@@ -168,3 +172,93 @@ nav{
 .inc:hover{
     color:white;
 }
+
+/***************************Team PAGE*******************************/
+
+/*div{
+    border: 1px solid black;
+
+} */
+
+.teamWindow{
+    height:65vh;
+}
+
+.teamTof{
+    border-radius:10%;
+    width:80%;
+    height:70%;
+    margin-left:7vh;
+    margin-top:6vh;
+}
+.infoTeam{
+    height: 55vh;
+}
+.line{
+    border-left: 1px solid rgba(0, 0, 0, 0.24);
+    height: 50vh;
+}
+
+.socicons{
+        width: 2vw;        
+}
+
+.socicons3{
+    width: 1.5vw;        
+}
+
+/****effet cartes flip***/
+          .flip-card {
+   
+            perspective: 500px;
+          }
+          
+          /* conteneur */
+          .flip{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+            transform-style: preserve-3d; /*active la carte de dos*/
+          }
+          
+           /* Position des faces*/
+           .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          
+          /* flip horizontal*/
+          .back , .flip:hover {
+            transform: rotateY(180deg);
+          }
+
+          .flip-card{
+            width: 35%;
+            height:70%;
+            transform: rotateY(-18deg);
+            margin-top:6%;
+            margin-left:5%;
+            border-radius:30%;
+            text-align:center;
+            animation-name: flipi;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+          
+          @keyframes flipi{
+          
+            from{
+              transform: rotateY(-18deg);
+          
+            }
+          
+            to{
+              transform: rotateY(180deg);
+          
+            }
+
+            
