@@ -168,3 +168,50 @@ nav{
 .inc:hover{
     color:white;
 }
+
+
+
+/******CONFIDENTIALITÉ*******/
+h1{
+    width: 100%;
+    height: 9vh;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+}
+
+h3{
+    color: black;
+}
+
+
+.font{
+    width: 100%;
+    height: 900vh;
+    background:#CCCCCC;
+}
+
+p{
+   color:#1D3C78;
+}
+
+.menu{
+    width:100%;
+    height: 300vh;
+}
+
+.menu a{
+    color:#1D3C78;
+
+}
+
+.menus
+{
+    width:50%;
+    height: 300vh;
+  
+
+}
