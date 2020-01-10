@@ -19,27 +19,32 @@ class Artisan
     /**
      * @ORM\Column(type="string", length=100)
      */
-    private $name_artisan;
+    private $first_name;
 
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $last_name_artisan;
+    private $last_name;
 
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $company_artisan;
+    private $company;
 
     /**
      * @ORM\Column(type="string", length=300)
      */
-    private $mail_artisan;
+    private $email;
+
+    /**
+     * @ORM\Column(type="string", length=200)
+     */
+    private $password;
 
     /**
      * @ORM\Column(type="string", length=500)
      */
-    private $picture_artisan;
+    private $picture;
 
     /**
      * @ORM\Column(type="string", length=50)
@@ -51,74 +56,19 @@ class Artisan
      */
     private $about;
 
+    public function __construct()
+    {
+        $this->created_at = new \Datetime;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNameArtisan(): ?string
-    {
-        return $this->name_artisan;
-    }
-
-    public function setNameArtisan(string $name_artisan): self
-    {
-        $this->name_artisan = $name_artisan;
-
-        return $this;
-    }
-
-    public function getLastNameArtisan(): ?string
-    {
-        return $this->last_name_artisan;
-    }
-
-    public function setLastNameArtisan(string $last_name_artisan): self
-    {
-        $this->last_name_artisan = $last_name_artisan;
-
-        return $this;
-    }
-
-    public function getCompanyArtisan(): ?string
-    {
-        return $this->company_artisan;
-    }
-
-    public function setCompanyArtisan(string $company_artisan): self
-    {
-        $this->company_artisan = $company_artisan;
-
-        return $this;
-    }
-
-    public function getMailArtisan(): ?string
-    {
-        return $this->mail_artisan;
-    }
-
-    public function setMailArtisan(string $mail_artisan): self
-    {
-        $this->mail_artisan = $mail_artisan;
-
-        return $this;
-    }
-
     public function getPictureArtisan(): ?string
     {
         return $this->picture_artisan;
-    }
-
-    public function setPictureArtisan(string $picture_artisan): self
-    {
-        $this->picture_artisan = $picture_artisan;
-
-        return $this;
-    }
-
-    public function getSpeciality(): ?string
-    {
-        return $this->speciality;
     }
 
     public function setSpeciality(string $speciality): self
@@ -136,6 +86,95 @@ class Artisan
     public function setAbout(string $about): self
     {
         $this->about = $about;
+
+        return $this;
+    }
+
+    public function getFirstName(): ?string
+    {
+        return $this->first_name;
+    }
+
+    public function setFirstName(string $first_name): self
+    {
+        $this->first_name = $first_name;
+
+        return $this;
+    }
+
+    public function getLastName(): ?string
+    {
+        return $this->last_name;
+    }
+
+    public function setLastName(string $last_name): self
+    {
+        $this->last_name = $last_name;
+
+        return $this;
+    }
+
+    public function getCompany(): ?string
+    {
+        return $this->company;
+    }
+
+    public function setCompany(string $company): self
+    {
+        $this->company = $company;
+
+        return $this;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getPassword(): ?string
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    public function getPicture(): ?string
+    {
+        return $this->picture;
+    }
+
+    public function setPicture(string $picture): self
+    {
+        $this->picture = $picture;
+
+        return $this;
+    }
+
+    public function getSpeciality(): ?string
+    {
+        return $this->speciality;
+    }
+
+    public function getCreationDateArtisan(): ?\DateTimeInterface
+    {
+        return $this->creation_date_artisan;
+    }
+
+    public function setCreationDateArtisan(\DateTimeInterface $creation_date_artisan): self
+    {
+        $this->creation_date_artisan = $creation_date_artisan;
 
         return $this;
     }
