@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artisan{% endblock %}
+
+{% block body %}
+    <h1>Artisan</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ artisan.id }}</td>
+            </tr>
+            <tr>
+                <th>First_name</th>
+                <td>{{ artisan.firstName }}</td>
+            </tr>
+            <tr>
+                <th>Last_name</th>
+                <td>{{ artisan.lastName }}</td>
+            </tr>
+            <tr>
+                <th>Company</th>
+                <td>{{ artisan.company }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ artisan.email }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ artisan.password }}</td>
+            </tr>
+            <tr>
+                <th>Picture</th>
+                <td>{{ artisan.picture }}</td>
+            </tr>
+            <tr>
+                <th>Speciality</th>
+                <td>{{ artisan.speciality }}</td>
+            </tr>
+            <tr>
+                <th>About</th>
+                <td>{{ artisan.about }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('artisan_index') }}">back to list</a>
+
+    <a href="{{ path('artisan_edit', {'id': artisan.id}) }}">edit</a>
+
+    {{ include('artisan/_delete_form.html.twig') }}
+{% endblock %}
