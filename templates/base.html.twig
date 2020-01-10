@@ -5,98 +5,25 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <script src="{{asset('js/main.js')}}"></script> 
     <title>{% block title %}Artisanat équitable{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
 </head>
 
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-            <a class="navbar-brand" href=""><img src="{{asset ('img/logo.png') }}" alt="" style="width:40%"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    {% include 'navbar.html.twig'%}
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">NomDuSite <span class="sr-only">(current)</span></a>
-                    </li>
+    <div class="clear2"></div>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Produits
-                            </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Meubles</a>
-                            <a class="dropdown-item" href="#">Décoration</a>
-                            <a class="dropdown-item" href="#">Bijoux</a>
-                            <a class="dropdown-item" href="#">Jouets</a>
-                    </li>
+    {% block body %}{% endblock %}
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{path('artisans')}}">Artisans</a>
-                    </li>
+    {% include 'footer.html.twig'%}
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{path('team')}}">L'équipe</a>
-                    </li>
+    {% block javascripts %}{% endblock %}
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{path('contact')}}">Nous contacter</a>
-                    </li>
-
-
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Trouver</button>
-                </form>
-                <span class="log"><a href="{{path('log')}}"><img src="{{asset('img/log.png')}}" width="50" alt=""></a></span>
-                <span class="cart"><a href="{{path('cart')}}"><img src="{{asset('img/cart.png')}}" width="50" alt=""></a></span>
-                </div>
-        </nav>
-
-        <div class="clear2"></div>
-
-        {% block body %}{% endblock %}
-
-        <footer>
-            <div class="row foot bg-secondary d-flex justify-content-center ">
-                <div class="col d-flex flex-column">
-                    <a href="">Contactez-nous</a>
-                    <a href="">L'équipe</a>
-                    <a href="">Nous rejoindre</a>
-                </div>
-                <div class="col d-flex flex-column">
-                    <a href="">Mode de paiement</a>
-                    <a href="">Modes de livraison</a>
-                    <a href="">Conditions d'utilisation</a>
-                </div>
-                <div class="col d-flex flex-column">
-                    <h2>Rejoignez-nous</h2>
-                    <p>Les icones mais là j'ai la flemme</p>
-                </div>
-
-            </div>
-
-
-            <div class="row footbis bg-dark d-flex flex-row-reverse">
-                <a href="">Conditions d'utilisation</a>
-                <a href="">mentions légales</a>
-                <a href="">cookie</a>
-                <a href="">confidentialité</a>
-                <p> © Castor Inc.</p>
-            </div>
-
-        </footer>
-
-        </div>
-
-        {% block javascripts %}{% endblock %}
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>

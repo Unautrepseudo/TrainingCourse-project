@@ -1,8 +1,27 @@
-body {
+/*********GENERAL***********/
+
+*
+{
+    margin :0;
+    padding:0;
+
+}
+body 
+{
     background-image: url(body.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
+
+
+}
+.container-fluid{
+    width:95%
+}
+
+a {
+    text-decoration: none;
 }
 
 .clear {
@@ -13,18 +32,139 @@ body {
     height: 15vh;
 }
 
-.lighText {
-    font-size: 10vh;
+/********NAV**************/
+
+nav{
+    font-size: 1.2vw;
+    clip-path: polygon(100% 0, 100% 83%, 95% 91%, 91% 95%, 87% 97%, 82% 99%, 76% 100%, 66% 100%, 0 100%, 0 0);
+    background:rgba(255, 255, 255, 0.705);
 }
+
+.searchInput{
+    border:none;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.397);
+    border-radius:0;
+    background:rgba(255, 255, 255, 0) !important;
+    width: 45vh !important;
+    opacity: 0.4;
+}
+
+.searchButton{
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    opacity: 0.3;
+    
+}
+
+.log, .cart{
+    opacity: 0.3;
+
+}
+
+
+.navcons{
+    position:absolute;
+    right: 2%;
+}
+
+.icon:hover{
+    opacity:0.6;
+}
+
+/***Produits du moment***/
+
+.currentProducts{
+    clip-path: polygon(10% 1%, 15% 0, 100% 0, 100% 100%, 0 100%, 0 13%, 2% 8%, 6% 3%);
+    background:rgba(255, 136, 0, 0.055);
+
+}
+
+.currentProducts h2{
+    background:rgba(255, 1, 1, 0.021);
+}
+
+.card{
+    background:rgba(255, 136, 0, 0);
+    border:none;
+}
+
+/*****Lumière sur *****/
+
+
+.light{
+    background:rgba(255, 1, 1, 0.021);
+  
+}
+
+.lighText {
+    font-size: 3.9vw;
+    border-right:1px solid rgba(255, 217, 4, 0.822);
+
+
+    border-radius: 0 10% 70% 0;
+}
+
 
 .nameArt {
-    font-size: 8vh;
+    font-size: 7vh;
+    border-radius:  90% 60% 90% 30%;
+
 }
 
-.foot {
+.crafterImg {
+    clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%, 3% 84%, 4% 53%, 0 24%);
+
+}
+
+
+/****LE PROJET*****/
+.project
+{
+    background:rgba(15, 172, 28, 0.158);
+
+
+}
+
+.projTitle{
+    background:rgba(129, 209, 140, 0.062);
+    font-size:3.6vw
+
+}
+
+
+/******FOOTER*******/
+
+.foot{
+    background:rgba(248, 108, 14, 0.76);
+    clip-path: polygon(36% 100%, 69% 0, 100% 0, 100% 100%, 0 100%, 0 0, 17% 0, 69% 0, 62% 17%);
     height: 20vh;
 }
 
-a {
+.foot a, .footbis a{
     text-decoration: none;
+
+}
+
+.foot a{
+    color:black;
+    font-size: 1.1vw
+
+
+}
+
+.logos img, .home{
+    width: 1.6vw;
+    height: 1.6vw;
+   
+    
+}
+
+
+.footbis{
+    background:rgb(0, 0, 0);
+
+}
+
+.inc:hover{
+    color:white;
 }

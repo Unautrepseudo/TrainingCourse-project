@@ -1,29 +1,37 @@
 <footer>
-    <div class="row foot bg-secondary d-flex justify-content-center ">
-        <div class="col d-flex flex-column">
+    <div class="row foot d-flex justify-content-center">
+        <div class="col d-flex flex-column text-center pt-4 footlinks">
             <a href="">Contactez-nous</a>
             <a href="">L'équipe</a>
-            <a href="">Nous rejoindre</a>
+            <a href="">Partenaires</a>
         </div>
-        <div class="col d-flex flex-column">
+        <div class="col d-flex flex-column pt-4 footlinks">
             <a href="">Mode de paiement</a>
             <a href="">Modes de livraison</a>
             <a href="">Conditions d'utilisation</a>
         </div>
-        <div class="col d-flex flex-column">
-            <h2>Rejoignez-nous</h2>
-            <p>Les icones mais là j'ai la flemme</p>
+        <div class="col d-flex flex-column mt-2 ml-5 text-center">
+            <h2>Rejoignez-nous!!!</h2>
+            <span class=" offset-2 mt-2 logos">
+                <span><a href=""><img class='face'src="{{asset('img/faceb.png')}}" alt=""></a></span>
+                <span><a href=""><img id='insta' src="{{asset('img/instab.png')}}" alt=""></a></span>
+                <span><a href=""><img class='twi' src="{{asset('img/twib.png')}}" alt=""></a></span>
+                <span><a href=""><img class='you'src="{{asset('img/youb.png')}}" alt=""></a></span>
+            </span>   
         </div>
 
     </div>
 
 
-    <div class="row footbis bg-dark d-flex flex-row-reverse">
-        <a href="">Conditions d'utilisation</a>
-        <a href="">mentions légales</a>
-        <a href="">cookie</a>
-        <a href="">confidentialité</a>
-        <p> © Castor Inc.</p>
+    <div class="row footbis d-flex justify-content-between">
+        <div class="col-5 ml-5">
+            <p class='inc'> © Castor Inc.</p>
+        </div>
+        <div class="col-2 d-flex justify-content-around footlinks2">
+            <div><a href="">Cookies</a></div>
+            <div><a href="">Confidentialité</a></div>
+        </div>
+        
     </div>
             
 </footer>

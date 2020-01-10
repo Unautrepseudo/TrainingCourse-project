@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
-
+    
 {% block body %}
+    
     <section>
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide mt-0 pt-0" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -41,28 +42,28 @@
 
     <div class="clear"></div>
 
-    <section class='currentProducts bg-light'>
+    <section class='currentProducts'>
         <h2 class='text-center mb-5'>Produits du moment</h2>
         <div class="row d-flex justify-content-around mt-5">
-            <div class="card" style="width: 18rem;">
+            <div class="card mt-3" style="width: 18rem;">
                 <img src="https://picsum.photos/id/20/800/600" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card mb-5" style="width: 18rem;">
                 <img src="https://picsum.photos/id/15/800/600" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card mt-5" style="width: 18rem;">
                 <img src="https://picsum.photos/id/10/800/600" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card mb-5" style="width: 18rem;">
                 <img src="https://picsum.photos/id/200/800/600" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -73,75 +74,72 @@
 
     <div class="clear"></div>
 
-
-    <section class="light bg-light">
+    <section class="light">
         <div class="row">
-            <div class="col lighText">Lumière sur</div>
-            <div class="col">
+            <span class="col-3 lighText text-center">Lumière sur</span>
+            <div class="col-5">
                 <h2 class='nameArt text-center my-5'>dédé</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi 
                     ex recusandae! Enim asperiores ullam, in dolorem quisquam itaque iusto deserunt
                     tempora, veniam dignissimos tenetur magnam earum adipisci quibusdam porro!
                 </p>
             </div>
-            <div class="col"><img class='rounded-circle' src="https://picsum.photos/500/500" alt="..."></div>
+            <div class="col"><img class=' crafterImg' src="https://picsum.photos/500/500" alt="..."></div>
         </div>
     </section>
 
     <div class="clear"></div>
 
 
-    <section class="project bg-light">
-        <h2 class="projTitle text-center display-3">Le projet</h2>
-
-        <div class="row">
-            <div class=" mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                    <img src="https://picsum.photos/300/300" class="card-img rounded-circle" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">La team</h5>
-                        <p class="card-text">baaaaaaaaaaaaaaaaaaaaablablaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <div class="row d-flex justify-content-around">
-            <div class=" mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                    <img src="https://picsum.photos/300/300" class="card-img rounded-circle" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Notre philosophie</h5>
-                        <p class="card-text">relation particulier/ artisan. Moins d'intermédiaires et blablabla</p>
-                    </div>
+    <section class="project">
+        <h2 class="projTitle text-center ">Le projet</h2>
+            <div class=" col-4 ml-5 mt-2">
+                <div class=" mb-5" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <img src="https://picsum.photos/300/300" class="card-img rounded-circle" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">La team</h5>
+                            <p class="card-text">baaaaaaaaaaaaaaaaaaaaablablaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-         <div class="row">
-            <div class="mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                    <img src="https://picsum.photos/300/300" class="card-img rounded-circle" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Un truc écolo</h5>
-                        <p class="card-text">La nature c'est super, la preuve, y'a plein de castors</p>
-                    </div>
+            <div class="col-5 d-flex justify-content-around mt-5">
+                <div class=" mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <img src="https://picsum.photos/300/300" class="card-img rounded-circle" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Notre philosophie</h5>
+                            <p class="card-text">relation particulier/ artisan. Moins d'intermédiaires et blablabla</p>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+            <div class="col-3 d-flex justify-content-end">
+                <div class="mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <img src="https://picsum.photos/300/300" class="card-img rounded-circle" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Un truc écolo</h5>
+                            <p class="card-text">La nature c'est super, la preuve, y'a plein de castors</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     </section>
 
     <div class="clear2"></div>
