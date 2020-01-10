@@ -17,24 +17,24 @@ class Product
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Artisan")
      */
-    private $artisan_id;
+    private $artisan;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Customer")
      */
-    private $customer_id;
+    private $customer;
 
     /**
      * @ORM\Column(type="string", length=100)
      */
-    private $name_product;
+    private $name;
 
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $reference_product;
+    private $reference;
 
     /**
      * @ORM\Column(type="integer")
@@ -86,57 +86,14 @@ class Product
      */
     private $artisan_picture;
 
+    public function __construct()
+    {
+        $this->created_at = new \Datetime;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getArtisanId(): ?int
-    {
-        return $this->artisan_id;
-    }
-
-    public function setArtisanId(int $artisan_id): self
-    {
-        $this->artisan_id = $artisan_id;
-
-        return $this;
-    }
-
-    public function getCustomerId(): ?int
-    {
-        return $this->customer_id;
-    }
-
-    public function setCustomerId(int $customer_id): self
-    {
-        $this->customer_id = $customer_id;
-
-        return $this;
-    }
-
-    public function getNameProduct(): ?string
-    {
-        return $this->name_product;
-    }
-
-    public function setNameProduct(string $name_product): self
-    {
-        $this->name_product = $name_product;
-
-        return $this;
-    }
-
-    public function getReferenceProduct(): ?string
-    {
-        return $this->reference_product;
-    }
-
-    public function setReferenceProduct(string $reference_product): self
-    {
-        $this->reference_product = $reference_product;
-
-        return $this;
     }
 
     public function getPrice(): ?int
@@ -255,6 +212,54 @@ class Product
     public function setArtisanPicture(string $artisan_picture): self
     {
         $this->artisan_picture = $artisan_picture;
+
+        return $this;
+    }
+
+    public function getArtisan(): ?Artisan
+    {
+        return $this->artisan;
+    }
+
+    public function setArtisan(?Artisan $artisan): self
+    {
+        $this->artisan = $artisan;
+
+        return $this;
+    }
+
+    public function getCustomer(): ?Customer
+    {
+        return $this->customer;
+    }
+
+    public function setCustomer(?Customer $customer): self
+    {
+        $this->customer = $customer;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getReference(): ?string
+    {
+        return $this->reference;
+    }
+
+    public function setReference(string $reference): self
+    {
+        $this->reference = $reference;
 
         return $this;
     }

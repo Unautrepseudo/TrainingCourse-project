@@ -19,12 +19,12 @@ class Customer
     /**
      * @ORM\Column(type="string", length=30)
      */
-    private $name_customer;
+    private $first_name;
 
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $last_name_customer;
+    private $last_name;
 
     /**
      * @ORM\Column(type="string", length=50)
@@ -39,17 +39,17 @@ class Customer
     /**
      * @ORM\Column(type="string", length=100)
      */
-    private $mail_customer;
+    private $email;
 
     /**
      * @ORM\Column(type="string", length=200)
      */
-    private $password_customer;
+    private $password;
 
     /**
      * @ORM\Column(type="datetime")
      */
-    private $birth_date_customer;
+    private $birthday;
 
     /**
      * @ORM\Column(type="string", length=100)
@@ -71,39 +71,16 @@ class Customer
      */
     private $phone_number;
 
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    private $creation_date_customer;
+    public function __construct()
+    {
+        $this->created_at = new \Datetime;
+    }
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNameCustomer(): ?string
-    {
-        return $this->name_customer;
-    }
-
-    public function setNameCustomer(string $name_customer): self
-    {
-        $this->name_customer = $name_customer;
-
-        return $this;
-    }
-
-    public function getLastNameCustomer(): ?string
-    {
-        return $this->last_name_customer;
-    }
-
-    public function setLastNameCustomer(string $last_name_customer): self
-    {
-        $this->last_name_customer = $last_name_customer;
-
-        return $this;
-    }
 
     public function getPseudo(): ?string
     {
@@ -125,42 +102,6 @@ class Customer
     public function setGender(string $gender): self
     {
         $this->gender = $gender;
-
-        return $this;
-    }
-
-    public function getMailCustomer(): ?string
-    {
-        return $this->mail_customer;
-    }
-
-    public function setMailCustomer(string $mail_customer): self
-    {
-        $this->mail_customer = $mail_customer;
-
-        return $this;
-    }
-
-    public function getPasswordCustomer(): ?string
-    {
-        return $this->password_customer;
-    }
-
-    public function setPasswordCustomer(string $password_customer): self
-    {
-        $this->password_customer = $password_customer;
-
-        return $this;
-    }
-
-    public function getBirthDateCustomer(): ?\DateTimeInterface
-    {
-        return $this->birth_date_customer;
-    }
-
-    public function setBirthDateCustomer(\DateTimeInterface $birth_date_customer): self
-    {
-        $this->birth_date_customer = $birth_date_customer;
 
         return $this;
     }
@@ -213,15 +154,64 @@ class Customer
         return $this;
     }
 
-    public function getCreationDateCustomer(): ?\DateTimeInterface
+    public function getFirstName(): ?string
     {
-        return $this->creation_date_customer;
+        return $this->first_name;
     }
 
-    public function setCreationDateCustomer(\DateTimeInterface $creation_date_customer): self
+    public function setFirstName(string $first_name): self
     {
-        $this->creation_date_customer = $creation_date_customer;
+        $this->first_name = $first_name;
 
         return $this;
     }
+
+    public function getLastName(): ?string
+    {
+        return $this->last_name;
+    }
+
+    public function setLastName(string $last_name): self
+    {
+        $this->last_name = $last_name;
+
+        return $this;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getPassword(): ?string
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    public function getBirthday(): ?\DateTimeInterface
+    {
+        return $this->birthday;
+    }
+
+    public function setBirthday(\DateTimeInterface $birthday): self
+    {
+        $this->birthday = $birthday;
+
+        return $this;
+    }
+
 }
