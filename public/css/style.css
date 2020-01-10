@@ -173,7 +173,7 @@ nav{
     color:white;
 }
 
-<<<<<<< HEAD
+
 /***************************Team PAGE*******************************/
 
 /*div{
@@ -207,6 +207,11 @@ nav{
 .socicons3{
     width: 1.5vw;        
 }
+
+.sociconDiv{
+    padding-top:11vh;
+}
+
 
 /****effet cartes flip***/
           .flip-card {
@@ -261,9 +266,10 @@ nav{
               transform: rotateY(180deg);
           
             }
-
+        }
             
-=======
+
+
 /******LIVRAISON*******/
 /**Made by Victor **/
 .center {
@@ -300,4 +306,3 @@ nav{
     align-self: flex-start;
     margin-right: 10px;
 }
->>>>>>> 4769104b1334bf7cc942c889e478185086381669
