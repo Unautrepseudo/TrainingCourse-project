@@ -168,3 +168,40 @@ nav{
 .inc:hover{
     color:white;
 }
+
+/******LIVRAISON*******/
+/**Made by Victor **/
+.center {
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.1em
+}
+
+.livraison {
+    width: 100%;
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    
+}
+
+.livraison1 {
+    width: 33%;
+    height: 35vh;
+    display: flex;
+}
+.livraison2 {
+    width: 34%;
+    height: 35vh;
+}
+.livraison3 {
+    display: flex;
+    width: 33%;
+    height: 35vh;
+}
+
+.logoups {
+    width: 50%;
+    height: 75%;
+    align-self: flex-start;
+    margin-right: 10px;
+}

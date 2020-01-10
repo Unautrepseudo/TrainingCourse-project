@@ -7,14 +7,19 @@
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
+    <h1 class="center"> Modes de Livraison </h1>
+<div class="livraison">
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="livraison1"> 
+    <img class='logoups'src="{{asset('img/ups.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"> UPS service de qualité antiprofessionelle depuis 2015, comme tous leurs concurents. garanti une livraison sans encombres qui s'adapte a vos besoin de part leur savoir faire, leurs qualité, et les qualifications de leurs livreurs.
+    </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/src/Controller/LivraisonController.php'|file_link(0) }}">src/Controller/LivraisonController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/templates/livraison/index.html.twig'|file_link(0) }}">templates/livraison/index.html.twig</a></code></li>
-    </ul>
+    <div class="livraison2"><img class=''src="{{asset('img/livraison.jpg')}}" style=" box-shadow: 8px 8px 12px #aaa;">
+    </div>
+
+    <div class="livraison3">
+        <img class='logoups'src="{{asset('img/laposte.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"> Laposte service de qualité professionelle depuis 1972, comme l'huile d'olive puget. garanti une livraison sans encombres qui s'adapte a vos besoin de part leur savoir faire, leurs qualité, et les qualifications de leurs livreurs.
+    </div>
+  
 </div>
 {% endblock %}
