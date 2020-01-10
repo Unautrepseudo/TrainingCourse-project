@@ -121,7 +121,7 @@ nav{
 /****LE PROJET*****/
 .project
 {
-    background:rgba(15, 172, 28, 0.158);
+    background:rgba(15, 172, 28, 0.068);
 
 
 }
@@ -136,7 +136,7 @@ nav{
 /******FOOTER*******/
 
 .foot{
-    background:rgba(248, 108, 14, 0.76);
+    background:rgba(248, 166, 14, 0.13);
     clip-path: polygon(36% 100%, 69% 0, 100% 0, 100% 100%, 0 100%, 0 0, 17% 0, 69% 0, 62% 17%);
     height: 20vh;
 }
@@ -153,7 +153,7 @@ nav{
 }
 
 .foot a:hover{
-    color:rgba(255, 255, 255, 0.808);
+    color:rgba(145, 143, 143, 0.808);
 }
 
 .logos img, .home{
@@ -165,8 +165,16 @@ nav{
 
 
 .footbis{
-    background:rgb(0, 0, 0);
+    background:rgb(85, 84, 84);
 
+}
+
+.footlinks2 a{
+    color:rgb(182, 165, 72);
+}
+
+.footlinks2 a:hover{
+    color:rgb(240, 240, 235);
 }
 
 .inc:hover{
@@ -213,7 +221,7 @@ nav{
 }
 
 
-/****effet cartes flip***/
+/************************************effet cartes flip**************************************************/
           .flip-card {
    
             perspective: 500px;
