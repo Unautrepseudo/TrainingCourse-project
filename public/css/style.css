@@ -242,18 +242,25 @@ nav{
 /*********LE PROJET*****/
 
 .projInfo{
-    margin-top:13%;
-    margin-left: 25%;
+    margin-top:20%;
+    margin-left: 10%;
     width: 80%;
     font-size: 1.3vw;
-    background:rgba(255, 255, 255, 0.137);
-    clip-path: polygon(56% 5%, 93% 5%, 99% 39%, 94% 91%, 60% 88%, 5% 97%, 6% 56%, 3% 23%, 10% 8%, 28% 4%);
-    transform: rotateZ(-6deg);
-    border-radius: 25%;
+    
 
 
 
 }
+
+.projRight{
+    background:rgba(43, 206, 116, 0.075);
+    transform: rotateZ(-6deg);
+    border-radius: 3%;
+    height: 40vh;
+    margin-top: 5vh;
+    width: 90%;
+}
+
 
 .project
 {
@@ -269,7 +276,7 @@ nav{
 .projTitle{
     background:rgba(129, 209, 140, 0.062);
     font-size:2.2vw;
-    margin-left:70%;
+    margin-left:65%;
 
 }
 
@@ -280,9 +287,10 @@ nav{
 
 .pi{
     transform: rotateZ(6deg);
-    height: 40vh;
-    padding-top: 3vh;
-    padding: 10%;
+    height: 36vh;
+    padding: 9%;
+    color:rgba(0, 0, 0, 0.849);
+
 }
 
 
@@ -313,9 +321,8 @@ nav{
 .logos img, .home{
     width: 1.6vw;
     height: 1.6vw;
-   
-    
 }
+
 
 
 .footbis{
