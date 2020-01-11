@@ -27,7 +27,7 @@ a {
 }
 
 .clear {
-    height: 10vh;
+    height: 16vh;
 }
 
 .clear2 {
@@ -104,6 +104,8 @@ nav{
 
 .tCurText{
     font-size: 2vw;
+    font-weight:bold;
+    opacity:0.9;
 }
 
 .titleCurrent img{
@@ -153,13 +155,13 @@ nav{
 
 
 .divLt{
-    background:rgba(233, 233, 90, 0.082);
+    background:rgba(233, 233, 90, 0.055);
     clip-path: polygon(100% 11%, 94% 23%, 98% 44%, 99% 68%, 95% 83%, 100% 100%, 0 100%, 0 0, 100% 0);
 
 }
 
 .light{
-    background:rgba(255, 1, 1, 0.021);
+    background:rgba(255, 1, 1, 0.007);
   
 }
 
@@ -169,7 +171,8 @@ nav{
 
 .dedeText{
 
-    padding-top: 6%;
+    padding-top: 2%;
+    font-size: 1.3vw;
 
 }
 
@@ -191,10 +194,10 @@ nav{
 }
 
 #button{
-    margin-top: 10%;
+    margin-top: 2%;
     margin-left: 75%;
     width: 15vh;
-    height: 5vh;
+    height: 4.5vh;
     border-radius: 10%;
     text-decoration:none;
     border-bottom:1px solid rgba(12, 219, 219, 0.068);
@@ -237,18 +240,51 @@ nav{
 
 
 /*********LE PROJET*****/
+
+.projInfo{
+    margin-top:13%;
+    margin-left: 25%;
+    width: 80%;
+    font-size: 1.3vw;
+    background:rgba(255, 255, 255, 0.137);
+    clip-path: polygon(56% 5%, 93% 5%, 99% 39%, 94% 91%, 60% 88%, 5% 97%, 6% 56%, 3% 23%, 10% 8%, 28% 4%);
+    transform: rotateZ(-6deg);
+    border-radius: 25%;
+
+
+
+}
+
 .project
 {
     background:rgba(15, 172, 28, 0.068);
 
-
 }
+
+.projLeft{
+    margin-right:0;
+}
+
 
 .projTitle{
     background:rgba(129, 209, 140, 0.062);
-    font-size:2.5vw
+    font-size:2.2vw;
+    margin-left:70%;
 
 }
+
+/***fade effect**/
+.infoHidden{
+    display:none;
+}
+
+.pi{
+    transform: rotateZ(6deg);
+    height: 40vh;
+    padding-top: 3vh;
+    padding: 10%;
+}
+
 
 
 /********************************FOOTER************************/
