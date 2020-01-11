@@ -43,15 +43,23 @@
     <div class="clear"></div>
 
     <section class='currentProducts'>
-        <h2 class='text-center mb-5'>Produits du moment</h2>
+        <div class='text-center mb-5 titleCurrent'>
+            <span class= 'tCurText'>Produits du moment</span>
+            <span class='ml-4 plusPro'>
+                <a href="{{path('products_main_page')}}"><img src="{{asset('img/iconPlus.png')}}" alt="">
+                <span class="plusWord ml-1">de produits</span>
+                </a>
+            </span>
+
+        </div>
         <div class="row d-flex justify-content-around mt-5">
-            <div class="card mt-3" style="width: 18rem;">
+            <div class="card mt-5" style="width: 18rem;">
                 <img src="https://picsum.photos/id/20/800/600" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card mb-5" style="width: 18rem;">
+            <div class="card mb-3" style="width: 18rem;">
                 <img src="https://picsum.photos/id/15/800/600" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -63,7 +71,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
-            <div class="card mb-5" style="width: 18rem;">
+            <div class="card mb-3" style="width: 18rem;">
                 <img src="https://picsum.photos/id/200/800/600" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -84,7 +92,7 @@
                     tempora, veniam dignissimos tenetur magnam earum adipisci quibusdam porro!
                 </p>
             </div>
-            <div class="col"><img class=' crafterImg' src="https://picsum.photos/500/300" alt="..."></div>
+            <div class="col"><img class=' crafterImg' src="https://picsum.photos/500/400" alt="..."></div>
         </div>
     </section>
 

@@ -72,14 +72,43 @@ nav{
     opacity:0.6;
 }
 
-/***********carousel*********/
+/***********CAROUSEL*********/
 .carousel img{
-    height: 40vh;
+    height: 50vh;
 }
 
 
-/***Produits du moment***/
+/***PRODUITS DU MOMENT***/
+/** title bar ***/
 
+.plusPro{
+    opacity:0.6;
+}
+
+.plusPro a{
+    text-decoration:none;
+}
+
+.plusWord{
+    opacity: 0.3;
+}
+
+.plusPro:hover, .plusWord:hover{
+    opacity:1;
+    color:black;
+}
+
+
+
+.tCurText{
+    font-size: 2vw;
+}
+
+.titleCurrent img{
+    width: 0.9vw;
+}
+
+/**products part ***/
 .currentProducts{
     clip-path: polygon(10% 1%, 15% 0, 100% 0, 100% 100%, 0 100%, 0 13%, 2% 8%, 6% 3%);
     background:rgba(255, 136, 0, 0.055);
