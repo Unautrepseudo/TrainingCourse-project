@@ -6,6 +6,7 @@
     padding:0;
 
 }
+
 body 
 {
     background-image: url(body.jpg);
@@ -16,6 +17,8 @@ body
 
 
 }
+
+
 .container-fluid{
     width:95%
 }
@@ -108,7 +111,7 @@ nav{
     width: 0.9vw;
 }
 
-/**products part ***/
+/**cards part ***/
 .currentProducts{
     clip-path: polygon(10% 1%, 15% 0, 100% 0, 100% 100%, 0 100%, 0 13%, 2% 8%, 6% 3%);
     background:rgba(255, 136, 0, 0.055);
@@ -122,6 +125,28 @@ nav{
 .card{
     background:rgba(255, 136, 0, 0);
     border:none;
+}
+
+.card a{
+    text-decoration:none;
+    color:black;
+}
+
+.cCarText{
+    opacity: 0.4;
+}
+
+.cardA p:hover{
+    opacity:1;
+}
+
+.currentPrice{
+    font-size: 1vw;
+}
+.note i {
+    width: 0.5vw;
+    padding-left: 1vw;
+    color: rgb(240, 185, 36);
 }
 
 /*****Lumière sur *****/
