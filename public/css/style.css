@@ -13,14 +13,13 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden;
 
 
 }
 
 
 .container-fluid{
-    width:95%
+    width:100%;
 }
 
 a {
@@ -149,36 +148,95 @@ nav{
     color: rgb(240, 185, 36);
 }
 
-/*****Lumière sur *****/
+/*************LUMIERE SUR*********/
 
+
+
+.divLt{
+    background:rgba(233, 233, 90, 0.082);
+    clip-path: polygon(100% 11%, 94% 23%, 98% 44%, 99% 68%, 95% 83%, 100% 100%, 0 100%, 0 0, 100% 0);
+
+}
 
 .light{
     background:rgba(255, 1, 1, 0.021);
   
 }
 
-.lighText {
+.lightText {
     font-size: 3.9vw;
-    border-right:1px solid rgba(255, 217, 4, 0.822);
+}
 
+.dedeText{
 
-    border-radius: 0 10% 70% 0;
+    padding-top: 6%;
+
 }
 
 
 .nameArt {
-    font-size: 7vh;
-    border-radius:  90% 60% 90% 30%;
+    font-size: 3vw;
+    clip-path: circle(64.8% at 50% 34%);
 
 }
+
+.descArt{
+    height:60%;
+}
+
 
 .crafterImg {
     clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0 100%, 3% 84%, 4% 53%, 0 24%);
 
 }
 
+#button{
+    margin-top: 10%;
+    margin-left: 75%;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 10%;
+    text-decoration:none;
+    border-bottom:1px solid rgba(12, 219, 219, 0.068);
+    border-right:1px solid transparent;
+    text-decoration:none;
+    background: rgba(233, 233, 90, 0.13);
+    background-size: 200% 100%;	
+    background-image: linear-gradient(to right, transparent 50%, rgba(228, 185, 65, 0.555) 50%);
+    transition: background-position .5s cubic-bezier(0.19, 1, 0.22, 1) .10s, color .5s ease 0s, background-color .8s ease;
+    font-size:2.1vh;
+  }
+  
+  #button a{
+    text-decoration:none;
+    color:black;
+    
+  
+  
+  }
+  #button:active
+  {
+      transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(227, 233, 233);
+    border-left:transparent;
+    border-right:transparent;
+    transform:rotateY(360deg); /*** mellow effect. needs border css thickness. at least border-top. Better with all of them.**/
+  }
+  
+  
+  #button:hover{
+      color:rgba(255, 255, 255, 1);
+      background-color:rgba(228, 184, 65, 0);
+    background-position: -100% 100%;
+    cursor: pointer;
+  
+  }
 
-/****LE PROJET*****/
+
+
+/*********LE PROJET*****/
 .project
 {
     background:rgba(15, 172, 28, 0.068);
@@ -188,12 +246,12 @@ nav{
 
 .projTitle{
     background:rgba(129, 209, 140, 0.062);
-    font-size:3.6vw
+    font-size:2.5vw
 
 }
 
 
-/******FOOTER*******/
+/********************************FOOTER************************/
 
 .foot{
     background:rgba(248, 166, 14, 0.13);

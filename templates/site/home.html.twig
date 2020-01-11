@@ -43,8 +43,8 @@
     <div class="clear"></div>
 
     <section class='currentProducts'>
-        <div class='text-center mb-5 titleCurrent'>
-            <span class= 'tCurText'>Produits du moment</span>
+        <div class='text-center mb-5 mx-auto titleCurrent'>
+            <span class= 'tCurText ml-5'>Produits du moment</span>
             <span class='ml-4 plusPro'>
                 <a href="{{path('products_main_page')}}"><img src="{{asset('img/iconPlus.png')}}" alt="">
                 <span class="plusWord ml-1">de produits</span>
@@ -52,6 +52,7 @@
             </span>
 
         </div>
+
         <div class="row d-flex justify-content-around mx-auto mt-5 currentCards">
             <div class="card mt-5 ml-5" style="width: 18rem;">
                 <a class= 'cardA' href="">
@@ -67,6 +68,7 @@
                     </span>
                         <p class="card-text cCarText">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
+                </a>
             </div>
             <div class="card mb-3" style="width: 18rem;">
                 <a class= 'cardA' href="">
@@ -122,16 +124,22 @@
     <div class="clear"></div>
 
     <section class="light">
-        <div class="row">
-            <span class="col-3 lighText text-center">Lumière sur</span>
-            <div class="col-5">
-                <h2 class='nameArt text-center my-5'>dédé</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi 
-                    ex recusandae! Enim asperiores ullam, in dolorem quisquam itaque iusto deserunt
-                    tempora, veniam dignissimos tenetur magnam earum adipisci quibusdam porro!
-                </p>
+        <div class="row d-flex justify-content-around">
+            <div class= 'col-3 text-center divLt'><p class='lightText '>Lumière sur</p> </div>
+
+            <div class="col-4">
+                <h3 class='nameArt text-center mt-3'>dédé</h3>
+                <div class="descArt">
+                    <p class ='dedeText text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi 
+                        ex recusandae! Enim asperiores ullam, in dolorem quisquam itaque iusto deserunt
+                        tempora, veniam dignissimos tenetur magnam earum adipisci quibusdam porro!
+                    </p>
+                    <button id='button'><a href="">En savoir <img src="{{asset('img/iconPlus.png')}}" width='17' alt=""></a></button>
+
+                </div>
+                
             </div>
-            <div class="col"><img class=' crafterImg' src="https://picsum.photos/500/400" alt="..."></div>
+            <div class="col-4"><img class=' crafterImg mx-auto' src="https://picsum.photos/500/400" alt="..."></div>
         </div>
     </section>
 

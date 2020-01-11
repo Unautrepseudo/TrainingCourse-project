@@ -14,11 +14,12 @@
 <body>
     {% include 'navbar.html.twig'%}
 
-    <div class="clear2"></div>
+    <div class="container-fluid">
+        <div class="clear2"></div>
 
-    {% block body %}{% endblock %}
-
-    {% include 'footer.html.twig'%}
+        {% block body %}{% endblock %}
+    </div>
+        {% include 'footer.html.twig'%}
 
     {% block javascripts %}{% endblock %}
 
