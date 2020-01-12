@@ -3,7 +3,7 @@
 {% block body %}
     
     <section>
-        <div id="carouselExampleCaptions" class="carousel slide mt-0 pt-0" data-ride="carousel">
+       <!-- <div id="carouselExampleCaptions" class="carousel slide mt-0 pt-0" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -38,6 +38,31 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+    -->
+    
+    <div class="fg-slider" id="slider-1">
+        <div class="fg-content text-center">
+            <p>Hi There... I'm Sarah Smith</p>
+            <a href="#about-me" class="btn hover">
+                <i class="fa fa-angle-right" aria-hidden="true"></i> More about me...</a>
+        </div>
+        <img src="{{asset('img/carousselleproduit.jpg')}}" alt="">
+
+        <div class="fg-content text-center">
+            <p>Hi There... I'm Sarah Smith</p>
+            <a href="#about-me" class="btn hover">
+                <i class="fa fa-angle-right" aria-hidden="true"></i> More about me...</a>
+        </div>
+        <img src="{{asset('img/caroussellengagement.jpg')}}" alt="">
+         <div class="fg-content text-center">
+            <p>Hi There... I'm Sarah Smith</p>
+            <a href="#about-me" class="btn hover">
+                <i class="fa fa-angle-right" aria-hidden="true"></i> More about me...</a>
+        </div>
+        <img src="{{asset('img/carousselleartisan.jpg')}}" alt="">
+    </div>
+
+
     </section>
 
     <div class="clear"></div>
@@ -199,7 +224,7 @@
             </div>
         </div>
         <div class="col-6 projRight infoHidden">
-            <div class="projInfo mt-5 reveal-1">
+            <div class="projInfo mt-5 reveal-5">
                 <p class="infoHidden pi1 pi text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea modi soluta ducimus excepturi necessitatibus repellat atque dignissimos. Natus, obcaecati facere!</p>
                 <p class="infoHidden pi2 pi text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi incidunt debitis reprehenderit quibusdam ad in, quisquam necessitatibus fuga impedit distinctio minus deserunt reiciendis ducimus explicabo! Ducimus velit fuga amet?</p>
                 <p class="infoHidden pi3 pi text-center">635zq4r65ve46rz4ztre6g elit. Ratione commodi incidunt debitis reprehenderit quibusdam ad in, quisquam necessitatibus fuga impedit distinctio minus deserunt reiciendis ducimus explicabo! Ducimus velit fuga amet?</p>
@@ -209,5 +234,14 @@
     </section>
 
     <div class="clear2"></div>
+  
 
 {% endblock %}
+{% block javascripts %}<script src="{{asset('js/main.js')}}"></script>
+<script>new FgSlider('slider-1', {
+    autoplay: true, // autoplay on / off
+    effect: 'slide', // fade, scale, slide, slide-top
+    duration: 5000, // duration till the next slide
+    bullets: true, // show / hide bullets
+});</script>
+ {% endblock %}
