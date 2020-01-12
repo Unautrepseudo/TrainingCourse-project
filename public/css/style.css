@@ -27,7 +27,7 @@ a {
 }
 
 .clear {
-    height: 16vh;
+    height: 25vh;
 }
 
 .clear2 {
@@ -134,7 +134,7 @@ nav{
 }
 
 .cCarText{
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .cardA p:hover{
@@ -441,9 +441,44 @@ nav{
             }
         }
             
+/***** Effet scroll whole page (HOME) ********/
+
+.reveal-loaded .reveal [class*="reveal-"] {
+    opacity: 0!important;
+    animation: none!important;
+    transition: 0s!important;
+  }
+  
+  .reveal-loaded [class*="reveal-"]{
+    animation: revealAnimation 1.2s cubic-bezier(.5, 0, 0, 1) both;
+  }
+  
+  .reveal-loaded .reveal-2 {
+    animation-delay: .1s;
+  }
+  
+  .reveal-loaded .reveal-3 {
+    animation-delay: .2s;
+  }
+  
+  .reveal-loaded .reveal-4 {
+    animation-delay: .3s;
+  }
+  
+  
+  @keyframes revealAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 
 
-/******LIVRAISON*******/
+/***********************************LIVRAISON**********************/
 /**Made by Victor **/
 .center {
     text-align: center;
