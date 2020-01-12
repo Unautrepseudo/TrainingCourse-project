@@ -469,11 +469,11 @@ nav{
   @keyframes revealAnimation {
     0% {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translate3d(42px, 62px, -135px);
     }
     100% {
       opacity: 1;
-      transform: translateY(0px);
+      transform: translate3d(0);
     }
   }
 
