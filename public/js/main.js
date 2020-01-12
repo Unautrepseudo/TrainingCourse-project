@@ -322,3 +322,5 @@ FgSlider.prototype.parallaxFunc = function() {
 
   }, 100);
 }
+
+      

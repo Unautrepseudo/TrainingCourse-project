@@ -20,6 +20,7 @@ body
 
 .container-fluid{
     width:100%;
+    overflow:hidden;
    
 }
 
@@ -149,6 +150,7 @@ nav{
     color: rgb(240, 185, 36);
 }
 
+
 /*************LUMIERE SUR*********/
 
 
@@ -241,7 +243,7 @@ nav{
 /*********LE PROJET*****/
 
 .projInfo{
-    margin-top:20%;
+    margin-top:10%;
     margin-left: 10%;
     width: 80%;
     font-size: 1.3vw;
@@ -287,7 +289,7 @@ nav{
 .pi{
     transform: rotateZ(6deg);
     height: 36vh;
-    padding: 9%;
+    padding: 3%;
     color:rgba(0, 0, 0, 0.849);
 
 }
@@ -865,4 +867,18 @@ nav{
 
 .fg-slider {
     height: 50vh;
+    margin-left: 1%;
+}
+
+.fg-content p{
+    font-size:2.4vw;
+    color:rgb(231, 225, 225);
+    border-bottom:1px solid rgba(114, 114, 114, 0.247);
+    text-shadow: rgb(56, 56, 56) 1px 0 1px;
+}
+
+.fg-content a{
+    font-size: 1vw;
+    opacity: 0.8;
+
 }

@@ -3,65 +3,29 @@
 {% block body %}
     
     <section>
-       <!-- <div id="carouselExampleCaptions" class="carousel slide mt-0 pt-0" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{{asset('img/carousselleproduit.jpg')}}" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                <h5>Nos produits</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('img/caroussellengagement.jpg')}}" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                <h5>Notre éthique</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('img/carousselleartisan.jpg')}}" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                <h5>Artisans</h5>
-                </div>
-            </div>
-            </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    -->
-    
+
     <div class="fg-slider" id="slider-1">
         <div class="fg-content text-center">
-            <p>Hi There... I'm Sarah Smith</p>
-            <a href="#about-me" class="btn hover">
-                <i class="fa fa-angle-right" aria-hidden="true"></i> More about me...</a>
+            <p>De l'atelier à votre intérieur...</p>
+            <a href="{{path('products_main_page')}}" class="btn hover bg-warning">
+                <i class="fa fa-angle-right" aria-hidden="true"></i> Besoin d'inspiration?</a>
         </div>
         <img src="{{asset('img/carousselleproduit.jpg')}}" alt="">
 
         <div class="fg-content text-center">
-            <p>Hi There... I'm Sarah Smith</p>
-            <a href="#about-me" class="btn hover">
-                <i class="fa fa-angle-right" aria-hidden="true"></i> More about me...</a>
-        </div>
-        <img src="{{asset('img/caroussellengagement.jpg')}}" alt="">
-         <div class="fg-content text-center">
-            <p>Hi There... I'm Sarah Smith</p>
-            <a href="#about-me" class="btn hover">
-                <i class="fa fa-angle-right" aria-hidden="true"></i> More about me...</a>
+            <p>Des bijoux uniques</p>
+            <a href="{{path('bijoux')}}" class="btn hover bg-warning">
+                <i class="fa fa-angle-right" aria-hidden="true"></i> Mon précieux...</a>
         </div>
         <img src="{{asset('img/carousselleartisan.jpg')}}" alt="">
-    </div>
 
+         <div class="fg-content text-center">
+            <p>Des matériaux et des hommes</p>
+            <a href="{{path('artisans')}}" class="btn hover bg-warning">
+                <i class="fa fa-angle-right" aria-hidden="true"></i> Rencontre avec...</a>
+        </div>
+        <img src="{{asset('img/caroussellengagement.jpg')}}" alt="">
+    </div>
 
     </section>
 
@@ -81,7 +45,7 @@
         <div class="row d-flex justify-content-around mx-auto mt-5 currentCards">
             <div class="card mt-5 ml-5 reveal" style="width: 18rem;">
                 <a class= 'cardA' href="">
-                    <img src="https://picsum.photos/id/20/800/600" class="card-img-top reveal-1" alt="...">
+                    <span><img src="https://picsum.photos/id/20/800/600" class="card-img-top reveal-1" width='100%' alt="..."></span>
                     <div class="card-body">
                     <span class="currentPrice reveal-2"> 60,50 € </span>
                     <span class='note reveal-2'>
@@ -164,7 +128,7 @@
                 </div>
                 
             </div>
-            <div class="col-4"><img class=' crafterImg mx-auto reveal-4' src="https://picsum.photos/500/400" alt="..."></div>
+            <div class="col-4"><img class=' crafterImg mx-auto reveal-4 img-responsive' src="https://picsum.photos/500/400" alt="..."></div>
         </div>
     </section>
 
@@ -184,8 +148,8 @@
                         </div>
                         <div class="col-md-8">
                         <div class="card-body reveal-4">
-                            <h5 class="card-title">La team</h5>
-                            <p class="card-text">baaaaaaaaaaaaaaaaaaaaablablaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                            <h5 class="card-title">Payer n'a jamais été aussi simple</h5>
+                            <p class="card-text">Nous demandez pas pourquoi. Mais chez nous, payer, c'est plus simple. Voilà.</p>
                         </div>
                         </div>
                     </div>
@@ -201,7 +165,7 @@
                         <div class="col-md-8">
                         <div class="card-body reveal-4">
                             <h5 class="card-title">Notre philosophie</h5>
-                            <p class="card-text reveal-3">relation particulier/ artisan. Moins d'intermédiaires et blablabla</p>
+                            <p class="card-text reveal-3">Si Socrate l'avait lue, il aurait capitulé et serait devenu peintre sur poney.</p>
                         </div>
                         </div>
                     </div>
@@ -215,7 +179,7 @@
                         </div>
                         <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Un truc écolo</h5>
+                            <h5 class="card-title">L'écologie au coeur de notre démarche</h5>
                             <p class="card-text">La nature c'est super, la preuve, y'a plein de castors</p>
                         </div>
                         </div>
@@ -225,9 +189,9 @@
         </div>
         <div class="col-6 projRight infoHidden">
             <div class="projInfo mt-5 reveal-5">
-                <p class="infoHidden pi1 pi text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea modi soluta ducimus excepturi necessitatibus repellat atque dignissimos. Natus, obcaecati facere!</p>
-                <p class="infoHidden pi2 pi text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi incidunt debitis reprehenderit quibusdam ad in, quisquam necessitatibus fuga impedit distinctio minus deserunt reiciendis ducimus explicabo! Ducimus velit fuga amet?</p>
-                <p class="infoHidden pi3 pi text-center">635zq4r65ve46rz4ztre6g elit. Ratione commodi incidunt debitis reprehenderit quibusdam ad in, quisquam necessitatibus fuga impedit distinctio minus deserunt reiciendis ducimus explicabo! Ducimus velit fuga amet?</p>
+                <p class="infoHidden pi1 pi text-center"> La première raison pour acheter chez nous, c'est qu'on aimerait bien recycler votre argent. L'argent, qu'est-ce que c'est? Une valeur fictive donnée à du papier et des lignes de code. Alors que chez nous, votre argent, c'est du concret: une piscine, un jet privé, une baleine de compagnie. Tout ça en un clic. Recycler n'aura jamais été aussi simple. A vos CB!</p>
+                <p class="infoHidden pi2 pi text-center"> Notre philosophie est simple: marcher jusqu'à l'arrêt de bus suivant pour éventuellement récupérer le bus 417. Surtout les jours de marcher. Au début on savait pas, on attendait naïvement. Depuis... ben on suit Mounir, enfin on lui cavale après vu qu'il court un coup sur deux. "J'veux pas râter mon train" Plus qu'une philosophie: une éthique, une morale, la lumière dans l'obscurité.</p>
+                <p class="infoHidden pi3 pi text-center"> En achetant les produits du site, vous contribuez au refroidissement de la planète grâce à un procédé maison dont nous tairons le secret. Mais notre puissance ne s'arrête pas là, à chaque produit acheté, c'est bien une famille entière d'ours blancs que vous sauvez. Oui oui, une famille entière. Alors qu'attendez vous?</p>
             </div>
         </div>
     </div>
