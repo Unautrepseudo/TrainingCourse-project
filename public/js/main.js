@@ -70,7 +70,7 @@ document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
  
 
 /***** Effet scroll whole page (HOME) ********/
-const threshold = .1
+const threshold = .5
 const options = {
   root: null,
   rootMargin: '0px',

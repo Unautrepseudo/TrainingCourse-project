@@ -27,7 +27,7 @@ a {
 }
 
 .clear {
-    height: 25vh;
+    height: 20vh;
 }
 
 .clear2 {
@@ -76,7 +76,7 @@ nav{
 
 /***********CAROUSEL*********/
 .carousel img{
-    height: 50vh;
+    height: 55vh;
 }
 
 
@@ -89,6 +89,7 @@ nav{
 
 .plusPro a{
     text-decoration:none;
+    color:rgba(0, 0, 0, 0.767);
 }
 
 .plusWord{
@@ -462,14 +463,14 @@ nav{
   }
   
   .reveal-loaded .reveal-4 {
-    animation-delay: .3s;
+    animation-delay: .25s;
   }
   
   
   @keyframes revealAnimation {
     0% {
       opacity: 0;
-      transform: translate3d(42px, 62px, -135px);
+      transform: translate3d(-42px, 62px, -135px);
     }
     100% {
       opacity: 1;
