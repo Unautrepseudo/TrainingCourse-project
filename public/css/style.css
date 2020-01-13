@@ -32,12 +32,15 @@ body
 }
 
 /***************************HOME*******************************/
-/********NAV**************/
+
+/******************NAV**************/
+
 
 nav{
     font-size: 1.2vw;
     clip-path: polygon(100% 0, 100% 83%, 95% 91%, 91% 95%, 87% 97%, 82% 99%, 76% 100%, 66% 100%, 0 100%, 0 0);
-    background:rgba(255, 255, 255, 0.705);
+    background:rgba(255, 255, 255, 0.89);
+    z-index:auto;
 }
 
 .searchInput{
@@ -46,7 +49,8 @@ nav{
     border-radius:0;
     background:rgba(255, 255, 255, 0) !important;
     width: 45vh !important;
-    opacity: 0.4;
+    opacity:0.6;
+
 }
 
 .searchButton{
@@ -68,14 +72,41 @@ nav{
 }
 
 .icon:hover{
-    opacity:0.6;
+    opacity:1;
 }
 
-.navbar-collapse{
-width: 60vh;
+/****Menu Dropdown Effect******/
+.menuDashboard{
+    width: 70vh;
+    height: 30vh;
+    top:11vh;
+    background:rgba(255, 255, 255, 0.781);
+    position:fixed;
+    margin-left: 42vh;
+    border-radius:9px;
+    z-index: 10000;
+    display:flex;
 }
 
-/***********CAROUSEL*********/
+.leftsubmenu li{
+    list-style: none;
+    color:rgba(0, 0, 0, 0.911);
+    font-size:1.1vw;
+}
+
+.menuDashboard a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.911);
+
+}
+
+.leftsubmenu{
+    padding-left: 10vh;
+    padding-top:2vh;
+}
+
+
+/*********************************************CAROUSEL*********/
 
 
 .carousel img{
@@ -167,7 +198,6 @@ width: 60vh;
 }
 
 .arrowNext{
-    opacity:0.4;
     color:rgb(121, 117, 117);
 }
 
@@ -365,7 +395,7 @@ width: 60vh;
 
 
 
-/******CONFIDENTIALITÉ*******/
+/******************************CONFIDENTIALITÉ****************************/
 .conf h1{
     width: 100%;
     background-color: rgb(226, 195, 22);
@@ -406,7 +436,7 @@ width: 60vh;
 
 
 
-/******COOKIE*******/
+/******************************COOKIE*****************************/
 
 
 .title{
