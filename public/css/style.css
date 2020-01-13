@@ -27,7 +27,7 @@ body
 
 
 .clear {
-    height: 20vh;
+    height: 16vh;
 }
 .clear2 {
     height: 15vh;
@@ -149,6 +149,12 @@ nav{
     padding-left: 1vw;
     color: rgb(240, 185, 36);
 }
+
+.test:hover{
+width: 90%;
+
+}
+
 
 
 /*************LUMIERE SUR*********/
