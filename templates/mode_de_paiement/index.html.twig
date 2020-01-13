@@ -8,13 +8,20 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<h1 class="center"> Modes de Paiement </h1>
+<br>
+<div class="livraison">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/src/Controller/ModeDePaiementController.php'|file_link(0) }}">src/Controller/ModeDePaiementController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/templates/mode_de_paiement/index.html.twig'|file_link(0) }}">templates/mode_de_paiement/index.html.twig</a></code></li>
-    </ul>
+    <div class="livraison1"> 
+    <img class='logoups'src="{{asset('img/cb.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"> Nous acceptons les Blues Cards, MasterCards, Visa Cards, AmericanExpressCard, en utilisant leurs systèmes ultra sécurisant et sécurisé. <br> Nous ne garderons aucune informations sur vos moyens de paiement, tout est traité directement par votre banque, pour votre banque ! 
+    </div>
+
+    <div class="livraison2"><img src="{{asset('img/bifton.png')}}" style=" box-shadow: 8px 8px 12px #aaa;">
+    </div>
+
+    <div class="livraison3">
+        <a href="https://www.paypal.com/fr/home" target="blank"><img class='logoups paypal' src="{{asset('img/paypal.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"></a> Paypal est une entreprise de commerce électronique (e-commerce) qui facilite les paiements entre les parties par le biais de transferts de fonds en ligne. PayPal permet aux clients d'ouvrir un compte sur sa plateforme, qui est connecté à la carte de crédit ou au compte courant d'un utilisateur.
+    </div>
+  
 </div>
 {% endblock %}

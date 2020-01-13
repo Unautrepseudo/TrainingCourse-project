@@ -351,6 +351,7 @@ width: 90%;
 
 
 
+
 /******CONFIDENTIALITÉ*******/
 h1{
     width: 100%;
@@ -391,6 +392,7 @@ p{
 
 
 
+
 /******COOKIE*******/
 
 
@@ -405,6 +407,7 @@ p{
     text-align: 50%;
     
 }
+
 
 
 
@@ -580,6 +583,10 @@ p{
     height: 75%;
     align-self: flex-start;
     margin-right: 10px;
+}
+
+.paypal {
+    width: 100%;
 }
 
 
@@ -946,3 +953,4 @@ p{
     opacity: 0.8;
 
 }
+
