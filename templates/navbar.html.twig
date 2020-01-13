@@ -13,7 +13,7 @@
             
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="{{path('products_main_page')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Produits
                     </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -40,8 +40,8 @@
 
         
             <form class=" form-inline my-2 my-lg-0 mx-5">
-                <input class="form-control mr-sm-2 searchInput icon" type="search" placeholder="Rechercher" aria-label="Search">
-                <button class="searchButton icon" type="submit"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
+                <input class="form-control mr-sm-2 searchInput icon" type="search" placeholder="Rechercher" aria-label="Search" name"searchBar">
+                <button class="searchButton icon" type="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
             </form>
             <div class=" col-1 navcons">
                 <span class="log icon"><a href="{{path('log')}}"><img src="{{asset('img/log.png')}}" width="40" alt=""></a></span>

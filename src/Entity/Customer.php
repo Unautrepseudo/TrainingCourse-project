@@ -42,14 +42,14 @@ class Customer
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=200)
+     * @ORM\Column(type="datetime")
      */
-    private $password;
+    private $birthday;
 
     /**
      * @ORM\Column(type="datetime")
      */
-    private $birthday;
+    private $created_at;
 
     /**
      * @ORM\Column(type="string", length=100)
@@ -190,18 +190,6 @@ class Customer
         return $this;
     }
 
-    public function getPassword(): ?string
-    {
-        return $this->password;
-    }
-
-    public function setPassword(string $password): self
-    {
-        $this->password = $password;
-
-        return $this;
-    }
-
     public function getBirthday(): ?\DateTimeInterface
     {
         return $this->birthday;
@@ -210,6 +198,18 @@ class Customer
     public function setBirthday(\DateTimeInterface $birthday): self
     {
         $this->birthday = $birthday;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->created_at;
+    }
+
+    public function setCreatedAt(\DateTimeInterface $created_at): self
+    {
+        $this->created_at = $created_at;
 
         return $this;
     }
