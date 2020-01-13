@@ -13,15 +13,13 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
+    overflow-X:hidden;
 
 }
 
 
 .container-fluid{
     width:100%;
-    overflow:hidden;
-   
 }
 
 
@@ -73,7 +71,13 @@ nav{
     opacity:0.6;
 }
 
+.navbar-collapse{
+width: 60vh;
+}
+
 /***********CAROUSEL*********/
+
+
 .carousel img{
     height: 55vh;
 }
@@ -885,7 +889,6 @@ nav{
 
 .fg-slider {
     height: 50vh;
-    margin-left: 1%;
 }
 
 .fg-content p{
