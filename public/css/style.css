@@ -38,6 +38,8 @@ nav{
     font-size: 1.2vw;
     clip-path: polygon(100% 0, 100% 83%, 95% 91%, 91% 95%, 87% 97%, 82% 99%, 76% 100%, 66% 100%, 0 100%, 0 0);
     background:rgba(255, 255, 255, 0.705);
+    
+
 }
 
 .searchInput{
@@ -420,7 +422,6 @@ p{
     text-align: 50%;
     
 }
-
 
 
 
