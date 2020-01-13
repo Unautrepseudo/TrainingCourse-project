@@ -201,12 +201,20 @@ nav{
 }
 
 .socicons{
-        width: 2vw;        
+        width: 2vw;  
+        opacity:0.5     
+      
 }
 
 .socicons3{
-    width: 1.5vw;        
+    width: 1.5vw;   
+    opacity:0.5     
 }
+
+.socicons:hover, .socicons3:hover{
+    opacity:1;
+}
+
 
 .sociconDiv{
     padding-top:11vh;
