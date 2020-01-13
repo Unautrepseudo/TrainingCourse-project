@@ -1,35 +1,42 @@
 <footer>
     <div class="row foot d-flex justify-content-center">
         <div class="col d-flex flex-column text-center pt-4 footlinks">
+
             <a href="{{path('confidentiality')}}">Contactez-nous</a>
             <a href="">L'équipe</a>
             <a href="">Partenaires</a>
+
+            <a href="{{path('contact')}}">Contact</a>
+            <a href="{{path('team')}}">L'équipe</a>
+            <a href="{{path('partenaires')}}">Partenaires</a>
+
         </div>
         <div class="col d-flex flex-column pt-4 footlinks">
-            <a href="">Mode de paiement</a>
-            <a href="">Modes de livraison</a>
-            <a href="">Conditions d'utilisation</a>
+            <a href="{{path('mode_de_paiement')}}">Modes de paiement</a>
+            <a href="{{path('livraison')}}">Modes de livraison</a>
+            <a href="{{path('condition_utilisation')}}">Conditions d'utilisation</a>
         </div>
         <div class="col d-flex flex-column mt-2 ml-5 text-center">
             <h2>Rejoignez-nous!!!</h2>
             <span class=" offset-2 mt-2 logos">
-                <span><a href=""><img class='face'src="{{asset('img/faceb.png')}}" alt=""></a></span>
+                <span><a href=""><img id='face'src="{{asset('img/faceb.png')}}" alt=""></a></span>
                 <span><a href=""><img id='insta' src="{{asset('img/instab.png')}}" alt=""></a></span>
-                <span><a href=""><img class='twi' src="{{asset('img/twib.png')}}" alt=""></a></span>
-                <span><a href=""><img class='you'src="{{asset('img/youb.png')}}" alt=""></a></span>
+                <span><a href=""><img id='twi' src="{{asset('img/twib.png')}}" alt=""></a></span>
+                <span><a href=""><img id='you'src="{{asset('img/youb.png')}}" alt=""></a></span>
             </span>   
         </div>
 
     </div>
 
 
-    <div class="row footbis d-flex justify-content-between">
+    <div class="row footbis d-flex justify-content-between pt-1">
         <div class="col-5 ml-5">
             <p class='inc'> © Castor Inc.</p>
         </div>
-        <div class="col-2 d-flex justify-content-around footlinks2">
-            <div><a href="">Cookies</a></div>
-            <div><a href="">Confidentialité</a></div>
+        <div class="col-2 d-flex justify-content-around footlinks2 mr-3">
+            <div><a href="{{path('cookie')}}">Cookies</a></div>
+            <div class="mx-auto"><a href="{{path('mentions_legales')}}">Mentions légales</a></div>
+            <div><a href="{{path('confidentiality')}}">Confidentialité</a></div>
         </div>
         
     </div>

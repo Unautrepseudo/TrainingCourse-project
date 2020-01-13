@@ -37,11 +37,6 @@ class Artisan
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=200)
-     */
-    private $password;
-
-    /**
      * @ORM\Column(type="string", length=500)
      */
     private $picture;
@@ -134,18 +129,6 @@ class Artisan
     public function setEmail(string $email): self
     {
         $this->email = $email;
-
-        return $this;
-    }
-
-    public function getPassword(): ?string
-    {
-        return $this->password;
-    }
-
-    public function setPassword(string $password): self
-    {
-        $this->password = $password;
 
         return $this;
     }
