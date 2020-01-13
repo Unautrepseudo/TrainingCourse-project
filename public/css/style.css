@@ -13,14 +13,23 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow-X:hidden;
+<<<<<<< HEAD
+    overflow-x: hidden;
+=======
+    overflow-x: hidden;
+>>>>>>> 2308b2652f024a73f26f6b2bc4dababbea3c9366
 
 }
 
 
 .container-fluid{
     width:100%;
+<<<<<<< HEAD
 }
+=======
+    overflow:hidden;
+   }
+>>>>>>> 2308b2652f024a73f26f6b2bc4dababbea3c9366
 
 
 
@@ -565,6 +574,11 @@ p{
 
 /***********************************LIVRAISON**********************/
 /**Made by Victor **/
+.ampoule 
+{
+    opacity: 0.6;
+}
+
 .center {
     text-align: center;
     text-shadow: black 0.1em 0.1em 0.1em
