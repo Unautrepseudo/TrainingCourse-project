@@ -389,7 +389,28 @@ p{
     height: 100vh;
     margin: 80px;  
 }
-=======
+
+
+
+
+/******COOKIE*******/
+
+
+.title{
+    width: 100%;
+    height: 180px;
+    background-color:#ffc107;
+}
+
+
+p{
+    text-align: 50%;
+    
+}
+
+
+
+
 /***************************Team PAGE*******************************/
 
 /*div{
