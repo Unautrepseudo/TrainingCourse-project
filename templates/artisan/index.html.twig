@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artisan index{% endblock %}
+
+{% block body %}
+    <h1>Artisan index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First_name</th>
+                <th>Last_name</th>
+                <th>Company</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Picture</th>
+                <th>Speciality</th>
+                <th>About</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for artisan in artisans %}
+            <tr>
+                <td>{{ artisan.id }}</td>
+                <td>{{ artisan.firstName }}</td>
+                <td>{{ artisan.lastName }}</td>
+                <td>{{ artisan.company }}</td>
+                <td>{{ artisan.email }}</td>
+                <td>{{ artisan.password }}</td>
+                <td>{{ artisan.picture }}</td>
+                <td>{{ artisan.speciality }}</td>
+                <td>{{ artisan.about }}</td>
+                <td>
+                    <a href="{{ path('artisan_show', {'id': artisan.id}) }}">show</a>
+                    <a href="{{ path('artisan_edit', {'id': artisan.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('artisan_new') }}">Create new</a>
+{% endblock %}
