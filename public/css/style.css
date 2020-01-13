@@ -150,11 +150,22 @@ nav{
     color: rgb(240, 185, 36);
 }
 
-.test:hover{
-width: 90%;
+.img-pres:hover{
+    width:105%;
+    transition: 1s ease-in-out;
 
 }
 
+.container-img{
+    width :30vh;
+    height: 22vh;
+    overflow:hidden;
+}
+
+.arrowNext{
+    opacity:0.4;
+    color:rgb(121, 117, 117);
+}
 
 
 /*************LUMIERE SUR*********/
