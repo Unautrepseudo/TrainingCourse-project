@@ -174,8 +174,7 @@ nav{
 /******CONFIDENTIALITÉ*******/
 h1{
     width: 100%;
-    height: 9vh;
-    background-color: darkblue;
+    background-color: rgb(226, 195, 22);
     color: #fff;
 }
 
@@ -187,31 +186,25 @@ h3{
     color: black;
 }
 
-
-.font{
-    width: 100%;
-    height: 900vh;
-    background:#CCCCCC;
-}
-
 p{
    color:#1D3C78;
 }
 
 .menu{
-    width:100%;
-    height: 300vh;
+    width:10%;
+    height: 20vh;
 }
 
 .menu a{
-    color:#1D3C78;
+    color:rgb(120, 119, 29);
+    size: 10px;
+    width:12%;
 
 }
 
 .menus
 {
-    width:50%;
-    height: 300vh;
-  
-
+    width:100%;
+    height: 100vh;
+    margin: 80px;  
 }
