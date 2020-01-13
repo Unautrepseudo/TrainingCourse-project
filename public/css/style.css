@@ -13,23 +13,14 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-<<<<<<< HEAD
     overflow-x: hidden;
-=======
-    overflow-x: hidden;
->>>>>>> 2308b2652f024a73f26f6b2bc4dababbea3c9366
 
 }
 
 
 .container-fluid{
     width:100%;
-<<<<<<< HEAD
 }
-=======
-    overflow:hidden;
-   }
->>>>>>> 2308b2652f024a73f26f6b2bc4dababbea3c9366
 
 
 
@@ -197,13 +188,12 @@ width: 60vh;
 }
 
 .lightText {
-    font-size: 3.9vw;
+    font-size: 3.4vw;
 }
 
 .dedeText{
 
-    padding-top: 2%;
-    font-size: 1.3vw;
+    font-size: 1vw;
 
 }
 
@@ -225,7 +215,6 @@ width: 60vh;
 }
 
 #button{
-    margin-top: 2%;
     margin-left: 75%;
     width: 15vh;
     height: 4.5vh;
@@ -250,7 +239,7 @@ width: 60vh;
   }
   #button:active
   {
-      transform: translate(0px,5px);
+    transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(227, 233, 233);
@@ -261,8 +250,8 @@ width: 60vh;
   
   
   #button:hover{
-      color:rgba(255, 255, 255, 1);
-      background-color:rgba(228, 184, 65, 0);
+    color:rgba(255, 255, 255, 1);
+    background-color:rgba(228, 184, 65, 0);
     background-position: -100% 100%;
     cursor: pointer;
   
@@ -377,7 +366,7 @@ width: 60vh;
 
 
 /******CONFIDENTIALITÉ*******/
-h1{
+.conf h1{
     width: 100%;
     background-color: rgb(226, 195, 22);
     color: #fff;
@@ -387,11 +376,11 @@ h1{
     display: flex;
 }
 
-h3{
+.conf h3{
     color: black;
 }
 
-p{
+.conf p{
    color:#1D3C78;
 }
 
