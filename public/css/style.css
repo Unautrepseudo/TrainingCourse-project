@@ -252,10 +252,6 @@ width: 90%;
     margin-left: 10%;
     width: 80%;
     font-size: 1.3vw;
-    
-
-
-
 }
 
 .projRight{
@@ -549,6 +545,69 @@ p{
 
 /***********************************LIVRAISON**********************/
 /**Made by Victor **/
+.titleproduct {
+        background: rgba(43, 206, 116, 0.075);
+}
+
+.prodductref {
+    background: rgba(43, 206, 116, 0.075);
+}
+
+.descriptionproduit {
+    background: rgba(43, 206, 116, 0.075);
+    margin-top:3vh;
+    font-style: italic;
+
+}
+
+.productprix
+{
+    margin-top :  3vh;
+    
+}
+
+.productstock 
+{
+    margin-top:3vh;
+    font-weight: bold;
+}
+
+.millieugauche {
+    width: 30%;
+    font-weight: bold;
+}
+
+.millieudroit {
+    background: rgba(50, 238, 135, 0.294);
+    font-style: italic;
+    font-weight: bold;    
+}
+
+.dixpourcent
+{
+    width: 10%;
+}
+
+.totaux 
+{
+    display: flex;
+}
+
+.imgproduct{
+    height: 40vh;
+    width: 40vh;
+    margin : 0 10vh 10vh 10vh;
+      transition-duration: 1s;
+}
+
+.center {
+    text-align: center;
+}
+
+.flexflex {
+    display: flex;
+}
+
 .ampoule 
 {
     opacity: 0.6;
@@ -593,7 +652,45 @@ p{
     width: 100%;
 }
 
+.bolditalic {
+    font-weight: bold;
+}
 
+.zoom:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transform: scale(1.2); 
+}
+
+.poi{
+    transform: rotateZ(6deg);
+    padding: 7%;
+    color:rgba(0, 0, 0, 0.849);
+    font-style: italic;
+}
+
+.projonfi{
+    margin-left: 10%;
+    width: 80%;
+    font-size: 1.3vw;
+}
+
+.projNight{
+    background:rgba(43, 206, 116, 0.075);
+    transform: rotateZ(-4deg);
+    border-radius: 3%;
+    height: 35vh;
+    margin-top: 5vh;
+    width: 80%;
+    margin-bottom: 7vh;
+}
+
+.productartisan {
+    font-weight: bold;
+}
+
+.productref {
+    font-weight: bold;
+}
 /************************************CAROUSEL****************************************************************/
 /* SLIDER MAIN CONTAINER */
 .fg-slider {
