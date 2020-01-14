@@ -1,3 +1,6 @@
+$('select #registration_form_role_user').click(function(){
+  alert("The text has been changed.");
+});
 
 /*** LE PROJET*****/
 /**Text show */
@@ -323,4 +326,7 @@ FgSlider.prototype.parallaxFunc = function() {
   }, 100);
 }
 
-      
+/**************************FORMULAIRE****************************************** */
+
+
+
