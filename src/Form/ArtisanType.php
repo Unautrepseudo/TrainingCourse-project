@@ -16,12 +16,18 @@ class ArtisanType extends AbstractType
             ->add('last_name')
             ->add('company')
             ->add('email')
-            ->add('password')
             ->add('picture')
             ->add('speciality')
             ->add('about')
         ;
     }
+
+    public function getParent()
+    {
+        return 'FOS\UserBundle\Form\Type\RegistrationFormType';
+
+    }
+
 
     public function configureOptions(OptionsResolver $resolver)
     {
