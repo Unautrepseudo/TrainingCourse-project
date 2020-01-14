@@ -67,7 +67,7 @@ class User extends BaseUser
     {
         return $this->id;
     }
-
+  
     public function getLastName(): ?string
     {
         return $this->last_name;
@@ -151,5 +151,4 @@ class User extends BaseUser
 
         return $this;
     }
-
 }
