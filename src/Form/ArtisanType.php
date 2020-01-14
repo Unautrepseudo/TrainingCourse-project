@@ -16,7 +16,6 @@ class ArtisanType extends AbstractType
             ->add('last_name')
             ->add('company')
             ->add('email')
-            ->add('password')
             ->add('picture')
             ->add('speciality')
             ->add('about')

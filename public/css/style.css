@@ -966,8 +966,7 @@ nav {
 /******************************************************ArtisanSingle****************************************************************/
 
 .contentname {
-    width: 50rem;
-    height: 120px;
+    height: 200px;
     margin-bottom: 30px;
     background-color: burlywood;
     margin: 0 auto;
@@ -979,9 +978,11 @@ nav {
 
 .nameofcraftsman {
     color: white;
-    /* padding: 25px; */
-    text-align: center;
-    font-size: 35px;
+    width: 200rem;
+    text-transform: uppercase;
+    font-size: 100px;
+    padding-left: 20rem;
+    padding-top: 25px;
 }
 
 .description {
@@ -1092,29 +1093,30 @@ figure:hover figcaption {
     background-color: burlywood;
 }
 
-.productsmenu1,
-.productsmenu2,
-.productsmenu3 {
+.productsmenu2 {
     width: 10rem;
     border-radius: 5px;
     box-shadow: 3px 2px 1px 1px grey;
     border: 3px solid burlywood;
-    transition: 1s;
+    transition: 1s ease-in-out;
 }
 
-.productsmenu1:hover,
-.productsmenu1:focus {
-    transform: rotate(-10deg);
-}
 
+/*
 .productsmenu2:hover,
 .productsmenu2:focus {
     width: 11rem;
+} */
+
+.productsmenu2:hover {
+    width: 11rem;
+    /* transition: 1s ease-in-out; */
 }
 
-.productsmenu3:hover,
-.productsmenu3:focus {
-    transform: rotate(10deg);
+.imagecontent {
+    width: 13rem;
+    height: 12rem;
+    overflow: hidden;
 }
 
 .fasb1,
