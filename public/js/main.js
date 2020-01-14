@@ -1,3 +1,64 @@
+/****** NAV Scroll Menu *****/
+document.getElementsByClassName('products')[0].addEventListener("click", (() =>{
+  $('.menuDashboard').removeClass('infoHidden');
+}));
+
+document.getElementsByClassName('leftsubmenu')[0].addEventListener("click", (() =>{
+  $('.menuDashboard').addClass('infoHidden');
+}));
+
+/*meubles*/
+document.getElementsByClassName('products')[1].addEventListener("mouseover", (() =>{
+  $('.rightsubmenu').removeClass('infoHidden');
+}));
+
+
+document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
+  $('.rightsubmenu').addClass('infoHidden');
+}));
+document.getElementsByClassName('submenu')[1].addEventListener("mouseover", (() =>{
+  $('.rightsubmenu').removeClass('infoHidden');
+}));
+
+/*décoration*/
+document.getElementsByClassName('products')[2].addEventListener("mouseover", (() =>{
+  $('.rightsubmenu2').removeClass('infoHidden');
+}));
+
+document.getElementsByClassName('products')[2].addEventListener("mouseout", (() =>{
+  $('.rightsubmenu2').addClass('infoHidden');
+}));
+document.getElementsByClassName('rightsubmenu2')[0].addEventListener("mouseover", (() =>{
+  $('.rightsubmenu').removeClass('infoHidden');
+}));
+
+
+// /*Bijoux*/
+// document.getElementsByClassName('products')[3].addEventListener("mouseover", (() =>{
+//   $('.rightsubmenu3').removeClass('infoHidden');
+// }));
+
+// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
+//   $('.rightsubmenu3').addClass('infoHidden');
+// }));
+// document.getElementsByClassName('submenu3')[3].addEventListener("mouseover", (() =>{
+//   $('.rightsubmenu3').removeClass('infoHidden');
+// }));
+
+// /*Jouets*/
+// document.getElementsByClassName('products')[4].addEventListener("mouseover", (() =>{
+//   $('.rightsubmenu4').removeClass('infoHidden');
+// }));
+
+// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
+//   $('.rightsubmenu4').addClass('infoHidden');
+// }));
+// document.getElementsByClassName('submenu4')[4].addEventListener("mouseover", (() =>{
+//   $('.rightsubmenu4').removeClass('infoHidden');
+// }));
+
+
+
 
 /*** LE PROJET*****/
 /**Text show */

@@ -98,26 +98,10 @@ nav{
 }
 
 .leftsubmenu{
-    padding-left: 10vh;
+    padding-left: 6vh;
     padding-top:2vh;
     background:rgba(255, 255, 255, 0.979);
     border-radius:0 10% 1% 0;
-    
-
-}
-
-.rightsubmenu{
-    padding-top:2vh;
-    background:rgba(255, 255, 255, 0.925);
-    border-radius:0 10% 10% 10%;
-    padding-left:2vh;
-    width:18vh;
-    height:30vh;
-    top:9vw;
-    position:fixed;
-    z-index:1000;
-    margin-left:22.8vh;
-
 }
 
 .rightsubmenu li, .rightsubmenu2 li, .rightsubmenu3 li, .rightsubmenu4 li{
@@ -127,6 +111,21 @@ nav{
     line-height: 5vh;
 }
 
+.rightsubmenu{
+    padding-top:2vh;
+    background:rgba(255, 255, 255, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:30vh;
+    top:10vw;
+    position:fixed;
+    z-index:1000;
+    margin-left:22.8vh;
+}
+
+
+
 
 .rightsubmenu2{
     padding-top:2vh;
@@ -135,35 +134,44 @@ nav{
     padding-left:2vh;
     width:18vh;
     height:30vh;
-    top:12vw;
+    top:13vw;
     position:fixed;
     z-index:1001;
     margin-left:22.8vh;
 }
 
 .rightsubmenu3{
-    background:rgba(202, 20, 20, 0.925);
+    background:rgba(255, 255, 255, 0.925);
     border-radius:0 10% 10% 10%;
     padding-left:2vh;
     width:18vh;
     height:24vh;
-    top:16vw;
+    top:17vw;
     position:fixed;
-    z-index:1001;
+    z-index:1003;
     margin-left:22.8vh;
 }
 
 .rightsubmenu4{
-    background:rgba(20, 202, 50, 0.925);
+    background:rgba(255, 255, 255, 0.925);
     border-radius:0 10% 10% 10%;
     padding-left:2vh;
     width:18vh;
     height:24vh;
     top:19vw;
     position:fixed;
-    z-index:1001;
+    z-index:1004;
     margin-left:22.8vh;
 }
+
+.test{
+    width:29vh;
+    height:5vh;
+}
+
+ .menuDashboard li, .menuDashboard a{
+border: 1px solid black;
+} 
 
 
 
@@ -244,6 +252,11 @@ nav{
     width: 0.5vw;
     padding-left: 1vw;
     color: rgb(240, 185, 36);
+}
+
+.img-pres{
+    transition: 1s ease-in-out;
+
 }
 
 .img-pres:hover{
