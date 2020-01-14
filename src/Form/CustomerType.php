@@ -23,7 +23,6 @@ class CustomerType extends AbstractType
                  ],
           ])
             ->add('email')
-            ->add('password')
             ->add('birthday')
             ->add('address')
             ->add('city')
@@ -31,6 +30,8 @@ class CustomerType extends AbstractType
             ->add('phone_number')
         ;
     }
+
+    
 
     public function configureOptions(OptionsResolver $resolver)
     {
