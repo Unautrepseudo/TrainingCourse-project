@@ -13,14 +13,14 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow-X:hidden;
+    overflow-x: hidden;
+
 
 }
 
 
 .container-fluid{
     width:100%;
-}
 
 
 
@@ -565,6 +565,11 @@ p{
 
 /***********************************LIVRAISON**********************/
 /**Made by Victor **/
+.ampoule 
+{
+    opacity: 0.6;
+}
+
 .center {
     text-align: center;
     text-shadow: black 0.1em 0.1em 0.1em
