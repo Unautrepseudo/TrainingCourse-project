@@ -77,24 +77,21 @@ nav{
 
 /****Menu Dropdown Effect******/
 .menuDashboard{
-    width: 70vh;
+    width: 49vh;
     height: 30vh;
-    top:11vh;
-    background:rgba(255, 255, 255, 0.781);
+    top:8vw;
     position:fixed;
-    margin-left: 42vh;
-    border-radius:9px;
-    z-index: 10000;
+    z-index: 1000;
     display:flex;
 }
 
 .leftsubmenu li{
     list-style: none;
     color:rgba(0, 0, 0, 0.911);
-    font-size:1.1vw;
+    font-size:1.2vw;
 }
 
-.menuDashboard a{
+.submenu a{
     text-decoration: none;
     color:rgba(0, 0, 0, 0.911);
 
@@ -103,7 +100,71 @@ nav{
 .leftsubmenu{
     padding-left: 10vh;
     padding-top:2vh;
+    background:rgba(255, 255, 255, 0.979);
+    border-radius:0 10% 1% 0;
+    
+
 }
+
+.rightsubmenu{
+    padding-top:2vh;
+    background:rgba(255, 255, 255, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:30vh;
+    top:9vw;
+    position:fixed;
+    z-index:1000;
+    margin-left:22.8vh;
+
+}
+
+.rightsubmenu li, .rightsubmenu2 li, .rightsubmenu3 li, .rightsubmenu4 li{
+    list-style: none;
+    color:rgba(0, 0, 0, 0.829);
+    font-size:1.1vw;
+    line-height: 5vh;
+}
+
+
+.rightsubmenu2{
+    padding-top:2vh;
+    background:rgba(255, 255, 255, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:30vh;
+    top:12vw;
+    position:fixed;
+    z-index:1001;
+    margin-left:22.8vh;
+}
+
+.rightsubmenu3{
+    background:rgba(202, 20, 20, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:24vh;
+    top:16vw;
+    position:fixed;
+    z-index:1001;
+    margin-left:22.8vh;
+}
+
+.rightsubmenu4{
+    background:rgba(20, 202, 50, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:24vh;
+    top:19vw;
+    position:fixed;
+    z-index:1001;
+    margin-left:22.8vh;
+}
+
 
 
 /*********************************************CAROUSEL*********/
