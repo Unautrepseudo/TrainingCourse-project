@@ -1,36 +1,36 @@
-/****** NAV Scroll Menu *****/
-document.getElementsByClassName('products')[0].addEventListener("click", (() =>{
-  $('.menuDashboard').removeClass('infoHidden');
-}));
+// /****** NAV Scroll Menu *****/
+// document.getElementsByClassName('products')[0].addEventListener("click", (() =>{
+//   $('.menuDashboard').removeClass('infoHidden');
+// }));
 
-document.getElementsByClassName('leftsubmenu')[0].addEventListener("click", (() =>{
-  $('.menuDashboard').addClass('infoHidden');
-}));
+// document.getElementsByClassName('leftsubmenu')[0].addEventListener("click", (() =>{
+//   $('.menuDashboard').addClass('infoHidden');
+// }));
 
-/*meubles*/
-document.getElementsByClassName('products')[1].addEventListener("mouseover", (() =>{
-  $('.rightsubmenu').removeClass('infoHidden');
-}));
+// /*meubles*/
+// document.getElementsByClassName('products')[1].addEventListener("mouseover", (() =>{
+//   $('.rightsubmenu').removeClass('infoHidden');
+// }));
 
 
-document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
-  $('.rightsubmenu').addClass('infoHidden');
-}));
-document.getElementsByClassName('submenu')[1].addEventListener("mouseover", (() =>{
-  $('.rightsubmenu').removeClass('infoHidden');
-}));
+// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
+//   $('.rightsubmenu').addClass('infoHidden');
+// }));
+// document.getElementsByClassName('submenu')[1].addEventListener("mouseover", (() =>{
+//   $('.rightsubmenu').removeClass('infoHidden');
+// }));
 
-/*décoration*/
-document.getElementsByClassName('products')[2].addEventListener("mouseover", (() =>{
-  $('.rightsubmenu2').removeClass('infoHidden');
-}));
+// /*décoration*/
+// document.getElementsByClassName('products')[2].addEventListener("mouseover", (() =>{
+//   $('.rightsubmenu2').removeClass('infoHidden');
+// }));
 
-document.getElementsByClassName('products')[2].addEventListener("mouseout", (() =>{
-  $('.rightsubmenu2').addClass('infoHidden');
-}));
-document.getElementsByClassName('rightsubmenu2')[0].addEventListener("mouseover", (() =>{
-  $('.rightsubmenu').removeClass('infoHidden');
-}));
+// document.getElementsByClassName('products')[2].addEventListener("mouseout", (() =>{
+//   $('.rightsubmenu2').addClass('infoHidden');
+// }));
+// document.getElementsByClassName('rightsubmenu2')[0].addEventListener("mouseover", (() =>{
+//   $('.rightsubmenu').removeClass('infoHidden');
+// }));
 
 
 // /*Bijoux*/
