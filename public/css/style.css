@@ -11,6 +11,7 @@
 body 
 {
     background-image: url(body.jpg);
+    /* background:rgba(243, 240, 202, 0.555); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,6 +30,8 @@ body
 }
 .clear2 {
     height: 15vh;
+    background:rgba(214, 212, 178, 0);
+
 }
 
 /***************************HOME*******************************/
@@ -176,14 +179,14 @@ border: 1px solid black;
 
 .buttonNav{
     position: fixed;
-    width:2vh;
-    height:7vh;
+    width:3vh;
+    height:6vh;
     clip-path: circle(71.1% at 68% 50%);
     background:rgb(248, 248, 248);
     z-index:1000;
     right:0;
     top:50%;
-    transition:1s ease-in-out;
+    transition:0.6s ease-in-out;
    
     
 }
@@ -194,14 +197,27 @@ border: 1px solid black;
 }
 
 .buttonNav:hover{
-    width: 6vh;
-    background:rgb(75, 75, 75);
+    width: 5vh;
+    background:rgba(145, 145, 145, 0.685);
 }
 
 .buttonNav i{
-    font-size:3.5vh;
+    font-size:2.5vh;
+    height:2vh;
     margin-top: 2vh;
+    transform: rotateZ(-90deg);
+    color:rgb(116, 110, 110);
+    transition: .8s;
+}
+
+.buttonNav i:hover{
+    transform: rotateZ(0);
+    font-size:4vh;
+    width:3vh;
     color:white;
+    padding-bottom:4vh;
+
+
 }
 
 /*********************************************CAROUSEL*********/

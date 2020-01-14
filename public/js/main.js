@@ -57,9 +57,6 @@
 //   $('.rightsubmenu4').removeClass('infoHidden');
 // }));
 
-
-
-
 /*** LE PROJET*****/
 /**Text show */
 document.getElementById('infoImg1').addEventListener("mouseover", (() =>{
