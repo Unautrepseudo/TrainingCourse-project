@@ -601,8 +601,6 @@ p{
 
 
 
-
-
 /*****right*****/
 .infoTeam{
     height: 55vh;
@@ -626,6 +624,19 @@ p{
 .sociconDiv{
     padding-top:11vh;
 }
+
+
+.sociconDiv a{
+    color:rgb(16, 126, 190);
+    text-decoration: none;
+    transition:0.5s;
+}
+
+.sociconDiv a:hover{
+    color:rgb(5, 184, 255);
+}
+
+
 
 
 /************************************effet cartes flip**************************************************/

@@ -365,10 +365,42 @@ FgSlider.prototype.parallaxFunc = function() {
 /*************************** LA TEAM******************************************/
 /**Text show */
   $(document).ready(function(){
+/*team1*/
     $('#infoImg1').mouseover(function(){
-      $('.infoTeam').removeClass('infoHidden');
-
+      $('.infoTeam1').removeClass('infoHidden');
+      $('.infoTeam2,.infoTeam3,.infoTeam4,.infoTeam5').addClass('infoHidden');
     });
+
+/*team2*/
+$('#infoImg2').mouseover(function(){
+  $('.infoTeam2').removeClass('infoHidden');
+  $('.infoTeam1,.infoTeam3,.infoTeam4,.infoTeam5').addClass('infoHidden');
+});
+
+/*team3*/
+$('#infoImg3').mouseover(function(){
+  $('.infoTeam3').removeClass('infoHidden');
+  $('.infoTeam2,.infoTeam1,.infoTeam4,.infoTeam5').addClass('infoHidden');
+});
+
+/*team4*/
+$('#infoImg4').mouseover(function(){
+  $('.infoTeam4').removeClass('infoHidden');
+  $('.infoTeam2,.infoTeam3,.infoTeam1,.infoTeam5').addClass('infoHidden');
+});
+
+/*team5*/
+$('#infoImg5').mouseover(function(){
+  $('.infoTeam5').removeClass('infoHidden');
+  $('.infoTeam2,.infoTeam3,.infoTeam4,.infoTeam1').addClass('infoHidden');
+});
+
+
+
+
+
+
+
   });
  
 
