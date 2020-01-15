@@ -99,10 +99,12 @@ document.getElementById('face').addEventListener("mouseover", (function(){
 $('#face').attr('src','img/facecol.png');
 }));
 
+
 document.getElementById('face').addEventListener("mouseout", (function(){
   
       $('#face').attr('src','img/faceb.png');
 }));
+
 
 
 
@@ -355,6 +357,7 @@ if (This.createdSlides.length) {
             })
         })
     });
+
 }
 
 }, 100);
@@ -394,6 +397,7 @@ $('#infoImg5').mouseover(function(){
 $('.infoTeam5').removeClass('infoHidden');
 $('.infoTeam2,.infoTeam3,.infoTeam4,.infoTeam1').addClass('infoHidden');
 });
+
 
 
 
