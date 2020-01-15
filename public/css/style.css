@@ -77,10 +77,11 @@ nav {
 /***nav bis*****/
 .nav2{
 justify-self: center;
-background:rgb(128, 126, 126);
-width:80%;
-border: 1px solid black;
+background:rgba(255, 252, 248, 0.747);
 font-size:1.1vw;
+border-radius:8%;
+color:rgba(88, 86, 86, 0.849) !important;
+
 }
 
 .nav2 li a{
@@ -96,11 +97,26 @@ font-size:1.1vw;
 .testContent{
     position:absolute;
     top:8vh;
-    border: 1px solid black;
     width:102%;
     line-height:1,5vw;
+    z-index:10000 !important;
+    
+}
+
+.subMenu2b{
+    padding-top:6vh !important;
+    color:rgba(88, 86, 86, 0.753) !important;
 
 }
+
+.subMenu2c{
+    padding-top:9.4vh !important;
+}
+
+.subMenu2d{
+    padding-top:12.7vh !important;
+}
+
 
 
 /**Button scroll up**/
@@ -365,7 +381,7 @@ font-size:1.1vw;
 /***fade effect**/
 
 .infoHidden {
-    display: none;
+    display: none !important;
 }
 
 .pi {
