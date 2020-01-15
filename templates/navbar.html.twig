@@ -1,4 +1,4 @@
- <nav class=" row navbar navbar-expand-lg navbar-light fixed-top d-flex justify-content-around">
+ <nav id= 'topPage' class=" row navbar navbar-expand-lg navbar-light d-flex justify-content-around">
     
     <div class="col-3">
         <a class="" href="/"><img src="{{asset ('img/logo.png') }}" alt="Art'I'Made, vous avez la main" style="width:35%"></a>
@@ -10,18 +10,15 @@
 
     <div class=" col-9 collapse navbar-collapse" id="navbarSupportedContent">
         <ul class=" navbar-nav mr-5">
-            
+            <li class="nav-item dropdown ">
+        <a class="nav-link products" href="#" id=" navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Produits
+        </a>
+        
+      </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{path('products_main_page')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Produits
-                    </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Meubles</a>
-                    <a class="dropdown-item" href="#">Décoration</a>
-                    <a class="dropdown-item" href="#">Bijoux</a>
-                    <a class="dropdown-item" href="#">Jouets</a>
-            </li>
+        <div class="testyo"></div>
+
 
             <li class="nav-item">
                 <a class="nav-link" href="{{path('artisans')}}">Artisans</a>
@@ -34,11 +31,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{path('contact')}}">Nous contacter</a>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="{{path('customer_index')}}">Customer  ajouter</a>
-            </li>
-
 
         </ul>
 
@@ -55,3 +47,50 @@
     </div>
 
 </nav>
+{% block javascripts %}
+    <script>
+    /************************* social logos hover****************************/
+
+    /*insta*/
+        document.getElementById('insta').addEventListener("mouseover", (function(){
+            $('#insta').attr('src','img/instacol.png');
+        }));
+        
+        document.getElementById('insta').addEventListener("mouseout", (function(){
+            
+                $('#insta').attr('src','img/instab.png');
+        }));
+
+    /*twitter*/
+        document.getElementById('twi').addEventListener("mouseover", (function(){
+        $('#twi').attr('src','img/twicol.png');
+        }));
+        
+        document.getElementById('twi').addEventListener("mouseout", (function(){
+            
+                $('#twi').attr('src','img/twib.png');
+        }));
+
+        
+    /*youtube*/
+        document.getElementById('you').addEventListener("mouseover", (function(){
+        $('#you').attr('src','img/youcol.png');
+        }));
+        
+        document.getElementById('you').addEventListener("mouseout", (function(){
+            
+                $('#you').attr('src','img/youb.png');
+        }));
+        
+
+    /*facebook*/
+        document.getElementById('face').addEventListener("mouseover", (function(){
+        $('#face').attr('src','img/facecol.png');
+        }));
+        
+        document.getElementById('face').addEventListener("mouseout", (function(){
+            
+                $('#face').attr('src','img/faceb.png');
+        }));
+    </script>
+{% endblock %}

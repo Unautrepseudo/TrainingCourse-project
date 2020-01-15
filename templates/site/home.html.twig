@@ -1,7 +1,50 @@
 {% extends 'base.html.twig' %}
     
 {% block body %}
-    
+
+    <span id ='scrollup' class='buttonNav text-center text-center'><a href="#topPage"><i class="fas fa-angle-double-up mb-4"></i>
+        </a> </span>
+
+    <section>
+        <div class=" row menuDashboard reveal infoHidden ">
+        <div class=" col-6 leftsubmenu submenu ">
+            <li class='products test'><a href="">Meubles</a></li><br>
+            <li class='products test'><a href="">Décoration</a></li><br>
+            <li class='products test'><a href="{{path('artisans')}}">Bijoux</a></li><br>
+            <li class='products test'><a href="">Jouets</a></li><br>
+        </div>
+        </div>
+        <div class=" col-6 rightsubmenu submenu infoHidden">
+            
+            <li><a href="#">Tables</a></li>
+            <li><a href="#">Chaises</a></li>
+            <li><a href="#">Bureau</a></li>
+            <li><a href="#">Etagères</a></li>
+            <li><a href="#">Armoires</a></li>
+        </div>
+        <div class='rightsubmenu2 submenu infoHidden'>
+            <li><a href="#">Poterie</a></li>
+            <li><a href="#">Luminaires</a></li>
+            <li><a href="#">Décorations murales</a></li>
+            <li><a href="#">Bougies</a></li>
+        </div>
+        <div class='rightsubmenu3 submenu infoHidden'>
+            <li><a href="#">Colliers</a></li>
+            <li><a href="#">Bagues</a></li>
+            <li><a href="#">Bracelets</a></li>
+            <li><a href="#">Tête</a></li>
+        </div>
+        <div class='rightsubmenu4 submenu infoHidden'>
+                <li><a href="#">Peluches</a></li>
+                <li><a href="#">Figurines</a></li>
+                <li><a href="#">Puzzles</a></li>
+                <li><a href="/">Jeux</a></li>
+        </div>
+
+        </div>
+    </section>
+
+
     <section>
 
     <div class="fg-slider" id="slider-1">
@@ -39,12 +82,13 @@
                 <span class="plusWord ml-1 reveal-2">de produits</span>
                 </a>
             </span>
+
         </div>
 
         <div class="row d-flex justify-content-around mx-auto mt-5 currentCards">
             <div class="card mt-5 ml-5 reveal" style="width: 18rem;">
                 <a class= 'cardA' href="">
-                    <div class='testdiv'><img src="https://picsum.photos/id/20/800/600" class="card-img-top reveal-1 test" width='100%' alt="..."></div class='testdiv'>
+                    <div class='container-img'><img src="https://picsum.photos/id/20/800/600" class="card-img-top reveal-1 img-pres" width='100%' alt="..."></div>
                     <div class="card-body">
                     <span class="currentPrice reveal-2"> 60,50 € </span>
                     <span class='note reveal-2'>
@@ -60,7 +104,7 @@
             </div>
             <div class="card mb-3 reveal" style="width: 18rem;">
                 <a class= 'cardA' href="">
-                    <img src="https://picsum.photos/id/15/800/600" class="card-img-top reveal-1" alt="...">
+                    <div class='container-img'><img src="https://picsum.photos/id/15/800/600" class="card-img-top reveal-1 img-pres" alt="..."></div>
                     <div class="card-body">
                         <span class="currentPrice reveal-2"> 60,50 € </span>
                         <span class='note reveal-3'>
@@ -76,7 +120,7 @@
             </div>
             <div class="card mt-5 reveal" style="width: 18rem;">
                 <a class= 'cardA' href="">
-                    <img src="https://picsum.photos/id/10/800/600" class="card-img-top reveal-2" alt="...">
+                    <div class='container-img'><img src="https://picsum.photos/id/10/800/600" class="card-img-top reveal-2 img-pres"  alt="..."></div>
                     <div class="card-body">
                         <span class="currentPrice reveal-1"> 80,50 € </span>
                         <span class='note reveal-4'>
@@ -92,7 +136,7 @@
             </div>
             <div class="card mb-3 reveal" style="width: 18rem;">
                 <a class= 'cardA' href="">
-                    <img src="https://picsum.photos/id/200/800/600" class="card-img-top reveal-4" alt="...">
+                    <div class='container-img'><img src="https://picsum.photos/id/200/800/600" class="card-img-top reveal-4 img-pres" alt="..."></div>
                     <div class="card-body">
                         <span class="currentPrice reveal-3"> 90,50 € </span>
                         <span class='note reveal-2'>
@@ -114,12 +158,13 @@
     <section class="light">
         <div class="row d-flex justify-content-around reveal">
             <div class= 'col-3 text-center divLt'><h2 class='lightText reveal-4'>Lumière sur</h2><br>
-           <span class="ampoule"> <img class="ampoule reveal-4" src="{{asset('img/ampoule.png')}}"> </span> </div> 
+                <span class="ampoule"> <img class="ampoule reveal-4" src="{{asset('img/ampoule.png')}}"> </span> 
+            </div> 
             <div class="col-4">
-                <p class='nameArt text-center mt-1 reveal-2'>Edouardo</p>
+                <p class='nameArt text-center reveal-2'>Edouardo</p>
                 <div class="descArt">
-                    <p class ='dedeText text-center reveal-3'> Nous sommes aller a la rencontre d'EDOUARDO, une chose nous as frappé, il est gentil, passionné, et met tout son coeur dans l'ouvrage. Il nous as confié que ce métier était sa passion depuis tout petit, et qu'il est très content et reconnaissant envers tous ces gens qui lui achète ses produits qui lui permette de vivre de sa passion, et ce depuis 10ans. <br>
-                    La flamme de sa passion est toujours vive, c'est beau à voir ! N'hésitez pas a aller voir ses articles !
+                    <p class ='dedeText text-center reveal-3'> Nous sommes allés à la rencontre d'EDOUARDO. Une chose nous a frappé, il est gentil, passionné, et met tout son coeur dans l'ouvrage. Il nous as confié que ce métier était sa passion depuis tout petit, et qu'il est très content et reconnaissant envers tous ces gens qui lui achètent ses produits qui lui permettent de vivre de sa passion, et ce depuis 10 ans. <br>
+                    La flamme de sa passion est toujours vive, c'est beau. N'hésitez pas à aller voir ses articles !
                     </p>
                     <button id='button'><a href="">En savoir <img src="{{asset('img/iconPlus.png')}}" width='17' alt=""></a></button>
 
@@ -148,6 +193,7 @@
                         <div class="card-body reveal-4">
                             <h5 class="card-title">Payer n'a jamais été aussi simple</h5>
                             <p class="card-text">Nous demandez pas pourquoi. Mais chez nous, payer, c'est plus simple. Voilà.</p>
+                            <span class='d-flex justify-content-end arrowNext'>Lire la suite<i class="fas fa-arrow-right ml-1 mt-1 mr-5"></i></span>
                         </div>
                         </div>
                     </div>
@@ -163,6 +209,7 @@
                         <div class="card-body reveal-4">
                             <h5 class="card-title">Notre philosophie</h5>
                             <p class="card-text reveal-3">Si Socrate l'avait lue, il aurait capitulé et serait devenu peintre sur poney.</p>
+                            <span class='d-flex justify-content-end arrowNext'>Lire la suite <i class="fas fa-arrow-right ml-1 mt-1 mr-5"></i></span>
                         </div>
                         </div>
                     </div>
@@ -178,6 +225,7 @@
                         <div class="card-body">
                             <h5 class="card-title">L'écologie au coeur de notre démarche</h5>
                             <p class="card-text">La nature c'est super, la preuve, y'a plein de castors</p>
+                            <span class='d-flex justify-content-end arrowNext'>Lire la suite<i class="fas fa-arrow-right ml-1 mt-1 mr-5"></i></span>
                         </div>
                         </div>
                     </div>
@@ -187,7 +235,7 @@
         <div class="col-6 projRight infoHidden">
             <div class="projInfo mt-5 reveal-5">
                 <p class="infoHidden pi1 pi text-center"> La première raison pour acheter chez nous, c'est qu'on aimerait bien recycler votre argent. L'argent, qu'est-ce que c'est? Une valeur fictive donnée à du papier et des lignes de code. Alors que chez nous, votre argent, c'est du concret: une piscine, un jet privé, une baleine de compagnie. Tout ça en un clic. Recycler n'aura jamais été aussi simple. A vos CB!</p>
-                <p class="infoHidden pi2 pi text-center"> Notre philosophie est simple: marcher jusqu'à l'arrêt de bus suivant pour éventuellement récupérer le bus 417. Surtout les jours de marcher. Au début on savait pas, on attendait naïvement. Depuis... ben on suit Mounir, enfin on lui cavale après vu qu'il court un coup sur deux. "J'veux pas râter mon train" Plus qu'une philosophie: une éthique, une morale, la lumière dans l'obscurité.</p>
+                <p class="infoHidden pi2 pi text-center"> Notre philosophie est simple: marcher jusqu'à l'arrêt de bus suivant pour éventuellement récupérer le bus 417. Surtout les jours de marché. Au début on savait pas, on attendait naïvement. Depuis... ben on suit Mounir, enfin on lui cavale après vu qu'il court un coup sur deux. "J'veux pas râter mon train" Plus qu'une philosophie: une éthique, une morale, la lumière dans l'obscurité.</p>
                 <p class="infoHidden pi3 pi text-center"> En achetant les produits du site, vous contribuez au refroidissement de la planète grâce à un procédé maison dont nous tairons le secret. Mais notre puissance ne s'arrête pas là, à chaque produit acheté, c'est bien une famille entière d'ours blancs que vous sauvez. Oui oui, une famille entière. Alors qu'attendez vous?</p>
             </div>
         </div>
@@ -204,5 +252,30 @@
     effect: 'slide', // fade, scale, slide, slide-top
     duration: 5000, // duration till the next slide
     bullets: true, // show / hide bullets
-});</script>
+});
+
+/*************************** LE PROJET******************************************/
+
+document.getElementById('infoImg1').addEventListener("mouseover", (() =>{
+    $('.pi1,.projRight').removeClass('infoHidden');
+    $('.pi2,.pi3').addClass('infoHidden');
+
+
+}));
+
+document.getElementById('infoImg2').addEventListener("mouseover", (() =>{
+    $('.pi2,.projRight').removeClass('infoHidden');
+    $('.pi1,.pi3').addClass('infoHidden');
+
+
+}));
+
+document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
+    $('.pi3,.projRight').removeClass('infoHidden');
+    $('.pi2,.pi1').addClass('infoHidden');
+
+
+}));
+
+</script>
  {% endblock %}

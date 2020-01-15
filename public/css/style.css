@@ -1,12 +1,16 @@
 /*********GENERAL***********/
 
-* {
-    margin: 0;
-    padding: 0;
+*
+{
+    margin :0;
+    padding:0;
+    scroll-behavior: smooth;
+
 }
 
 body {
     background-image: url(body.jpg);
+    /* background:rgba(243, 240, 202, 0.555); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -24,18 +28,20 @@ body {
 
 .clear2 {
     height: 15vh;
+    background:rgba(214, 212, 178, 0);
+
 }
 
 
 /***************************HOME*******************************/
 
+/******************NAV**************/
 
-/********NAV**************/
 
 nav {
     font-size: 1.2vw;
     clip-path: polygon(100% 0, 100% 83%, 95% 91%, 91% 95%, 87% 97%, 82% 99%, 76% 100%, 66% 100%, 0 100%, 0 0);
-    background: rgba(255, 255, 255, 0.705);
+    background:rgba(255, 255, 255, 0.781);
 }
 
 .searchInput {
@@ -44,7 +50,8 @@ nav {
     border-radius: 0;
     background: rgba(255, 255, 255, 0) !important;
     width: 45vh !important;
-    opacity: 0.4;
+    opacity:0.6;
+
 }
 
 .searchButton {
@@ -63,14 +70,157 @@ nav {
     right: 2%;
 }
 
-.icon:hover {
-    opacity: 0.6;
+.icon:hover{
+    opacity:1;
+}
+
+/****Menu Dropdown Effect******/
+.menuDashboard{
+    width: 49vh;
+    height: 30vh;
+    top:8vw;
+    position:fixed;
+    z-index: 1000;
+    display:flex;
+}
+
+.leftsubmenu li{
+    list-style: none;
+    color:rgba(0, 0, 0, 0.911);
+    font-size:1.2vw;
+}
+
+.submenu a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.911);
+
+}
+
+.leftsubmenu{
+    padding-left: 6vh;
+    padding-top:2vh;
+    background:rgba(255, 255, 255, 0.979);
+    border-radius:0 10% 1% 0;
+}
+
+.rightsubmenu li, .rightsubmenu2 li, .rightsubmenu3 li, .rightsubmenu4 li{
+    list-style: none;
+    color:rgba(0, 0, 0, 0.829);
+    font-size:1.1vw;
+    line-height: 5vh;
+}
+
+.rightsubmenu{
+    padding-top:2vh;
+    background:rgba(255, 255, 255, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:30vh;
+    top:10vw;
+    position:fixed;
+    z-index:1000;
+    margin-left:22.8vh;
 }
 
 
-/***********CAROUSEL*********/
 
-.carousel img {
+
+.rightsubmenu2{
+    padding-top:2vh;
+    background:rgba(255, 255, 255, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:30vh;
+    top:13vw;
+    position:fixed;
+    z-index:1011;
+    margin-left:22.8vh;
+}
+
+.rightsubmenu3{
+    background:rgba(255, 255, 255, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:24vh;
+    top:17vw;
+    position:fixed;
+    z-index:1023;
+    margin-left:22.8vh;
+}
+
+.rightsubmenu4{
+    background:rgba(255, 255, 255, 0.925);
+    border-radius:0 10% 10% 10%;
+    padding-left:2vh;
+    width:18vh;
+    height:24vh;
+    top:19vw;
+    position:fixed;
+    z-index:1034;
+    margin-left:22.8vh;
+}
+
+.test{
+    width:29vh;
+    height:5vh;
+}
+
+ .menuDashboard li, .menuDashboard a{
+border: 1px solid black;
+} 
+
+/**Button scroll up**/
+
+.buttonNav{
+    position: fixed;
+    width:3vh;
+    height:6vh;
+    clip-path: circle(71.1% at 68% 50%);
+    background:rgb(248, 248, 248);
+    z-index:1000;
+    right:0;
+    top:50%;
+    transition:0.6s ease-in-out;
+   
+    
+}
+
+.buttonNav a{
+    text-decoration: none;
+    color:black;
+}
+
+.buttonNav:hover{
+    width: 5vh;
+    background:rgba(145, 145, 145, 0.685);
+}
+
+.buttonNav i{
+    font-size:2.5vh;
+    height:2vh;
+    margin-top: 2vh;
+    transform: rotateZ(-90deg);
+    color:rgb(116, 110, 110);
+    transition: .8s;
+}
+
+.buttonNav i:hover{
+    transform: rotateZ(0);
+    font-size:4vh;
+    width:3vh;
+    color:white;
+    padding-bottom:4vh;
+
+
+}
+
+/*********************************************CAROUSEL*********/
+
+
+.carousel img{
     height: 55vh;
 }
 
@@ -149,10 +299,29 @@ nav {
     color: rgb(240, 185, 36);
 }
 
+.img-pres{
+    transition: 1s ease-in-out;
+
+}
+
+.img-pres:hover{
+    width:105%;
+    transition: 1s ease-in-out;
+}
+
 .test:hover {
     width: 90%;
 }
 
+.container-img{
+    width :30vh;
+    height: 22vh;
+    overflow:hidden;
+}
+
+.arrowNext{
+    color:rgb(121, 117, 117);
+}
 
 /*************LUMIERE SUR*********/
 
@@ -166,12 +335,13 @@ nav {
 }
 
 .lightText {
-    font-size: 3.9vw;
+    font-size: 3.4vw;
 }
 
-.dedeText {
-    padding-top: 2%;
-    font-size: 1.3vw;
+.dedeText{
+
+    font-size: 1vw;
+
 }
 
 .nameArt {
@@ -320,6 +490,11 @@ nav {
 }
 
 
+
+
+/*********************************************CONFIDENTIALITÉ****************************/
+
+
 /******CONFIDENTIALITÉ*******/
 
 .castor {
@@ -332,12 +507,12 @@ nav {
     display: flex;
 }
 
-.conf h3 {
+.conf h3{
     color: black;
 }
 
-.conf p {
-    color: #1D3C78;
+.conf p{
+   color:#1D3C78;
 }
 
 .menu {
@@ -358,7 +533,9 @@ nav {
 }
 
 
-/******COOKIE*******/
+
+
+/******************************COOKIE*****************************/
 
 
 /* 
@@ -375,25 +552,34 @@ nav {
 
 /***************************Team PAGE*******************************/
 
-
-/*div{
-    border: 1px solid black;
-
-} */
+/***left***/
 
 .teamWindow {
     height: 65vh;
 }
 
-.teamTof {
-    border-radius: 10%;
-    width: 80%;
-    height: 70%;
-    margin-left: 7vh;
-    margin-top: 6vh;
+
+.teamTof .col{
+    border: 1px solid black;
 }
 
-.infoTeam {
+
+.teamTof{
+    background-image: url(team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:10%;
+    width:70%;
+    height:70%;
+    margin-left:7vh;
+    margin-top:6vh;
+}
+
+
+
+
+/*****right*****/
+.infoTeam{
     height: 55vh;
 }
 
@@ -415,6 +601,19 @@ nav {
 .sociconDiv {
     padding-top: 11vh;
 }
+
+
+.sociconDiv a{
+    color:rgb(16, 126, 190);
+    text-decoration: none;
+    transition:0.5s;
+}
+
+.sociconDiv a:hover{
+    color:rgb(5, 184, 255);
+}
+
+
 
 
 /************************************effet cartes flip**************************************************/
@@ -518,6 +717,9 @@ nav {
 }
 
 
+/***********************************LIVRAISON******************************************************/
+/**Made by Victor **/
+.ampoule 
 /***********************************LIVRAISON**********************/
 
 .dixpourcent
@@ -1068,7 +1270,6 @@ margin : 10vh 10vh;
 
 .fg-slider {
     height: 50vh;
-    margin-left: 1%;
 }
 
 .fg-content p {
