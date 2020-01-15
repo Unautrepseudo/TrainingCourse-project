@@ -3,12 +3,17 @@
 
 namespace App\Entity;
 
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
+
+
 /**
  * @ORM\Entity
+ * @Vich\Uploadable
  * @ORM\Table(name="fos_user")
  * @UniqueEntity(fields={"username"}, message="There is already an account with this username")
  */
@@ -61,10 +66,11 @@ class User extends BaseUser
      */
     private $company;
 
-    /**
-     * @ORM\Column(type="string", length=500)
+       /**
+     * @ORM\Column(type="string", length=255)
+     * @var string
      */
-    private $picture;
+    private $image;
 
     /**
      * @ORM\Column(type="string", length=50)
@@ -76,7 +82,22 @@ class User extends BaseUser
      */
     private $about;
 
+    /**
+     * @Vich\UploadableField(mapping="product_image", fileNameProperty="image")
+     * @var File
+     */
+    private $imageFile;
 
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
+    }
+
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+    private $artisan_picture;
 
 
     public function __construct()
@@ -170,6 +191,54 @@ class User extends BaseUser
     public function setRoleUser(string $role_user): self
     {
         $this->role_user = $role_user;
+
+        return $this;
+    }
+
+    public function getCompany(): ?string
+    {
+        return $this->company;
+    }
+
+    public function setCompany(string $company): self
+    {
+        $this->company = $company;
+
+        return $this;
+    }
+
+    public function getSpeciality(): ?string
+    {
+        return $this->speciality;
+    }
+
+    public function setSpeciality(string $speciality): self
+    {
+        $this->speciality = $speciality;
+
+        return $this;
+    }
+
+    public function getAbout(): ?string
+    {
+        return $this->about;
+    }
+
+    public function setAbout(string $about): self
+    {
+        $this->about = $about;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }

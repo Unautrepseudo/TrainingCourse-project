@@ -13,6 +13,7 @@ use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class RegistrationFormType extends AbstractType
 {
@@ -39,11 +40,18 @@ class RegistrationFormType extends AbstractType
             
         $builder
         ->add('company')
-        ->add('picture');
-        
+        ->add('speciality')
+        ->add('about')
+        ->add('imageFile', VichImageType::class, array(
+            'required' => true,
+            'allow_delete' => true,
+            'download_uri' => true,
+            'image_uri' => true,
+            'label' => 'Image *'
+        ))
         ;
 
-            
+        }
     }
 
     public function getParent()
@@ -60,6 +68,8 @@ class RegistrationFormType extends AbstractType
     }
         
 }
+
+
 
 
 
