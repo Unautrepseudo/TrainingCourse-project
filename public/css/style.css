@@ -1643,3 +1643,17 @@ a:hover {
     color: rgb(173, 113, 33);
     text-align: center;
 }
+
+/*****************************************************Formulaire artisan*****************************************/
+.titleh1{
+    color: rgb(173, 113, 33);
+    text-align: center;
+}
+.formcontent{
+    margin: 0 auto;
+    width: 50rem;
+}
+.buttonartisan{
+    margin: 0 auto;
+    width: 50rem;
+}

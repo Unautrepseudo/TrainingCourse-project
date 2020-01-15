@@ -1,4 +1,70 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <div class="formcontent">
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault01">{{ form_row(form.username) }}</label>
+              <input type="text" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">{{ form_row(form.last_name) }}</label>
+              <input type="text" class="form-control" id="validationDefault02" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefaultUsername">{{ form_row(form.email) }}</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault01">{{ form_row(form.phone_number) }}</label>
+              <input type="text" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">{{ form_row(form.birthday) }}</label>
+              
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault02">{{ form_row(form.imageFile) }}</label>
+                
+              </div>
+        </div>        
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault01">{{ form_row(form.address) }}</label>
+              <input type="text" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">{{ form_row(form.zip_code) }}</label>
+              <input type="text" class="form-control" id="validationDefault02" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault02">{{ form_row(form.city) }}</label>
+                <input type="text" class="form-control" id="validationDefault02" value="" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault01">{{ form_row(form.company) }}</label>
+              <input type="text" class="form-control" id="validationDefault01" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">{{ form_row(form.speciality) }}</label>
+              <input type="text" class="form-control" id="validationDefault02" value="" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault02">{{ form_row(form.about) }}</label>
+                <input type="text" class="form-control" id="validationDefault02" value="" required>
+            </div>
+        </div>
+    </div>
+    <div class="buttonartisan">
+        <button class="btn btn-outline-secondary">{{ button_label|default('S\'inscrire') }}</button>
+    </div>
+    <br>
 {{ form_end(form) }}
