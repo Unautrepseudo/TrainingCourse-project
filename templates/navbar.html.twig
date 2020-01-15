@@ -10,7 +10,7 @@
     <div class=" col-9 collapse navbar-collapse" id="navbarSupportedContent">
         <ul class=" navbar-nav mr-5">
             <li class="nav-item dropdown ">
-        <a class="nav-link products" href="#" id=" navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link products" href="#" id="navDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Produits
         </a>
         
@@ -47,32 +47,32 @@
 
 </nav>
 <div class="row pl-1 testContent reveal">
-    <div class=" col-1 offset-3 d-flex flex-column pl-4 pt-4 text-white nav2 subMenu1">
-       <li><a href=""></a> Meubles</li>
-       <li><a href=""></a> Décoration</li>
-       <li><a href=""></a> Bijoux</li>
-       <li><a href=""></a> Jouets</li>
+    <div class=" col-1 offset-3 d-flex flex-column pl-4 pt-4 text-white nav2 subMenu1 infoHidden">
+       <li class="subMenuA"><a href="">Meubles</a></li>
+       <li  class="subMenuB"><a href="">Décoration</a>
+       <li  class="subMenuC"><a href="">Bijoux</a></li>
+       <li  class="subMenuD"><a href="">Jouets</a></li>
     </div>
-    <div class=" col-1 d-flex flex-column pl-4 pt-4 text-white nav2 subMenu2">
-        <li><a href=""></a> Tables</li>
-        <li><a href=""></a> Chaises</li>
-        <li><a href=""></a> Bureaux</li>
-        <li><a href=""></a> Etagères</li>
-        <li><a href=""></a> Armoires</li>
+    <div class=" col-1 d-flex flex-column pl-4 pt-4 text-white nav2 subMenu2 infoHidden">
+        <li><a href="">Tables</a></li>
+        <li><a href="">Chaises</a></li>
+        <li><a href="">Bureaux</a></li>
+        <li><a href="">Etagères</a></li>
+        <li><a href="">Armoires</a></li>
      </div>
-     <div class=" col-1 d-flex flex-column pl-4  text-white nav2 subMenu2b">
-        <li><a href=""></a> Poteries</li>
-        <li><a href=""></a> Luminaires</li>
-        <li><a href=""></a> Décorations murales</li>
-        <li><a href=""></a> Bougies</li>
+     <div class=" col-1 d-flex flex-column pl-4  text-white nav2 subMenu2b infoHidden">
+        <li><a href="">Poteries</a></li>
+        <li><a href="">Luminaires</a></li>
+        <li><a href="">Décorations murales</a></li>
+        <li><a href="">Bougies</a></li>
      </div>
-     <div class=" col-1 d-flex flex-column pl-4 pt-4 text-white nav2 subMenu2c">
-        <li><a href=""></a> Bagues</li>
-        <li><a href=""></a> Bracelets</li>
-        <li><a href=""></a> Colliers</li>
-        <li><a href=""></a> Tête</li>
+     <div class=" col-1 d-flex flex-column pl-4 pt-4 text-white nav2 subMenu2c infoHidden">
+        <li><a href="">Bagues</a></li>
+        <li><a href="">Bracelets</a></li>
+        <li><a href="">Colliers</a></li>
+        <li><a href="">Tête</a></li>
      </div>
-     <div class=" col-1 d-flex flex-column pl-4 pt-4 text-white nav2 subMenu2d">
+     <div class=" col-1 d-flex flex-column pl-4 pt-4 text-white nav2 subMenu2d infoHidden">
         <li><a href=""></a> Figurines</li>
         <li><a href=""></a> Jeux</li>
         <li><a href=""></a> Peluches</li>
@@ -84,51 +84,3 @@
     
 </div>
 
-
-{% block javascripts %}
-    <script>
-    /************************* social logos hover****************************/
-
-    /*insta*/
-        document.getElementById('insta').addEventListener("mouseover", (function(){
-            $('#insta').attr('src','img/instacol.png');
-        }));
-        
-        document.getElementById('insta').addEventListener("mouseout", (function(){
-            
-                $('#insta').attr('src','img/instab.png');
-        }));
-
-    /*twitter*/
-        document.getElementById('twi').addEventListener("mouseover", (function(){
-        $('#twi').attr('src','img/twicol.png');
-        }));
-        
-        document.getElementById('twi').addEventListener("mouseout", (function(){
-            
-                $('#twi').attr('src','img/twib.png');
-        }));
-
-        
-    /*youtube*/
-        document.getElementById('you').addEventListener("mouseover", (function(){
-        $('#you').attr('src','img/youcol.png');
-        }));
-        
-        document.getElementById('you').addEventListener("mouseout", (function(){
-            
-                $('#you').attr('src','img/youb.png');
-        }));
-        
-
-    /*facebook*/
-        document.getElementById('face').addEventListener("mouseover", (function(){
-        $('#face').attr('src','img/facecol.png');
-        }));
-        
-        document.getElementById('face').addEventListener("mouseout", (function(){
-            
-                $('#face').attr('src','img/faceb.png');
-        }));
-    </script>
-{% endblock %}

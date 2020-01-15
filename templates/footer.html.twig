@@ -38,3 +38,52 @@
     </div>
             
 </footer>
+
+{% block javascripts %}
+<script>
+
+/************************* social logos hover****************************/
+
+/*insta*/
+document.getElementById('insta').addEventListener("mouseover", (function(){
+  $('#insta').attr('src','img/instacol.png');
+}));
+
+document.getElementById('insta').addEventListener("mouseout", (function(){
+  
+      $('#insta').attr('src','img/instab.png');
+}));
+
+/*twitter*/
+document.getElementById('twi').addEventListener("mouseover", (function(){
+$('#twi').attr('src','img/twicol.png');
+}));
+
+document.getElementById('twi').addEventListener("mouseout", (function(){
+  
+      $('#twi').attr('src','img/twib.png');
+}));
+
+
+/*youtube*/
+document.getElementById('you').addEventListener("mouseover", (function(){
+$('#you').attr('src','img/youcol.png');
+}));
+
+document.getElementById('you').addEventListener("mouseout", (function(){
+  
+      $('#you').attr('src','img/youb.png');
+}));
+
+
+/*facebook*/
+document.getElementById('face').addEventListener("mouseover", (function(){
+$('#face').attr('src','img/facecol.png');
+}));
+
+document.getElementById('face').addEventListener("mouseout", (function(){
+  
+      $('#face').attr('src','img/faceb.png');
+}));
+</script>
+{% endblock %}

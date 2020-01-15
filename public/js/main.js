@@ -1,108 +1,32 @@
 // /****** NAV Scroll Menu *****/
-// document.getElementsByClassName('products')[0].addEventListener("click", (() =>{
-//   $('.menuDashboard').removeClass('infoHidden');
-// }));
 
-// document.getElementsByClassName('leftsubmenu')[0].addEventListener("click", (() =>{
-//   $('.menuDashboard').addClass('infoHidden');
-// }));
+$('#navDrop').hover(function(){
+  $('.subMenu1').removeClass('infoHidden');
+  });
 
-// /*meubles*/
-// document.getElementsByClassName('products')[1].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu').removeClass('infoHidden');
-// }));
-
-
-// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
-//   $('.rightsubmenu').addClass('infoHidden');
-// }));
-// document.getElementsByClassName('submenu')[1].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu').removeClass('infoHidden');
-// }));
-
-// /*décoration*/
-// document.getElementsByClassName('products')[2].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu2').removeClass('infoHidden');
-// }));
-
-// document.getElementsByClassName('products')[2].addEventListener("mouseout", (() =>{
-//   $('.rightsubmenu2').addClass('infoHidden');
-// }));
-// document.getElementsByClassName('rightsubmenu2')[0].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu').removeClass('infoHidden');
-// }));
-
-
-// /*Bijoux*/
-// document.getElementsByClassName('products')[3].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu3').removeClass('infoHidden');
-// }));
-
-// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
-//   $('.rightsubmenu3').addClass('infoHidden');
-// }));
-// document.getElementsByClassName('submenu3')[3].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu3').removeClass('infoHidden');
-// }));
-
-// /*Jouets*/
-// document.getElementsByClassName('products')[4].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu4').removeClass('infoHidden');
-// }));
-
-// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
-//   $('.rightsubmenu4').addClass('infoHidden');
-// }));
-// document.getElementsByClassName('submenu4')[4].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu4').removeClass('infoHidden');
-// }));
-
-
-
-
-/************************* social logos hover****************************/
-
-/*insta*/
-document.getElementById('insta').addEventListener("mouseover", (function(){
-  $('#insta').attr('src','img/instacol.png');
-}));
-
-document.getElementById('insta').addEventListener("mouseout", (function(){
+$('.subMenu1').click(function(){
+  $('.subMenu1').addClass('infoHidden');
+  });
   
-      $('#insta').attr('src','img/instab.png');
-}));
 
-/*twitter*/
-document.getElementById('twi').addEventListener("mouseover", (function(){
-$('#twi').attr('src','img/twicol.png');
-}));
+  $('.subMenuA').hover(function(){
+    $('.subMenu2').removeClass('infoHidden');
+    $('.subMenu').addClass('infoHidden');
 
-document.getElementById('twi').addEventListener("mouseout", (function(){
-  
-      $('#twi').attr('src','img/twib.png');
-}));
+  }); 
 
+  $('.subMenuB').hover(function(){
+    $('.subMenu2b').removeClass('infoHidden');
+  }); 
 
-/*youtube*/
-document.getElementById('you').addEventListener("mouseover", (function(){
-$('#you').attr('src','img/youcol.png');
-}));
+  $('.subMenuC').hover(function(){
+    $('.subMenu2c').removeClass('infoHidden');
+  });
 
-document.getElementById('you').addEventListener("mouseout", (function(){
-  
-      $('#you').attr('src','img/youb.png');
-}));
+  $('.subMenuD').hover(function(){
+    $('.subMenu2d').removeClass('infoHidden');
+  }); 
 
-
-/*facebook*/
-document.getElementById('face').addEventListener("mouseover", (function(){
-$('#face').attr('src','img/facecol.png');
-}));
-
-document.getElementById('face').addEventListener("mouseout", (function(){
-  
-      $('#face').attr('src','img/faceb.png');
-}));
 
 
 
@@ -360,7 +284,6 @@ if (This.createdSlides.length) {
 }, 100);
 }
 
-/**** */
 
 /*************************** LA TEAM******************************************/
 /**Text show */

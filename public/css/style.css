@@ -86,11 +86,18 @@ color:rgba(88, 86, 86, 0.849) !important;
 
 .nav2 li a{
     text-decoration: none;
-    color:rgba(0, 0, 0, 0.911) !important;
+    color:rgba(88, 86, 86, 0.753) !important;
 }
+
+.nav2 li a:hover{
+    color:rgba(88, 86, 86, 0.979) !important;
+}
+
 
 .nav2 li{
     list-style:none;
+    border-top:1px solid rgba(230, 227, 227, 0.253);
+
 
 }
 
@@ -98,14 +105,19 @@ color:rgba(88, 86, 86, 0.849) !important;
     position:absolute;
     top:8vh;
     width:102%;
-    line-height:1,5vw;
+    line-height:3vw;
     z-index:10000 !important;
     
 }
 
+.subMenu2{
+    margin-top:6vh !important;
+ 
+}
+
+
 .subMenu2b{
     padding-top:6vh !important;
-    color:rgba(88, 86, 86, 0.753) !important;
 
 }
 
