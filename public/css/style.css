@@ -1,11 +1,9 @@
 /*********GENERAL***********/
 
-*
-{
-    margin :0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -28,20 +26,19 @@ body {
 
 .clear2 {
     height: 15vh;
-    background:rgba(214, 212, 178, 0);
-
+    background: rgba(214, 212, 178, 0);
 }
 
 
 /***************************HOME*******************************/
 
-/******************NAV**************/
 
+/******************NAV**************/
 
 nav {
     font-size: 1.2vw;
     clip-path: polygon(100% 0, 100% 83%, 95% 91%, 91% 95%, 87% 97%, 82% 99%, 76% 100%, 66% 100%, 0 100%, 0 0);
-    background:rgba(255, 255, 255, 0.781);
+    background: rgba(255, 255, 255, 0.781);
 }
 
 .searchInput {
@@ -50,8 +47,7 @@ nav {
     border-radius: 0;
     background: rgba(255, 255, 255, 0) !important;
     width: 45vh !important;
-    opacity:0.6;
-
+    opacity: 0.6;
 }
 
 .searchButton {
@@ -70,157 +66,156 @@ nav {
     right: 2%;
 }
 
-.icon:hover{
-    opacity:1;
+.icon:hover {
+    opacity: 1;
 }
+
 
 /****Menu Dropdown Effect******/
-.menuDashboard{
+
+.menuDashboard {
     width: 49vh;
     height: 30vh;
-    top:8vw;
-    position:fixed;
+    top: 8vw;
+    position: fixed;
     z-index: 1000;
-    display:flex;
+    display: flex;
 }
 
-.leftsubmenu li{
+.leftsubmenu li {
     list-style: none;
-    color:rgba(0, 0, 0, 0.911);
-    font-size:1.2vw;
+    color: rgba(0, 0, 0, 0.911);
+    font-size: 1.2vw;
 }
 
-.submenu a{
+.submenu a {
     text-decoration: none;
-    color:rgba(0, 0, 0, 0.911);
-
+    color: rgba(0, 0, 0, 0.911);
 }
 
-.leftsubmenu{
+.leftsubmenu {
     padding-left: 6vh;
-    padding-top:2vh;
-    background:rgba(255, 255, 255, 0.979);
-    border-radius:0 10% 1% 0;
+    padding-top: 2vh;
+    background: rgba(255, 255, 255, 0.979);
+    border-radius: 0 10% 1% 0;
 }
 
-.rightsubmenu li, .rightsubmenu2 li, .rightsubmenu3 li, .rightsubmenu4 li{
+.rightsubmenu li,
+.rightsubmenu2 li,
+.rightsubmenu3 li,
+.rightsubmenu4 li {
     list-style: none;
-    color:rgba(0, 0, 0, 0.829);
-    font-size:1.1vw;
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 1.1vw;
     line-height: 5vh;
 }
 
-.rightsubmenu{
-    padding-top:2vh;
-    background:rgba(255, 255, 255, 0.925);
-    border-radius:0 10% 10% 10%;
-    padding-left:2vh;
-    width:18vh;
-    height:30vh;
-    top:10vw;
-    position:fixed;
-    z-index:1000;
-    margin-left:22.8vh;
+.rightsubmenu {
+    padding-top: 2vh;
+    background: rgba(255, 255, 255, 0.925);
+    border-radius: 0 10% 10% 10%;
+    padding-left: 2vh;
+    width: 18vh;
+    height: 30vh;
+    top: 10vw;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 22.8vh;
 }
 
-
-
-
-.rightsubmenu2{
-    padding-top:2vh;
-    background:rgba(255, 255, 255, 0.925);
-    border-radius:0 10% 10% 10%;
-    padding-left:2vh;
-    width:18vh;
-    height:30vh;
-    top:13vw;
-    position:fixed;
-    z-index:1011;
-    margin-left:22.8vh;
+.rightsubmenu2 {
+    padding-top: 2vh;
+    background: rgba(255, 255, 255, 0.925);
+    border-radius: 0 10% 10% 10%;
+    padding-left: 2vh;
+    width: 18vh;
+    height: 30vh;
+    top: 13vw;
+    position: fixed;
+    z-index: 1011;
+    margin-left: 22.8vh;
 }
 
-.rightsubmenu3{
-    background:rgba(255, 255, 255, 0.925);
-    border-radius:0 10% 10% 10%;
-    padding-left:2vh;
-    width:18vh;
-    height:24vh;
-    top:17vw;
-    position:fixed;
-    z-index:1023;
-    margin-left:22.8vh;
+.rightsubmenu3 {
+    background: rgba(255, 255, 255, 0.925);
+    border-radius: 0 10% 10% 10%;
+    padding-left: 2vh;
+    width: 18vh;
+    height: 24vh;
+    top: 17vw;
+    position: fixed;
+    z-index: 1023;
+    margin-left: 22.8vh;
 }
 
-.rightsubmenu4{
-    background:rgba(255, 255, 255, 0.925);
-    border-radius:0 10% 10% 10%;
-    padding-left:2vh;
-    width:18vh;
-    height:24vh;
-    top:19vw;
-    position:fixed;
-    z-index:1034;
-    margin-left:22.8vh;
+.rightsubmenu4 {
+    background: rgba(255, 255, 255, 0.925);
+    border-radius: 0 10% 10% 10%;
+    padding-left: 2vh;
+    width: 18vh;
+    height: 24vh;
+    top: 19vw;
+    position: fixed;
+    z-index: 1034;
+    margin-left: 22.8vh;
 }
 
-.test{
-    width:29vh;
-    height:5vh;
+.test {
+    width: 29vh;
+    height: 5vh;
 }
 
- .menuDashboard li, .menuDashboard a{
-border: 1px solid black;
-} 
+.menuDashboard li,
+.menuDashboard a {
+    border: 1px solid black;
+}
+
 
 /**Button scroll up**/
 
-.buttonNav{
+.buttonNav {
     position: fixed;
-    width:3vh;
-    height:6vh;
+    width: 3vh;
+    height: 6vh;
     clip-path: circle(71.1% at 68% 50%);
-    background:rgb(248, 248, 248);
-    z-index:1000;
-    right:0;
-    top:50%;
-    transition:0.6s ease-in-out;
-   
-    
+    background: rgb(248, 248, 248);
+    z-index: 1000;
+    right: 0;
+    top: 50%;
+    transition: 0.6s ease-in-out;
 }
 
-.buttonNav a{
+.buttonNav a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.buttonNav:hover{
+.buttonNav:hover {
     width: 5vh;
-    background:rgba(145, 145, 145, 0.685);
+    background: rgba(145, 145, 145, 0.685);
 }
 
-.buttonNav i{
-    font-size:2.5vh;
-    height:2vh;
+.buttonNav i {
+    font-size: 2.5vh;
+    height: 2vh;
     margin-top: 2vh;
     transform: rotateZ(-90deg);
-    color:rgb(116, 110, 110);
+    color: rgb(116, 110, 110);
     transition: .8s;
 }
 
-.buttonNav i:hover{
+.buttonNav i:hover {
     transform: rotateZ(0);
-    font-size:4vh;
-    width:3vh;
-    color:white;
-    padding-bottom:4vh;
-
-
+    font-size: 4vh;
+    width: 3vh;
+    color: white;
+    padding-bottom: 4vh;
 }
+
 
 /*********************************************CAROUSEL*********/
 
-
-.carousel img{
+.carousel img {
     height: 55vh;
 }
 
@@ -299,12 +294,12 @@ border: 1px solid black;
     color: rgb(240, 185, 36);
 }
 
-.img-pres{
+.img-pres {
     transition: 1s ease-in-out;
 }
 
-.img-pres:hover{
-    width:105%;
+.img-pres:hover {
+    width: 105%;
     transition: 1s ease-in-out;
 }
 
@@ -312,15 +307,16 @@ border: 1px solid black;
     width: 90%;
 }
 
-.container-img{
-    width :30vh;
+.container-img {
+    width: 30vh;
     height: 22vh;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.arrowNext{
-    color:rgb(121, 117, 117);
+.arrowNext {
+    color: rgb(121, 117, 117);
 }
+
 
 /*************LUMIERE SUR*********/
 
@@ -337,10 +333,8 @@ border: 1px solid black;
     font-size: 3.4vw;
 }
 
-.dedeText{
-
+.dedeText {
     font-size: 1vw;
-
 }
 
 .nameArt {
@@ -489,8 +483,6 @@ border: 1px solid black;
 }
 
 
-
-
 /*********************************************CONFIDENTIALITÉ****************************/
 
 
@@ -506,12 +498,12 @@ border: 1px solid black;
     display: flex;
 }
 
-.conf h3{
+.conf h3 {
     color: black;
 }
 
-.conf p{
-   color:#1D3C78;
+.conf p {
+    color: #1D3C78;
 }
 
 .menu {
@@ -532,8 +524,6 @@ border: 1px solid black;
 }
 
 
-
-
 /******************************COOKIE*****************************/
 
 
@@ -551,34 +541,32 @@ border: 1px solid black;
 
 /***************************Team PAGE*******************************/
 
+
 /***left***/
 
 .teamWindow {
     height: 65vh;
 }
 
-
-.teamTof .col{
+.teamTof .col {
     border: 1px solid black;
 }
 
-
-.teamTof{
+.teamTof {
     background-image: url(team.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius:10%;
-    width:70%;
-    height:70%;
-    margin-left:7vh;
-    margin-top:6vh;
+    border-radius: 10%;
+    width: 70%;
+    height: 70%;
+    margin-left: 7vh;
+    margin-top: 6vh;
 }
 
 
-
-
 /*****right*****/
-.infoTeam{
+
+.infoTeam {
     height: 55vh;
 }
 
@@ -601,18 +589,15 @@ border: 1px solid black;
     padding-top: 11vh;
 }
 
-
-.sociconDiv a{
-    color:rgb(16, 126, 190);
+.sociconDiv a {
+    color: rgb(16, 126, 190);
     text-decoration: none;
-    transition:0.5s;
+    transition: 0.5s;
 }
 
-.sociconDiv a:hover{
-    color:rgb(5, 184, 255);
+.sociconDiv a:hover {
+    color: rgb(5, 184, 255);
 }
-
-
 
 
 /************************************effet cartes flip**************************************************/
@@ -717,10 +702,12 @@ border: 1px solid black;
 
 
 /***********************************LIVRAISON******************************************************/
-/**Made by Victor **/
-.ampoule 
-/***********************************LIVRAISON**********************/
 
+
+/**Made by Victor **/
+
+.ampoule
+/***********************************LIVRAISON**********************/
 
 .center {
     text-align: center;
@@ -731,7 +718,6 @@ border: 1px solid black;
 }
 
 .ampoule {
-
     opacity: 0.6;
 }
 
@@ -773,43 +759,55 @@ border: 1px solid black;
 .bolditalic {
     font-weight: bold;
 }
+
+
 /************************************Product Single****************************************************************/
+
 .notfull {
     width: 70%;
     margin: 0 auto;
 }
 
-.producttitle
-{  
+.producttitle {
     font-weight: bold;
     margin-bottom: 3vh;
 }
 
-.producttitle:hover
-{  
+.producttitle:hover {
     text-decoration: underline;
 }
 
-.dixpourcent /* blank for adds */
+.dixpourcent
+/* blank for adds */
+
 {
     width: 10%;
     height: AUTO;
 }
 
+
+.imgproduct {
+    width: 50vh;
+    height: 50vh;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+    margin-right: 5vh;
+}
+
+
 .restproduct
 {
+
     width: 40%;
     height: AUTO;
 }
 
-.splitintwo 
-{
+.splitintwo {
     width: 100%;
     height: 10vh;
 }
 
-.nameartisan
-{
+.nameartisan {
     width: 40%;
     height: 10vh;
     font-size: large;
@@ -818,42 +816,37 @@ border: 1px solid black;
     font-weight: bold;
 }
 
-.productprice
-{
+.productprice {
     width: 40%;
     height: 10vh;
     font-size: large;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
-    margin-top : -5vh
+    margin-top: -5vh
 }
 
-
-.starsartisan
-{
+.starsartisan {
     width: 60%;
     height: 10vh;
 }
 
-.starsartisanphoto
-{
+.starsartisanphoto {
     width: 60%;
     height: 10vh;
     text-align: center;
 }
 
-.starproduct
-{
+.starproduct {
     width: 50%;
-    margin : 0 auto;
+    margin: 0 auto;
     transition: 1s;
 }
 
-.starproduct:hover 
-{
+.starproduct:hover {
     background: burlywood;
 }
+
 
 .margintope{
     margin-top:-10vh;
@@ -862,22 +855,22 @@ border: 1px solid black;
 
 .descriptionartisan
 {
+
     width: 100%;
     height: auto;
     padding: 5vh;
-    margin-top : 2vh;
+    margin-top: 2vh;
     border: 2px solid burlywood;
 }
 
-.descriptionartisan:hover{
+.descriptionartisan:hover {
     box-shadow: 8px 8px 15px 1px burlywood;
 }
 
-.imgproductartisan
-{
+.imgproductartisan {
     width: 50%;
     height: 100%;
-    margin : 5% auto;
+    margin: 5% auto;
 }
 
 .img-wrapper {
@@ -918,17 +911,17 @@ border: 1px solid black;
 }
 
 .ajoutpanier {
-text-align: center;
-vertical-align: middle;
-line-height: 5vh; 
-margin-top: 5vh;
-margin-bottom: 5vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
-.italic
-{
+.italic {
     font-style: italic;
 }
+
 
 .avisclient{
     background: red;
@@ -988,6 +981,7 @@ margin-bottom: 5vh;
 {  
     text-decoration: underline;
 }
+
 
 
 /************************************CAROUSEL****************************************************************/
@@ -1619,4 +1613,17 @@ a:hover {
 
 #picture {
     overflow: hidden;
+}
+
+
+/*****************************************************Contact*****************************************/
+
+.formul {
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.contacttitle {
+    color: rgb(173, 113, 33);
+    text-align: center;
 }
