@@ -514,7 +514,7 @@ border: 1px solid black;
 
 
 
-/******************************CONFIDENTIALITÉ****************************/
+/*********************************************CONFIDENTIALITÉ****************************/
 .conf h1{
     width: 100%;
     background-color: rgb(226, 195, 22);
@@ -575,22 +575,35 @@ p{
 
 /***************************Team PAGE*******************************/
 
-/*div{
-    border: 1px solid black;
-
-} */
+/***left***/
 
 .teamWindow{
     height:65vh;
 }
 
+
+.teamTof .col{
+    border: 1px solid black;
+}
+
+
 .teamTof{
+    background-image: url(team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius:10%;
-    width:80%;
+    width:70%;
     height:70%;
     margin-left:7vh;
     margin-top:6vh;
 }
+
+
+
+
+
+
+/*****right*****/
 .infoTeam{
     height: 55vh;
 }
@@ -710,7 +723,7 @@ p{
   }
 
 
-/***********************************LIVRAISON**********************/
+/***********************************LIVRAISON******************************************************/
 /**Made by Victor **/
 .ampoule 
 {

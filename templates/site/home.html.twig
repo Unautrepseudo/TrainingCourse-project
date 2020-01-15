@@ -252,5 +252,30 @@
     effect: 'slide', // fade, scale, slide, slide-top
     duration: 5000, // duration till the next slide
     bullets: true, // show / hide bullets
-});</script>
+});
+
+/*************************** LE PROJET******************************************/
+
+document.getElementById('infoImg1').addEventListener("mouseover", (() =>{
+    $('.pi1,.projRight').removeClass('infoHidden');
+    $('.pi2,.pi3').addClass('infoHidden');
+
+
+}));
+
+document.getElementById('infoImg2').addEventListener("mouseover", (() =>{
+    $('.pi2,.projRight').removeClass('infoHidden');
+    $('.pi1,.pi3').addClass('infoHidden');
+
+
+}));
+
+document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
+    $('.pi3,.projRight').removeClass('infoHidden');
+    $('.pi2,.pi1').addClass('infoHidden');
+
+
+}));
+
+</script>
  {% endblock %}

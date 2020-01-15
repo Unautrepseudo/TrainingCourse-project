@@ -57,31 +57,10 @@
 //   $('.rightsubmenu4').removeClass('infoHidden');
 // }));
 
-/*** LE PROJET*****/
-/**Text show */
-document.getElementById('infoImg1').addEventListener("mouseover", (() =>{
-    $('.pi1,.projRight').removeClass('infoHidden');
-    $('.pi2,.pi3').addClass('infoHidden');
 
 
-}));
 
-document.getElementById('infoImg2').addEventListener("mouseover", (() =>{
-    $('.pi2,.projRight').removeClass('infoHidden');
-    $('.pi1,.pi3').addClass('infoHidden');
-
-
-}));
-
-document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
-    $('.pi3,.projRight').removeClass('infoHidden');
-    $('.pi2,.pi1').addClass('infoHidden');
-
-
-}));
-
-
-/*** social logos hover****/
+/************************* social logos hover****************************/
 
 /*insta*/
     document.getElementById('insta').addEventListener("mouseover", (function(){
@@ -127,7 +106,7 @@ document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
      
  
 
-/***** Effet scroll whole page (HOME) ********/
+/**************************************** Effet scroll whole page (HOME) ********************/
 const threshold = .5
 const options = {
   root: null,
@@ -381,4 +360,17 @@ FgSlider.prototype.parallaxFunc = function() {
   }, 100);
 }
 
-      
+
+
+/*************************** LA TEAM******************************************/
+/**Text show */
+  $(document).ready(function(){
+    $('#infoImg1').mouseover(function(){
+      $('.infoTeam').removeClass('infoHidden');
+
+    });
+  });
+ 
+
+
+
