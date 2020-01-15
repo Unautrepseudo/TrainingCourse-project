@@ -1,3 +1,4 @@
+
 // /****** NAV Scroll Menu *****/
 // document.getElementsByClassName('products')[0].addEventListener("click", (() =>{
 //   $('.menuDashboard').removeClass('infoHidden');
@@ -360,6 +361,7 @@ FgSlider.prototype.parallaxFunc = function() {
   }, 100);
 }
 
+<<<<<<< HEAD
 
 
 /*************************** LA TEAM******************************************/
@@ -403,6 +405,9 @@ $('#infoImg5').mouseover(function(){
 
   });
  
+=======
+/**************************FORMULAIRE****************************************** */
+>>>>>>> 4cfd4b725155429903cd9d72bb47bddb7cea13f0
 
 
 

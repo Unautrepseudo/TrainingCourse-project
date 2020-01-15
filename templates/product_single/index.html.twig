@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductSingleController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper {width: 80%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5}
+</style>
+
+<div class="totaux">
+
+    <div class="dixpourcent"></div> <!-- in order to center the 'Example-Wrapper -->
+
+    <div class="example-wrapper">
+
+        <h2 class="center titleproduct"> Chaise en bois de castor </h2>
+
+
+        <div class="flexflex">
+            <img class='imgproduct zoom' src="{{asset('img/jouet.jpg')}}" >
+
+            <div class>
+
+                <div class="flexflex"> 
+
+                    <div class="productprix millieugauche"> PRIX :  252€  </div> 
+
+                    <button class="productprix millieudroit">  Ajouter au Panier <img src="{{asset('img/panier.png')}}" class="img-responsiv"> </button>
+                
+                </div> <!-- End of flexflex -->
+
+                <div class="productstock"> STOCK : 15 </div> <br>
+
+                <div class="productref"> REFERENCE : XXXXXX</div> <br>   
+
+                <div class="productartisan"> ARTISAN : Edouardo </div>  <br>
+                
+                <div class="col-12 projNight ">
+
+                    <div class="projonfi ">
+                        <p class=" poi text-center"> <span class="bolditalic"> Description : </span> Petite maison de la prairie faites par des castors en forêt brulantes sous un soleil ardent, convient a tous les petits enfants mais aussi à tous les petits bébé castors que vous pourrez croisez, faites un geste pour la planètes : Sauvez un arbre, Sauvez un Castor </p>
+                    </div> <!-- End of Prokonfi -->
+
+                </div> <!-- End of projNight -->
+
+                
+            </div>
+        </div> <!-- End of FlexFlex-->
+    </div> <!-- End of : 'Example-Wrapper -->
+
+
+<div class="dixpourcent"></div><!-- in order to center the 'Example-Wrapper -->
+
+
+{% endblock %}
