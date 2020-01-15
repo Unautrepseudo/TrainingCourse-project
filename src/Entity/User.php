@@ -56,6 +56,28 @@ class User extends BaseUser
      */
     private $role_user;
 
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $company;
+
+    /**
+     * @ORM\Column(type="string", length=500)
+     */
+    private $picture;
+
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $speciality;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $about;
+
+
+
 
     public function __construct()
     {
