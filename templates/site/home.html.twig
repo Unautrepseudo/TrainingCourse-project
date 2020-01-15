@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
     
 {% block body %}
-    
+
     <section>
 
     <div class="fg-slider" id="slider-1">
@@ -196,14 +196,41 @@
     </section>
 
     <div class="clear2"></div>
-  
 
+      <!-- Pop Up-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Ce site internet utilise des cookie</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p>En poursuivant votre navigation sur ce site, vous acceptez le dépôt de cookies et technologies 
+       similaires.</p>
+      <a href="#">En savoir plus</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><a class="P">Non je n'accepte pas</a></button>
+        <button type="button" class="btn btn-primary"><a class="P"> Oui j'accepte</a></button>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
 {% block javascripts %}<script src="{{asset('js/main.js')}}"></script>
-<script>new FgSlider('slider-1', {
-    autoplay: true, // autoplay on / off
-    effect: 'slide', // fade, scale, slide, slide-top
-    duration: 5000, // duration till the next slide
-    bullets: true, // show / hide bullets
-});</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    jQuery( window ).on( "load",function(){
+        $('#staticBackdrop').modal('show');
+    });
+   </script>
+
+
  {% endblock %}
