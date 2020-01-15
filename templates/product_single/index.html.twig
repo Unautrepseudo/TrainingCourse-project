@@ -8,49 +8,66 @@
     .example-wrapper code { background: #F5F5F5}
 </style>
 
-<div class="totaux">
+<div class="notfull">
 
-    <div class="dixpourcent"></div> <!-- in order to center the 'Example-Wrapper -->
+    <div class="flexflex">
+        <div class="dixpourcent"></div>
 
-    <div class="example-wrapper">
+        <div class="mainphoto"> 
+            <img class='imgproduct' src="{{asset('img/jouet.jpg')}}" > 
+        </div>
 
-        <h2 class="center titleproduct"> Chaise en bois de castor </h2>
+        <div class="restproduct">
+
+            <h2 class="producttitle">
+                Charmante petite maison en bois de castor, pour tous les âges ! 
+            </h2>
+
+            <div class="splitintwo flexflex">
+                <div class="nameartisan">
+                    Objet créé par : Edouardo
+                </div>
+                <div class="starsartisanphoto">
+                   <img class='imgproductartisan' src="{{asset('img/camille.jpg')}}" >
+                </div>
+            </div> <!-- fin splitintwo -->
+
+            <div class="splitintwo flexflex center">
+                <div class="productprice ">
+                 <hr>   Prix : 252 € <hr>
+                   <span class="italic"> Ref : 756 751 </span>
+                </div>
+                <div class="starsartisan">
+                    <li class="list-group-item describe starproduct">
+                        <i class="fas fa-star fasa1"></i>
+                        <i class="fas fa-star fasa2"></i>
+                        <i class="fas fa-star fasa3"></i>
+                        <i class="fas fa-star fasa4"></i>
+                        <i class="fas fa-star fasa5"></i>
+                    </li>
+                </div>
+            </div> <!-- fin splitintwo -->
+
+            <div class="descriptionartisan">  
+                    Petite maison pas dans la prairie créé par des castors qui ont été bien traité, c'est un produit qui convient aux végan, aux personnes souhaitant faire du télétravail, mais aussi aux enfants, qui de base étaient al cible principal mais on s'ets laissé distraire et le public n'a pas été celui visé, mais bien celui de grand adultes désirant jouer entre eux, et en même temps faire prolifére rles castors qui domineront un jour le monde ! ah... nan c'est les chats je confond ! 
+            </div> <!-- fin description artisan -->
+            <div class="ajoutpanier">
+            <button class="productprix millieudroit">  Ajouter au Panier <img src="{{asset('img/panier.png')}}" class="img-responsiv"> </button> 
+            </div> <!-- fin ajoutpanier -->
+        </div> <!-- fin restproduct -->
+
+    </div> <!-- fin flexflex du début -->
+
+    <div class="">
+
+    </div>
+
+    <div class="">
+
+    </div>
 
 
-        <div class="flexflex">
-            <img class='imgproduct zoom' src="{{asset('img/jouet.jpg')}}" >
-
-            <div class>
-
-                <div class="flexflex"> 
-
-                    <div class="productprix millieugauche"> PRIX :  252€  </div> 
-
-                    <button class="productprix millieudroit">  Ajouter au Panier <img src="{{asset('img/panier.png')}}" class="img-responsiv"> </button>
-                
-                </div> <!-- End of flexflex -->
-
-                <div class="productstock"> STOCK : 15 </div> <br>
-
-                <div class="productref"> REFERENCE : XXXXXX</div> <br>   
-
-                <div class="productartisan"> ARTISAN : Edouardo </div>  <br>
-                
-                <div class="col-12 projNight ">
-
-                    <div class="projonfi ">
-                        <p class=" poi text-center"> <span class="bolditalic"> Description : </span> Petite maison de la prairie faites par des castors en forêt brulantes sous un soleil ardent, convient a tous les petits enfants mais aussi à tous les petits bébé castors que vous pourrez croisez, faites un geste pour la planètes : Sauvez un arbre, Sauvez un Castor </p>
-                    </div> <!-- End of Prokonfi -->
-
-                </div> <!-- End of projNight -->
-
-                
-            </div>
-        </div> <!-- End of FlexFlex-->
-    </div> <!-- End of : 'Example-Wrapper -->
-
-
-<div class="dixpourcent"></div><!-- in order to center the 'Example-Wrapper -->
+</div>
 
 
 {% endblock %}
