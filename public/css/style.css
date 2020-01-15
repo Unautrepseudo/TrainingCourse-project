@@ -27,7 +27,7 @@ body {
 }
 
 .clear2 {
-    height: 15vh;
+    height: 10vh;
     background:rgba(214, 212, 178, 0);
 
 }
@@ -865,8 +865,10 @@ border: 1px solid black;
     width: 100%;
     height: auto;
     padding: 5vh;
-    margin-top : 2vh;
-    border: 2px solid burlywood;
+    margin-top : 5vh;
+    border: 0.5px solid burlywood ;
+    border-radius: 10vh;
+
 }
 
 .descriptionartisan:hover{
@@ -903,10 +905,10 @@ border: 1px solid black;
 .mainphoto{
     width: 70vh;
     height: 70vh;
-    border: 5px solid burlywood;
+    border: 3px solid burlywood;
     text-align: center;
     margin: 1vh 5vh ;
-    border-radius: 5vh;
+    border-radius: 3.5vh;
 
 }
 
@@ -920,7 +922,6 @@ border: 1px solid black;
 .ajoutpanier {
 text-align: center;
 vertical-align: middle;
-line-height: 5vh; 
 margin-top: 5vh;
 margin-bottom: 5vh;
 }
@@ -930,6 +931,17 @@ margin-bottom: 5vh;
     font-style: italic;
 }
 
+.butonbuton{
+    border-radius: 10vh;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.butonbuton:hover{
+    -webkit-box-shadow: 3px 4px 10px -1px rgba(56,224,56,1);
+-moz-box-shadow: 3px 4px 10px -1px rgba(56,224,56,1);
+box-shadow: 3px 4px 10px -1px rgba(56,224,56,1);
+}
 .avisclient{
     background: red;
     width: 100%;
