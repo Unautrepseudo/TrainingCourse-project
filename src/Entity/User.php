@@ -26,6 +26,8 @@ class User extends BaseUser
      */
     protected $id;
 
+
+
     /**
      * @ORM\Column(type="string", length=100)
      */
@@ -62,23 +64,23 @@ class User extends BaseUser
     private $role_user;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=50, nullable=true)
      */
     private $company;
 
        /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      * @var string
      */
     private $image;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=50, nullable=true)
      */
     private $speciality;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $about;
 
@@ -87,6 +89,11 @@ class User extends BaseUser
      * @var File
      */
     private $imageFile;
+
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\Artisan")
+     */
+    private $artisan;
 
     public function setImageFile(File $image = null)
     {
@@ -239,6 +246,18 @@ class User extends BaseUser
     public function setImage(string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getArtisan(): ?Artisan
+    {
+        return $this->artisan;
+    }
+
+    public function setArtisan(?Artisan $artisan): self
+    {
+        $this->artisan = $artisan;
 
         return $this;
     }
