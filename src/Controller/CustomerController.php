@@ -57,10 +57,12 @@ class CustomerController extends AbstractController
             if ($endofurl == 'customer') {
                 $user->setRoleUser('customer');
             }
+            $user->setEnabled(true);
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);
             $entityManager->flush();
+
 
             return $this->redirectToRoute('home');
         }
