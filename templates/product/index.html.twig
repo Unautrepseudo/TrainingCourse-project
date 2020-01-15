@@ -21,6 +21,7 @@
                 <th>Artisan_company</th>
                 <th>Artisan_name</th>
                 <th>Artisan_picture</th>
+                <th>Image</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -40,6 +41,7 @@
                 <td>{{ product.artisanCompany }}</td>
                 <td>{{ product.artisanName }}</td>
                 <td>{{ product.artisanPicture }}</td>
+                <td><img src="{{asset('images/product/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
                 <td>
                     <a href="{{ path('product_show', {'id': product.id}) }}">show</a>
                     <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>

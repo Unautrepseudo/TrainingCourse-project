@@ -1,20 +1,22 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ArtisansController!{% endblock %}
-
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <hr class="lign">
+    <h1 class="titleartisan">Nos artisans</h1>
+    <hr class="lign">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'G:/Coding/htdocs/TrainingCourse-project/src/Controller/ArtisansController.php'|file_link(0) }}">src/Controller/ArtisansController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'G:/Coding/htdocs/TrainingCourse-project/templates/artisans/index.html.twig'|file_link(0) }}">templates/artisans/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <div class="row1">
+        <a id="crafts1" class="card craftsman" href="/artisansingle" style="width: 18rem;">
+            <div class="container-img">
+                <img src="img/Camille.jpg" class="card-img-top img-pres" alt="...">
+            </div>
+
+            <div class="card-body spacecard">
+                <h5 class="card-title namecrafts">Camille</h5>
+                <hr class="betweenlign">
+                <p class="card-text jobtown">Menuisière - Toulouse</p>
+            </div>
+        </a>
+    </div>
 {% endblock %}

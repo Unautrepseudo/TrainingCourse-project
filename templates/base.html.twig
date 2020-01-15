@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="shortcut icon" href="{{asset('favicon.ico')}}" />
     <link rel="icon" type="image/png" href="{{asset('favicon.png')}}" />
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <title>{% block title %}Artisanat équitable{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
+    
 </head>
 
 <body>
-    {% include 'navbar.html.twig'%}
-
+    
+ {% include 'navbar.html.twig'%}
     <div class="container-fluid">
+       
         <div class="clear2"></div>
 
         {% block body %} 
@@ -23,7 +29,9 @@
     </div>
         {% include 'footer.html.twig'%}
 
-    {% block javascripts %}<script src="{{asset('js/main.js')}}"></script> {% endblock %}
+    {% block javascripts %}
+    
+    <script src="{{asset('js/main.js')}}"></script> {% endblock %}
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

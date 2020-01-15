@@ -4,43 +4,186 @@
 
 {% block body %}
     <h2 class='text-center display-3'> La team</h2>
+{# <img class='teamTof' src="https://picsum.photos/seed/picsum/800/600" alt=""> #}
+
+
 
     <div class="row teamWindow mb-1">
-        <div class="col-6"><img class='teamTof' src="https://picsum.photos/seed/picsum/800/600" alt=""></div>
+        <div class="col-6 ">
+            <div class="row teamTof" id="colHover1">
+            <div class="col bg-primary" id="infoImg1"></div>
+            <div class="col bg-warning" id="infoImg2"></div>
+            <div class="col bg-secondary" id="infoImg3"></div>
+            <div class="col bg-warning" id="infoImg4"></div>
+            <div class="col bg-dark" id="infoImg5"></div>
+            
+            </div>
+        
+        
+        </div>
         
         <div class="line mt-5"></div>
+{# teamate 1 #}
+<div class="col-5">
+        <div class=" my-2">
+            <div class=" row infoTeam1 infoHidden mt-1">
+                <div class="col">
+                    <h2 class="  mb-3 mt-5">Salif</h2>
 
-        <div class="col-5 my-2">
-                <div class=" row infoTeam mt-1">
-                    <div class="col">
-                        <h2 class="  mb-3 mt-5">Prénom</h2>
-
-                        <div class="desc my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam commodi possimus rerum adipisci, natus fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore hic harum ipsum, earum laborum. </div>
-                        
-                        <div class="timinfo">
-                            <label for="">Rôle sur le projet</label>
-                            <div class='roleprojet'></div>
-                        </div>
-
-                        <div class='d-flex mt-6 justify-content-around sociconDiv'>
-                            <span ><img  class='socicons'src="{{asset('img/email.png')}}" alt="email icon"> castor@queuplate.fr</span>
-                            <span ><img  class='socicons'src="{{asset('img/tel.png')}}" alt="tel icon"> 07.53.63.69.23</span>
-                            <span ><img  class='socicons3 mx-2 mt-1'src="{{asset('img/linked.png')}}" alt="linkedIn icon"> linkedin.liked</span>
-                        </div>
+                    <div class="desc my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam commodi possimus rerum adipisci, natus fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore hic harum ipsum, earum laborum. </div>
                     
-                        
+                    <div class="timinfo">
+                        <label for="">Rôle sur le projet</label>
+                        <div class='roleprojet'></div>
                     </div>
 
-                    <div class="col-md-3 col-xs-3 flip flip-card">
-                        <div class='front Head'>  <img class="img-fluid  al3 rounded-circle" src="https://picsum.photos/seed/picsum/300/300" alt=""></div> 
-                        <div class='back Head'>  <img class="img-fluid  div1 rounded-circle" src="https://picsum.photos/id/237/300/300" alt=""></div>     
+                    <div class='d-flex mt-6 justify-content-around sociconDiv'>
+                        <span >
+                            <img  class='socicons'src="{{asset('img/email.png')}}" alt="email icon">
+                            <a href="mailto:eric.narbo@gmail.com">castor@queuplate.fr</a>
+                            </span>
+                        <span ><img  class='socicons'src="{{asset('img/tel.png')}}" alt="tel icon"> 07.53.63.69.23</span>
+                        <span >
+                        <img  class='socicons3 mx-2 mt-1'src="{{asset('img/linked.png')}}" alt="linkedIn icon">
+                        <a href="linkedin.com/in/eric-narbo-48a007198">Visiter</a>
+                        </span>
                     </div>
                 </div>
+                <div class="col-md-3 col-xs-3 flip flip-card">
+                    <div class='front Head'>  <img class="img-fluid  al3 rounded-circle" src="https://picsum.photos/seed/picsum/300/300" alt=""></div> 
+                    <div class='back Head'>  <img class="img-fluid  div1 rounded-circle" src="https://picsum.photos/id/237/300/300" alt=""></div>     
+                </div>
+            </div>
+        </div>
+{# teamate 2 #}
+        <div class=" my-2">
+            <div class=" row infoTeam2 infoHidden mt-1">
+                <div class="col">
+                    <h2 class="  mb-3 mt-5">Mounir</h2>
 
+                    <div class="desc my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam commodi possimus rerum adipisci, natus fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore hic harum ipsum, earum laborum. </div>
+                    
+                    <div class="timinfo">
+                        <label for="">Rôle sur le projet</label>
+                        <div class='roleprojet'></div>
+                    </div>
+
+                    <div class='d-flex mt-6 justify-content-around sociconDiv'>
+                        <span >
+                            <img  class='socicons'src="{{asset('img/email.png')}}" alt="email icon">
+                            <a href="mailto:eric.narbo@gmail.com">castor@queuplate.fr</a>
+                            </span>
+                        <span ><img  class='socicons'src="{{asset('img/tel.png')}}" alt="tel icon"> 07.53.63.69.23</span>
+                         <span >
+                        <img  class='socicons3 mx-2 mt-1'src="{{asset('img/linked.png')}}" alt="linkedIn icon">
+                        <a href="linkedin.com/in/eric-narbo-48a007198">Visiter</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 flip flip-card">
+                    <div class='front Head'>  <img class="img-fluid  al3 rounded-circle" src="https://picsum.photos/seed/picsum/300/300" alt=""></div> 
+                    <div class='back Head'>  <img class="img-fluid  div1 rounded-circle" src="https://picsum.photos/id/237/300/300" alt=""></div>     
+                </div>
+            </div>
+        </div>
+{# teamate 3 #}
+        <div class="my-2">
+            <div class=" row infoTeam3 infoHidden mt-1">
+                <div class="col">
+                    <h2 class="  mb-3 mt-5">Anémone</h2>
+
+                    <div class="desc my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam commodi possimus rerum adipisci, natus fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore hic harum ipsum, earum laborum. </div>
+                    
+                    <div class="timinfo">
+                        <label for="">Rôle sur le projet</label>
+                        <div class='roleprojet'></div>
+                    </div>
+
+                    <div class='d-flex mt-6 justify-content-around sociconDiv'>
+                        <span >
+                            <img  class='socicons'src="{{asset('img/email.png')}}" alt="email icon">
+                            <a href="mailto:eric.narbo@gmail.com">castor@queuplate.fr</a>
+                            </span>
+                        <span ><img  class='socicons'src="{{asset('img/tel.png')}}" alt="tel icon"> 07.53.63.69.23</span>
+                         <span >
+                        <img  class='socicons3 mx-2 mt-1'src="{{asset('img/linked.png')}}" alt="linkedIn icon">
+                        <a href="linkedin.com/in/eric-narbo-48a007198">Visiter</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 flip flip-card">
+                    <div class='front Head'>  <img class="img-fluid  al3 rounded-circle" src="https://picsum.photos/seed/picsum/300/300" alt=""></div> 
+                    <div class='back Head'>  <img class="img-fluid  div1 rounded-circle" src="https://picsum.photos/id/237/300/300" alt=""></div>     
+                </div>
+            </div>
+        </div>
+{# teamate 4 #}
+        <div class=" my-2">
+            <div class=" row infoTeam4 infoHidden mt-1">
+                <div class="col">
+                    <h2 class="  mb-3 mt-5">Victor</h2>
+
+                    <div class="desc my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam commodi possimus rerum adipisci, natus fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore hic harum ipsum, earum laborum. </div>
+                    
+                    <div class="timinfo">
+                        <label for="">Rôle sur le projet</label>
+                        <div class='roleprojet'></div>
+                    </div>
+
+                    <div class='d-flex mt-6 justify-content-around sociconDiv'>
+                        <span >
+                            <img  class='socicons'src="{{asset('img/email.png')}}" alt="email icon">
+                            <a href="mailto:eric.narbo@gmail.com">castor@queuplate.fr</a>
+                            </span>
+                        <span ><img  class='socicons'src="{{asset('img/tel.png')}}" alt="tel icon"> 07.53.63.69.23</span>
+                         <span >
+                        <img  class='socicons3 mx-2 mt-1'src="{{asset('img/linked.png')}}" alt="linkedIn icon">
+                        <a href="linkedin.com/in/eric-narbo-48a007198">Visiter</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 flip flip-card">
+                    <div class='front Head'>  <img class="img-fluid  al3 rounded-circle" src="https://picsum.photos/seed/picsum/300/300" alt=""></div> 
+                    <div class='back Head'>  <img class="img-fluid  div1 rounded-circle" src="https://picsum.photos/id/237/300/300" alt=""></div>     
+                </div>
+            </div>
+        </div>
+
+{# teamate 5 #}
+        <div class=" my-2">
+            <div class=" row infoTeam5 infoHidden mt-1">
+                <div class="col">
+                    <h2 class="  mb-3 mt-5">Eric</h2>
+
+                    <div class="desc my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam commodi possimus rerum adipisci, natus fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore hic harum ipsum, earum laborum. </div>
+                    
+                    <div class="timinfo">
+                        <label for="">Rôle sur le projet</label>
+                        <div class='roleprojet'></div>
+                    </div>
+
+                    <div class='d-flex mt-6 justify-content-around sociconDiv'>
+                        <span >
+                            <img  class='socicons'src="{{asset('img/email.png')}}" alt="email icon">
+                            <a href="mailto:eric.narbo@gmail.com">castor@queuplate.fr</a>
+                            </span>
+                        <span ><img  class='socicons'src="{{asset('img/tel.png')}}" alt="tel icon"> 07.53.63.69.23</span>
+                         <span >
+                        <img  class='socicons3 mx-2 mt-1'src="{{asset('img/linked.png')}}" alt="linkedIn icon">
+                        <a href="linkedin.com/in/eric-narbo-48a007198">Visiter</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-3 flip flip-card">
+                    <div class='front Head'>  <img class="img-fluid  al3 rounded-circle" src="https://picsum.photos/seed/picsum/300/300" alt=""></div> 
+                    <div class='back Head'>  <img class="img-fluid  div1 rounded-circle" src="https://picsum.photos/id/237/300/300" alt=""></div>     
+                </div>
+            </div>
         </div>
     </div>
-
+</div>
 
     
 
 {% endblock %}
+
