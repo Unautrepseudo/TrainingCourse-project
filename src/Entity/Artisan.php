@@ -51,6 +51,11 @@ class Artisan
      */
     private $about;
 
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\User")
+     */
+    private $user;
+
     public function __construct()
     {
         $this->created_at = new \Datetime;
@@ -158,6 +163,18 @@ class Artisan
     public function setCreationDateArtisan(\DateTimeInterface $creation_date_artisan): self
     {
         $this->creation_date_artisan = $creation_date_artisan;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }
