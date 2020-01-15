@@ -2,21 +2,32 @@
 
 {% block body %}
 
-    <hr class="lign">
-    <h1 class="titleartisan">Nos artisans</h1>
-    <hr class="lign">
+    <header>
+        <hr class="lign">
+        <h1 class="titleartisan">Nos artisans</h1>
+        <hr class="lign">
+    </header>
 
-    <div class="row1">
-        <a id="crafts1" class="card craftsman" href="/artisansingle" style="width: 18rem;">
-            <div class="container-img">
-                <img src="img/Camille.jpg" class="card-img-top img-pres" alt="...">
-            </div>
+    <?php
+        $bdd = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '', 
+        array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND =>'SET NAMES UTF8'));
 
-            <div class="card-body spacecard">
-                <h5 class="card-title namecrafts">Camille</h5>
-                <hr class="betweenlign">
-                <p class="card-text jobtown">Menuisière - Toulouse</p>
-            </div>
-        </a>
-    </div>
+        $artisans = $bdd->query('select * from artisan order by id asc');
+        foreach ($artisans as $artisan): 
+    ?>        
+            <div class="row1">
+                <a id="crafts1" class="card craftsman" href="/artisansingle" style="width: 18rem;">
+                    <div class="container-img">
+                        <img src="img/Camille.jpg" class="card-img-top img-pres" alt="...">
+                    </div>
+
+                    <div class="card-body spacecard">
+                        <h5 class="card-title namecrafts"><?php echo $artisan['first_name'] ?></h5>
+                        <hr class="betweenlign">
+                        <p class="card-text jobtown"><?php echo $artisan['speciality'] ?> - <?php echo $artisan['ville'] ?></p>
+                    </div>
+                </a>
+            </div>    
+        <?php endforeach ?>
+
 {% endblock %}
