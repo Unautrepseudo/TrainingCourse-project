@@ -520,61 +520,9 @@ nav {
 
 /***********************************LIVRAISON**********************/
 
-
-
-.titleproduct {
-        background: rgba(43, 206, 116, 0.075);
-}
-
-.prodductref {
-    background: rgba(43, 206, 116, 0.075);
-}
-
-.descriptionproduit {
-    background: rgba(43, 206, 116, 0.075);
-    margin-top:3vh;
-    font-style: italic;
-
-}
-
-.productprix
-{
-    margin-top :  3vh;
-    
-}
-
-.productstock 
-{
-    margin-top:3vh;
-    font-weight: bold;
-}
-
-.millieugauche {
-    width: 30%;
-    font-weight: bold;
-}
-
-.millieudroit {
-    background: rgba(50, 238, 135, 0.294);
-    font-style: italic;
-    font-weight: bold;    
-}
-
 .dixpourcent
 {
     width: 10%;
-}
-
-.totaux 
-{
-    display: flex;
-}
-
-.imgproduct{
-    height: 40vh;
-    width: 40vh;
-    margin : 0 10vh 10vh 10vh;
-      transition-duration: 1s;
 }
 
 .center {
@@ -584,8 +532,6 @@ nav {
 .flexflex {
     display: flex;
 }
-
-
 
 .ampoule {
 
@@ -636,6 +582,14 @@ nav {
     font-weight: bold;
 }
 
+/***********************************Zoom page : Produits  && texte incliné **********************/
+
+.productref:hover, .productstock:hover, .productartisan:hover, .millieugauche:hover
+{
+box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.15);
+background: rgba(43, 206, 116, 0.075);
+}
+
 .zoom:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     transform: scale(1.2); 
@@ -664,12 +618,76 @@ nav {
     margin-bottom: 7vh;
 }
 
-.productartisan {
-    font-weight: bold;
+
+
+/***********************************Page Produits**********************/
+
+.titleproduct {
+    background: rgba(43, 206, 116, 0.075);
 }
 
 .productref {
+transition: 0.5s;
+width: 22vh;
+font-weight: bold;
+}
+
+.productartisan {
     font-weight: bold;
+    transition: 0.5s;
+    width: 20vh;
+}
+
+.productprix
+{
+margin-top :  3vh;
+}
+
+.millieugauche {
+    width: 12vh;
+    margin-right: 10vh;
+    font-weight: bold;
+    transition: 0.5s;
+    height: 3vh;
+    }
+    
+.millieudroit {
+    background: rgba(50, 238, 135, 0.294);
+    font-style: italic;
+    font-weight: bold;    
+    }
+    
+
+.descriptionproduit {
+background: rgba(43, 206, 116, 0.075);
+margin-top:3vh;
+font-style: italic;
+
+}
+
+.productstock 
+{
+margin-top:3vh;
+font-weight: bold;
+transition: 0.5s;
+width: 11vh;
+}
+
+.dixpourcent
+{
+width: 10%;
+}
+
+.totaux 
+{
+display: flex;
+}
+
+.imgproduct{
+height: 40vh;
+width: 40vh;
+margin : 10vh 10vh;
+  transition-duration: 1s;
 }
 /************************************CAROUSEL****************************************************************/
 
