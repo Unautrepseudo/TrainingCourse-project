@@ -301,7 +301,6 @@ border: 1px solid black;
 
 .img-pres{
     transition: 1s ease-in-out;
-
 }
 
 .img-pres:hover{
@@ -797,14 +796,6 @@ border: 1px solid black;
     height: AUTO;
 }
 
-.imgproduct {
-    width: 50vh;
-    height: 50vh;
-    margin-bottom: 10vh;
-    margin-top : 5vh;
-    margin-right: 5vh;
-}
-
 .restproduct
 {
     width: 40%;
@@ -864,6 +855,11 @@ border: 1px solid black;
     background: burlywood;
 }
 
+.margintope{
+    margin-top:-10vh;
+}
+
+
 .descriptionartisan
 {
     width: 100%;
@@ -884,15 +880,42 @@ border: 1px solid black;
     margin : 5% auto;
 }
 
+.img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    border: solid black 1px;
+}
+.imgproduct {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
 .imgproduct:hover {
-    zoom: 1.5;
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
 }
 
-.mainphoto {
+.mainphoto{
+    width: 70vh;
+    height: 70vh;
+    border: 5px solid burlywood;
+    text-align: center;
+    margin: 1vh 5vh ;
+    border-radius: 5vh;
+
+}
+
+.imgproduct {
     width: 50vh;
     height: 50vh;
+    margin-top: 7vh;
+    transition: 1s;
 }
-
 
 .ajoutpanier {
 text-align: center;
@@ -906,6 +929,67 @@ margin-bottom: 5vh;
 {
     font-style: italic;
 }
+
+.avisclient{
+    background: red;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+}
+/************************************avis client****************************************************************/
+
+.currentavis{
+    background: rgba(238, 135, 18, 0.055);
+    border-radius: 10vh;
+    text-align: justify;
+    margin-left : 5vh;
+    height: 45vh;
+    }
+
+.bold
+{
+    font-weight: bold;
+}
+
+.borderborder
+{
+    border: 3px solid burlywood;
+    margin-bottom: 4vh;
+    border-radius: 5vh;
+
+}
+
+
+
+/************************************danslememegenre****************************************************************/
+
+.danslememegenre{
+    height: auto;
+    width: 100%;
+    margin-top: 5vh
+}
+
+.inthesameway
+{
+    background: rgba(238, 135, 18, 0.055);
+    border-radius: 10vh;
+    text-align: justify;
+    margin-left : 5vh;
+    margin-bottom: 10vh;
+    height: auto;
+}
+
+.othertitle
+{  
+    font-weight: bold;
+}
+
+.othertitle:hover
+{  
+    text-decoration: underline;
+}
+
+
 /************************************CAROUSEL****************************************************************/
 
 
