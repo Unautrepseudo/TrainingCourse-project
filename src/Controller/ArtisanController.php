@@ -58,12 +58,12 @@ class ArtisanController extends AbstractController
                 $user->setRoles(['ROLE_ARTISAN']);
                 $user->setRoleUser('artisan');
             }
+            $user->setEnabled(true);
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);
             $entityManager->flush();
 
-            $user->setEnabled(true);
 
             // do anything else you need here, like send an email
 
