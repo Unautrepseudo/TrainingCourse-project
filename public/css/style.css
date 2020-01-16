@@ -1749,3 +1749,17 @@ a:hover {
 .open-button:hover {
     opacity: 1;
 }
+
+
+/*************************************loginpage********/
+
+.toregister {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.registerside {
+    color: rgb(184, 115, 24);
+}
