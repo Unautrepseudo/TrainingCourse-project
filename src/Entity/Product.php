@@ -47,21 +47,6 @@ class Product
     private $price;
 
     /**
-     * @ORM\Column(type="string", length=500)
-     */
-    private $picture_one;
-
-    /**
-     * @ORM\Column(type="string", length=500, nullable=true)
-     */
-    private $picture_two;
-
-    /**
-     * @ORM\Column(type="string", length=500, nullable=true)
-     */
-    private $picture_three;
-
-    /**
      * @ORM\Column(type="string", length=50)
      */
     private $materials;
@@ -75,20 +60,6 @@ class Product
      * @ORM\Column(type="string", length=300)
      */
     private $description;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     */
-    private $artisan_company;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     */
-    private $artisan_name;
-
-    /**
-     * @ORM\Column(type="string", length=500)
-     */
 
         /**
      * @ORM\Column(type="string", length=255)
