@@ -28,9 +28,6 @@ $('.subMenu1').click(function(){
   }); 
 
 
-
-
-
 /**************************************** Effet scroll whole page (HOME) ********************/
 const threshold = .5
 const options = {
@@ -321,10 +318,21 @@ $('.infoTeam2,.infoTeam3,.infoTeam4,.infoTeam1').addClass('infoHidden');
 });
 
 
-
-
 });
 
 
-
+/***scrollup button */
+$(document).ready( function () {
+  // Add return on top button
+  $('body').append('<span id="scrollup" title="Retour en haut">&nbsp;</div>');
+  
+  
+  $(window).scroll(function() {
+      // If on top fade the bouton out, else fade it in
+      if ( $(window).scrollTop() == 0 )
+          $('#scrollup').hide();
+      else
+          $('#scrollup').show();
+  });
+});
 
