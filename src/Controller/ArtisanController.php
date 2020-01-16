@@ -55,6 +55,7 @@ class ArtisanController extends AbstractController
             $endofurl = $r[3];
 
             if ($endofurl == 'artisan') {
+                $user->setRoles(['ROLE_ARTISAN']);
                 $user->setRoleUser('artisan');
             }
 

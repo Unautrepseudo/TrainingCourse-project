@@ -19,7 +19,13 @@
 
         <div class="testyo"></div>
 
+{% if is_granted('ROLE_ARTISAN') %}
 
+   my message 
+
+   {% else %}
+   je n'ai pas de role artisan
+{% endif %}
             <li class="nav-item">
                 <a class="nav-link" href="{{path('artisans')}}">Artisans</a>
             </li>
