@@ -63,7 +63,7 @@ class Product
     private $image;
 
     /**
-     * @Vich\UploadableField(mapping="product_image", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
      * @var File
      */
     private $imageFile;
@@ -73,15 +73,6 @@ class Product
         $this->created_at = new \Datetime;
     }
 
-    public function setImageFile(File $image = null)
-    {
-        $this->imageFile = $image;
-    }
-
-    public function getImageFile()
-    {
-        return $this->imageFile;
-    }
 
     public function getId(): ?int
     {
@@ -160,16 +151,25 @@ class Product
         return $this;
     }
 
-    public function getImage(): ?string
+    public function setImageFile(File $image = null)
     {
-        return $this->image;
+        $this->imageFile = $image;
+
     }
 
-    public function setImage(string $image): self
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+
+    public function setImage($image)
     {
         $this->image = $image;
+    }
 
-        return $this;
+    public function getImage()
+    {
+        return $this->image;
     }
 
     public function getUser(): ?User
