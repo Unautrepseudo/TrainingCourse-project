@@ -43,8 +43,8 @@
                 <td>{{ product.artisanPicture }}</td>
                 <td><img src="{{asset('images/product/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
                 <td>
-                    <a href="{{ path('product_show', {'id': product.id}) }}">show</a>
-                    <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>
+                    <a href="{{ path('card_add', {'id': product.id}) }}">show</a>
+                    <a href="{{ path('card_add', {'id': product.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}
