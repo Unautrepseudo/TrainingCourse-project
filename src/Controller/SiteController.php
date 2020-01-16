@@ -22,7 +22,9 @@ class SiteController extends AbstractController
      */
     public function home()
     {
-        return $this->render('site/home.html.twig');
+        return $this->render('site/home.html.twig', [
+            'test' => $_POST,
+        ]);
     }
 
 }
