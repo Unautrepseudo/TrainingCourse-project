@@ -1763,3 +1763,22 @@ a:hover {
 .registerside {
     color: rgb(184, 115, 24);
 }
+/**************************************** Partenaires*******************************************/
+.leslogos{
+    width: 200px;
+    height: 50px;
+    margin: 0 50px;
+}
+.lelogo{
+    width: 70px;
+    height: 50px;
+    margin: 0 10px;
+}
+.parterns{
+    width: 50rem;
+    margin: 0 auto;
+}
+.titleh2{
+    color: rgb(189, 122, 34);
+    text-align: center;
+}
