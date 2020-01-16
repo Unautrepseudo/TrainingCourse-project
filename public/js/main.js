@@ -30,6 +30,7 @@ $('.subMenu1').click(function(){
 
 
 
+
 /**************************************** Effet scroll whole page (HOME) ********************/
 const threshold = .5
 const options = {
@@ -279,6 +280,7 @@ if (This.createdSlides.length) {
             })
         })
     });
+
 }
 
 }, 100);
@@ -317,9 +319,6 @@ $('#infoImg5').mouseover(function(){
 $('.infoTeam5').removeClass('infoHidden');
 $('.infoTeam2,.infoTeam3,.infoTeam4,.infoTeam1').addClass('infoHidden');
 });
-
-
-
 
 
 
