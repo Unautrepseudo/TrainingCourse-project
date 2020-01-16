@@ -85,7 +85,7 @@ class User extends BaseUser
     private $about;
 
     /**
-     * @Vich\UploadableField(mapping="product_image", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
      * @var File
      */
     private $imageFile;
