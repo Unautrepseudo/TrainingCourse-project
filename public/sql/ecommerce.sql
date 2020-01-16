@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 16 jan. 2020 à 11:23
+-- Généré le :  jeu. 16 jan. 2020 à 15:23
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.1.33
 
@@ -99,17 +99,20 @@ CREATE TABLE `fos_user` (
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `speciality` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `about` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `artisan_id` int(11) DEFAULT NULL
+  `product_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `fos_user`
 --
 
-INSERT INTO `fos_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `confirmation_token`, `password_requested_at`, `roles`, `last_name`, `birthday`, `address`, `city`, `zip_code`, `phone_number`, `role_user`, `company`, `image`, `speciality`, `about`, `artisan_id`) VALUES
-(14, 'jean', 'jean', 'jean@jean.fr', 'jean@jean.fr', 0, '3MDjd0WqledBdBVSwG6r6LnLES4.rs1aGwo.zQ8DnoU', '$2y$13$GKKfh/QEBn4WHCuEiX54eufbJtxaEoNWxpjYvTmp6N03ipa2rbJnO', NULL, NULL, NULL, 'a:0:{}', 'françois', '2015-01-01 00:00:00', 'rue jean', 'jeanville', '78000', '0105040302', 'customer', NULL, NULL, NULL, NULL, NULL),
-(15, 'alber', 'alber', 'alber@castor.fr', 'alber@castor.fr', 0, 'ANKTWNHmjQqZ0i0wa23TTQhYTk0QVON0zF24.QJ1loA', '$2y$13$bhnkyJ.ioVcTdNqQ7By1KeKqvJfqSDrmgwc0AQYwP5oFwXi26Id6m', NULL, NULL, NULL, 'a:0:{}', 'Delaforet', '2015-01-01 00:00:00', 'rue de la foret', 'castorville', '78000', '0102030405', 'artisan', 'castorFirm', 'food15.jpg', 'castorman', 'chat', NULL),
-(16, 'admin', 'admin', 'toto@hotmail.fr', 'toto@hotmail.fr', 1, 'y11Mam1T7zTJPK2o9McMdtXXYspHn8s23EKkQxCjY6Y', '$2y$13$MMdYFaHxBERxsSu0P.MpseC9csKrQXsdDBeZCpaFSTPmnYfB1QKI.', '2020-01-15 14:21:13', NULL, NULL, 'a:0:{}', 'TOTTI', '2015-01-01 00:00:00', 'rue de la foret', 'castorville', '78000', '0102030405', 'customer', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `fos_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `confirmation_token`, `password_requested_at`, `roles`, `last_name`, `birthday`, `address`, `city`, `zip_code`, `phone_number`, `role_user`, `company`, `image`, `speciality`, `about`, `product_id`) VALUES
+(19, 'jerome', 'jerome', 'jerome@hotmail.fr', 'jerome@hotmail.fr', 1, 'B9HItIiAEKNCdgPMkOI2XiSrgQSTsSJ8BtuVxlWd2vA', '$2y$13$ZBHztIY1cTXD9mKzHus07O0GAtVzGx9YT3bLynQRctXaGd0dG/Rei', NULL, NULL, NULL, 'a:0:{}', 'NomJerome', '2022-05-02 07:09:00', 'rue jerome', 'Trappes', '78000', '0102030405', 'customer', NULL, NULL, NULL, NULL, NULL),
+(20, 'julien', 'julien', 'julien@hotmail.fr', 'julien@hotmail.fr', 1, '4vbLNh2pDzjuIGiS8I/53nYam9ngojzg8nwTR8F.yNY', '$2y$13$DziHLSJ5g7reJMIGd1.LXueDvmLyc49AC7W5jlK1FEPItvf.pfjt6', NULL, NULL, NULL, 'a:0:{}', 'Nomjulien', '2020-06-08 05:05:00', 'rue julien', 'Trappes', '78000', '0102030405', 'customer', NULL, NULL, NULL, NULL, NULL),
+(21, 'Seb', 'seb', 'seb@gmail.com', 'seb@gmail.com', 1, '4qW0LJCIVEQkM0MLWCjtyCYOzqFbOC06f2J1TD8mDbw', '$2y$13$7KM27UWX8hOUiP26bX3KheMwZQ1KGLHJDWg2VcIREtunRIyjIxLdS', NULL, NULL, NULL, 'a:0:{}', 'NomSeb', '2022-11-08 00:04:00', 'rue seb', 'Trappes', '78000', '0102030405', 'customer', NULL, NULL, NULL, NULL, NULL),
+(22, 'Camille', 'camille', 'camille@gmail.com', 'camille@gmail.com', 0, 'hw8DdEOMAq3SAlGm/9jkP94o3AO9Mhvp.JIHJeojYHw', '$2y$13$idvJzMK08eh92kGEwgt4r..vOzzQQ4sIzDaJR7RgZqt3nfG1mUUj6', NULL, NULL, NULL, 'a:0:{}', 'Ellimac', '2021-07-09 08:11:00', 'rue Camille', 'Trappes', '78000', '0102030405', 'artisan', 'CamilleFirme', 'Camille.jpg', 'Ameublement', 'J\'aime créer des meubles en bois pour toute la maison', NULL),
+(23, 'Maellya', 'maellya', 'maellya@gmail.com', 'maellya@gmail.com', 0, 'WEwgbIYvOVzfjFVN/rGL1ZVnGBdHERWS5miRjF1Git8', '$2y$13$ILyfVNZngVel7sbmBn6nTOtf/NM1ZsM5fnh.GFYwIi1nK0XTTXGYe', NULL, NULL, NULL, 'a:0:{}', 'Aylleam', '2019-05-18 00:00:00', 'rue de maellya', 'Trappes', '78000', '0102030405', 'artisan', 'MaellyaFirme', 'Maellya.jpg', 'joalier', 'J\'aime créer des bijoux pour toute la famille', NULL),
+(24, 'Edouardo', 'edouardo', 'edouardo@gmail.com', 'edouardo@gmail.com', 0, 'TD/gEUnIrmd9GE382p8vKmyBUy19KKmrt5tYV3dI.4Y', '$2y$13$vICVBZWHwmc1rXpY7vi92On0d7HrgOxQRLaA3WpjRWhGC9M0viHiG', NULL, NULL, NULL, 'a:0:{}', 'Odrauode', '2025-12-29 00:00:00', 'rue edouardo', 'Trappes', '78000', '0102030405', 'artisan', 'EdouardoFirme', 'edouardo.jpg', 'potier', 'J\'aime créer des produits pour la maison', NULL);
 
 -- --------------------------------------------------------
 
@@ -122,18 +125,21 @@ CREATE TABLE `product` (
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `reference` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `price` int(11) NOT NULL,
-  `picture_one` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `picture_two` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `picture_three` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `materials` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `stock` int(11) NOT NULL,
   `description` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `artisan_company` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `artisan_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `artisan_id` int(11) DEFAULT NULL,
-  `customer_id` int(11) DEFAULT NULL,
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `product`
+--
+
+INSERT INTO `product` (`id`, `name`, `reference`, `price`, `materials`, `stock`, `description`, `image`, `user_id`) VALUES
+(8, 'Chaise en boix', '123', 45, 'bois', 6, 'Très belle chaise en bois', 'chaise.jpg', 22),
+(9, 'Collier en or', '456', 1568, 'or', 7, 'Très beau collier en or', 'collier 1.jpg', 23),
+(10, 'Vase', '789', 25, 'plâtre', 6, 'Jolie vase', 'Robot 1.jpg', 24);
 
 --
 -- Index pour les tables déchargées
@@ -160,15 +166,14 @@ ALTER TABLE `fos_user`
   ADD UNIQUE KEY `UNIQ_957A647992FC23A8` (`username_canonical`),
   ADD UNIQUE KEY `UNIQ_957A6479A0D96FBF` (`email_canonical`),
   ADD UNIQUE KEY `UNIQ_957A6479C05FB297` (`confirmation_token`),
-  ADD UNIQUE KEY `UNIQ_957A64795ED3C7B7` (`artisan_id`);
+  ADD UNIQUE KEY `UNIQ_957A64794584665A` (`product_id`);
 
 --
 -- Index pour la table `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `IDX_D34A04AD5ED3C7B7` (`artisan_id`),
-  ADD KEY `IDX_D34A04AD9395C3F3` (`customer_id`);
+  ADD KEY `IDX_D34A04ADA76ED395` (`user_id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -190,13 +195,13 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT pour la table `fos_user`
 --
 ALTER TABLE `fos_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT pour la table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Contraintes pour les tables déchargées
@@ -212,14 +217,13 @@ ALTER TABLE `artisan`
 -- Contraintes pour la table `fos_user`
 --
 ALTER TABLE `fos_user`
-  ADD CONSTRAINT `FK_957A64795ED3C7B7` FOREIGN KEY (`artisan_id`) REFERENCES `artisan` (`id`);
+  ADD CONSTRAINT `FK_957A64794584665A` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`);
 
 --
 -- Contraintes pour la table `product`
 --
 ALTER TABLE `product`
-  ADD CONSTRAINT `FK_D34A04AD5ED3C7B7` FOREIGN KEY (`artisan_id`) REFERENCES `artisan` (`id`),
-  ADD CONSTRAINT `FK_D34A04AD9395C3F3` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`id`);
+  ADD CONSTRAINT `FK_D34A04ADA76ED395` FOREIGN KEY (`user_id`) REFERENCES `fos_user` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

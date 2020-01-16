@@ -84,7 +84,9 @@ class ProductController extends AbstractController
     public function delete(Request $request, Product $product): Response
     {
         if ($this->isCsrfTokenValid('delete'.$product->getId(), $request->request->get('_token'))) {
+            
             $entityManager = $this->getDoctrine()->getManager();
+            //unlink('images/'.$product->getImage());
             $entityManager->remove($product);
             $entityManager->flush();
         }

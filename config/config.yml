@@ -1,0 +1,11 @@
+payum:
+    security:
+        token_storage:
+            Acme\PaymentBundle\Entity\PaymentToken: { doctrine: orm }
+
+    storages:
+        Acme\PaymentBundle\Entity\Payment: { doctrine: orm }
+            
+    gateways:
+        offline:
+            factory: offline
