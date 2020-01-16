@@ -57,8 +57,8 @@ class Product
     private $description;
 
         /**
-     * @ORM\Column(type="string", length=255)
-     * @var string
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @var File
      */
     private $image;
 
@@ -68,6 +68,11 @@ class Product
      */
     private $imageFile;
 
+    public function __construct()
+    {
+        $this->created_at = new \Datetime;
+    }
+
     public function setImageFile(File $image = null)
     {
         $this->imageFile = $image;
@@ -76,12 +81,6 @@ class Product
     public function getImageFile()
     {
         return $this->imageFile;
-    }
-    private $artisan_picture;
-
-    public function __construct()
-    {
-        $this->created_at = new \Datetime;
     }
 
     public function getId(): ?int
