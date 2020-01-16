@@ -32,15 +32,10 @@
                 <td>{{ product.name }}</td>
                 <td>{{ product.reference }}</td>
                 <td>{{ product.price }}</td>
-                <td>{{ product.pictureOne }}</td>
-                <td>{{ product.pictureTwo }}</td>
-                <td>{{ product.pictureThree }}</td>
                 <td>{{ product.materials }}</td>
                 <td>{{ product.stock }}</td>
                 <td>{{ product.description }}</td>
-                <td>{{ product.artisanCompany }}</td>
-                <td>{{ product.artisanName }}</td>
-                <td>{{ product.artisanPicture }}</td>
+                <td>{{ product.user }}</td>
                 <td><img src="{{asset('images/product/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
                 <td>
                     <a href="{{ path('product_show', {'id': product.id}) }}">show</a>

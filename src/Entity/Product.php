@@ -22,14 +22,9 @@ class Product
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Artisan")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User")
      */
-    private $artisan;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Customer")
-     */
-    private $customer;
+    private $user;
 
     /**
      * @ORM\Column(type="string", length=100)
@@ -106,42 +101,6 @@ class Product
         return $this;
     }
 
-    public function getPictureOne(): ?string
-    {
-        return $this->picture_one;
-    }
-
-    public function setPictureOne(string $picture_one): self
-    {
-        $this->picture_one = $picture_one;
-
-        return $this;
-    }
-
-    public function getPictureTwo(): ?string
-    {
-        return $this->picture_two;
-    }
-
-    public function setPictureTwo(?string $picture_two): self
-    {
-        $this->picture_two = $picture_two;
-
-        return $this;
-    }
-
-    public function getPictureThree(): ?string
-    {
-        return $this->picture_three;
-    }
-
-    public function setPictureThree(?string $picture_three): self
-    {
-        $this->picture_three = $picture_three;
-
-        return $this;
-    }
-
     public function getMaterials(): ?string
     {
         return $this->materials;
@@ -178,66 +137,6 @@ class Product
         return $this;
     }
 
-    public function getArtisanCompany(): ?string
-    {
-        return $this->artisan_company;
-    }
-
-    public function setArtisanCompany(string $artisan_company): self
-    {
-        $this->artisan_company = $artisan_company;
-
-        return $this;
-    }
-
-    public function getArtisanName(): ?string
-    {
-        return $this->artisan_name;
-    }
-
-    public function setArtisanName(string $artisan_name): self
-    {
-        $this->artisan_name = $artisan_name;
-
-        return $this;
-    }
-
-    public function getArtisanPicture(): ?string
-    {
-        return $this->artisan_picture;
-    }
-
-    public function setArtisanPicture(string $artisan_picture): self
-    {
-        $this->artisan_picture = $artisan_picture;
-
-        return $this;
-    }
-
-    public function getArtisan(): ?Artisan
-    {
-        return $this->artisan;
-    }
-
-    public function setArtisan(?Artisan $artisan): self
-    {
-        $this->artisan = $artisan;
-
-        return $this;
-    }
-
-    public function getCustomer(): ?Customer
-    {
-        return $this->customer;
-    }
-
-    public function setCustomer(?Customer $customer): self
-    {
-        $this->customer = $customer;
-
-        return $this;
-    }
-
     public function getName(): ?string
     {
         return $this->name;
@@ -270,6 +169,18 @@ class Product
     public function setImage(string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }
