@@ -85,15 +85,15 @@ class User extends BaseUser
     private $about;
 
     /**
-     * @Vich\UploadableField(mapping="product_image", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
      * @var File
      */
     private $imageFile;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Artisan")
+     * @ORM\OneToOne(targetEntity="App\Entity\Product")
      */
-    private $artisan;
+    private $product;
 
     public function setImageFile(File $image = null)
     {
@@ -250,15 +250,16 @@ class User extends BaseUser
         return $this;
     }
 
-    public function getArtisan(): ?Artisan
+    public function getProduct(): ?Product
     {
-        return $this->artisan;
+        return $this->product;
     }
 
-    public function setArtisan(?Artisan $artisan): self
+    public function setProduct(?Product $product): self
     {
-        $this->artisan = $artisan;
+        $this->product = $product;
 
         return $this;
     }
+
 }
