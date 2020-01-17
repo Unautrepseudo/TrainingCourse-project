@@ -1622,6 +1622,16 @@ a:hover {
 }
 
 
+
+/*****************************************************Cookie*****************************************/
+
+
+.cookie{
+    width: 100%;
+    height: 15vh;
+    background-color:#ffff;
+}
+
 /************************************************Formulaire artisan et customer************************************/
 
 .formartisan,
@@ -1790,6 +1800,7 @@ a:hover {
 }
 
 
+
 /**************************************** ProductMainPage *******************************************/
 
 .allproduct{
@@ -1809,8 +1820,3 @@ a:hover {
     background: yellow;
 }
 
-.fullbody {
-    width: 100%;
-    height: 1500vh;
-    background: cyan;
-}
