@@ -718,6 +718,7 @@ color:rgba(88, 86, 86, 0.849) !important;
 
 .logoup3{
     width: 60%;
+    margin-left:15%;
 }
 
 
@@ -729,6 +730,17 @@ color:rgba(88, 86, 86, 0.849) !important;
     font-weight: bold;
 }
 
+
+/***********************************LIVRAISON********************/
+
+.delivImg{
+width: 30%;
+height: 90%;
+}
+
+.delivImg2{
+    width: 30%;
+    }
 
 /************************************Product Single****************************************************************/
 
@@ -1722,9 +1734,6 @@ a:hover {
 
 /**Made by Victor **/
 
-.ampoule
-
-
 .center {
     text-align: center;
 }
@@ -1734,5 +1743,7 @@ a:hover {
 }
 
 .ampoule {
-    opacity: 0.3;
-}
+    opacity: 0.1;
+  }
+  
+ 
