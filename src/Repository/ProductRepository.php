@@ -70,19 +70,6 @@ class ProductRepository extends ServiceEntityRepository
     // }
 
 
-    /**
-     * @param $user_id
-     * @return mixed
-     */
-    public function findByNumUser($user_id)
-    {
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.user_id = :val')
-            ->setParameter('val', $user_id)
-            ->orderBy('p.id', 'ASC')
-            ->getQuery()
-            ->getResult()
-            ;
-        }
+
     
 }

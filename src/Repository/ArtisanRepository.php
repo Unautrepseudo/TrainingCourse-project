@@ -47,4 +47,5 @@ class ArtisanRepository extends ServiceEntityRepository
         ;
     }
     */
+
 }

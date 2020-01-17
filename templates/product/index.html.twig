@@ -22,6 +22,8 @@
         </thead>
         <tbody>
         {% for product in products %}
+        {% if is_granted('ROLE_ARTISAN') %}
+        {% if product.user.id == app.user.id %}
             <tr>
                 <td>{{ product.id }}</td>
                 <td>{{ product.name }}</td>
@@ -37,6 +39,8 @@
                     <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>
                 </td>
             </tr>
+        {% endif %}
+        {% endif %}
         {% else %}
             <tr>
                 <td colspan="14">no records found</td>
