@@ -1,34 +1,56 @@
 // /****** NAV Scroll Menu *****/
-
+//Produits
 $('#navDrop').hover(function(){
   $('.subMenu1').removeClass('infoHidden');
   });
 
-$('.subMenu1').click(function(){
-  $('.subMenu1').addClass('infoHidden');
-  });
-  
+
 
   $('.subMenuA').hover(function(){
     $('.subMenu2').removeClass('infoHidden');
-    $('.subMenu').addClass('infoHidden');
+    $('.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
 
   }); 
 
   $('.subMenuB').hover(function(){
     $('.subMenu2b').removeClass('infoHidden');
+    $('.subMenu2,.subMenu2c,.subMenu2d').addClass('infoHidden');
+
   }); 
 
   $('.subMenuC').hover(function(){
     $('.subMenu2c').removeClass('infoHidden');
+    $('.subMenu2b,.subMenu2,.subMenu2d').addClass('infoHidden');
+
   });
 
   $('.subMenuD').hover(function(){
     $('.subMenu2d').removeClass('infoHidden');
+    $('.subMenu2b,.subMenu2c,.subMenu2').addClass('infoHidden');
+
   }); 
 
+  $('.testContent').mouseleave(function(){
+    $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
+  })
+  $('navlink2,.navlink3,.navlink3,.navlink4').hover(function(){
+    $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
+  })
 
+  //Artisans
+//Artisans
+$('#navDrop2').hover(function(){
+  $('.subMenu2e').removeClass('infoHidden');
+  $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
+});
 
+$('.subMenu2e').mouseleave(function(){
+  $('.subMenu2e').addClass('infoHidden');
+})
+  
+$('#navDrop,.navlink3,.navlink4').hover(function(){
+  $('.subMenu2e').addClass('infoHidden');
+})
 
 
 /**************************************** Effet scroll whole page (HOME) ********************/
@@ -321,10 +343,20 @@ $('.infoTeam2,.infoTeam3,.infoTeam4,.infoTeam1').addClass('infoHidden');
 });
 
 
-
-
 });
 
 
-
+/***scrollup button */
+$(document).ready( function () {
+  // Add return on top button
+  
+  
+  $(window).scroll(function() {
+      // If on top fade the bouton out, else fade it in
+      if ( $(window).scrollTop() == 0 )
+          $('#scrollup').hide();
+      else
+          $('#scrollup').show();
+  });
+});
 
