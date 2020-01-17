@@ -1,5 +1,5 @@
 // /****** NAV Scroll Menu *****/
-
+//Produits
 $('#navDrop').hover(function(){
   $('.subMenu1').removeClass('infoHidden');
   });
@@ -31,14 +31,26 @@ $('#navDrop').hover(function(){
   }); 
 
   $('.testContent').mouseleave(function(){
-    console.log('hello');
     $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
   })
   $('navlink2,.navlink3,.navlink3,.navlink4').hover(function(){
-    console.log('hello');
     $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
   })
 
+  //Artisans
+//Artisans
+$('#navDrop2').hover(function(){
+  $('.subMenu2e').removeClass('infoHidden');
+  $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
+});
+
+$('.subMenu2e').mouseleave(function(){
+  $('.subMenu2e').addClass('infoHidden');
+})
+  
+$('#navDrop,.navlink3,.navlink4').hover(function(){
+  $('.subMenu2e').addClass('infoHidden');
+})
 
 
 /**************************************** Effet scroll whole page (HOME) ********************/

@@ -142,6 +142,11 @@ color:rgba(88, 86, 86, 0.849) !important;
 
 }
 
+.subMenu2e li:hover{
+    background:rgba(221, 157, 37, 0.151);
+    border-radius: 10px 120px / 120px;
+}
+
 
 /**/
 .testContent{
@@ -172,6 +177,10 @@ color:rgba(88, 86, 86, 0.849) !important;
     padding-top:12.7vh !important;
 }
 
+.subMenu2e{
+    margin-left:29%;
+    bottom: 7vh !important;
+}
 
 
 /**Button scroll up**/
