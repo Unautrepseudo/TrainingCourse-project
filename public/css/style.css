@@ -17,7 +17,7 @@ body {
 
 .container-fluid {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .clear {
@@ -706,54 +706,20 @@ color:rgba(88, 86, 86, 0.849) !important;
 
 /***********************************LIVRAISON******************************************************/
 
-
-/**Made by Victor **/
-
-.ampoule
-/***********************************LIVRAISON**********************/
-
-.center {
-    text-align: center;
-}
-
-.flexflex {
-    display: flex;
-}
-
-.ampoule {
-    opacity: 0.6;
-}
-
-.livraison {
-    width: 100%;
-    text-align: center;
-    height: 40vh;
-    display: flex;
-}
-
-.livraison1 {
-    width: 33%;
-    height: 35vh;
-    display: flex;
-}
-
-.livraison2 {
-    width: 34%;
-    height: 35vh;
-}
-
-.livraison3 {
-    display: flex;
-    width: 33%;
-    height: 35vh;
-}
-
 .logoups {
-    width: 50%;
+    width: 30%;
     height: 75%;
-    align-self: flex-start;
-    margin-right: 10px;
 }
+
+.logoup2{
+    width: 30%;
+    height:80%
+}
+
+.logoup3{
+    width: 60%;
+}
+
 
 .paypal {
     width: 100%;
@@ -1751,4 +1717,22 @@ a:hover {
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
+}
+
+
+/**Made by Victor **/
+
+.ampoule
+
+
+.center {
+    text-align: center;
+}
+
+.flexflex {
+    display: flex;
+}
+
+.ampoule {
+    opacity: 0.3;
 }

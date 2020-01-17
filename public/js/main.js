@@ -337,7 +337,6 @@ $('.infoTeam2,.infoTeam3,.infoTeam4,.infoTeam1').addClass('infoHidden');
 /***scrollup button */
 $(document).ready( function () {
   // Add return on top button
-  $('body').append('<span id="scrollup" title="Retour en haut">&nbsp;</div>');
   
   
   $(window).scroll(function() {

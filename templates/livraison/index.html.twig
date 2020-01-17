@@ -7,20 +7,80 @@
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
-    <h1 class="center"> Modes de Livraison </h1>
+    <h1 class="center text-center"> Modes de Livraison </h1>
     <br>
-<div class="livraison">
+    
 
-    <div class="livraison1"> 
-    <img class='logoups'src="{{asset('img/ups.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"> UPS service de qualité antiprofessionelle depuis 2015, comme tous leurs concurents. garanti une livraison sans encombres qui s'adapte a vos besoin de part leur savoir faire, leurs qualité, et les qualifications de leurs livreurs.
-    </div>
 
-    <div class="livraison2"><img src="{{asset('img/livraison.jpg')}}" style=" box-shadow: 8px 8px 12px #aaa;">
-    </div>
+<div class="row justify-content-center">
+     
 
-    <div class="livraison3">
-        <img class='logoups'src="{{asset('img/laposte.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"> Laposte service de qualité professionelle depuis 1972, comme l'huile d'olive puget. garanti une livraison sans encombres qui s'adapte a vos besoin de part leur savoir faire, leurs qualité, et les qualifications de leurs livreurs.
+         <div class="col-5 d-flex">
+        <img class='logoup2 mr-4'src="{{asset('img/ups.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"><hr>
+                <p>
+                    Pour la France Métropolitaine, et la Corse : nouveau transporteur UPS. COMMANDEZ AVANT 13h, SOYEZ LIVRE DEMAIN.  Livraison du Lundi au Vendredi - jours ouvrables
+                    Livraison 2 à 3 jours ouvrés par transporteur pour les commandes supérieures à 90kg ou comportant des produits dont les dimensions ne permettent pas l'envoi par Chronopost.
+
+
+                    Pour l’Outre Mer : livraison 4 à 8 jours ouvrables par Coliposte.
+
+                    * hors produits signalés exclus de l'offre transport offert
+                </p>
+        </div>
+</div>  
+<div class="row justify-content-center">
+
+
+        <br><hr>
+
+           <div class="col-5 d-flex">
+            <p>
+                Livraison payante pour :  Colis livré le lendemain matin avant 13h à votre domicile. La veille de la livraison, vous êtes averti par e-mail et SMS. Par Chronopost.
+                Pour la France Métropolitaine, et la Corse : nouveau transporteur UPS. COMMANDEZ AVANT 13h, SOYEZ LIVRE DEMAIN.  Livraison du Lundi au Vendredi - jours ouvrables
+                Livraison 2 à 3 jours ouvrés par transporteur pour les commandes supérieures à 90kg ou comportant des produits dont les dimensions ne permettent pas l'envoi par Chronopost.
+
+
+                Pour l’Outre Mer : livraison 4 à 8 jours ouvrables par Coliposte.
+
+                * hors produits signalés exclus de l'offre transport offert
+            </p>
+            <img class='logoups mr-2'src="{{asset('img/laposte.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"> 
+        </div>
+        {# <div class="livraison1"> 
+        </div>
+
+        <div class="livraison2"><img src="{{asset('img/livraison.jpg')}}" style=" box-shadow: 8px 8px 12px #aaa;">
+        </div>
+
+        <div class="livraison3">
+        </div> #}
+ </div>   
+ <div class="row justify-content-center">
+    
+    <div class=" col-5 livraison">
+        <p> LE TRANSPORT EST OFFERT POUR TOUTES COMMANDES SUPERIEURES A 59€*
+            Les commandes sont expédiées dans un délai maximum de 5 jours ouvrés. Néanmoins aujourd'hui, 95% des commandes sont préparées dans les 24hr. Il est évident qu'en cas d'intempéries, neige et autres dégâts météorologiques, les marchandises peuvent avoir un peu de retard.
+            Nous vous rappelons que les délais d’expédition dépendent du type de paiement que vous avez retenu, la préparation de la commande n'intervenant qu'à réception et encaissement de ce dernier.
+
+            Transport offert :
+
+            dès 59€* pour les livraisons en France métropolitaine (et Luxembourg)
+            dès 89€* pour les livraisons en Corse (surplus non compressible de 19.60€ HT)
+            dès 89€* pour les livraisons en Belgique, Allemagne, et Pays Bas
+            dès 139€* pour les livraisons en Angleterre, Irlande, Espagne, Portugal, Italie, Portugal, Grèce, Danemark, Finlande et Suède
+            dès 199€* pour les livraisons en République Tchèque, Slovaquie, Slovénie, Pologne, Roumanie,Bulgarie, Hongrie, Estonie, Lettonie, Lituanie et Croatie
+            dès 249€* pour les livraisons en Suisse
+            * hors produits signalés exclus de l'offre transport offert<br>
+
+            
+        </p>
+        <img class='logoup3 mr-5 mb-2'src="{{asset('img/livraison.jpg')}}" style=" box-shadow: 8px 8px 12px #aaa;"> 
+        Livraison sûre et rapide <br>
+         en remise contre signature par un transporteur indépendant.Pour la France Métropolitaine, la Corse et Monaco : livraison 24hr par Chronopost pour les commandes dont le poids total est inférieur à 90kg.
+            Livré le lendemain matin avant 18h à votre domicile. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officiis quaerat velit corrupti. Unde ipsam esse error numquam atque cum!
+            
     </div>
-  
-</div>
+</div>   
+<div class="clear2"></div>
+
 {% endblock %}
