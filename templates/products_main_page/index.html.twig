@@ -7,20 +7,20 @@
 
 <div class='allproduct'>
 
-        <tbody >
         {% for product in products %}
             <div class="testproduit">
-                <div>{{ product.name }}</div>
+                  <div>{{ product.name }}</div>
                 <div>{{ product.reference }}</div>
                 <div>{{ product.price }} en €</div>
                 <div>{{ product.materials }}</div>
                 <div>{{ product.stock }}</div>
                 <div>{{ product.description }}</div>
                 <div><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></div>
+                <button class="butonbuton"><img src="{{asset('img/panier2.jpg')}}" class="img-responsiv panier2"> </button> 
             </div>
             {% if loop.index % 3 == 0 %} ma bite <br> <br><br><br> test  {% endif %}
      {% endfor %}
-        </tbody>
+      
         
 </div>
 
