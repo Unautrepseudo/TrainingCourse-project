@@ -1,24 +1,25 @@
-{% extends 'base.html.twig' %} {% block body %}
+{% extends 'base.html.twig' %}
 
-<header>
-    <hr class="lign">
-    <h1 class="titleartisan">Nos artisans</h1>
-    <hr class="lign">
-</header>
+{% block body %}
 
-<div class="row1">
+    <header>
+        <hr class="lign">
+        <h1 class="titleartisan">Nos artisans</h1>
+        <hr class="lign">
+    </header>
+            <div class="row1">
+                <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
+                    <div class="container-img">
+                        <img src="{{asset('img/Camille.jpg')}}" class="card-img-top img-pres" alt="...">
+                    </div>
 
-    <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
-        <div class="container-img">
-            <img src="{{asset('img/Camille.jpg')}}" class="card-img-top img-pres" alt="...">
-        </div>
+                    <div class="card-body spacecard">
+                        <h5 class="card-title namecrafts">Camille</h5>
+                        <hr class="betweenlign">
+                        <p class="card-text jobtown">Menusière - Toulouse</p>
+                    </div>
+                </a>
+            </div>    
 
-        <div class="card-body spacecard">
-            <h5 class="card-title namecrafts">Camille</h5>
-            <hr class="betweenlign">
-            <p class="card-text jobtown">Menusière - Toulouse</p>
-        </div>
-    </a>
-</div>
 
 {% endblock %}

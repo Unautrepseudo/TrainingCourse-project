@@ -18,7 +18,7 @@
                 <span><a href="https://www.facebook.com/Art-I-Made-110467733815269/?" target="_blank"><img id='face'src="{{asset('img/faceb.png')}}" alt=""></a></span>
                 <span><a href="https://www.instagram.com/artimade_78/?hl=fr" target="_blank"><img id='insta' src="{{asset('img/instab.png')}}" alt=""></a></span>
                 <span><a href="https://twitter.com/artisanatfr?lang=fr" target="_blank"><img id='twi' src="{{asset('img/twib.png')}}" alt=""></a></span>
-                <span><a href="https://youtu.be/dEBbQUkc9nE?t=55" target="_blank"><img id='you'src="{{asset('img/youb.png')}}" alt=""></a></span>
+                <span><a href="https://youtu.be/5dQPOteatic?t=142" target="_blank"><img id='you'src="{{asset('img/youb.png')}}" alt=""></a></span>
             </span>   
         </div>
 
@@ -38,3 +38,53 @@
     </div>
             
 </footer>
+
+{% block javascripts %}
+<script>
+
+/************************* social logos hover****************************/
+$(document).ready( function () {
+/*insta*/
+document.getElementById('insta').addEventListener("mouseover", (function(){
+  $('#insta').attr('src','img/instacol.png');
+}));
+
+document.getElementById('insta').addEventListener("mouseout", (function(){
+  
+      $('#insta').attr('src','img/instab.png');
+}));
+
+/*twitter*/
+document.getElementById('twi').addEventListener("mouseover", (function(){
+$('#twi').attr('src','img/twicol.png');
+}));
+
+document.getElementById('twi').addEventListener("mouseout", (function(){
+  
+      $('#twi').attr('src','img/twib.png');
+}));
+
+
+/*youtube*/
+document.getElementById('you').addEventListener("mouseover", (function(){
+$('#you').attr('src','img/youcol.png');
+}));
+
+document.getElementById('you').addEventListener("mouseout", (function(){
+  
+      $('#you').attr('src','img/youb.png');
+}));
+
+
+/*facebook*/
+document.getElementById('face').addEventListener("mouseover", (function(){
+$('#face').attr('src','img/facecol.png');
+}));
+
+document.getElementById('face').addEventListener("mouseout", (function(){
+  
+      $('#face').attr('src','img/faceb.png');
+}));
+});
+</script>
+{% endblock %}
