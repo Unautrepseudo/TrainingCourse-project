@@ -1622,8 +1622,6 @@ a:hover {
 }
 
 
-<<<<<<< HEAD
-
 
 /*****************************************************Cookie*****************************************/
 
@@ -1634,8 +1632,6 @@ a:hover {
     background-color:#ffff;
 }
 
-
-=======
 /************************************************Formulaire artisan et customer************************************/
 
 .formartisan,
@@ -1802,4 +1798,25 @@ a:hover {
     color: rgb(189, 122, 34);
     text-align: center;
 }
->>>>>>> 8276e56b7f2a808b7ae80b27f31c58ae3b69b2ba
+
+
+
+/**************************************** ProductMainPage *******************************************/
+
+.allproduct{
+    width: 150vh;
+    height: 150vh;
+    background: red;
+    margin: 0 auto;
+    display: flex;
+}
+
+.titreallproduct {
+    text-align: center;
+}
+
+.testproduit{
+    width: 40%;
+    height: auto;
+    background: yellow;
+}

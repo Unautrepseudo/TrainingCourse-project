@@ -1,20 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProductsMainPageController!{% endblock %}
+{% block title %}Product index{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <h1 class="titreallproduct">Tous nos Produits  </h1><hr>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class='allproduct'>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'G:/Coding/htdocs/TrainingCourse-project/src/Controller/ProductsMainPageController.php'|file_link(0) }}">src/Controller/ProductsMainPageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'G:/Coding/htdocs/TrainingCourse-project/templates/products_main_page/index.html.twig'|file_link(0) }}">templates/products_main_page/index.html.twig</a></code></li>
-    </ul>
+        <tbody >
+        {% for product in products %}
+            <div class="testproduit">
+                <div>{{ product.name }}</div>
+                <div>{{ product.reference }}</div>
+                <div>{{ product.price }} en €</div>
+                <div>{{ product.materials }}</div>
+                <div>{{ product.stock }}</div>
+                <div>{{ product.description }}</div>
+                <div><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></div>
+            </div>
+            {% if loop.index % 3 == 0 %} ma bite <br> <br><br><br> test  {% endif %}
+     {% endfor %}
+        </tbody>
+        
 </div>
+
 {% endblock %}
