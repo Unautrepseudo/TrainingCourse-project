@@ -17,3 +17,4 @@ class ArtisansController extends AbstractController
         ]);
     }
 }
+
