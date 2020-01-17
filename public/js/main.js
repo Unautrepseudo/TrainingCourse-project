@@ -1,111 +1,56 @@
 // /****** NAV Scroll Menu *****/
-// document.getElementsByClassName('products')[0].addEventListener("click", (() =>{
-//   $('.menuDashboard').removeClass('infoHidden');
-// }));
-
-// document.getElementsByClassName('leftsubmenu')[0].addEventListener("click", (() =>{
-//   $('.menuDashboard').addClass('infoHidden');
-// }));
-
-// /*meubles*/
-// document.getElementsByClassName('products')[1].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu').removeClass('infoHidden');
-// }));
-
-
-// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
-//   $('.rightsubmenu').addClass('infoHidden');
-// }));
-// document.getElementsByClassName('submenu')[1].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu').removeClass('infoHidden');
-// }));
-
-// /*décoration*/
-// document.getElementsByClassName('products')[2].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu2').removeClass('infoHidden');
-// }));
-
-// document.getElementsByClassName('products')[2].addEventListener("mouseout", (() =>{
-//   $('.rightsubmenu2').addClass('infoHidden');
-// }));
-// document.getElementsByClassName('rightsubmenu2')[0].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu').removeClass('infoHidden');
-// }));
-
-
-// /*Bijoux*/
-// document.getElementsByClassName('products')[3].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu3').removeClass('infoHidden');
-// }));
-
-// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
-//   $('.rightsubmenu3').addClass('infoHidden');
-// }));
-// document.getElementsByClassName('submenu3')[3].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu3').removeClass('infoHidden');
-// }));
-
-// /*Jouets*/
-// document.getElementsByClassName('products')[4].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu4').removeClass('infoHidden');
-// }));
-
-// document.getElementsByClassName('products')[1].addEventListener("mouseout", (() =>{
-//   $('.rightsubmenu4').addClass('infoHidden');
-// }));
-// document.getElementsByClassName('submenu4')[4].addEventListener("mouseover", (() =>{
-//   $('.rightsubmenu4').removeClass('infoHidden');
-// }));
+//Produits
+$('#navDrop').hover(function(){
+  $('.subMenu1').removeClass('infoHidden');
+  });
 
 
 
+  $('.subMenuA').hover(function(){
+    $('.subMenu2').removeClass('infoHidden');
+    $('.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
 
-/************************* social logos hover****************************/
+  }); 
 
-/*insta*/
-document.getElementById('insta').addEventListener("mouseover", (function(){
-  $('#insta').attr('src','img/instacol.png');
-}));
+  $('.subMenuB').hover(function(){
+    $('.subMenu2b').removeClass('infoHidden');
+    $('.subMenu2,.subMenu2c,.subMenu2d').addClass('infoHidden');
 
-document.getElementById('insta').addEventListener("mouseout", (function(){
+  }); 
+
+  $('.subMenuC').hover(function(){
+    $('.subMenu2c').removeClass('infoHidden');
+    $('.subMenu2b,.subMenu2,.subMenu2d').addClass('infoHidden');
+
+  });
+
+  $('.subMenuD').hover(function(){
+    $('.subMenu2d').removeClass('infoHidden');
+    $('.subMenu2b,.subMenu2c,.subMenu2').addClass('infoHidden');
+
+  }); 
+
+  $('.testContent').mouseleave(function(){
+    $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
+  })
+  $('navlink2,.navlink3,.navlink3,.navlink4').hover(function(){
+    $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
+  })
+
+  //Artisans
+//Artisans
+$('#navDrop2').hover(function(){
+  $('.subMenu2e').removeClass('infoHidden');
+  $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
+});
+
+$('.subMenu2e').mouseleave(function(){
+  $('.subMenu2e').addClass('infoHidden');
+})
   
-      $('#insta').attr('src','img/instab.png');
-}));
-
-/*twitter*/
-document.getElementById('twi').addEventListener("mouseover", (function(){
-$('#twi').attr('src','img/twicol.png');
-}));
-
-document.getElementById('twi').addEventListener("mouseout", (function(){
-  
-      $('#twi').attr('src','img/twib.png');
-}));
-
-
-/*youtube*/
-document.getElementById('you').addEventListener("mouseover", (function(){
-$('#you').attr('src','img/youcol.png');
-}));
-
-document.getElementById('you').addEventListener("mouseout", (function(){
-  
-      $('#you').attr('src','img/youb.png');
-}));
-
-
-/*facebook*/
-document.getElementById('face').addEventListener("mouseover", (function(){
-$('#face').attr('src','img/facecol.png');
-}));
-
-
-document.getElementById('face').addEventListener("mouseout", (function(){
-  
-      $('#face').attr('src','img/faceb.png');
-}));
-
-
+$('#navDrop,.navlink3,.navlink4').hover(function(){
+  $('.subMenu2e').addClass('infoHidden');
+})
 
 
 /**************************************** Effet scroll whole page (HOME) ********************/
@@ -364,7 +309,6 @@ if (This.createdSlides.length) {
 }
 
 
-
 /*************************** LA TEAM******************************************/
 /**Text show */
 $(document).ready(function(){
@@ -399,10 +343,20 @@ $('.infoTeam2,.infoTeam3,.infoTeam4,.infoTeam1').addClass('infoHidden');
 });
 
 
-
-
 });
 
 
-
+/***scrollup button */
+$(document).ready( function () {
+  // Add return on top button
+  
+  
+  $(window).scroll(function() {
+      // If on top fade the bouton out, else fade it in
+      if ( $(window).scrollTop() == 0 )
+          $('#scrollup').hide();
+      else
+          $('#scrollup').show();
+  });
+});
 
