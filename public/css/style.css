@@ -73,7 +73,7 @@ nav {
 /***nav bis*****/
 .nav2{
 justify-self: center;
-background:rgba(255, 252, 248, 0.747);
+background:rgba(255, 252, 248, 0.836);
 font-size:1.1vw;
 border-radius:8%;
 color:rgba(88, 86, 86, 0.849) !important;
@@ -87,12 +87,19 @@ color:rgba(88, 86, 86, 0.849) !important;
 
 .nav2 li a:hover{
     color:rgba(88, 86, 86, 0.979) !important;
+    opacity:1;
+}
+
+.nav2 li:hover{
+    background:rgba(8, 179, 150, 0.137);
 }
 
 
 .nav2 li{
     list-style:none;
     border-top:1px solid rgba(230, 227, 227, 0.253);
+    border-radius: 10px 120px / 120px;
+
 
 
 }
@@ -107,7 +114,7 @@ color:rgba(88, 86, 86, 0.849) !important;
 }
 
 .subMenu2{
-    margin-top:6vh !important;
+    margin-top:3vh !important;
  
 }
 

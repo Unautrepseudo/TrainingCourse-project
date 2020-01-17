@@ -11,20 +11,26 @@ $('.subMenu1').click(function(){
 
   $('.subMenuA').hover(function(){
     $('.subMenu2').removeClass('infoHidden');
-    $('.subMenu').addClass('infoHidden');
+    $('.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
 
   }); 
 
   $('.subMenuB').hover(function(){
     $('.subMenu2b').removeClass('infoHidden');
+    $('.subMenu2,.subMenu2c,.subMenu2d').addClass('infoHidden');
+
   }); 
 
   $('.subMenuC').hover(function(){
     $('.subMenu2c').removeClass('infoHidden');
+    $('.subMenu2b,.subMenu2,.subMenu2d').addClass('infoHidden');
+
   });
 
   $('.subMenuD').hover(function(){
     $('.subMenu2d').removeClass('infoHidden');
+    $('.subMenu2b,.subMenu2c,.subMenu2').addClass('infoHidden');
+
   }); 
 
 
