@@ -12,13 +12,9 @@
     <div class=" col-9 collapse navbar-collapse" id="navbarSupportedContent">
         <ul class=" navbar-nav mr-5">
             <li class="nav-item dropdown ">
-        <a class="nav-link products" href="#" id="navDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Produits
-        </a>
-        
-      </li>
+                <a class="nav-link products" href="{{path('products_main_page')}}" id="navDrop">Produits</a>
+            </li>
 
-        <div class="testyo"></div>
 
 
             <li class="nav-item">
@@ -50,35 +46,35 @@
 </nav>
 <div class="row pl-1 testContent reveal">
     <div class=" col-1 offset-3 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu1 infoHidden">
-       <li class="subMenuA"><a href="">Meubles</a></li>
-       <li  class="subMenuB"><a href="">Décoration</a>
-       <li  class="subMenuC"><a href="">Bijoux</a></li>
-       <li  class="subMenuD"><a href="">Jouets</a></li>
+       <li class="subMenuA"><a href="{{path('meubles')}}">Meubles</a></li>
+       <li  class="subMenuB"><a href="{{path('decoration')}}">Décoration</a>
+       <li  class="subMenuC"><a href="{{path('bijoux')}}">Bijoux</a></li>
+       <li  class="subMenuD"><a href="{{path('jouets')}}">Jouets</a></li>
     </div>
     <div class=" col-1 d-flex flex-column text-center pl-4 pt-4 text-white nav2 subMenu2 infoHidden">
-        <li><a href="">Tables</a></li>
-        <li><a href="">Chaises</a></li>
-        <li><a href="">Bureaux</a></li>
-        <li><a href="">Etagères</a></li>
-        <li><a href="">Armoires</a></li>
+        <li><a href="{{path('meubles')}}">Tables</a></li>
+        <li><a href="{{path('meubles')}}">Chaises</a></li>
+        <li><a href="{{path('meubles')}}">Bureaux</a></li>
+        <li><a href="{{path('meubles')}}">Etagères</a></li>
+        <li><a href="{{path('meubles')}}">Armoires</a></li>
      </div>
      <div class=" col-1 d-flex flex-column pl-4 text-center text-white nav2 subMenu2b infoHidden">
-        <li><a href="">Poteries</a></li>
-        <li><a href="">Luminaires</a></li>
-        <li><a href="">Décorations murales</a></li>
-        <li><a href="">Bougies</a></li>
+        <li><a href="{{path('decoration')}}">Poteries</a></li>
+        <li><a href="{{path('decoration')}}">Luminaires</a></li>
+        <li><a href="{{path('decoration')}}">Murales</a></li>
+        <li><a href="{{path('decoration')}}">Bougies</a></li>
      </div>
      <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2c infoHidden">
-        <li><a href="">Bagues</a></li>
-        <li><a href="">Bracelets</a></li>
-        <li><a href="">Colliers</a></li>
-        <li><a href="">Tête</a></li>
+        <li><a href="{{path('bijoux')}}">Bagues</a></li>
+        <li><a href="{{path('bijoux')}}">Bracelets</a></li>
+        <li><a href="{{path('bijoux')}}">Colliers</a></li>
+        <li><a href="{{path('bijoux')}}">Tête</a></li>
      </div>
      <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2d infoHidden">
-        <li><a href=""></a> Figurines</li>
-        <li><a href=""></a> Jeux</li>
-        <li><a href=""></a> Peluches</li>
-        <li><a href=""></a> Puzzle</li>
+        <li><a href="{{path('jouets')}}">Figurines</a></li>
+        <li><a href="{{path('jouets')}}">Jeux</a></li>
+        <li><a href="{{path('jouets')}}">Peluches</a></li>
+        <li><a href="{{path('jouets')}}">Puzzle</a></li>
      </div>
     
 

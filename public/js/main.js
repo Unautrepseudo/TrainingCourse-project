@@ -4,10 +4,7 @@ $('#navDrop').hover(function(){
   $('.subMenu1').removeClass('infoHidden');
   });
 
-$('.subMenu1').click(function(){
-  $('.subMenu1').addClass('infoHidden');
-  });
-  
+
 
   $('.subMenuA').hover(function(){
     $('.subMenu2').removeClass('infoHidden');
@@ -32,6 +29,11 @@ $('.subMenu1').click(function(){
     $('.subMenu2b,.subMenu2c,.subMenu2').addClass('infoHidden');
 
   }); 
+
+  $('.testContent').mouseleave(function(){
+    console.log('hello');
+    $('.subMenu1,.subMenu2,.subMenu2b,.subMenu2c,.subMenu2d').addClass('infoHidden');
+  })
 
 
 /**************************************** Effet scroll whole page (HOME) ********************/

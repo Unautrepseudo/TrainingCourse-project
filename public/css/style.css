@@ -73,7 +73,7 @@ nav {
 /***nav bis*****/
 .nav2{
 justify-self: center;
-background:rgba(255, 252, 248, 0.836);
+background:rgba(255, 252, 248, 0.959);
 font-size:1.1vw;
 border-radius:8%;
 color:rgba(88, 86, 86, 0.849) !important;
@@ -91,7 +91,6 @@ color:rgba(88, 86, 86, 0.849) !important;
 }
 
 .nav2 li:hover{
-    background:rgba(8, 179, 150, 0.137);
 }
 
 
@@ -99,14 +98,58 @@ color:rgba(88, 86, 86, 0.849) !important;
     list-style:none;
     border-top:1px solid rgba(230, 227, 227, 0.253);
     border-radius: 10px 120px / 120px;
+    transition:.2s;
+}
+/** color effect hover**/
+.subMenu2 li:hover{
+    background:rgba(79, 192, 226, 0.137);
+}
+.subMenuA:hover{
+    background:rgba(79, 192, 226, 0.137);
+}
 
 
+.subMenu2b li:hover{
+    background:rgba(241, 72, 42, 0.137);
 
 }
 
+.subMenuB:hover{
+    background:rgba(241, 72, 42, 0.137);
+
+}
+
+.subMenu2c li:hover{
+    background:rgba(241, 238, 42, 0.233);
+
+}
+
+.subMenuC:hover{
+    background:rgba(241, 238, 42, 0.219);
+
+}
+
+.subMenu2d li:hover{
+    background:rgba(52, 238, 28, 0.137);
+
+}
+
+.subMenuD:hover{
+    background:rgba(52, 238, 28, 0.137);
+
+}
+
+.nav-item:hover{
+    background:rgba(221, 157, 37, 0.151);
+    border-radius: 10px 120px / 120px;
+
+}
+
+
+/**/
 .testContent{
     position:absolute;
-    top:8vh;
+    top:9vh;
     width:102%;
     line-height:3vw;
     z-index:10000 !important;
