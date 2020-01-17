@@ -8,17 +8,17 @@
         <hr class="lign">
     </header>
 
-    <?php
+    {# <?php
         $bdd = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '', 
         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND =>'SET NAMES UTF8'));
 
         $artisans = $bdd->query('select * from artisan order by id asc');
         foreach ($artisans as $artisan): 
-    ?>        
+    ?>         #}
             <div class="row1">
-                <a id="crafts1" class="card craftsman" href="/artisansingle" style="width: 18rem;">
+                <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
                     <div class="container-img">
-                        <img src="img/Camille.jpg" class="card-img-top img-pres" alt="...">
+                        <img src="{{asset('img/Camille.jpg')}}" class="card-img-top img-pres" alt="...">
                     </div>
 
                     <div class="card-body spacecard">
@@ -28,6 +28,6 @@
                     </div>
                 </a>
             </div>    
-        <?php endforeach ?>
+        {# <?php endforeach ?> #}
 
 {% endblock %}

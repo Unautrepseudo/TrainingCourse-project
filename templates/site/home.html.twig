@@ -2,8 +2,7 @@
     
 {% block body %}
 
-    <span id ='scrollup' class='buttonNav text-center text-center'><a href="#topPage"><i class="fas fa-angle-double-up mb-4"></i>
-        </a> </span>
+    
 
     <section>
         <div class=" row menuDashboard reveal infoHidden ">
@@ -241,6 +240,28 @@
         </div>
     </div>
     </section>
+        <section>
+ <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">CE SITE INTERNET UTILISE DES COOKIES</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       En poursuivant votre navigation sur ce site, vous acceptez le dépôt de cookies et technologies similaires
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Non j'accepte pas</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Oui j'accepte</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    </section>
 
 <section>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -268,7 +289,6 @@
 </section>
 
     <div class="clear2"></div>
-  
 
 {% endblock %}
 {% block javascripts %}<script src="{{asset('js/main.js')}}"></script>
@@ -302,6 +322,7 @@ document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
 
 }));
 
+<<<<<<< HEAD
 //*************************** LE COOKIE******************************************/
  /*
     jQuery( window ).on( "load",function(){
@@ -328,3 +349,15 @@ $(document).ready(function(){
 
 
  
+=======
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    jQuery( window ).on( "load",function(){
+        $('#staticBackdrop').modal('show');
+    });
+   </script>
+
+ {% endblock %}
+>>>>>>> 8276e56b7f2a808b7ae80b27f31c58ae3b69b2ba

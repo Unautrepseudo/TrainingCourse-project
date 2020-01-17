@@ -17,7 +17,7 @@ body {
 
 .container-fluid {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .clear {
@@ -26,10 +26,8 @@ body {
 
 .clear2 {
     height: 10vh;
-    background:rgba(214, 212, 178, 0);
+    background: rgba(214, 212, 178, 0);
 }
-
-
 
 
 /***************************HOME*******************************/
@@ -72,106 +70,119 @@ nav {
     opacity: 1;
 }
 
-
-/****Menu Dropdown Effect******/
-
-.menuDashboard {
-    width: 49vh;
-    height: 30vh;
-    top: 8vw;
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-}
-
-.leftsubmenu li {
-    list-style: none;
-    color: rgba(0, 0, 0, 0.911);
-    font-size: 1.2vw;
-}
-
-.submenu a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.911);
-}
-
-.leftsubmenu {
-    padding-left: 6vh;
-    padding-top: 2vh;
-    background: rgba(255, 255, 255, 0.979);
-    border-radius: 0 10% 1% 0;
-}
-
-.rightsubmenu li,
-.rightsubmenu2 li,
-.rightsubmenu3 li,
-.rightsubmenu4 li {
-    list-style: none;
-    color: rgba(0, 0, 0, 0.829);
-    font-size: 1.1vw;
-    line-height: 5vh;
-}
-
-.rightsubmenu {
-    padding-top: 2vh;
-    background: rgba(255, 255, 255, 0.925);
-    border-radius: 0 10% 10% 10%;
-    padding-left: 2vh;
-    width: 18vh;
-    height: 30vh;
-    top: 10vw;
-    position: fixed;
-    z-index: 1000;
-    margin-left: 22.8vh;
-}
-
-.rightsubmenu2 {
-    padding-top: 2vh;
-    background: rgba(255, 255, 255, 0.925);
-    border-radius: 0 10% 10% 10%;
-    padding-left: 2vh;
-    width: 18vh;
-    height: 30vh;
-    top: 13vw;
-    position: fixed;
-    z-index: 1011;
-    margin-left: 22.8vh;
-}
-
-.rightsubmenu3 {
-    background: rgba(255, 255, 255, 0.925);
-    border-radius: 0 10% 10% 10%;
-    padding-left: 2vh;
-    width: 18vh;
-    height: 24vh;
-    top: 17vw;
-    position: fixed;
-    z-index: 1023;
-    margin-left: 22.8vh;
-}
-
-.rightsubmenu4 {
-    background: rgba(255, 255, 255, 0.925);
-    border-radius: 0 10% 10% 10%;
-    padding-left: 2vh;
-    width: 18vh;
-    height: 24vh;
-    top: 19vw;
-    position: fixed;
-    z-index: 1034;
-    margin-left: 22.8vh;
-}
-
-.test {
-    width: 29vh;
-    height: 5vh;
-}
-
-.menuDashboard li,
-.menuDashboard a {
-    border: 1px solid black;
-}
-
+/***nav bis*****/
+.nav2{
+    justify-self: center;
+    background:rgba(255, 252, 248, 0.959);
+    font-size:1.1vw;
+    border-radius:8%;
+    color:rgba(88, 86, 86, 0.849) !important;
+    
+    }
+    
+    .nav2 li a{
+        text-decoration: none;
+        color:rgba(88, 86, 86, 0.753) !important;
+    }
+    
+    .nav2 li a:hover{
+        color:rgba(88, 86, 86, 0.979) !important;
+        opacity:1;
+    }
+    
+    
+    .nav2 li{
+        list-style:none;
+        border-top:1px solid rgba(230, 227, 227, 0.253);
+        border-radius: 10px 120px / 120px;
+        transition:.2s;
+    }
+    /** color effect hover**/
+    .subMenu2 li:hover{
+        background:rgba(79, 192, 226, 0.137);
+    }
+    .subMenuA:hover{
+        background:rgba(79, 192, 226, 0.137);
+    }
+    
+    
+    .subMenu2b li:hover{
+        background:rgba(241, 72, 42, 0.137);
+    
+    }
+    
+    .subMenuB:hover{
+        background:rgba(241, 72, 42, 0.137);
+    
+    }
+    
+    .subMenu2c li:hover{
+        background:rgba(241, 238, 42, 0.233);
+    
+    }
+    
+    .subMenuC:hover{
+        background:rgba(241, 238, 42, 0.219);
+    
+    }
+    
+    .subMenu2d li:hover{
+        background:rgba(52, 238, 28, 0.137);
+    
+    }
+    
+    .subMenuD:hover{
+        background:rgba(52, 238, 28, 0.137);
+    
+    }
+    
+    .nav-item:hover{
+        background:rgba(221, 157, 37, 0.151);
+        border-radius: 10px 120px / 120px;
+    
+    }
+    
+    .subMenu2e li:hover{
+        background:rgba(221, 157, 37, 0.151);
+        border-radius: 10px 120px / 120px;
+    }
+    
+    
+    /**/
+    .testContent{
+        position:absolute;
+        top:9vh;
+        width:102%;
+        line-height:3vw;
+        z-index:10000 !important;
+        
+    }
+    
+    .subMenu2{
+        margin-top:3vh !important;
+     
+    }
+    
+    
+    .subMenu2b{
+        padding-top:6vh !important;
+    
+    }
+    
+    .subMenu2c{
+        padding-top:9.4vh !important;
+    }
+    
+    .subMenu2d{
+        padding-top:12.7vh !important;
+    }
+    
+    .subMenu2e{
+        margin-left:29%;
+        bottom: 7vh !important;
+    }
+    
+    
 
 /**Button scroll up**/
 
@@ -429,7 +440,7 @@ nav {
 /***fade effect**/
 
 .infoHidden {
-    display: none;
+    display: none !important;
 }
 
 .pi {
@@ -705,54 +716,21 @@ nav {
 
 /***********************************LIVRAISON******************************************************/
 
-
-/**Made by Victor **/
-
-.ampoule
-/***********************************LIVRAISON**********************/
-
-.center {
-    text-align: center;
-}
-
-.flexflex {
-    display: flex;
-}
-
-.ampoule {
-    opacity: 0.6;
-}
-
-.livraison {
-    width: 100%;
-    text-align: center;
-    height: 40vh;
-    display: flex;
-}
-
-.livraison1 {
-    width: 33%;
-    height: 35vh;
-    display: flex;
-}
-
-.livraison2 {
-    width: 34%;
-    height: 35vh;
-}
-
-.livraison3 {
-    display: flex;
-    width: 33%;
-    height: 35vh;
-}
-
 .logoups {
-    width: 50%;
+    width: 30%;
     height: 75%;
-    align-self: flex-start;
-    margin-right: 10px;
 }
+
+.logoup2{
+    width: 30%;
+    height:80%
+}
+
+.logoup3{
+    width: 60%;
+    margin-left:15%;
+}
+
 
 .paypal {
     width: 100%;
@@ -762,6 +740,17 @@ nav {
     font-weight: bold;
 }
 
+
+/***********************************LIVRAISON********************/
+
+.delivImg{
+width: 30%;
+height: 90%;
+}
+
+.delivImg2{
+    width: 30%;
+    }
 
 /************************************Product Single****************************************************************/
 
@@ -787,7 +776,6 @@ nav {
     height: AUTO;
 }
 
-
 .imgproduct {
     width: 50vh;
     height: 50vh;
@@ -796,10 +784,7 @@ nav {
     margin-right: 5vh;
 }
 
-
-.restproduct
-{
-
+.restproduct {
     width: 40%;
     height: AUTO;
 }
@@ -849,21 +834,17 @@ nav {
     background: burlywood;
 }
 
-
-.margintope{
-    margin-top:-10vh;
+.margintope {
+    margin-top: -10vh;
 }
 
-
-.descriptionartisan
-{
+.descriptionartisan {
     width: 100%;
     height: auto;
     padding: 5vh;
-    margin-top : 5vh;
-    border: 0.5px solid burlywood ;
+    margin-top: 5vh;
+    border: 0.5px solid burlywood;
     border-radius: 10vh;
-
 }
 
 .descriptionartisan:hover {
@@ -881,6 +862,7 @@ nav {
     overflow: hidden;
     border: solid black 1px;
 }
+
 .imgproduct {
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
@@ -888,22 +870,26 @@ nav {
     -o-transition: all .2s ease;
     transition: all .2s ease;
 }
+
 .imgproduct:hover {
-    transform:scale(1.5);
-    -ms-transform:scale(1.5); /* IE 9 */
-    -moz-transform:scale(1.5); /* Firefox */
-    -webkit-transform:scale(1.5); /* Safari and Chrome */
-    -o-transform:scale(1.5); /* Opera */
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -moz-transform: scale(1.5);
+    /* Firefox */
+    -webkit-transform: scale(1.5);
+    /* Safari and Chrome */
+    -o-transform: scale(1.5);
+    /* Opera */
 }
 
-.mainphoto{
+.mainphoto {
     width: 70vh;
     height: 70vh;
     border: 3px solid burlywood;
     text-align: center;
-    margin: 1vh 5vh ;
+    margin: 1vh 5vh;
     border-radius: 3.5vh;
-
 }
 
 .imgproduct {
@@ -914,90 +900,81 @@ nav {
 }
 
 .ajoutpanier {
-
-text-align: center;
-vertical-align: middle;
-margin-top: 5vh;
-margin-bottom: 5vh;
-
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .italic {
     font-style: italic;
 }
 
-
-.butonbuton{
+.butonbuton {
     border-radius: 10vh;
     overflow: hidden;
     transition: 0.5s;
 }
 
-.butonbuton:hover{
-    -webkit-box-shadow: 3px 4px 10px -1px rgba(56,224,56,1);
--moz-box-shadow: 3px 4px 10px -1px rgba(56,224,56,1);
-box-shadow: 3px 4px 10px -1px rgba(56,224,56,1);
+.butonbuton:hover {
+    -webkit-box-shadow: 3px 4px 10px -1px rgba(56, 224, 56, 1);
+    -moz-box-shadow: 3px 4px 10px -1px rgba(56, 224, 56, 1);
+    box-shadow: 3px 4px 10px -1px rgba(56, 224, 56, 1);
 }
 
-.avisclient{
+.avisclient {
     background: red;
     width: 100%;
     height: 30vh;
     text-align: center;
 }
+
+
 /************************************avis client****************************************************************/
 
-.currentavis{
+.currentavis {
     background: rgba(238, 135, 18, 0.055);
     border-radius: 10vh;
     text-align: justify;
-    margin-left : 5vh;
+    margin-left: 5vh;
     height: 45vh;
-    }
+}
 
-.bold
-{
+.bold {
     font-weight: bold;
 }
 
-.borderborder
-{
+.borderborder {
     border: 3px solid burlywood;
     margin-bottom: 4vh;
     border-radius: 5vh;
-
 }
-
 
 
 /************************************danslememegenre****************************************************************/
 
-.danslememegenre{
+.danslememegenre {
     height: auto;
     width: 100%;
     margin-top: 5vh
 }
 
-.inthesameway
-{
+.inthesameway {
     background: rgba(238, 135, 18, 0.055);
     border-radius: 10vh;
     text-align: justify;
-    margin-left : 5vh;
+    margin-left: 5vh;
     margin-bottom: 10vh;
     height: auto;
 }
 
-.othertitle
-{  
+.othertitle {
     font-weight: bold;
 }
 
-.othertitle:hover
-{  
+.othertitle:hover {
     text-decoration: underline;
 }
-
 
 
 /************************************CAROUSEL****************************************************************/
@@ -1645,6 +1622,7 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
 
 
 /*****************************************************Cookie*****************************************/
@@ -1657,3 +1635,171 @@ a:hover {
 }
 
 
+=======
+/************************************************Formulaire artisan et customer************************************/
+
+.formartisan,
+.backartisan,
+.backcustomer {
+    width: 50rem;
+    margin: 0 auto;
+    padding-left: 200px;
+}
+
+.titleartisan,
+.titlecustomer {
+    color: rgb(170, 113, 39);
+    text-align: center;
+}
+
+
+/* Fixez le bouton sur le côté gauche de la page the button on the left side of the page */
+
+.open-btn {
+    display: flex;
+    justify-content: left;
+}
+
+
+/* Stylez et fixez le bouton sur la page */
+
+.open-button {
+    background-color: #1c87c9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+}
+
+
+/* Positionnez la forme Popup */
+
+.login-popup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Masquez la forme Popup */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-45%, 5%);
+    border: 2px solid #666;
+    z-index: 9;
+}
+
+
+/* Styles pour le conteneur de la forme */
+
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+/* Largeur complète pour les champs de saisie */
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+}
+
+
+/* Quand les entrées sont concentrées, faites quelque chose */
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Stylez le bouton de connexion */
+
+.form-container .btn {
+    background-color: #8ebf42;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Stylez le bouton pour annuler */
+
+.form-container .cancel {
+    background-color: #cc0000;
+}
+
+
+/* Planez les effets pour les boutons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+
+/**Made by Victor **/
+
+.center {
+    text-align: center;
+}
+
+.flexflex {
+    display: flex;
+}
+
+.ampoule {
+    opacity: 0.1;
+  }
+  
+ 
+/*************************************loginpage********/
+
+.toregister {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.registerside {
+    color: rgb(184, 115, 24);
+}
+/**************************************** Partenaires*******************************************/
+.leslogos{
+    width: 200px;
+    height: 50px;
+    margin: 0 50px;
+}
+.lelogo{
+    width: 70px;
+    height: 50px;
+    margin: 0 10px;
+}
+.parterns{
+    width: 50rem;
+    margin: 0 auto;
+}
+.titleh2{
+    color: rgb(189, 122, 34);
+    text-align: center;
+}
+>>>>>>> 8276e56b7f2a808b7ae80b27f31c58ae3b69b2ba

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id= 'topPage' class=" row navbar navbar-expand-lg navbar-light d-flex justify-content-around">
+    
+        <div class="col-3">
+            <a class="" href="/"><img src="{{asset ('img/logo.png') }}" alt="Art'I'Made, vous avez la main" style="width:35%"></a>
+        </div>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class=" col-9 collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class=" navbar-nav mr-5">
+                <li class="nav-item dropdown ">
+            <a class="nav-link products" href="#" id=" navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Produits
+            </a>
+            
+          </li>
+    
+            <div class="testyo"></div>
+    
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="{{path('artisans')}}">Artisans</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="{{path('team')}}">L'équipe</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="{{path('contact')}}">Nous contacter</a>
+                </li>
+    
+            </ul>
+    
+            
+                <form class=" form-inline my-2 my-lg-0 mx-5">
+                    <input class="form-control mr-sm-2 searchInput icon" type="search" placeholder="Rechercher" aria-label="Search" name"searchBar">
+                    <button class="searchButton icon" type="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
+                </form>
+                <div class=" col-1 navcons">
+                    <span class="log icon"><a href="{{path('log')}}"><img src="{{asset('img/log.png')}}" width="40" alt=""></a></span>
+                    <span class="cart icon"><a href="{{path('cart')}}"><img src="{{asset('img/cart.png')}}" width="40" alt=""></a></span>
+                </div>
+            
+        </div>
+    
+    </nav>
+
+        <script>
+        /************************* social logos hover****************************/
+    
+        /*insta*/
+            document.getElementById('insta').addEventListener("mouseover", (function(){
+                $('#insta').attr('src','img/instacol.png');
+            }));
+            
+            document.getElementById('insta').addEventListener("mouseout", (function(){
+                
+                    $('#insta').attr('src','img/instab.png');
+            }));
+    
+        /*twitter*/
+            document.getElementById('twi').addEventListener("mouseover", (function(){
+            $('#twi').attr('src','img/twicol.png');
+            }));
+            
+            document.getElementById('twi').addEventListener("mouseout", (function(){
+                
+                    $('#twi').attr('src','img/twib.png');
+            }));
+    
+            
+        /*youtube*/
+            document.getElementById('you').addEventListener("mouseover", (function(){
+            $('#you').attr('src','img/youcol.png');
+            }));
+            
+            document.getElementById('you').addEventListener("mouseout", (function(){
+                
+                    $('#you').attr('src','img/youb.png');
+            }));
+            
+    
+        /*facebook*/
+            document.getElementById('face').addEventListener("mouseover", (function(){
+            $('#face').attr('src','img/facecol.png');
+            }));
+            
+            document.getElementById('face').addEventListener("mouseout", (function(){
+                
+                    $('#face').attr('src','img/faceb.png');
+            }));
+        </script>
+   
+</body>
+</html>
