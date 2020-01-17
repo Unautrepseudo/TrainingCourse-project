@@ -263,6 +263,31 @@
     
     </section>
 
+<section>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>    
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
     <div class="clear2"></div>
 
 {% endblock %}
@@ -297,6 +322,34 @@ document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
 
 }));
 
+<<<<<<< HEAD
+//*************************** LE COOKIE******************************************/
+ /*
+    jQuery( window ).on( "load",function(){
+        $('#staticBackdrop').modal('show');
+  });
+   */
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("##staticBackdrop").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+      if(statusTxt == "success")
+        alert("External content loaded successfully!");
+      if(statusTxt == "error")
+        alert("Error: " + xhr.status + ": " + xhr.statusText);
+    });
+  });
+});
+
+</script>
+ {% endblock %}
+
+
+
+ 
+=======
 
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -307,3 +360,4 @@ document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
    </script>
 
  {% endblock %}
+>>>>>>> 8276e56b7f2a808b7ae80b27f31c58ae3b69b2ba
