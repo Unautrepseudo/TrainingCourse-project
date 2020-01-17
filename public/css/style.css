@@ -1788,3 +1788,24 @@ a:hover {
     color: rgb(189, 122, 34);
     text-align: center;
 }
+
+
+/**************************************** ProductMainPage *******************************************/
+
+.allproduct{
+    width: 150vh;
+    height: 150vh;
+    background: red;
+    margin: 0 auto;
+    display: flex;
+}
+
+.titreallproduct {
+    text-align: center;
+}
+
+.testproduit{
+    width: 40%;
+    height: auto;
+    background: yellow;
+}
