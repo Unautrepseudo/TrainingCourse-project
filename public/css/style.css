@@ -1643,3 +1643,17 @@ a:hover {
     color: rgb(173, 113, 33);
     text-align: center;
 }
+
+
+
+
+/*****************************************************Cookie*****************************************/
+
+
+.cookie{
+    width: 100%;
+    height: 15vh;
+    background-color:#ffff;
+}
+
+
