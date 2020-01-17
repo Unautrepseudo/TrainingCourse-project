@@ -17,6 +17,7 @@
                 <div>{{ product.stock }}</div>
                 <div>{{ product.description }}</div>
                 <div><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></div>
+                <button class="butonbuton"><img src="{{asset('img/panier2.jpg')}}" class="img-responsiv panier2"> </button> 
             </div>
             {% if loop.index % 3 == 0 %} ma bite <br> <br><br><br> test  {% endif %}
      {% endfor %}
