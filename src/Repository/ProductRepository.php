@@ -47,4 +47,42 @@ class ProductRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    // public function getLastInserted($entity, $amount)
+    // {
+    //     return $this->getEntityManager()
+    //                 ->createQuery(
+    //                     "SELECT e FROM $entity e ORDER BY e.id DESC"
+    //                 )
+    //                 ->setMaxResults($amount)
+    //                 ->getResult();
+    // }
+
+    // public function getLastInsertedAjax($entity, $amount)
+    // {
+    //     return $this->getEntityManager()
+    //                 ->createQuery(
+    //                     "SELECT e.id, e.name, e.reference,e.price,e.materials, u.id, u.username FROM $entity e JOIN e.user u ORDER BY e.id DESC"
+
+    //                 )
+    //                 ->setMaxResults($amount)
+    //                 ->getResult();;
+    // }
+
+
+    /**
+     * @param $user_id
+     * @return mixed
+     */
+    public function findByNumUser($user_id)
+    {
+        return $this->createQueryBuilder('p')
+            ->andWhere('p.user_id = :val')
+            ->setParameter('val', $user_id)
+            ->orderBy('p.id', 'ASC')
+            ->getQuery()
+            ->getResult()
+            ;
+        }
+    
 }
