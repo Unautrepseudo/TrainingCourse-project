@@ -3,47 +3,25 @@
 {% block title %}Product index{% endblock %}
 
 {% block body %}
-    <h1>Product index</h1>
+    <h1 class="titreallproduct">Tous nos Produits  </h1><hr>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Reference</th>
-                <th>Price</th>
-                <th>Materials</th>
-                <th>Stock</th>
-                <th>Description</th>
-                <th>Artisan_name</th>
-                <th>Image</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
+<div class='allproduct'>
+
+        <tbody >
         {% for product in products %}
-            <tr>
-                <td>{{ product.id }}</td>
-                <td>{{ product.name }}</td>
-                <td>{{ product.reference }}</td>
-                <td>{{ product.price }}</td>
-                <td>{{ product.materials }}</td>
-                <td>{{ product.stock }}</td>
-                <td>{{ product.description }}</td>
-                <td>{{ product.user }}</td>
-                <td><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
-                <td>
-                    <a href="{{ path('product_show', {'id': product.id}) }}">show</a>
-                    <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="14">no records found</td>
-            </tr>
-        {% endfor %}
+            <div class="testproduit">
+                <div>{{ product.name }}</div>
+                <div>{{ product.reference }}</div>
+                <div>{{ product.price }} en €</div>
+                <div>{{ product.materials }}</div>
+                <div>{{ product.stock }}</div>
+                <div>{{ product.description }}</div>
+                <div><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></div>
+            </div>
+            {% if loop.index % 3 == 0 %} ma bite <br> <br><br><br> test  {% endif %}
+     {% endfor %}
         </tbody>
-    </table>
+        
+</div>
 
-    <a href="{{ path('product_new') }}">Create new</a>
 {% endblock %}
