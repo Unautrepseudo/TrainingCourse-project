@@ -5,23 +5,28 @@
 {% block body %}
     <h1 class="titreallproduct">Tous nos Produits  </h1><hr>
 
-<div class='allproduct'>
-
+<div class="testflex">
         {% for product in products %}
-            <div class="testproduit">
-                  <div>{{ product.name }}</div>
-                <div>{{ product.reference }}</div>
-                <div>{{ product.price }} en €</div>
-                <div>{{ product.materials }}</div>
-                <div>{{ product.stock }}</div>
-                <div>{{ product.description }}</div>
-                <div><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></div>
-                <button class="butonbuton"><img src="{{asset('img/panier2.jpg')}}" class="img-responsiv panier2"> </button> 
-            </div>
-            {% if loop.index % 3 == 0 %} ma bite <br> <br><br><br> test  {% endif %}
+        
+            <div class="salutccoll">
+                <div class="card cardproduct" style="width: 18rem;">
+                    <img src="{{asset('images/')}}{{ product.image }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.price }}€</p>
+                        <p class="card-text">{{ product.stock }}</p>
+                        <p class="card-text">{{ product.reference }}</p>
+                        <p class="card-text">{{ product.description }}</p>
+                        <p class="card-text">{{ product.materials }}</p>
+                        <a href="#" class="btn btn-primary">Ajouter au Panier</a>
+                     </div>
+                </div>
+             </div>
+            {% if loop.index % 3 == 0 %} 
+        </div>  <hr>   <div class="testflex">  {% endif %}
+      
      {% endfor %}
       
-        
-</div>
+
 
 {% endblock %}

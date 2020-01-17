@@ -1803,20 +1803,31 @@ a:hover {
 
 /**************************************** ProductMainPage *******************************************/
 
-.allproduct{
-    width: 150vh;
-    height: 150vh;
-    background: red;
-    margin: 0 auto;
+.testproduit{
+    height: 305vh;
+    background: rgb(30, 172, 96);
     display: flex;
 }
 
-.titreallproduct {
-    text-align: center;
+.tierdemap {
+
+background: deepskyblue;
+width: 50vh;
+height: 50vh;
 }
 
-.testproduit{
-    height: auto;
-    background: yellow;
+
+.testflex
+{
+     background : cyan;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.salutccoll
+{
+    background: red;
+    width: 30%;
 }
 
