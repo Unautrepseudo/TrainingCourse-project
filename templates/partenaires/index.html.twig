@@ -1,7 +1,11 @@
-{% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %} {% block title %}Nos partenaires{% endblock %} {% block body %}
+<div class="parterns">
+    <hr class="row1">
+    <h1 class="title2">Nos partenaires</h1>
+    <hr class="row1">
 
+    <a href="https://www.lemonde.fr/" target="_blank" rel="noopener noreferrer"><img src="{{asset('img/lemondelogo.png')}}" class="leslogos" alt="" srcset=""></a>
+    <a href="https://www.artisanat.fr/lartisanat/un-secteur-cle-de-leconomie/lartisanat-premiere-entreprise-de-france" target="_blank" rel="noopener noreferrer"><img src="{{asset('img/logoartisanatfrance.png')}}" class="lelogo" alt="" srcset=""></a>
+    <a href="https://www.notre-planete.info/" target="_blank" rel="noopener noreferrer"><img src="{{asset('img/logoplaneteinfo.jpg')}}" class="leslogos" alt="" srcset=""></a>
 
-
-{% block body %}
-<h1>Partenaires</h1>
-{% endblock %}
+</div><br> {% endblock %}
