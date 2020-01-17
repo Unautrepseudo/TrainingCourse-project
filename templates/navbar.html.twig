@@ -39,8 +39,16 @@
                 <button class="searchButton icon" type="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
             </form>
             <div class=" col-1 navcons">
-                <span class="log icon"><a href="{{path('log')}}"><img src="{{asset('img/log.png')}}" width="40" alt=""></a></span>
+                <span class="log icon" id="loggin"><a href="{{path('fos_user_security_login')}}"><img src="{{asset('img/log.png')}}" width="40" alt=""></a></span>
                 <span class="cart icon"><a href="{{path('cart')}}"><img src="{{asset('img/cart.png')}}" width="40" alt=""></a></span>
+
+                {% if is_granted('ROLE_ARTISAN') %}
+
+                    <span class="store icon"><a href="{{path('product_index')}}"><img src="{{asset('img/store.png')}}" width="40" alt=""></a></span> 
+
+                {% else %}
+                {% endif %}
+                
             </div>
     </div>
 
@@ -83,4 +91,3 @@
         
     
 </div>
-

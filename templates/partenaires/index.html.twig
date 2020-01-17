@@ -1,20 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PartenairesController!{% endblock %}
+{% block title %}Nos partenaires{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/src/Controller/PartenairesController.php'|file_link(0) }}">src/Controller/PartenairesController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/templates/partenaires/index.html.twig'|file_link(0) }}">templates/partenaires/index.html.twig</a></code></li>
-    </ul>
-</div>
+<div class="parterns">
+    <hr class="row1">
+    <h1 class="titleh2">Nos partenaires</h1>
+    <hr class="row1"><br>
+<a href="https://www.lemonde.fr/" target="_blank" rel="noopener noreferrer"><img src="{{asset('img/lemondelogo.png')}}" class="leslogos" alt="" srcset=""></a>
+<a href="https://www.artisanat.fr/lartisanat/un-secteur-cle-de-leconomie/lartisanat-premiere-entreprise-de-france" target="_blank" rel="noopener noreferrer"><img src="{{asset('img/logoartisanatfrance.png')}}" class="lelogo" alt="" srcset=""></a>
+<a href="https://www.notre-planete.info/" target="_blank" rel="noopener noreferrer"><img src="{{asset('img/logoplaneteinfo.jpg')}}" class="leslogos" alt="" srcset=""></a>
+
+</div><br>
 {% endblock %}

@@ -12,15 +12,10 @@
                 <th>Name</th>
                 <th>Reference</th>
                 <th>Price</th>
-                <th>Picture_one</th>
-                <th>Picture_two</th>
-                <th>Picture_three</th>
                 <th>Materials</th>
                 <th>Stock</th>
                 <th>Description</th>
-                <th>Artisan_company</th>
                 <th>Artisan_name</th>
-                <th>Artisan_picture</th>
                 <th>Image</th>
                 <th>actions</th>
             </tr>
@@ -32,16 +27,11 @@
                 <td>{{ product.name }}</td>
                 <td>{{ product.reference }}</td>
                 <td>{{ product.price }}</td>
-                <td>{{ product.pictureOne }}</td>
-                <td>{{ product.pictureTwo }}</td>
-                <td>{{ product.pictureThree }}</td>
                 <td>{{ product.materials }}</td>
                 <td>{{ product.stock }}</td>
                 <td>{{ product.description }}</td>
-                <td>{{ product.artisanCompany }}</td>
-                <td>{{ product.artisanName }}</td>
-                <td>{{ product.artisanPicture }}</td>
-                <td><img src="{{asset('images/product/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
+                <td>{{ product.user }}</td>
+                <td><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
                 <td>
                     <a href="{{ path('product_show', {'id': product.id}) }}">show</a>
                     <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>

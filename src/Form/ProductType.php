@@ -2,11 +2,15 @@
 
 namespace App\Form;
 
+use App\Entity\Artisan;
+use App\Entity\Customer;
 use App\Entity\Product;
+use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichImageType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
 class ProductType extends AbstractType
 {
@@ -16,17 +20,13 @@ class ProductType extends AbstractType
             ->add('name')
             ->add('reference')
             ->add('price')
-            ->add('picture_one')
-            ->add('picture_two')
-            ->add('picture_three')
             ->add('materials')
             ->add('stock')
             ->add('description')
-            ->add('artisan_company')
-            ->add('artisan_name')
-            ->add('artisan_picture')
-            ->add('artisan')
-            ->add('customer')
+            ->add('user', EntityType::class, [
+                'class' => User::class,
+                'choice_label' => 'username',
+            ])
             ->add('imageFile', VichImageType::class, array(
                 'required' => true,
                 'allow_delete' => true,
