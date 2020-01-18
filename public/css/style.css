@@ -776,13 +776,13 @@ height: 90%;
     height: AUTO;
 }
 
-.imgproduct {
+/* .imgproduct {
     width: 50vh;
     height: 50vh;
     margin-bottom: 10vh;
     margin-top: 5vh;
     margin-right: 5vh;
-}
+} */
 
 .restproduct {
     width: 40%;
@@ -914,6 +914,7 @@ height: 90%;
     border-radius: 10vh;
     overflow: hidden;
     transition: 0.5s;
+    height: 4vh;
 }
 
 .butonbuton:hover {
@@ -1792,29 +1793,44 @@ a:hover {
 
 /**************************************** ProductMainPage *******************************************/
 
-.testproduit{
-    height: 305vh;
-    background: rgb(30, 172, 96);
-    display: flex;
-}
-
-.tierdemap {
-
-background: deepskyblue;
-width: 50vh;
-height: 50vh;
-}
-
-.testflex
+.titreallproduct
 {
-     background : cyan;
+    text-align: center;
+    font-style: italic;
+}
+
+.MainLigneTrois
+{
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: center;
+    margin: 0 auto;
 }
 
-.salutccoll
+.widthcard
 {
-    background: red;
     width: 30%;
+    margin : 2vh 5vh;
+    text-align: center;
+    border: 3px solid burlywood;
+    border-radius: 3.5vh;
+}
+
+.imagemainproduct {
+    width: 50%;
+    height: 50%;
+    margin: 1vh 0;
+}
+
+
+
+.priceproduct
+{
+    font-weight: bold;
+    box-shadow: 2px 2px 5px 1px burlywood;
+
+}
+.centerbodododo {
+    text-align: center;
+    justify-content: center;
 }
