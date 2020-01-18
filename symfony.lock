@@ -124,7 +124,7 @@
         "version": "2.1.1"
     },
     "php": {
-        "version": "7.1"
+        "version": "7.2"
     },
     "php-http/guzzle6-adapter": {
         "version": "v2.0.1"
