@@ -20,7 +20,7 @@ $query = $_POST['query'];
          
          
         $raw_results = mysql_query("SELECT * FROM fos_user
-            WHERE (`username` LIKE '%".$query."%') OR (`text` LIKE '%".$query."%')") or die(mysql_error());
+            WHERE (`username` LIKE '%".$query."%')") or die(mysql_error());
          
     
 
