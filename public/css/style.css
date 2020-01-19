@@ -527,7 +527,43 @@ nav {
     opacity:1;
 }
 
+.arrowOp{
+    font-size:1vw;
+    opacity:0.3;
+}
 
+.rt{
+    margin-left:12%!important;
+    justify-content: space-evenly!important;
+
+}
+
+.lineCatBij{
+    border-top:1px solid rgba(128, 128, 128, 0.192);
+    width:40%;
+}
+
+
+.scrollOp2{
+    border-radius: 50%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.103);
+    border-top: 1px solid rgba(128, 128, 128, 0.171);
+    opacity:0;
+
+}
+.scrollOp2:hover{
+    background:rgba(235, 178, 104, 0.432);
+
+}
+
+.scrollOp{
+    border-left:1px solid rgba(128, 128, 128, 0.185);
+    margin-left: 3vh;
+}
+
+.scrollOp:hover{
+    background:rgba(240, 185, 123, 0.568);
+}
 
 .currentPrice {
     font-size: 1vw;
