@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProductSingleController!{% endblock %}
+{% block title %}Product{% endblock %}
 
 {% block body %}
+
 <style>
     .example-wrapper {width: 80%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5}
@@ -14,28 +15,31 @@
         <div class="dixpourcent"></div>
 
         <div class="mainphoto img-wrapper"> 
-           <img class='imgproduct' src="{{asset('img/jouet.jpg')}}" >
+           <img class='imgproduct'  alt="Responsive image" src="{{asset('images/')}}{{ product.image }}" >
         </div>
+
 
         <div class="restproduct">
 
             <h2 class="producttitle">
-                Charmante petite maison en bois de castor, pour tous les âges ! 
+                {{ product.name }}           
             </h2>
 
             <div class="splitintwo flexflex">
                 <div class="nameartisan">
-                    Objet créé par : Edouardo
+                    Objet créé par : {{ product.user }}
                 </div>
                 <div class="starsartisanphoto">
-                   <img class='imgproductartisan' src="{{asset('img/camille.jpg')}}" >
+                   <img class='imgproductartisan' src="{{asset('images/')}}{{ product.user.image }}" >
                 </div>
             </div> <!-- fin splitintwo -->
 
             <div class="splitintwo flexflex center">
-                <div class="productprice ">
-                 <hr>   Prix : 252 € <hr>
-                   <span class="italic"> Ref : 756 751 </span>
+                <div class="productprice">
+                 <hr>   Prix : {{product.price}} € <hr>
+                   <span class="italic"> Ref : {{product.reference}} </span><hr>
+                   <span class="italic">Stock : {{ product.stock }}</span>
+
                 </div>
                 <div class="starsartisan">
                     <li class="list-group-item describe starproduct">
@@ -49,7 +53,7 @@
             </div> <!-- fin splitintwo -->
 
             <div class="descriptionartisan">  
-                    Petite maison pas dans la prairie créé par des castors qui ont été bien traité, c'est un produit qui convient aux végan, aux personnes souhaitant faire du télétravail, mais aussi aux enfants, qui de base étaient al cible principal mais on s'ets laissé distraire et le public n'a pas été celui visé, mais bien celui de grand adultes désirant jouer entre eux, et en même temps faire prolifére rles castors qui domineront un jour le monde ! ah... nan c'est les chats je confond ! 
+                {{ product.description }}         
             </div> <!-- fin description artisan -->
             <div class="ajoutpanier">
                 <button class="butonbuton"><img src="{{asset('img/panier2.jpg')}}" class="img-responsiv panier2"> </button> 
@@ -109,6 +113,8 @@
     </section>
 
     <div class="danslememegenre">
+
+
 
     <section class='inthesameway'>
         <div class='text-center mb-5 mx-auto titleCurrent'>
@@ -188,12 +194,7 @@
             </div>
         </div>
     </section>
-
     </div>
 
-
 </div>
-
-
-
 {% endblock %}
