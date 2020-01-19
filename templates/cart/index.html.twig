@@ -11,7 +11,7 @@
          <table class="table">
             <thead>
                <tr>
-                  <th>Produit</th>
+                  <th>Produits</th>
                   <th>reference</th>
                   <th>Prix</th>
                   <th>materials</th>
@@ -39,14 +39,18 @@
                    </tr>
                 {% endfor %}
             </tbody>
+            <tfoot>
+               <tr>
+                 <tr colspan="5" class="text-right">Total :</tr>
+                 <tr>{{ total}}</tr>
+                 <tr></tr>
+                 <tr></tr>
+                 <tr></tr>
+                 <tr></tr>
+               </tr>
+            </tfoot>
          </table>
         {% else %}
             <p>Mon panier est vide</p>
        {% endif %}
-       
-     
-     
-      
-      
-
 {% endblock %}

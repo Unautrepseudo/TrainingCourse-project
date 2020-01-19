@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CartController extends AbstractController
 {
     /**
-     * @Route("/cart", name="cart")
+     * @Route("/panier", name="cart")
      */
     public function index(Session $session,ProductRepository $ProductRepository )
     {
@@ -25,8 +25,18 @@ class CartController extends AbstractController
             ];
         }
 
+       $total = 0;
+
+       foreach($panierData as $item )
+       {
+           $totalitem = $item['product']->getPrice() * $item['quantity'];
+           $total += $totalitem;
+
+       }
+
         return $this->render('cart/index.html.twig', [
-            'items'=>$panierData
+            'items'=>$panierData,
+            'total'=>$total
         ]);
     }
 
@@ -35,8 +45,7 @@ class CartController extends AbstractController
      */
 
     public function add($id, Session $session){
-            //$session = $session->getSession();
-
+        
             $panier = $session->get('panier',[]);
             if(!empty($panier[$id])){
                 $panier[$id]++;
