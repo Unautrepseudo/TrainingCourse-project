@@ -21,11 +21,11 @@ body {
 }
 
 .clear {
-    height: 16vh;
+    height: 13vh;
 }
 
 .clear2 {
-    height: 10vh;
+    height: 5vh;
     background: rgba(214, 212, 178, 0);
 }
 
@@ -455,7 +455,7 @@ nav {
 .foot {
     background: rgba(248, 166, 14, 0.13);
     clip-path: polygon(36% 100%, 69% 0, 100% 0, 100% 100%, 0 100%, 0 0, 17% 0, 69% 0, 62% 17%);
-    height: 20vh;
+    height: 18vh;
 }
 
 .foot a,
@@ -497,9 +497,7 @@ nav {
 /*******************************************PAGES by CATEGORIES********************/
 /*Bijoux*/
 
-.clear2{
-    height:0vh;
-}
+
 .clear3{
     height:10vh;
     width:100%
@@ -515,7 +513,7 @@ nav {
 
 
 .pathRef a, .pathRef li{
-    color:black;
+    color:rgb(57, 101, 160);
     text-decoration:none;
     opacity:0.8;
     font-size: 0.9vw;
