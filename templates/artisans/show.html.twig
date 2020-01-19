@@ -1,18 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Product{% endblock %}
+
 {% block body %}
 
 
-    <header>
-        <hr class="lign">
-        <h1 class="titleartisan">Nos artisans</h1>
-        <hr class="lign">
-    </header>
 
-   {% for artisan in artisans %} #}
-
-        {% if artisans.id == app.user.id %}
-                <div class="row1">
+            <div class="row1">
                 <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
                     <div class="container-img">
                         <img src="{{asset('img/')}}" class="card-img-top img-pres" alt="...">
@@ -21,12 +15,8 @@
                     <div class="card-body spacecard">
                         <h5 class="card-title namecrafts">{{artisans.username}}</h5>
                         <hr class="betweenlign">
-                        <p class="card-text jobtown">{{artisans.speciality}} - {{artisans.city}}</p>
+                        <p class="card-text jobtown">{{artisans.speciality}} - {{artisans.company}}</p>
                     </div>
                 </a>
             </div>  
-
-        {% endif %} 
-        {% endfor %} 
-
-    {% endblock %}
+{% endblock %}
