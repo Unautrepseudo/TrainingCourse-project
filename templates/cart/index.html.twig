@@ -5,6 +5,17 @@
 {% block body %}
      <div class="bg-light p-3">
        <h1>Votre panier</h1>
+   <ul class="nav ">
+         <li class="nav-item">
+            <a class="nav-link active text-dark" href="#">Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="{{path('products_main_page')}}">Product</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Artisan</a>
+         </li>
+   </ul>
      <div>
       
        {% if items | length > 0 %}
@@ -18,7 +29,8 @@
                   <th>stock</th>
                   <th>description</th>
                   <th>Total</th>
-                  <th></th>
+                  <th>
+                  </th>
                </tr>
             </thead>
             <tbody>
@@ -32,8 +44,8 @@
                      <td>{{item.product.description}}</td>
                      <td>{{item.product.price * item.product.stock }}</td>
                      <td>
-                        <a href="#" class="btn btn-danger.btn-sm">
-                        <i class="fas.fa-trash"></i>
+                        <a href="{{path('cart_remove',{'id':item.product.id })}}" class="btn btn-danger.btn-sm">
+                            <i class="fas.fa-trash"></i>
                       </a>
                      </td>
                    </tr>
@@ -41,12 +53,10 @@
             </tbody>
             <tfoot>
                <tr>
-                 <tr colspan="5" class="text-right">Total :</tr>
-                 <tr>{{ total}}</tr>
-                 <tr></tr>
-                 <tr></tr>
-                 <tr></tr>
-                 <tr></tr>
+                 <td colspan="6" class="text-right">Total :</td>
+                 <td>{{ total}}</td>
+                 <td></td>
+                 <td></td>
                </tr>
             </tfoot>
          </table>

@@ -15,9 +15,11 @@
                 <div>{{ product.stock }}</div>
                 <div>{{ product.description }}</div>
                 <div><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></div>
-               <button><a type="submit" class="butonbuton" href="{{ path('cart_add', {'id': product.id}) }}" >Ajouter au panier</a></button> 
+               <a href="{{ path('cart_add', {'id': product.id}) }} " class="btn btn-info" >Ajouter au panier
+                   <i class="fas fa-shopping-cart mr-1"></i>
+               </a>
             </div>
-            {% if loop.index % 3 == 0 %} ma bite <br> <br><br><br> test  {% endif %}
+            {% if loop.index % 3 == 0 %} <br> <br><br><br> test  {% endif %}
      {% endfor %}
       
         
