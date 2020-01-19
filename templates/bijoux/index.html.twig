@@ -22,10 +22,25 @@
         <hr class="lign">
     </header>
 
-    <div class=" row trierbij mt-4">
-            <p class="text-center trierTitle">Trier par</p>
-            <div>Prix</div>
-    </div>
+    <div class=" row trierbij mx-auto mt-4 justify-content-center">
+ 
+            <p class="  text-center trierTitle">Trier par</p>
+            <div class=" ">Ordre alphabetique</div>
+            <div class=" ">Prix</div>
+            <div class="btn-group dropright">
+  <button type="button" class="btn">
+    Ordre alphabétique
+  </button>
+  <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Ordre Alphabétique</span>
+  </button>
+  <div class="dropdown-menu">
+    <div class=" ">A-Z</div>
+    <div class=" ">Z-A</div>
+  </div>
+</div>
+        </div>       
+    
     <div class="row d-flex justify-content-around mx-auto mt-5 currentCards">
        
         {% for product in products %}

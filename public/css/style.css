@@ -539,7 +539,7 @@ nav {
 
 .trierbij{
     background:rgba(238, 161, 73, 0.116);
-    width:100%
+    font-size: 1vw;
 }
 
 .trierTitle{
@@ -548,8 +548,15 @@ nav {
 
 .trierbij div, .trierbij p{
     border: 1px solid black;
-    
+
 }
+
+.trierbijRight{
+    background:rgba(238, 161, 73, 0.26);
+    width:10%;
+    transition:3s ease-in-out;
+}
+
 
 /*********************************************CONFIDENTIALITÉ****************************/
 
