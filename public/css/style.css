@@ -517,7 +517,16 @@ nav {
 .pathRef a, .pathRef li{
     color:black;
     text-decoration:none;
+    opacity:0.8;
+    font-size: 0.9vw;
+    transition:0.3s;
 }
+
+.pathRef a:hover{
+    color:rgb(49, 183, 236);
+    opacity:1;
+}
+
 
 
 .currentPrice {
@@ -553,10 +562,6 @@ nav {
     font-size: 1vw;
 }
 
-.trierbij div, .trierbij p{
-    border: 1px solid black;
-
-}
 
 .trierbijRight{
     background:rgba(238, 161, 73, 0.26);
