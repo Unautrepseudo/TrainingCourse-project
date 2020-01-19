@@ -8,13 +8,6 @@
         <hr class="lign">
     </header>
 
-    {# <?php
-        $bdd = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '', 
-        array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND =>'SET NAMES UTF8'));
-
-        $artisans = $bdd->query('select * from artisan order by id asc');
-        foreach ($artisans as $artisan): 
-    ?>         #}
             <div class="row1">
                 <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
                     <div class="container-img">
@@ -22,12 +15,11 @@
                     </div>
 
                     <div class="card-body spacecard">
-                        <h5 class="card-title namecrafts"><?php echo $artisan['first_name'] ?></h5>
+                        <h5 class="card-title namecrafts">Camille</h5>
                         <hr class="betweenlign">
-                        <p class="card-text jobtown"><?php echo $artisan['speciality'] ?> - <?php echo $artisan['ville'] ?></p>
+                        <p class="card-text jobtown">Menusière - Toulouse</p>
                     </div>
                 </a>
             </div>    
-        {# <?php endforeach ?> #}
 
 {% endblock %}
