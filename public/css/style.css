@@ -1722,6 +1722,12 @@ a:hover {
 .formul {
     width: 50rem;
     margin: 0 auto;
+    
+}
+
+.formul1{
+    background:rgba(179, 177, 173, 0.151);
+        border-radius: 20px;
 }
 
 .contacttitle {
