@@ -29,11 +29,17 @@
 
         </ul>
 
-        
-            <form class=" form-inline my-2 my-lg-0 mx-5" action="{{path('products_main_page')}}" method="POST">
-                <input class="form-control mr-sm-2 searchInput icon" type="text" placeholder="Rechercher" aria-label="Search" name="query">
-                <button class="searchButton icon" type="submit" value="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
+           
+            <form class=" form my-2 my-lg-0 mx-5" action="{{path('products_main_page')}}" method="GET">
+                <div class="row mt-3 form-inline">
+                    <input class="form-control mr-sm-2 searchInput icon" id="search" type="search" placeholder="Rechercher" aria-label="Search" name= "search">
+                    <button class="searchButton icon" type="submit" value="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
+                </div>
+                <div class="row">
+                <div class="result" id="result"></div>
+                </div>
             </form>
+           
             <div class=" col-1 navcons">
                 <span class="log icon" id="loggin"><a href="{{path('fos_user_security_login')}}"><img src="{{asset('img/log.png')}}" width="40" alt=""></a></span>
                 <span class="cart icon"><a href="{{path('cart')}}"><img src="{{asset('img/cart.png')}}" width="40" alt=""></a></span>

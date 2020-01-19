@@ -1,10 +1,10 @@
- <!--Search Bar-->
- <?php
+ <!--Search Bar
+ 
  mysql_connect("localhost", "root", "") or die("Error connecting to database: ".mysql_error());
  mysql_select_db("ecommerce") or die(mysql_error());
 
     
-$query = $_POST['query']; 
+$query = $_GET['query']; 
   //proctection failles XSS
   foreach($_POST as $key => $value)
   {
@@ -42,4 +42,50 @@ $query = $_POST['query'];
             }
         }
     }
+?>-->
+
+
+<?php
+$bdd = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+    if(isset($_GET['motclef'])){
+        $motclef = $_GET['motclef'];
+        $q = array('motclef'=>$motclef. '%');
+        $sql = 'SELECT name FROM product WHERE name like :motclef';
+        $req = $bdd->prepare($sql);
+        $req->execute($q);
+        $count = $req->rowCount($sql);
+
+        if($count == 1){
+            while($result = $req->fetch(PDO::FETCH_OBJ)){
+                echo $result;
+            }
+        }else{
+            echo $motclef . " non trouvé";
+        }
+    }
+
+
 ?>
+
+
+{% block javascripts %}
+<script>
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            var search = $(this).val();
+            var data = 'motclef=' + search;
+            if (search.length > 3){
+                $.ajax({
+                    type: "GET",
+                    url : "searchBar.php",
+                    data : data,
+                    success: function(server_response){
+                        $("#result").html(server_response).show();
+                    }
+                });
+            }
+        });
+    });
+
+</script>
+{% endblock %}

@@ -3,7 +3,7 @@
 {% block title %}Product index{% endblock %}
 
 {% block body %}
-    <h1 class="titreallproduct">Tous nos Produits  </h1><hr>
+    <h1 class="titreallproduct">{{ product.name }} </h1><hr>
 
 <div class="testflex">
         {% for product in products %}

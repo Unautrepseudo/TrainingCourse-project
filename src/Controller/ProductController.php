@@ -93,4 +93,28 @@ class ProductController extends AbstractController
 
         return $this->redirectToRoute('product_index');
     }
+
+
+       /**
+     * @Route("/{name}", name="product_search", methods={"GET","POST"})
+     */
+    public function search(Request $request, Product $product): Response
+    {
+        $form = $this->createForm(ProductType::class, $product);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->getDoctrine()->getManager()->flush();
+
+            return $this->redirectToRoute('product_index');
+        }
+
+        return $this->render('product/edit.html.twig', [
+            'product' => $product,
+            'form' => $form->createView(),
+        ]);
+    }
+
+
+
 }
