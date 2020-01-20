@@ -1,4 +1,4 @@
-<div class="formartisan"> {{ form_start(form) }}
+<div class="formartisan"> {% form_theme form 'bootstrap_4_layout.html.twig' %}{{ form_start(form) }}
     <br> {{ form_widget(form) }}
     <br><button class="btn btn-outline-secondary">{{ button_label|default('Save') }}
      

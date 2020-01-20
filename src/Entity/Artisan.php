@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArtisanRepository")
@@ -27,6 +29,11 @@ class Artisan
     private $last_name;
 
     /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $city;
+
+    /**
      * @ORM\Column(type="string", length=50)
      */
     private $company;
@@ -35,11 +42,6 @@ class Artisan
      * @ORM\Column(type="string", length=300)
      */
     private $email;
-
-    /**
-     * @ORM\Column(type="string", length=500)
-     */
-    private $picture;
 
     /**
      * @ORM\Column(type="string", length=50)
@@ -52,9 +54,31 @@ class Artisan
     private $about;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @var string
+     */
+    private $image;
+
+    /**
      * @ORM\OneToOne(targetEntity="App\Entity\User")
      */
     private $user;
+
+    /**
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
+     * @var File
+     */
+    private $imageFile;
+
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
+    }
+
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
 
     public function __construct()
     {
@@ -138,18 +162,6 @@ class Artisan
         return $this;
     }
 
-    public function getPicture(): ?string
-    {
-        return $this->picture;
-    }
-
-    public function setPicture(string $picture): self
-    {
-        $this->picture = $picture;
-
-        return $this;
-    }
-
     public function getSpeciality(): ?string
     {
         return $this->speciality;
@@ -175,6 +187,30 @@ class Artisan
     public function setUser(?User $user): self
     {
         $this->user = $user;
+
+        return $this;
+    }
+
+    public function getCity(): ?string
+    {
+        return $this->city;
+    }
+
+    public function setCity(string $city): self
+    {
+        $this->city = $city;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(?string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }

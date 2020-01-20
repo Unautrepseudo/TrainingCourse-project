@@ -16,16 +16,16 @@ body {
 }
 
 .container-fluid {
-    width: 100%;
+    width: 70%;
     overflow-x: hidden;
 }
 
 .clear {
-    height: 16vh;
+    height: 13vh;
 }
 
 .clear2 {
-    height: 10vh;
+    height: 5vh;
     background: rgba(214, 212, 178, 0);
 }
 
@@ -70,119 +70,111 @@ nav {
     opacity: 1;
 }
 
+
 /***nav bis*****/
-.nav2{
+
+.nav2 {
     justify-self: center;
-    background:rgba(255, 252, 248, 0.959);
-    font-size:1.1vw;
-    border-radius:8%;
-    color:rgba(88, 86, 86, 0.849) !important;
-    
-    }
-    
-    .nav2 li a{
-        text-decoration: none;
-        color:rgba(88, 86, 86, 0.753) !important;
-    }
-    
-    .nav2 li a:hover{
-        color:rgba(88, 86, 86, 0.979) !important;
-        opacity:1;
-    }
-    
-    
-    .nav2 li{
-        list-style:none;
-        border-top:1px solid rgba(230, 227, 227, 0.253);
-        border-radius: 10px 120px / 120px;
-        transition:.2s;
-    }
-    /** color effect hover**/
-    .subMenu2 li:hover{
-        background:rgba(79, 192, 226, 0.137);
-    }
-    .subMenuA:hover{
-        background:rgba(79, 192, 226, 0.137);
-    }
-    
-    
-    .subMenu2b li:hover{
-        background:rgba(241, 72, 42, 0.137);
-    
-    }
-    
-    .subMenuB:hover{
-        background:rgba(241, 72, 42, 0.137);
-    
-    }
-    
-    .subMenu2c li:hover{
-        background:rgba(241, 238, 42, 0.233);
-    
-    }
-    
-    .subMenuC:hover{
-        background:rgba(241, 238, 42, 0.219);
-    
-    }
-    
-    .subMenu2d li:hover{
-        background:rgba(52, 238, 28, 0.137);
-    
-    }
-    
-    .subMenuD:hover{
-        background:rgba(52, 238, 28, 0.137);
-    
-    }
-    
-    .nav-item:hover{
-        background:rgba(221, 157, 37, 0.151);
-        border-radius: 10px 120px / 120px;
-    
-    }
-    
-    .subMenu2e li:hover{
-        background:rgba(221, 157, 37, 0.151);
-        border-radius: 10px 120px / 120px;
-    }
-    
-    
-    /**/
-    .testContent{
-        position:absolute;
-        top:9vh;
-        width:102%;
-        line-height:3vw;
-        z-index:10000 !important;
-        
-    }
-    
-    .subMenu2{
-        margin-top:3vh !important;
-     
-    }
-    
-    
-    .subMenu2b{
-        padding-top:6vh !important;
-    
-    }
-    
-    .subMenu2c{
-        padding-top:9.4vh !important;
-    }
-    
-    .subMenu2d{
-        padding-top:12.7vh !important;
-    }
-    
-    .subMenu2e{
-        margin-left:29%;
-        bottom: 7vh !important;
-    }
-    
-    
+    background: rgba(255, 252, 248, 0.959);
+    font-size: 1.1vw;
+    border-radius: 8%;
+    color: rgba(88, 86, 86, 0.849) !important;
+}
+
+.nav2 li a {
+    text-decoration: none;
+    color: rgba(88, 86, 86, 0.753) !important;
+}
+
+.nav2 li a:hover {
+    color: rgba(88, 86, 86, 0.979) !important;
+    opacity: 1;
+}
+
+.nav2 li {
+    list-style: none;
+    border-top: 1px solid rgba(230, 227, 227, 0.253);
+    border-radius: 10px 120px / 120px;
+    transition: .2s;
+}
+
+
+/** color effect hover**/
+
+.subMenu2 li:hover {
+    background: rgba(79, 192, 226, 0.137);
+}
+
+.subMenuA:hover {
+    background: rgba(79, 192, 226, 0.137);
+}
+
+.subMenu2b li:hover {
+    background: rgba(241, 72, 42, 0.137);
+}
+
+.subMenuB:hover {
+    background: rgba(241, 72, 42, 0.137);
+}
+
+.subMenu2c li:hover {
+    background: rgba(241, 238, 42, 0.233);
+}
+
+.subMenuC:hover {
+    background: rgba(241, 238, 42, 0.219);
+}
+
+.subMenu2d li:hover {
+    background: rgba(52, 238, 28, 0.137);
+}
+
+.subMenuD:hover {
+    background: rgba(52, 238, 28, 0.137);
+}
+
+.nav-item:hover {
+    background: rgba(221, 157, 37, 0.151);
+    border-radius: 10px 120px / 120px;
+}
+
+.subMenu2e li:hover {
+    background: rgba(221, 157, 37, 0.151);
+    border-radius: 10px 120px / 120px;
+}
+
+
+/**/
+
+.testContent {
+    position: absolute;
+    top: 9vh;
+    width: 102%;
+    line-height: 3vw;
+    z-index: 10000 !important;
+}
+
+.subMenu2 {
+    margin-top: 3vh !important;
+}
+
+.subMenu2b {
+    padding-top: 6vh !important;
+}
+
+.subMenu2c {
+    padding-top: 9.4vh !important;
+}
+
+.subMenu2d {
+    padding-top: 12.7vh !important;
+}
+
+.subMenu2e {
+    margin-left: 29%;
+    bottom: 7vh !important;
+}
+
 
 /**Button scroll up**/
 
@@ -308,12 +300,11 @@ nav {
 }
 
 .img-pres {
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .img-pres:hover {
     width: 105%;
-    transition: 1s ease-in-out;
 }
 
 .test:hover {
@@ -332,6 +323,10 @@ nav {
 
 
 /*************LUMIERE SUR*********/
+
+.ampoule {
+    width: 50%;
+}
 
 .divLt {
     background: rgba(233, 233, 90, 0.055);
@@ -365,7 +360,6 @@ nav {
 
 #button {
     margin-top: 2%;
-    margin-left: 75%;
     width: 15vh;
     height: 4.5vh;
     border-radius: 10%;
@@ -406,10 +400,15 @@ nav {
 
 /*********LE PROJET*****/
 
+.pProjet {
+    font-size: 1vw;
+}
+
 .projInfo {
-    margin-top: 10%;
+    margin-top: 30%;
+    padding-top: 10%;
     margin-left: 10%;
-    width: 80%;
+    width: 70%;
     font-size: 1.3vw;
 }
 
@@ -417,7 +416,7 @@ nav {
     background: rgba(43, 206, 116, 0.075);
     transform: rotateZ(-6deg);
     border-radius: 3%;
-    height: 40vh;
+    height: 45vh;
     margin-top: 5vh;
     width: 90%;
 }
@@ -436,6 +435,10 @@ nav {
     margin-left: 65%;
 }
 
+.imgProjet-left {
+    width: 70%;
+}
+
 
 /***fade effect**/
 
@@ -447,6 +450,7 @@ nav {
     transform: rotateZ(6deg);
     height: 36vh;
     padding: 3%;
+    font-size: 1vw;
     color: rgba(0, 0, 0, 0.849);
 }
 
@@ -493,6 +497,114 @@ nav {
 
 .inc:hover {
     color: white;
+}
+
+
+/*******************************************PAGES by CATEGORIES********************/
+
+
+/*Bijoux*/
+
+.clear3 {
+    height: 10vh;
+    width: 100%
+}
+
+.rer {
+    background: rgba(255, 255, 255, 0.582);
+    left: 0;
+}
+
+.titleartisan2 {
+    font-size: 2.8vw;
+}
+
+.pathRef a,
+.pathRef li {
+    color: rgb(57, 101, 160);
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 0.9vw;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.pathRef a:hover {
+    color: rgb(49, 183, 236);
+    opacity: 1;
+}
+
+.arrowOp {
+    font-size: 1vw;
+    opacity: 0.3;
+}
+
+.rt {
+    margin-left: 12%!important;
+    justify-content: space-evenly!important;
+}
+
+.lineCatBij {
+    border-top: 1px solid rgba(128, 128, 128, 0.192);
+    width: 40%;
+}
+
+.scrollOp2 {
+    border-radius: 50%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.103);
+    border-top: 1px solid rgba(128, 128, 128, 0.171);
+    opacity: 0;
+}
+
+.scrollOp2:hover {
+    background: rgba(235, 178, 104, 0.432);
+}
+
+.scrollOp {
+    border-left: 1px solid rgba(128, 128, 128, 0.185);
+    margin-left: 3vh;
+}
+
+.scrollOp:hover {
+    background: rgba(240, 185, 123, 0.568);
+}
+
+.currentPrice {
+    font-size: 1vw;
+}
+
+.note i {
+    width: 0.5vw;
+    padding-left: 1vw;
+    color: rgb(240, 185, 36);
+}
+
+#trou {
+    transition: 1s;
+}
+
+#trou:hover {
+    width: 105%;
+}
+
+.container-img2 {
+    width: 30vh;
+    overflow: hidden;
+}
+
+.trierbij {
+    background: rgba(238, 161, 73, 0.116);
+    font-size: 1vw;
+}
+
+.trierTitle {
+    font-size: 1vw;
+}
+
+.trierbijRight {
+    background: rgba(238, 161, 73, 0.26);
+    width: 10%;
+    transition: 3s ease-in-out;
 }
 
 
@@ -558,11 +670,7 @@ nav {
 /***left***/
 
 .teamWindow {
-    height: 65vh;
-}
-
-.teamTof .col {
-    border: 1px solid black;
+    height: 25vw;
 }
 
 .teamTof {
@@ -572,8 +680,8 @@ nav {
     border-radius: 10%;
     width: 70%;
     height: 70%;
-    margin-left: 7vh;
     margin-top: 6vh;
+    margin-right: 0;
 }
 
 
@@ -585,21 +693,22 @@ nav {
 
 .line {
     border-left: 1px solid rgba(0, 0, 0, 0.24);
-    height: 50vh;
+    height: 40vh;
 }
 
 .socicons {
-    width: 2vw;
+    width: 1.1vw;
     opacity: 0.5;
+    margin-right: 1px;
 }
 
 .socicons3 {
-    width: 1.5vw;
+    width: 1.2vw;
     opacity: 0.5;
 }
 
 .sociconDiv {
-    padding-top: 11vh;
+    padding-top: 2vh;
 }
 
 .sociconDiv a {
@@ -721,16 +830,15 @@ nav {
     height: 75%;
 }
 
-.logoup2{
+.logoup2 {
     width: 30%;
-    height:80%
+    height: 80%
 }
 
-.logoup3{
+.logoup3 {
     width: 60%;
-    margin-left:15%;
+    margin-left: 15%;
 }
-
 
 .paypal {
     width: 100%;
@@ -743,14 +851,15 @@ nav {
 
 /***********************************LIVRAISON********************/
 
-.delivImg{
-width: 30%;
-height: 90%;
+.delivImg {
+    width: 30%;
+    height: 90%;
 }
 
-.delivImg2{
+.delivImg2 {
     width: 30%;
-    }
+}
+
 
 /************************************Product Single****************************************************************/
 
@@ -1552,7 +1661,7 @@ figure:hover figcaption {
 }
 
 
-/******************************************************Artisans**********************************************************/
+/****************************************************** Page Artisan**********************************************************/
 
 .titleartisan {
     text-align: center;
@@ -1567,6 +1676,8 @@ figure:hover figcaption {
 .row1 {
     width: 50rem;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .craftsman {
@@ -1623,15 +1734,14 @@ a:hover {
 }
 
 
-
 /*****************************************************Cookie*****************************************/
 
-
-.cookie{
+.cookie {
     width: 100%;
     height: 15vh;
-    background-color:#ffff;
+    background-color: #ffff;
 }
+
 
 /************************************************Formulaire artisan et customer************************************/
 
@@ -1640,13 +1750,18 @@ a:hover {
 .backcustomer {
     width: 50rem;
     margin: 0 auto;
-    padding-left: 200px;
 }
 
 .titleartisan,
 .titlecustomer {
     color: rgb(170, 113, 39);
     text-align: center;
+}
+
+.boucle_art {
+    display: flex;
+    width: 70rem;
+    margin: 0 auto;
 }
 
 
@@ -1765,9 +1880,9 @@ a:hover {
 
 .ampoule {
     opacity: 0.1;
-  }
-  
- 
+}
+
+
 /*************************************loginpage********/
 
 .toregister {
@@ -1780,30 +1895,42 @@ a:hover {
 .registerside {
     color: rgb(184, 115, 24);
 }
+
+.loginseparate {
+    height: 200px;
+    width: 2px;
+    background-color: rgb(114, 74, 22);
+}
+
+
 /**************************************** Partenaires*******************************************/
-.leslogos{
+
+.leslogos {
     width: 200px;
     height: 50px;
     margin: 0 50px;
 }
-.lelogo{
+
+.lelogo {
     width: 70px;
     height: 50px;
     margin: 0 10px;
 }
-.parterns{
+
+.parterns {
     width: 50rem;
     margin: 0 auto;
 }
-.titleh2{
+
+.titleh2 {
     color: rgb(189, 122, 34);
     text-align: center;
 }
 
 
-
 /**************************************** ProductMainPage *******************************************/
 
+<<<<<<< HEAD
 .titreallproduct
 {
     text-align: center;
@@ -1812,12 +1939,18 @@ a:hover {
 
 .MainLigneTrois
 {
+=======
+.testproduit {
+    height: 305vh;
+    background: rgb(30, 172, 96);
+>>>>>>> new_page_artisan
     display: flex;
     width: 80%;
     justify-content: center;
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .widthcard
 {
     width: 30%;
@@ -1847,3 +1980,22 @@ a:hover {
 }
 
 
+=======
+.tierdemap {
+    background: deepskyblue;
+    width: 50vh;
+    height: 50vh;
+}
+
+.testflex {
+    background: cyan;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.salutccoll {
+    background: red;
+    width: 30%;
+}
+>>>>>>> new_page_artisan
