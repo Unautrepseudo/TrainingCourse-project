@@ -13,9 +13,9 @@
                 <th>Reference</th>
                 <th>Price</th>
                 <th>Materials</th>
-                <th>Stock</th>
                 <th>Catégories</th>
                 <th>Type</th>
+                <th>Stock</th>
                 <th>Description</th>
                 <th>Artisan_name</th>  
                 <th>Image</th>
@@ -39,8 +39,8 @@
                 <td>{{ product.user }}</td>
                 <td><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
                 <td>
-                    <a href="{{ path('product_show', {'id': product.id}) }}">show</a>
-                    <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>
+                    <a href="{{ path('product_show', {'id': product.id}) }}">Afficher</a>
+                    <a href="{{ path('product_edit', {'id': product.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% endif %}
@@ -53,5 +53,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('product_new') }}">Create new</a>
+    <a href="{{ path('product_new') }}">Ajouter un nouveau produit</a>
 {% endblock %}
