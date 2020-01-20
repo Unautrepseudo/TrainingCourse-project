@@ -885,13 +885,13 @@ nav {
     height: AUTO;
 }
 
-/* .imgproduct {
+.imgproduct {
     width: 50vh;
     height: 50vh;
     margin-bottom: 10vh;
     margin-top: 5vh;
     margin-right: 5vh;
-} */
+}
 
 .restproduct {
     width: 40%;
@@ -1023,7 +1023,6 @@ nav {
     border-radius: 10vh;
     overflow: hidden;
     transition: 0.5s;
-    height: 4vh;
 }
 
 .butonbuton:hover {
@@ -1930,6 +1929,9 @@ a:hover {
 
 /**************************************** ProductMainPage ***********************************   ********/
 
+
+
+
 .titreallproduct
 {
     text-align: center;
@@ -1971,5 +1973,6 @@ a:hover {
     text-align: center;
     justify-content: center;
 }
+
 
 

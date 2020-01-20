@@ -83,10 +83,10 @@ class User extends BaseUser
      */
     private $product;
 
-    /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Artisan")
-     */
-    private $artisan;
+    // /**
+    //  * @ORM\OneToOne(targetEntity="App\Entity\Artisan")
+    //  */
+    // private $artisan;
 
     public function setImageFile(File $image = null)
     {

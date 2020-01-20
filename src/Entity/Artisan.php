@@ -66,7 +66,7 @@ class Artisan
     private $speciality;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="text")
      */
     private $about;
 
@@ -75,6 +75,11 @@ class Artisan
      * @ORM\OneToOne(targetEntity="App\Entity\User")
      */
     private $user;
+
+    // /**
+    //  * @ORM\OneToMany(targetEntity="App\Entity\product")
+    //  */
+    // private $product;
 
     /**
 
