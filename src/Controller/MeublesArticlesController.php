@@ -25,7 +25,7 @@ class MeublesArticlesController extends AbstractController
     public function tables(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/tables.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'tables')),
 
         ]);
     }
@@ -36,7 +36,7 @@ class MeublesArticlesController extends AbstractController
     public function chaises(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/chaises.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'chaises')),
 
         ]);
     }
@@ -47,7 +47,7 @@ class MeublesArticlesController extends AbstractController
     public function bureaux(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/bureaux.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'bureaux')),
 
         ]);
     }
@@ -58,7 +58,7 @@ class MeublesArticlesController extends AbstractController
     public function etageres(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/etageres.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'etageres')),
 
         ]);
     }
@@ -69,7 +69,7 @@ class MeublesArticlesController extends AbstractController
     public function armoires(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/armoires.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'armoires')),
 
         ]);
     }

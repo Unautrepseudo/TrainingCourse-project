@@ -47,11 +47,6 @@ class Artisan
     /**
      * @ORM\Column(type="string", length=100)
      */
-    private $city;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     */
     private $zip_code;
 
     /**
@@ -75,11 +70,6 @@ class Artisan
      */
     private $about;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     * @var string
-     */
-    private $image;
 
     /**
      * @ORM\OneToOne(targetEntity="App\Entity\User")

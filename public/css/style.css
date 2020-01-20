@@ -864,8 +864,8 @@ nav {
 /************************************Product Single****************************************************************/
 
 .notfull {
-    width: 70%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 5vh auto;
 }
 
 .producttitle {
@@ -1928,9 +1928,8 @@ a:hover {
 }
 
 
-/**************************************** ProductMainPage *******************************************/
+/**************************************** ProductMainPage ***********************************   ********/
 
-<<<<<<< HEAD
 .titreallproduct
 {
     text-align: center;
@@ -1939,18 +1938,12 @@ a:hover {
 
 .MainLigneTrois
 {
-=======
-.testproduit {
-    height: 305vh;
-    background: rgb(30, 172, 96);
->>>>>>> new_page_artisan
     display: flex;
     width: 80%;
     justify-content: center;
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .widthcard
 {
     width: 30%;
@@ -1980,22 +1973,3 @@ a:hover {
 }
 
 
-=======
-.tierdemap {
-    background: deepskyblue;
-    width: 50vh;
-    height: 50vh;
-}
-
-.testflex {
-    background: cyan;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.salutccoll {
-    background: red;
-    width: 30%;
-}
->>>>>>> new_page_artisan

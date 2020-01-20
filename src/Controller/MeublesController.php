@@ -15,7 +15,7 @@ class MeublesController extends AbstractController
     public function index(ProductRepository $productRepository): Response
     {
         return $this->render('meubles/index.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('categorie' => 'Meubles')),
 
         ]);
     }
