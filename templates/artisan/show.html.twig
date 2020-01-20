@@ -3,7 +3,94 @@
 {% block title %}Artisan{% endblock %}
 
 {% block body %}
-    <h1>Artisan</h1>
+
+    <div class="nametitle">
+    <div class="contentname">
+        <h1 class="nameofcraftsman">{{ artisan.firstName }}</h1>
+    </div>
+</div>
+<div class="description">
+    <figure>
+        <img src="{{asset('images/')}}{{ artisan.image }}" class="craftsmanpicture" alt="">
+        <figcaption>
+            <p class="caption">" Chaise'amille, c'est surtout le bonheur ! "</p>
+        </figcaption>
+    </figure>
+
+    <ul class="list-group fiche">
+        <li class="list-group-item describe">
+            <i class="fas fa-star fasa1"></i>
+            <i class="fas fa-star fasa2"></i>
+            <i class="fas fa-star fasa3"></i>
+            <i class="fas fa-star fasa4"></i>
+            <i class="fas fa-star fasa5"></i>
+        </li>
+        <li class="list-group-item describe">{{ artisan.speciality }}</li>
+        <li class="list-group-item describe">Basée à {{ artisan.city }}</li>
+    </ul>
+</div>
+<div class="presentation">
+    <p class="textpresentation">
+        {{ artisan.about }}
+    </p>
+</div>
+
+<div class="titleofproducts">
+    <hr class="separation">
+    <h2 class="nameofproducts">Nos produits</h2>
+    <hr class="separation">
+</div>
+
+<div class="craftsmanproducts">
+
+    <div class="myproduct1">
+        <div class="imagecontent"><img src="{{asset('images/')}}{{ artisan.image }}" class="productsmenu2" alt=""></div>
+
+        <p class="thedescription">Chaise en bois</p>
+        <div class="starsproducts">
+            <i class="fas fa-star fasb1"></i>
+            <i class="fas fa-star fasb2"></i>
+            <i class="fas fa-star fasb3"></i>
+            <i class="fas fa-star fasb4"></i>
+            <i class="fas fa-star fasb5"></i>
+        </div>
+        <p class="cost">200€</p>
+    </div>
+
+    <div class="myproduct1">
+        <div class="imagecontent"><img src="{{asset('images/')}}{{ artisan.image }}" class="productsmenu2" alt=""></div>
+
+
+        <p class="thedescription">Table à manger avec chaises</p>
+        <div class="starsproducts">
+            <i class="fas fa-star fasc1"></i>
+            <i class="fas fa-star fasc2"></i>
+            <i class="fas fa-star fasc3"></i>
+            <i class="fas fa-star fasc4"></i>
+            <i class="fas fa-star fasc5"></i>
+        </div>
+        <p class="cost">1500€</p>
+    </div>
+
+    <div class="myproduct1">
+        <div class="imagecontent"><img src="{{asset('images/')}}{{ artisan.image }}" class="productsmenu2" alt=""></div>
+
+
+        <p class="thedescription">Table à manger pour 4 à 8 personnes</p>
+
+        <div class="starsproducts">
+            <i class="fas fa-star fasd1"></i>
+            <i class="fas fa-star fasd2"></i>
+            <i class="fas fa-star fasd3"></i>
+            <i class="fas fa-star fasd4"></i>
+            <i class="fas fa-star fasd5"></i>
+        </div>
+        <p class="cost">800€</p>
+    </div>
+
+</div>
+
+    {# <h1>Artisan</h1>
 
     <table class="table">
         <tbody>
@@ -20,21 +107,15 @@
                 <td>{{ artisan.lastName }}</td>
             </tr>
             <tr>
-                <th>Company</th>
-                <td>{{ artisan.company }}</td>
-            </tr>
-            <tr>
                 <th>Email</th>
                 <td>{{ artisan.email }}</td>
             </tr>
             <tr>
-                <th>Password</th>
-                <td>{{ artisan.password }}</td>
+                <th>Company</th>
+                <td>{{ artisan.company }}</td>
             </tr>
-            <tr>
-                <th>Picture</th>
-                <td>{{ artisan.picture }}</td>
-            </tr>
+
+
             <tr>
                 <th>Speciality</th>
                 <td>{{ artisan.speciality }}</td>
@@ -46,9 +127,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('artisan_index') }}">back to list</a>
+    <a href="{{ path('artisan') }}">Back to list</a><br><br>
 
-    <a href="{{ path('artisan_edit', {'id': artisan.id}) }}">edit</a>
+    <a href="{{ path('artisan_edit', {'id': artisan.id}) }}">Edit</a><br><br>
 
-    {{ include('artisan/_delete_form.html.twig') }}
+    {{ include('artisan/_delete_form.html.twig') }} #}
 {% endblock %}

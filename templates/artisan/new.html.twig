@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %} {% block title %}Inscription Artisan{% endblock %} {% block body %}
 <hr class="row1">
-<h1 class="titleartisan">Créer votre compte</h1>
+<h1 class="titleartisan">Créer votre compte artisan</h1>
 <hr class="row1"> {{ include('artisan/_form.html.twig') }}
 <div class="backartisan">
-    <a href="{{ path('artisan_index') }}">back to list</a></div>
+    <a href="{{ path('artisan') }}">Back to list</a></div><br>
 {% endblock %}

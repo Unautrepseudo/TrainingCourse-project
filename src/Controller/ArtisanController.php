@@ -19,7 +19,7 @@ use App\Form\RegistrationFormType;
 class ArtisanController extends AbstractController
 {
     /**
-     * @Route("/", name="artisan_index", methods={"GET"})
+     * @Route("/", name="artisan", methods={"GET"})
      */
     public function index(ArtisanRepository $artisanRepository): Response
     {

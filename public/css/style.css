@@ -79,6 +79,7 @@ nav {
 }
 
 
+<<<<<<< HEAD
 /****Menu Dropdown Effect******/
 
 .menuDashboard {
@@ -176,6 +177,110 @@ nav {
 .menuDashboard li,
 .menuDashboard a {
     border: 1px solid black;
+=======
+/***nav bis*****/
+
+.nav2 {
+    justify-self: center;
+    background: rgba(255, 252, 248, 0.959);
+    font-size: 1.1vw;
+    border-radius: 8%;
+    color: rgba(88, 86, 86, 0.849) !important;
+}
+
+.nav2 li a {
+    text-decoration: none;
+    color: rgba(88, 86, 86, 0.753) !important;
+}
+
+.nav2 li a:hover {
+    color: rgba(88, 86, 86, 0.979) !important;
+    opacity: 1;
+}
+
+.nav2 li {
+    list-style: none;
+    border-top: 1px solid rgba(230, 227, 227, 0.253);
+    border-radius: 10px 120px / 120px;
+    transition: .2s;
+}
+
+
+/** color effect hover**/
+
+.subMenu2 li:hover {
+    background: rgba(79, 192, 226, 0.137);
+}
+
+.subMenuA:hover {
+    background: rgba(79, 192, 226, 0.137);
+}
+
+.subMenu2b li:hover {
+    background: rgba(241, 72, 42, 0.137);
+}
+
+.subMenuB:hover {
+    background: rgba(241, 72, 42, 0.137);
+}
+
+.subMenu2c li:hover {
+    background: rgba(241, 238, 42, 0.233);
+}
+
+.subMenuC:hover {
+    background: rgba(241, 238, 42, 0.219);
+}
+
+.subMenu2d li:hover {
+    background: rgba(52, 238, 28, 0.137);
+}
+
+.subMenuD:hover {
+    background: rgba(52, 238, 28, 0.137);
+}
+
+.nav-item:hover {
+    background: rgba(221, 157, 37, 0.151);
+    border-radius: 10px 120px / 120px;
+}
+
+.subMenu2e li:hover {
+    background: rgba(221, 157, 37, 0.151);
+    border-radius: 10px 120px / 120px;
+}
+
+
+/**/
+
+.testContent {
+    position: absolute;
+    top: 9vh;
+    width: 102%;
+    line-height: 3vw;
+    z-index: 10000 !important;
+}
+
+.subMenu2 {
+    margin-top: 3vh !important;
+}
+
+.subMenu2b {
+    padding-top: 6vh !important;
+}
+
+.subMenu2c {
+    padding-top: 9.4vh !important;
+}
+
+.subMenu2d {
+    padding-top: 12.7vh !important;
+}
+
+.subMenu2e {
+    margin-left: 29%;
+    bottom: 7vh !important;
+>>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59
 }
 
 
@@ -832,6 +937,7 @@ nav {
 /***********************************LIVRAISON******************************************************/
 
 
+<<<<<<< HEAD
 /**Made by Victor **/
 
 .ampoule
@@ -850,6 +956,19 @@ nav {
 }
 
 .livraison {
+=======
+.logoup2 {
+    width: 30%;
+    height: 80%
+}
+
+.logoup3 {
+    width: 60%;
+    margin-left: 15%;
+}
+
+.paypal {
+>>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59
     width: 100%;
     text-align: center;
     height: 40vh;
@@ -880,6 +999,7 @@ nav {
     margin-right: 10px;
 }
 
+<<<<<<< HEAD
 .paypal {
     width: 100%;
 }
@@ -888,6 +1008,17 @@ nav {
     font-weight: bold;
 }
 
+=======
+.delivImg {
+    width: 30%;
+    height: 90%;
+}
+
+.delivImg2 {
+    width: 30%;
+}
+
+>>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59
 
 /************************************Product Single****************************************************************/
 
@@ -1765,15 +1896,14 @@ a:hover {
 }
 
 
-
 /*****************************************************Cookie*****************************************/
 
-
-.cookie{
+.cookie {
     width: 100%;
     height: 15vh;
-    background-color:#ffff;
+    background-color: #ffff;
 }
+
 
 /************************************************Formulaire artisan et customer************************************/
 
@@ -1782,13 +1912,16 @@ a:hover {
 .backcustomer {
     width: 50rem;
     margin: 0 auto;
-    padding-left: 200px;
 }
 
 .titleartisan,
 .titlecustomer {
     color: rgb(170, 113, 39);
     text-align: center;
+}
+
+.boucle_art {
+    display: flex;
 }
 
 
@@ -1895,6 +2028,24 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
+=======
+/**Made by Victor **/
+
+.center {
+    text-align: center;
+}
+
+.flexflex {
+    display: flex;
+}
+
+.ampoule {
+    opacity: 0.1;
+}
+
+
+>>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59
 /*************************************loginpage********/
 
 .toregister {
@@ -1908,6 +2059,15 @@ a:hover {
     color: rgb(184, 115, 24);
 }
 
+<<<<<<< HEAD
+=======
+.loginseparate {
+    height: 200px;
+    width: 2px;
+    background-color: rgb(114, 74, 22);
+}
+
+>>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59
 
 /**************************************** Partenaires*******************************************/
 
@@ -1923,45 +2083,47 @@ a:hover {
     margin: 0 10px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .parterns{
+=======
+
+.parterns {
+>>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59
     width: 50rem;
     margin: 0 auto;
 }
-.titleh2{
+
+.titleh2 {
     color: rgb(189, 122, 34);
     text-align: center;
 }
 
 
-
 /**************************************** ProductMainPage *******************************************/
 
-.testproduit{
+.testproduit {
     height: 305vh;
     background: rgb(30, 172, 96);
     display: flex;
 }
 
 .tierdemap {
-
-background: deepskyblue;
-width: 50vh;
-height: 50vh;
+    background: deepskyblue;
+    width: 50vh;
+    height: 50vh;
 }
 
-
-.testflex
-{
-     background : cyan;
+.testflex {
+    background: cyan;
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.salutccoll
-{
+.salutccoll {
     background: red;
     width: 30%;
+<<<<<<< HEAD
 }
 
 
@@ -1984,3 +2146,6 @@ height: 50vh;
     text-align: center;
 }
 >>>>>>> 87739b2e079c131474472292fdb36f89a8632b2c
+=======
+}
+>>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59

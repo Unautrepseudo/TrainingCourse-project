@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %} {% block title %}Inscription Customer{% endblock %} {% block body %}
 <hr class="row1">
-<h1 class="titlecustomer">Créer votre compte</h1>
+<h1 class="titlecustomer">Créer votre compte client</h1>
 <hr class="row1"> {{ include('customer/_form.html.twig') }}
 <div class="backcustomer">
-    <a href="{{ path('customer_index') }}">back to list</a></div>
+    <a href="{{ path('customer_index') }}">Back to list</a></div><br>
 {% endblock %}

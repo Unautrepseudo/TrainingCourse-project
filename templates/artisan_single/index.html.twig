@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %} {% block body %}
 <div class="nametitle">
     <div class="contentname">
-        <h1 class="nameofcraftsman">Camille</h1>
+        <h1 class="nameofcraftsman">{{ artisan.firstName }}</h1>
     </div>
 </div>
 <div class="description">
     <figure>
-        <img src="{{asset('img/Camille.jpg')}}" class="craftsmanpicture" alt="">
+        <img src="{{asset('images/')}}{{ artisan.image }}" class="craftsmanpicture" alt="">
         <figcaption>
             <p class="caption">" Chaise'amille, c'est surtout le bonheur ! "</p>
         </figcaption>
@@ -20,8 +20,8 @@
             <i class="fas fa-star fasa4"></i>
             <i class="fas fa-star fasa5"></i>
         </li>
-        <li class="list-group-item describe">Spécialiste en meubles</li>
-        <li class="list-group-item describe">Basée à Toulouse</li>
+        <li class="list-group-item describe">{{ artisan.speciality }}</li>
+        <li class="list-group-item describe">Basée à {{ artisan.city }}</li>
     </ul>
 </div>
 <div class="presentation">
@@ -41,7 +41,7 @@
 <div class="craftsmanproducts">
 
     <div class="myproduct1">
-        <div class="imagecontent"><img src="{{asset('img/chaise.jpg')}}" class="productsmenu2" alt=""></div>
+        <div class="imagecontent"><img src="{{asset('images/')}}{{ artisan.image }}" class="productsmenu2" alt=""></div>
 
         <p class="thedescription">Chaise en bois</p>
         <div class="starsproducts">
@@ -55,7 +55,7 @@
     </div>
 
     <div class="myproduct1">
-        <div class="imagecontent"><img src="{{asset('img/tableee.jpg')}}" class="productsmenu2" alt=""></div>
+        <div class="imagecontent"><img src="{{asset('images/')}}{{ artisan.image }}" class="productsmenu2" alt=""></div>
 
 
         <p class="thedescription">Table à manger avec chaises</p>
@@ -70,7 +70,7 @@
     </div>
 
     <div class="myproduct1">
-        <div class="imagecontent"><img src="{{asset('img/table1 3.jpg')}}" class="productsmenu2" alt=""></div>
+        <div class="imagecontent"><img src="{{asset('images/')}}{{ artisan.image }}" class="productsmenu2" alt=""></div>
 
 
         <p class="thedescription">Table à manger pour 4 à 8 personnes</p>
