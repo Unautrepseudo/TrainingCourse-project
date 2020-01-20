@@ -14,20 +14,26 @@
                 <th>Price</th>
                 <th>Materials</th>
                 <th>Stock</th>
+                <th>Catégories</th>
+                <th>Type</th>
                 <th>Description</th>
-                <th>Artisan_name</th>
+                <th>Artisan_name</th>  
                 <th>Image</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for product in products %}
+        {% if is_granted('ROLE_ARTISAN') %}
+        {% if product.user.id == app.user.id %}
             <tr>
                 <td>{{ product.id }}</td>
                 <td>{{ product.name }}</td>
                 <td>{{ product.reference }}</td>
                 <td>{{ product.price }}</td>
                 <td>{{ product.materials }}</td>
+                <td>{{ product.categorie }}</td>
+                <td>{{ product.type }}</td>
                 <td>{{ product.stock }}</td>
                 <td>{{ product.description }}</td>
                 <td>{{ product.user }}</td>
@@ -41,6 +47,8 @@
                     </a>
                 </td>
             </tr>
+        {% endif %}
+        {% endif %}
         {% else %}
             <tr>
                 <td colspan="14">no records found</td>

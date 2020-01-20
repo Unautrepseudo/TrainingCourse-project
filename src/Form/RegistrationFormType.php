@@ -16,6 +16,7 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 
 
+
 class RegistrationFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
@@ -33,7 +34,7 @@ class RegistrationFormType extends AbstractType
         ->add('address')
         ->add('city')
         ->add('zip_code')
-        ->add('phone_number');
+        ;
         
         if($endofurl == 'artisan') 
         {

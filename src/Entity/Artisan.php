@@ -8,6 +8,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArtisanRepository")
+ * @Vich\Uploadable
  */
 class Artisan
 {
@@ -39,11 +40,32 @@ class Artisan
     private $company;
 
     /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $address;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $city;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $zip_code;
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $role_user;
+
+    /**
      * @ORM\Column(type="string", length=300)
      */
     private $email;
 
     /**
+
      * @ORM\Column(type="string", length=50)
      */
     private $speciality;
@@ -65,6 +87,19 @@ class Artisan
     private $user;
 
     /**
+
+     * @ORM\OneToOne(targetEntity="App\Entity\Product")
+     */
+    private $product;
+
+       /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @var string
+     */
+    private $image;
+
+    /**
+    
      * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
      * @var File
      */
@@ -76,13 +111,15 @@ class Artisan
     }
 
     public function getImageFile()
+
     {
         return $this->imageFile;
     }
 
     public function __construct()
+
     {
-        $this->created_at = new \Datetime;
+        return $this->imageFile;
     }
 
     public function getId(): ?int
@@ -191,6 +228,20 @@ class Artisan
         return $this;
     }
 
+
+    public function getAddress(): ?string
+    {
+        return $this->address;
+    }
+
+    public function setAddress(string $address): self
+    {
+        $this->address = $address;
+
+        return $this;
+    }
+
+
     public function getCity(): ?string
     {
         return $this->city;
@@ -202,6 +253,44 @@ class Artisan
 
         return $this;
     }
+
+
+    public function getZipCode(): ?string
+    {
+        return $this->zip_code;
+    }
+
+    public function setZipCode(string $zip_code): self
+    {
+        $this->zip_code = $zip_code;
+
+        return $this;
+    }
+
+    public function getRoleUser(): ?string
+    {
+        return $this->role_user;
+    }
+
+    public function setRoleUser(?string $role_user): self
+    {
+        $this->role_user = $role_user;
+
+        return $this;
+    }
+
+    public function getProduct(): ?Product
+    {
+        return $this->product;
+    }
+
+    public function setProduct(?Product $product): self
+    {
+        $this->product = $product;
+
+        return $this;
+    }
+
 
     public function getImage(): ?string
     {
