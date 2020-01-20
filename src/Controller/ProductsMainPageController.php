@@ -21,13 +21,20 @@ class ProductsMainPageController extends AbstractController
             'products' => $productRepository->findAll(),
         ]);
     }
-
-
+/**
+     * @Route("/products/main/page", name="products_main_page")
+     */
+    public function index2(ProductRepository $productRepository): Response
+    {
+        return $this->render('products_main_page/index.html.twig',  [
+            'products2' => $productRepository->findby (array('name' => 'Vase')),
+        ]);
+    }
   /**
-     * @Route("/{id}", name="products_main_page_show", methods={"GET"})
+     * @Route("/{id}p", name="products_main_page_show", )
      */
      public function show(Product $product): Response
-    {
+    { 
         return $this->render('products_main_page/show.html.twig', [
             'product' => $product,
         ]);
