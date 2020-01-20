@@ -23,11 +23,8 @@ class CartController extends AbstractController
                 'product' => $ProductRepository->find($id),
                 'quantity'=> $quantity
             ];
-
-          
         }
 
-       
 //---------------------------------------------------------------------------------------------
        $total = 0;
 

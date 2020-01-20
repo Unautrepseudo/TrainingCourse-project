@@ -52,8 +52,10 @@
                 {{ product.description }}         
             </div> <!-- fin description artisan -->
             <div class="ajoutpanier">
-                <button class="butonbuton"><img src="{{asset('img/panier2.jpg')}}" class="img-responsiv panier2"> </button> 
-            </div> <!-- fin ajoutpanier -->
+                <a href="{{ path('cart_add', {'id': product.id}) }} " class="btn btn-info" >Ajouter au panier
+                 <i class="fas fa-shopping-cart mr-1"></i>
+               </a>
+           </div> <!-- fin ajoutpanier -->
         </div> <!-- fin restproduct -->
 
     </div> <!-- fin flexflex du début -->
