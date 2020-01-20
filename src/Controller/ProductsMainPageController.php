@@ -21,4 +21,15 @@ class ProductsMainPageController extends AbstractController
             'products' => $productRepository->findAll(),
         ]);
     }
+
+
+  /**
+     * @Route("/{id}", name="products_main_page_show", methods={"GET"})
+     */
+     public function show(Product $product): Response
+    {
+        return $this->render('products_main_page/show.html.twig', [
+            'product' => $product,
+        ]);
+    }
 }
