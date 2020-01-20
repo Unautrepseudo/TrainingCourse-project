@@ -377,7 +377,6 @@ $('.sOB').hover(function() {
 
 });
 
-<<<<<<< HEAD
 /*******************************Products by categories*********************************/
 /****** filter nav animation******/
 
@@ -410,20 +409,3 @@ $('.sO1c2,.sO1b').mouseout(function(){
 $('.pathRef,.lign').hover(function(){
   $('.sO1a,.sO1c,.sO1c').css({'opacity':0});
 }); 
-=======
-$('.sOC').hover(function() {
-    $('.sO1a').css({ 'opacity': 0 });
-    $('.sO1b').css({ 'opacity': 0 });
-    $('.sO1c').css({ 'opacity': 1 });
-});
-
-// $('.sO1c2, .sOB').mouseout(function(){
-//   $('.sO1a,.sO1c').css({'opacity':0});
-// }); 
-$('.sO1c2,.sO1b').mouseout(function() {
-    $('.sO1a,.sO1c').css({ 'opacity': 0 });
-});
-$('.pathRef,.lign').hover(function() {
-    $('.sO1a,.sO1c,.sO1c').css({ 'opacity': 0 });
-});
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d

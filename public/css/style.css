@@ -335,13 +335,8 @@ nav {
 
 /*************LUMIERE SUR*********/
 
-<<<<<<< HEAD
 .ampoule{
     width:50%;
-=======
-.ampoule {
-    width: 50%;
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 }
 
 .divLt {
@@ -416,22 +411,12 @@ nav {
 
 /*********LE PROJET*****/
 
-<<<<<<< HEAD
 .pProjet{
     font-size:1vw;
 }
 .projInfo {
     margin-top: 30%;
     padding-top:10%;
-=======
-.pProjet {
-    font-size: 1vw;
-}
-
-.projInfo {
-    margin-top: 30%;
-    padding-top: 10%;
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
     margin-left: 10%;
     width: 70%;
     font-size: 1.3vw;
@@ -460,17 +445,10 @@ nav {
     margin-left: 65%;
 }
 
-<<<<<<< HEAD
 .imgProjet-left{
     width:70%;
 
 }
-=======
-.imgProjet-left {
-    width: 70%;
-}
-
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
 /***fade effect**/
 
@@ -482,11 +460,7 @@ nav {
     transform: rotateZ(6deg);
     height: 36vh;
     padding: 3%;
-<<<<<<< HEAD
     font-size:1vw;
-=======
-    font-size: 1vw;
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
     color: rgba(0, 0, 0, 0.849);
 }
 
@@ -827,14 +801,9 @@ nav {
 /***left***/
 
 .teamWindow {
-<<<<<<< HEAD
     height:25vw;
 }
 
-=======
-    height: 25vw;
-}
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
 .teamTof {
     background-image: url(team.jpg);
@@ -844,12 +813,8 @@ nav {
     width: 70%;
     height: 70%;
     margin-top: 6vh;
-<<<<<<< HEAD
     margin-right:0;
 
-=======
-    margin-right: 0;
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 }
 
 
@@ -867,11 +832,7 @@ nav {
 .socicons {
     width: 1.1vw;
     opacity: 0.5;
-<<<<<<< HEAD
     margin-right:1px;
-=======
-    margin-right: 1px;
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 }
 
 .socicons3 {

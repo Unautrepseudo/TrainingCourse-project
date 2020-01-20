@@ -25,11 +25,7 @@ class DecorationArticlesController extends AbstractController
     public function poteries(ProductRepository $productRepository): Response
     {
         return $this->render('decoration_articles/poteries.html.twig', [
-<<<<<<< HEAD
-            'products' => $productRepository->findAll(),
-=======
             'products' => $productRepository->findby (array('type' => 'poteries')),
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -40,11 +36,7 @@ class DecorationArticlesController extends AbstractController
     public function luminaires(ProductRepository $productRepository): Response
     {
         return $this->render('decoration_articles/luminaires.html.twig', [
-<<<<<<< HEAD
-            'products' => $productRepository->findAll(),
-=======
             'products' => $productRepository->findby (array('type' => 'luminaires')),
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -55,11 +47,7 @@ class DecorationArticlesController extends AbstractController
     public function murales(ProductRepository $productRepository): Response
     {
         return $this->render('decoration_articles/murales.html.twig', [
-<<<<<<< HEAD
-            'products' => $productRepository->findAll(),
-=======
             'products' => $productRepository->findby (array('type' => 'murales')),
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -70,11 +58,7 @@ class DecorationArticlesController extends AbstractController
     public function bougies(ProductRepository $productRepository): Response
     {
         return $this->render('decoration_articles/bougies.html.twig', [
-<<<<<<< HEAD
-            'products' => $productRepository->findAll(),
-=======
             'products' => $productRepository->findby (array('type' => 'bougies')),
->>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
