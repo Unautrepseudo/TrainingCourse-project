@@ -25,7 +25,11 @@ class BijouxArticlesController extends AbstractController
     public function bagues(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux_articles/bagues.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'bagues')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -36,8 +40,12 @@ class BijouxArticlesController extends AbstractController
     public function bracelets(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux_articles/bracelets.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
 
+=======
+            'products' => $productRepository->findby (array('type' => 'bracelets')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
         ]);
     }
 
@@ -47,7 +55,11 @@ class BijouxArticlesController extends AbstractController
     public function colliers(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux_articles/colliers.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'colliers')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -58,7 +70,11 @@ class BijouxArticlesController extends AbstractController
     public function tete(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux_articles/tete.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'tete')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }

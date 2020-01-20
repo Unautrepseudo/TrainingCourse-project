@@ -25,7 +25,11 @@ class JouetsArticlesController extends AbstractController
     public function figurines(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/figurines.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'figurines')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -36,7 +40,11 @@ class JouetsArticlesController extends AbstractController
     public function jeux(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/jeux.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'jeux')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -47,7 +55,11 @@ class JouetsArticlesController extends AbstractController
     public function peluches(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/peluches.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'peluches')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -58,7 +70,11 @@ class JouetsArticlesController extends AbstractController
     public function puzzle(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/puzzle.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'puzzle')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }

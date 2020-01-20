@@ -7,6 +7,11 @@
 
     <table class="table">
         <tbody>
+
+            <tr>
+                <th>Prenom artisan</th>
+                <td>{{ product.user}}</td>
+            </tr>
             <tr>
                 <th>Id</th>
                 <td>{{ product.id }}</td>
@@ -32,14 +37,21 @@
                 <td>{{ product.stock }}</td>
             </tr>
             <tr>
+                <th>Categorie</th>
+                <td>{{ product.categorie }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ product.type }}</td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>{{ product.description }}</td>
             </tr>
-                    <tr>
-            <th>Image</th>
-            <td>dsf
-                </td>
-        </tr>
+            <tr>
+                <th>Image</th>
+                <td><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
+            </tr>
         </tbody>
     </table>
 

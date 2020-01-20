@@ -25,7 +25,11 @@ class MeublesArticlesController extends AbstractController
     public function tables(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/tables.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'tables')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -36,7 +40,11 @@ class MeublesArticlesController extends AbstractController
     public function chaises(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/chaises.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'chaises')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -47,7 +55,11 @@ class MeublesArticlesController extends AbstractController
     public function bureaux(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/bureaux.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'bureaux')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -58,7 +70,11 @@ class MeublesArticlesController extends AbstractController
     public function etageres(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/etageres.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'etageres')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
@@ -69,7 +85,11 @@ class MeublesArticlesController extends AbstractController
     public function armoires(ProductRepository $productRepository): Response
     {
         return $this->render('meubles_articles/armoires.html.twig', [
+<<<<<<< HEAD
             'products' => $productRepository->findAll(),
+=======
+            'products' => $productRepository->findby (array('type' => 'armoires')),
+>>>>>>> 1d08c7024e797de584801acbb8b3cb5aa096571d
 
         ]);
     }
