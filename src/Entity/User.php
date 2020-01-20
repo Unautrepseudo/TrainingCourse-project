@@ -265,16 +265,16 @@ class User extends BaseUser
         return $this;
     }
 
-    public function getArtisan(): ?Artisan
-    {
-        return $this->artisan;
-    }
+    // public function getArtisan(): ?Artisan
+    // {
+    //     return $this->artisan;
+    // }
 
-    public function setArtisan(?Artisan $artisan): self
-    {
-        $this->artisan = $artisan;
+    // public function setArtisan(?Artisan $artisan): self
+    // {
+    //     $this->artisan = $artisan;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
 }
