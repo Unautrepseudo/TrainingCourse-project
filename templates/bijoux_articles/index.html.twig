@@ -1,20 +1,32 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BijouxArticlesController!{% endblock %}
+{% block title %}Bijoux{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <h1 class="titreallproduct">Tous nos Produits  </h1><hr>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="testflex">
+        {% for product in products %}
+        
+            <div class="salutccoll">
+                <div class="card cardproduct" style="width: 18rem;">
+                    <img src="{{asset('images/')}}{{ product.image }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.price }}€</p>
+                        <p class="card-text">{{ product.stock }}</p>
+                        <p class="card-text">{{ product.reference }}</p>
+                        <p class="card-text">{{ product.description }}</p>
+                        <p class="card-text">{{ product.materials }}</p>
+                        <a href="#" class="btn btn-primary">Ajouter au Panier</a>
+                     </div>
+                </div>
+             </div>
+            {% if loop.index % 3 == 0 %} 
+        </div>  <hr>   <div class="testflex">  {% endif %}
+      
+     {% endfor %}
+      
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/src/Controller/BijouxArticlesController.php'|file_link(0) }}">src/Controller/BijouxArticlesController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/templates/bijoux_articles/index.html.twig'|file_link(0) }}">templates/bijoux_articles/index.html.twig</a></code></li>
-    </ul>
-</div>
+
 {% endblock %}
