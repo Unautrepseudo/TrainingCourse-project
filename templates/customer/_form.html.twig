@@ -1,11 +1,5 @@
-{{ form_start(form) }}
-    {{ form_row(form.email) }}
-    {{ form_row(form.username) }}
-    {{ form_row(form.last_name) }}
-    {{ form_row(form.birthday) }}
-    {{ form_row(form.address) }}
-    {{ form_row(form.city) }}
-    {{ form_row(form.zip_code) }}
-    {{ form_row(form.phone_number) }}
-    <button class="btn btn-secondary">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+<div class="formartisan">{% form_theme form 'bootstrap_4_layout.html.twig' %}{{ form_start(form) }}
+<br>
+{{ form_widget(form) }}
+   <br> <button class="btn btn-outline-secondary">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}<br></div>

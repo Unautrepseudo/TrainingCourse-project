@@ -1,7 +1,8 @@
+
+
  <nav id= 'topPage' class=" row navbar navbar-expand-lg navbar-light d-flex justify-content-around">
-    
     <div class="col-3">
-        <a class="" href="{{path('home')}}"><img src="{{asset ('img/logo.png') }}" alt="Art'I'Made, vous avez la main" style="width:35%"></a>
+        <a class="" href="/"><img src="{{asset ('img/logo.png') }}" alt="Art'I'Made, vous avez la main" style="width:35%"></a>
     </div>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,95 +12,95 @@
     <div class=" col-9 collapse navbar-collapse" id="navbarSupportedContent">
         <ul class=" navbar-nav mr-5">
             <li class="nav-item dropdown ">
-        <a class="nav-link products" href="#" id=" navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Produits
-        </a>
-        
-      </li>
-
-        <div class="testyo"></div>
-
-
-            <li class="nav-item">
-                <a class="nav-link" href="{{path('artisans')}}">Artisans</a>
+                <a class="nav-link products" href="{{path('products_main_page')}}" id="navDrop">Produits</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item navlink2">
+                <a class="nav-link" href="{{path('artisans')}}" id="navDrop2">Artisans</a>
+            </li>
+
+            <li class="nav-item navlink3">
                 <a class="nav-link" href="{{path('team')}}">L'équipe</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item navlink4">
                 <a class="nav-link" href="{{path('contact')}}">Nous contacter</a>
             </li>
 
         </ul>
 
-        
-            <form class=" form-inline my-2 my-lg-0 mx-5">
-                <input class="form-control mr-sm-2 searchInput icon" type="search" placeholder="Rechercher" aria-label="Search" name"searchBar">
-                <button class="searchButton icon" type="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
+           
+            <form class=" form my-2 my-lg-0 mx-5" action="{{path('products_main_page')}}" method="GET">
+                <div class="row mt-3 form-inline">
+                    <input class="form-control mr-sm-2 searchInput icon" id="search" type="search" placeholder="Rechercher" aria-label="Search" name= "search">
+                    <button class="searchButton icon" type="submit" value="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
+                </div>
+                <div class="row">
+                <div class="result" id="result"></div>
+                </div>
             </form>
+           
             <div class=" col-1 navcons">
-                <span class="log icon"><a href="{{path('log')}}"><img src="{{asset('img/log.png')}}" width="40" alt=""></a></span>
+                <span class="log icon" id="loggin"><a href="{{path('fos_user_security_login')}}"><img src="{{asset('img/log.png')}}" width="40" alt=""></a></span>
                 <span class="cart icon"><a href="{{path('cart')}}"><img src="{{asset('img/cart.png')}}" width="40" alt=""></a></span>
 
                 {% if is_granted('ROLE_ARTISAN') %}
 
-                    <span class="store icon"><a href="{{path('product_index',{'id':app.user.id})}}"><img src="{{asset('img/store.png')}}" width="40" alt=""></a></span>
+                    <span class="store icon"><a href="{{path('product_index')}}"><img src="{{asset('img/store.png')}}" width="40" alt=""></a></span> 
 
-
-            
+                {% else %}
                 {% endif %}
                 
             </div>
-        
     </div>
 
+
 </nav>
-{% block javascripts %}
-    <script>
-    /************************* social logos hover****************************/
+<div class="row pl-1 testContent reveal">
+<!--Produits-->
+    <div class=" col-1 offset-3 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu1 infoHidden">
+       <li class="subMenuA"><a href="{{path('meubles')}}">Meubles</a></li>
+       <li  class="subMenuB"><a href="{{path('decoration')}}">Décoration</a>
+       <li  class="subMenuC"><a href="{{path('bijoux')}}">Bijoux</a></li>
+       <li  class="subMenuD"><a href="{{path('jouets')}}">Jouets</a></li>
+    </div>
+    <div class=" col-1 d-flex flex-column text-center pl-4 pt-4 text-white nav2 subMenu2 infoHidden">
+        <li><a href="{{path('tables')}}">Tables</a></li>
+        <li><a href="{{path('chaises')}}">Chaises</a></li>
+        <li><a href="{{path('bureaux')}}">Bureaux</a></li>
+        <li><a href="{{path('etageres')}}">Etagères</a></li>
+        <li><a href="{{path('armoires')}}">Armoires</a></li>
+     </div>
+     <div class=" col-1 d-flex flex-column pl-4 text-center text-white nav2 subMenu2b infoHidden">
+        <li><a href="{{path('poteries')}}">Poteries</a></li>
+        <li><a href="{{path('luminaires')}}">Luminaires</a></li>
+        <li><a href="{{path('murales')}}">Murales</a></li>
+        <li><a href="{{path('bougies')}}">Bougies</a></li>
+     </div>
+     <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2c infoHidden">
+        <li><a href="{{path('bagues')}}">Bagues</a></li>
+        <li><a href="{{path('bracelets')}}">Bracelets</a></li>
+        <li><a href="{{path('colliers')}}">Colliers</a></li>
+        <li><a href="{{path('tete')}}">Tête</a></li>
+     </div>
+     <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2d infoHidden">
+        <li><a href="{{path('figurines')}}">Figurines</a></li>
+        <li><a href="{{path('jeux')}}">Jeux</a></li>
+        <li><a href="{{path('peluches')}}">Peluches</a></li>
+        <li><a href="{{path('puzzle')}}">Puzzles</a></li>
+     </div>
+     <!--Artisans-->
+     <div class="row pl-1 testContent reveal">
+        <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2e infoHidden">
+            <li><a href="{{path('artisans')}}">Couturier</a></li>
+            <li><a href="{{path('artisans')}}">Forgeron</a></li>
+            <li><a href="{{path('artisans')}}">Peintre</a></li>
+            <li><a href="{{path('artisans')}}">Menuisier</a></li>
+            <li><a href="{{path('artisans')}}">Potier</a></li>
+            <li><a href="{{path('artisans')}}">Tapissier</a></li>
+            <li><a href="{{path('artisans')}}">Bijoutier</a></li>
+            <li><a href="{{path('artisans')}}">Autre</a></li>
+        </div>
+    </div>
+</div>
 
-    /*insta*/
-        document.getElementById('insta').addEventListener("mouseover", (function(){
-            $('#insta').attr('src','img/instacol.png');
-        }));
-        
-        document.getElementById('insta').addEventListener("mouseout", (function(){
-            
-                $('#insta').attr('src','img/instab.png');
-        }));
-
-    /*twitter*/
-        document.getElementById('twi').addEventListener("mouseover", (function(){
-        $('#twi').attr('src','img/twicol.png');
-        }));
-        
-        document.getElementById('twi').addEventListener("mouseout", (function(){
-            
-                $('#twi').attr('src','img/twib.png');
-        }));
-
-        
-    /*youtube*/
-        document.getElementById('you').addEventListener("mouseover", (function(){
-        $('#you').attr('src','img/youcol.png');
-        }));
-        
-        document.getElementById('you').addEventListener("mouseout", (function(){
-            
-                $('#you').attr('src','img/youb.png');
-        }));
-        
-
-    /*facebook*/
-        document.getElementById('face').addEventListener("mouseover", (function(){
-        $('#face').attr('src','img/facecol.png');
-        }));
-        
-        document.getElementById('face').addEventListener("mouseout", (function(){
-            
-                $('#face').attr('src','img/faceb.png');
-        }));
-    </script>
-{% endblock %}

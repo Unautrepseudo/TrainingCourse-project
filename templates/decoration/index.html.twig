@@ -1,20 +1,92 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DecorationController!{% endblock %}
+{% block title %}Décoration d'intérieur{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<section class='rer mx-0'>
+    <section>
+    <div class="bandeau mx-auto ">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{asset('img/decoration-prez.png')}}" class="img-fluid img-categorie d-block w-100" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <header>
+        <hr class="lign mt-5">
+        <p class="titleartisan titleartisan2">Décoration d'intérieur</p>
+        <hr class="lign">
+    </header>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/src/Controller/DecorationController.php'|file_link(0) }}">src/Controller/DecorationController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/TrainingCourse-project/templates/decoration/index.html.twig'|file_link(0) }}">templates/decoration/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <span class="ml-2 pathRef">
+        <a href="{{path('products_main_page')}}">Produits</a> > <a href="{{path('decoration')}}">Décoration</a>
+    </span>
+    <div class=" row trierbij mx-auto mt-2 justify-content-center">
+ 
+            <button type="button" class="btn d-flex  scrollOp sOA">
+                Ordre alphabétique
+                <span><i class=" arrowOp fas fa-caret-right mt-1 ml-2"></i></span>
+
+                <button type="button" class="btn  scrollOp2 sO1a">A-Z</button>
+                <button type="button" class="btn  scrollOp2 sO1a">Z-A</button>
+            </button>
+            <button type="button" class="btn  scrollOp sOB">
+                Prix
+                <span><i class=" arrowOp fas fa-caret-right mt-1 ml-2"></i></span>
+                <button type="button" class="btn  scrollOp2 sO1b">+</button>
+                <button type="button" class="btn  scrollOp2 sO1b">-</button>
+            </button>
+
+            <button type="button" class="btn  scrollOp sOC">
+                Note
+                <span><i class=" arrowOp fas fa-caret-right mt-1 ml-2"></i></span>
+                <button type="button" class="btn  scrollOp2 sO1c">+</button>
+                <button type="button" class="btn  scrollOp2 sO1c sO1c2">-</button>
+            </button>
+   </div>
+         
+    
+    <div class="row d-flex justify-content-around mx-auto mt-5 currentCards rt">
+       
+        {% for product in products %}
+            <div class=" col-lg-4 col-md-5 col-xm-6 col-xs-4 card mt-5 reveal" style="width: 18rem;">
+                
+                <div class='container-img2 reveal'><img src="{{asset('images/')}}{{ product.image }}" id='trou' class=" img-fluid d-block w-100 card-img-top img-cat reveal-1" alt="..."></div>
+                <a class= 'cardA' href="">
+                    <div class="card-body cardDescGen">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <span class="currentPrice reveal-2"> {{ product.price }}€</span>
+                        <span class='note reveal-2'>
+                            <i class="fas fa-star fas1"></i>
+                            <i class="fas fa-star fas2"></i>
+                            <i class="fas fa-star fas3"></i>
+                            <i class="fas fa-star fas4"></i>
+                            <i class="fas fa-star fas5"></i>
+                        </span>
+                        <p class="card-text cCarText reveal-4">{{ product.description }}</p>
+                    </div>
+                </a>
+                 <div class="lineCatBij"></div>
+            </div>
+           
+
+       
+            
+        {% endfor %}
+    </div>
+</section>
+
+<div class="clear3"></div>
+ 
+
+      
+    
+      
+
+
 {% endblock %}
+

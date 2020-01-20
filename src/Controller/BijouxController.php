@@ -2,18 +2,22 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Repository\ProductRepository;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
 
 class BijouxController extends AbstractController
 {
     /**
      * @Route("/bijoux", name="bijoux")
      */
-    public function index()
+    public function index(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux/index.html.twig', [
-            'controller_name' => 'BijouxController',
+            'products' => $productRepository->findby (array('categorie' => 'Bijoux')),
+
         ]);
     }
 }

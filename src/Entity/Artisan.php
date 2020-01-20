@@ -30,6 +30,11 @@ class Artisan
     private $last_name;
 
     /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $city;
+
+    /**
      * @ORM\Column(type="string", length=50)
      */
     private $company;
@@ -38,11 +43,6 @@ class Artisan
      * @ORM\Column(type="string", length=100)
      */
     private $address;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     */
-    private $city;
 
     /**
      * @ORM\Column(type="string", length=100)
@@ -60,6 +60,7 @@ class Artisan
     private $email;
 
     /**
+
      * @ORM\Column(type="string", length=50)
      */
     private $speciality;
@@ -69,12 +70,14 @@ class Artisan
      */
     private $about;
 
+
     /**
      * @ORM\OneToOne(targetEntity="App\Entity\User")
      */
     private $user;
 
     /**
+
      * @ORM\OneToOne(targetEntity="App\Entity\Product")
      */
     private $product;
@@ -86,6 +89,7 @@ class Artisan
     private $image;
 
     /**
+    
      * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
      * @var File
      */
@@ -97,6 +101,13 @@ class Artisan
     }
 
     public function getImageFile()
+
+    {
+        return $this->imageFile;
+    }
+
+    public function __construct()
+
     {
         return $this->imageFile;
     }
@@ -207,6 +218,7 @@ class Artisan
         return $this;
     }
 
+
     public function getAddress(): ?string
     {
         return $this->address;
@@ -219,6 +231,7 @@ class Artisan
         return $this;
     }
 
+
     public function getCity(): ?string
     {
         return $this->city;
@@ -230,6 +243,7 @@ class Artisan
 
         return $this;
     }
+
 
     public function getZipCode(): ?string
     {
@@ -266,6 +280,7 @@ class Artisan
 
         return $this;
     }
+
 
     public function getImage(): ?string
     {
