@@ -93,4 +93,15 @@ class ProductController extends AbstractController
 
         return $this->redirectToRoute('product_index');
     }
+
+    // /**
+    //  * @Route("/{user_id}", name="product_artisan", methods={GET})
+    //  */
+    // public function productArtisan(Product $user) : Response
+    // {
+    //     if ($this->)
+    // }
+
+    // */
+
 }

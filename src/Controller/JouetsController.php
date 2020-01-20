@@ -15,7 +15,7 @@ class JouetsController extends AbstractController
     public function index(ProductRepository $productRepository): Response
     {
         return $this->render('jouets/index.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('categorie' => 'Jouets')),
 
         ]);
     }

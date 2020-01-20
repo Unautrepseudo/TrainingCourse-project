@@ -56,6 +56,16 @@ class Product
      */
     private $description;
 
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $categorie;
+
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $type;
+
         /**
      * @ORM\Column(type="string", length=255, nullable=true)
      * @var File
@@ -72,7 +82,6 @@ class Product
     //  * @ORM\ManyToOne(targetEntity="App\Entity\Artisan")
     //  */
     // private $artisan;
-
 
     public function getId(): ?int
     {
@@ -183,4 +192,29 @@ class Product
 
         return $this;
     }
+
+    public function getCategorie(): ?string
+    {
+        return $this->categorie;
+    }
+
+    public function setCategorie(string $categorie): self
+    {
+        $this->categorie = $categorie;
+
+        return $this;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function setType(string $type): self
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
 }

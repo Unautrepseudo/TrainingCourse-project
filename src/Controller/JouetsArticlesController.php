@@ -25,7 +25,7 @@ class JouetsArticlesController extends AbstractController
     public function figurines(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/figurines.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'figurines')),
 
         ]);
     }
@@ -36,7 +36,7 @@ class JouetsArticlesController extends AbstractController
     public function jeux(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/jeux.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'jeux')),
 
         ]);
     }
@@ -47,7 +47,7 @@ class JouetsArticlesController extends AbstractController
     public function peluches(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/peluches.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'peluches')),
 
         ]);
     }
@@ -58,7 +58,7 @@ class JouetsArticlesController extends AbstractController
     public function puzzle(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/puzzle.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'puzzle')),
 
         ]);
     }

@@ -25,7 +25,7 @@ class BijouxArticlesController extends AbstractController
     public function bagues(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux_articles/bagues.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'bagues')),
 
         ]);
     }
@@ -36,8 +36,7 @@ class BijouxArticlesController extends AbstractController
     public function bracelets(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux_articles/bracelets.html.twig', [
-            'products' => $productRepository->findAll(),
-
+            'products' => $productRepository->findby (array('type' => 'bracelets')),
         ]);
     }
 
@@ -47,7 +46,7 @@ class BijouxArticlesController extends AbstractController
     public function colliers(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux_articles/colliers.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'colliers')),
 
         ]);
     }
@@ -58,7 +57,7 @@ class BijouxArticlesController extends AbstractController
     public function tete(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux_articles/tete.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'tete')),
 
         ]);
     }

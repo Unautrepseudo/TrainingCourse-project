@@ -16,7 +16,7 @@ class BijouxController extends AbstractController
     public function index(ProductRepository $productRepository): Response
     {
         return $this->render('bijoux/index.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('categorie' => 'Bijoux')),
 
         ]);
     }

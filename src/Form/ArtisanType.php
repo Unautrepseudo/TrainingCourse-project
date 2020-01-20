@@ -15,6 +15,13 @@ class ArtisanType extends AbstractType
         $builder
             ->add('first_name')
             ->add('last_name')
+
+            ->add('address')
+            ->add('city')
+            ->add('zip_code')
+            ->add('company')
+            ->add('email')
+
             ->add('city')
             ->add('company')
             ->add('speciality')

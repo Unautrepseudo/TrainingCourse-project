@@ -25,7 +25,7 @@ class DecorationArticlesController extends AbstractController
     public function poteries(ProductRepository $productRepository): Response
     {
         return $this->render('decoration_articles/poteries.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'poteries')),
 
         ]);
     }
@@ -36,7 +36,7 @@ class DecorationArticlesController extends AbstractController
     public function luminaires(ProductRepository $productRepository): Response
     {
         return $this->render('decoration_articles/luminaires.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'luminaires')),
 
         ]);
     }
@@ -47,7 +47,7 @@ class DecorationArticlesController extends AbstractController
     public function murales(ProductRepository $productRepository): Response
     {
         return $this->render('decoration_articles/murales.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'murales')),
 
         ]);
     }
@@ -58,7 +58,7 @@ class DecorationArticlesController extends AbstractController
     public function bougies(ProductRepository $productRepository): Response
     {
         return $this->render('decoration_articles/bougies.html.twig', [
-            'products' => $productRepository->findAll(),
+            'products' => $productRepository->findby (array('type' => 'bougies')),
 
         ]);
     }
