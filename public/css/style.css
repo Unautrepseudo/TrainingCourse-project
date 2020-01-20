@@ -16,16 +16,16 @@ body {
 }
 
 .container-fluid {
-    width: 100%;
+    width: 70%;
     overflow-x: hidden;
 }
 
 .clear {
-    height: 16vh;
+    height: 13vh;
 }
 
 .clear2 {
-    height: 10vh;
+    height: 5vh;
     background: rgba(214, 212, 178, 0);
 }
 
@@ -300,12 +300,11 @@ nav {
 }
 
 .img-pres {
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .img-pres:hover {
     width: 105%;
-    transition: 1s ease-in-out;
 }
 
 .test:hover {
@@ -324,6 +323,10 @@ nav {
 
 
 /*************LUMIERE SUR*********/
+
+.ampoule {
+    width: 50%;
+}
 
 .divLt {
     background: rgba(233, 233, 90, 0.055);
@@ -357,7 +360,6 @@ nav {
 
 #button {
     margin-top: 2%;
-    margin-left: 75%;
     width: 15vh;
     height: 4.5vh;
     border-radius: 10%;
@@ -398,10 +400,15 @@ nav {
 
 /*********LE PROJET*****/
 
+.pProjet {
+    font-size: 1vw;
+}
+
 .projInfo {
-    margin-top: 10%;
+    margin-top: 30%;
+    padding-top: 10%;
     margin-left: 10%;
-    width: 80%;
+    width: 70%;
     font-size: 1.3vw;
 }
 
@@ -409,7 +416,7 @@ nav {
     background: rgba(43, 206, 116, 0.075);
     transform: rotateZ(-6deg);
     border-radius: 3%;
-    height: 40vh;
+    height: 45vh;
     margin-top: 5vh;
     width: 90%;
 }
@@ -428,6 +435,10 @@ nav {
     margin-left: 65%;
 }
 
+.imgProjet-left {
+    width: 70%;
+}
+
 
 /***fade effect**/
 
@@ -439,6 +450,7 @@ nav {
     transform: rotateZ(6deg);
     height: 36vh;
     padding: 3%;
+    font-size: 1vw;
     color: rgba(0, 0, 0, 0.849);
 }
 
@@ -485,6 +497,114 @@ nav {
 
 .inc:hover {
     color: white;
+}
+
+
+/*******************************************PAGES by CATEGORIES********************/
+
+
+/*Bijoux*/
+
+.clear3 {
+    height: 10vh;
+    width: 100%
+}
+
+.rer {
+    background: rgba(255, 255, 255, 0.582);
+    left: 0;
+}
+
+.titleartisan2 {
+    font-size: 2.8vw;
+}
+
+.pathRef a,
+.pathRef li {
+    color: rgb(57, 101, 160);
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 0.9vw;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.pathRef a:hover {
+    color: rgb(49, 183, 236);
+    opacity: 1;
+}
+
+.arrowOp {
+    font-size: 1vw;
+    opacity: 0.3;
+}
+
+.rt {
+    margin-left: 12%!important;
+    justify-content: space-evenly!important;
+}
+
+.lineCatBij {
+    border-top: 1px solid rgba(128, 128, 128, 0.192);
+    width: 40%;
+}
+
+.scrollOp2 {
+    border-radius: 50%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.103);
+    border-top: 1px solid rgba(128, 128, 128, 0.171);
+    opacity: 0;
+}
+
+.scrollOp2:hover {
+    background: rgba(235, 178, 104, 0.432);
+}
+
+.scrollOp {
+    border-left: 1px solid rgba(128, 128, 128, 0.185);
+    margin-left: 3vh;
+}
+
+.scrollOp:hover {
+    background: rgba(240, 185, 123, 0.568);
+}
+
+.currentPrice {
+    font-size: 1vw;
+}
+
+.note i {
+    width: 0.5vw;
+    padding-left: 1vw;
+    color: rgb(240, 185, 36);
+}
+
+#trou {
+    transition: 1s;
+}
+
+#trou:hover {
+    width: 105%;
+}
+
+.container-img2 {
+    width: 30vh;
+    overflow: hidden;
+}
+
+.trierbij {
+    background: rgba(238, 161, 73, 0.116);
+    font-size: 1vw;
+}
+
+.trierTitle {
+    font-size: 1vw;
+}
+
+.trierbijRight {
+    background: rgba(238, 161, 73, 0.26);
+    width: 10%;
+    transition: 3s ease-in-out;
 }
 
 
@@ -550,11 +670,7 @@ nav {
 /***left***/
 
 .teamWindow {
-    height: 65vh;
-}
-
-.teamTof .col {
-    border: 1px solid black;
+    height: 25vw;
 }
 
 .teamTof {
@@ -564,8 +680,8 @@ nav {
     border-radius: 10%;
     width: 70%;
     height: 70%;
-    margin-left: 7vh;
     margin-top: 6vh;
+    margin-right: 0;
 }
 
 
@@ -577,21 +693,22 @@ nav {
 
 .line {
     border-left: 1px solid rgba(0, 0, 0, 0.24);
-    height: 50vh;
+    height: 40vh;
 }
 
 .socicons {
-    width: 2vw;
+    width: 1.1vw;
     opacity: 0.5;
+    margin-right: 1px;
 }
 
 .socicons3 {
-    width: 1.5vw;
+    width: 1.2vw;
     opacity: 0.5;
 }
 
 .sociconDiv {
-    padding-top: 11vh;
+    padding-top: 2vh;
 }
 
 .sociconDiv a {
