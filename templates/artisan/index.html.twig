@@ -12,34 +12,18 @@
             <div class="row1">
                 <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
                     <div class="container-img">
-                        <img src="{{asset('img/Camille.jpg')}}" class="card-img-top img-pres" alt="...">
+                        <img src="{{asset('images/')}}{{ artisan.image }}" class="card-img-top img-pres" alt="...">
                     </div>
 
                     <div class="card-body spacecard">
                         <h5 class="card-title namecrafts">{{ artisan.firstName }}</h5>
                         <hr class="betweenlign">
-                        <p class="card-text jobtown"> {{ artisan.speciality }}</p>
+                        <p class="card-text jobtown"> {{ artisan.speciality }} - {{ artisan.city }}</p>
                     </div>
                 </a>
             </div> 
+    {% if loop.index % 3 == 0 %} 
+          <hr>   <div class="">  {% endif %}</div>
 {% endfor %}
-    <table class="table">
 
-        <tbody>
-        {% for artisan in artisans %}
-            <tr>
-                <td>{{ artisan.id }}</td>
-                <td>{{ artisan.firstName }}</td>
-                <td>{{ artisan.lastName }}</td>
-                <td>{{ artisan.company }}</td>
-                <td>{{ artisan.email }}</td>
-                <td>{{ artisan.picture }}</td>
-                <td>{{ artisan.speciality }}</td>
-                <td>{{ artisan.about }}</td>
-            </tr>
-
-
-        {% endfor %}
-        </tbody>
-    </table>
 {% endblock %}

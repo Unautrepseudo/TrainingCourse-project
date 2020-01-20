@@ -26,8 +26,6 @@ class User extends BaseUser
      */
     protected $id;
 
-
-
     /**
      * @ORM\Column(type="string", length=100)
      */
