@@ -10,7 +10,7 @@
     </header>
 {% for artisan in artisans %}
             <div class="row1">
-                <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
+                <a id="crafts1" class="card craftsman" href="{{ path('artisan_show', {'id': artisan.id}) }}" style="width: 18rem;">
                     <div class="container-img">
                         <img src="{{asset('images/')}}{{ artisan.image }}" class="card-img-top img-pres" alt="...">
                     </div>
@@ -23,7 +23,7 @@
                 </a>
             </div> 
     {% if loop.index % 3 == 0 %} 
-          <hr>   <div class="">  {% endif %}</div>
+          <hr>   <div class="boucle_art">  {% endif %}</div>
 {% endfor %}
 
 {% endblock %}
