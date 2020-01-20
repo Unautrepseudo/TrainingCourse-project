@@ -7,41 +7,15 @@
         <h1 class="titleartisan">Nos artisans</h1>
         <hr class="lign">
     </header>
-<<<<<<< HEAD
-            <div class="row1">
-            {% for artisan in artisans %}
-            {# {% if user.id == app.user.id %} #}
-                <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
-=======
 
             <div class="row1">
                 <a id="crafts1" class="card craftsman" href="{{ path('artisan_single') }}" style="width: 18rem;">
->>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59
                     <div class="container-img">
                         <img src="{{asset('img/Camille.jpg')}}" class="card-img-top img-pres" alt="...">
                     </div>
 
                     <div class="card-body spacecard">
-<<<<<<< HEAD
-                        <h5 class="card-title namecrafts">{{artisan.username}}</h5>
+                        <h5 class="card-title namecrafts"></h5>
                         <hr class="betweenlign">
-<<<<<<< HEAD
-=======
-                        <p class="card-text jobtown">{{artisan.speciality}} - {{artisan.city}}</p>
->>>>>>> 87739b2e079c131474472292fdb36f89a8632b2c
-                    </div>
-                </a>
-            </div> 
-            {# {% endif %}    #}
-            {% endfor %}   
-
-=======
-                        <h5 class="card-title namecrafts">Camille</h5>
-                        <hr class="betweenlign">
-                        <p class="card-text jobtown">Menusière - Toulouse</p>
-                    </div>
-                </a>
-            </div>    
->>>>>>> 04d0e7b7f2bfdf1b6f208a26bfc558a692b65b59
 
 {% endblock %}
