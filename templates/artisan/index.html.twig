@@ -8,9 +8,10 @@
         <h1 class="titleartisan">Nos artisans</h1>
         <hr class="lign">
     </header>
+    <div class="boucle_art">
 {% for artisan in artisans %}
             <div class="row1">
-                <a id="crafts1" class="card craftsman" href="{{ path('artisan_show', {'id': artisan.id}) }}" style="width: 15rem;">
+                <a id="crafts1" class="card craftsman" href="{{ path('artisan_show', {'id': artisan.id}) }}" style="width: 18rem;">
                     <div class="container-img">
                         <img src="{{asset('images/')}}{{ artisan.image }}" class="card-img-top img-pres" alt="...">
                     </div>
@@ -22,8 +23,9 @@
                     </div>
                 </a>
             </div> 
-    {# {% if loop.index % 3 == 0 %}  #}
-           <hr>   {#<div class="boucle_art">  {% endif %}</div> #}
+    {% if loop.index % 3 == 0 %} 
+         </div>  <br>   
+         <div class="boucle_art">  {% endif %}
 {% endfor %}
 
 {% endblock %}
