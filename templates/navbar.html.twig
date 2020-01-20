@@ -2,7 +2,7 @@
 
  <nav id= 'topPage' class=" row navbar navbar-expand-lg navbar-light d-flex justify-content-around">
     <div class="col-3">
-        <a class="" href="/"><img src="{{asset ('img/logo.png') }}" alt="Art'I'Made, vous avez la main" style="width:35%"></a>
+        <a class="" href="{{ path('home')}}"><img src="{{asset ('img/logo.png') }}" alt="Art'I'Made, vous avez la main" style="width:35%"></a>
     </div>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
             </li>
 
             <li class="nav-item navlink2">
-                <a class="nav-link" href="{{path('artisans')}}" id="navDrop2">Artisans</a>
+                <a class="nav-link" href="{{path('artisan')}}" id="navDrop2">Artisans</a>
             </li>
 
             <li class="nav-item navlink3">
@@ -34,11 +34,17 @@
 
         </ul>
 
-        
-            <form class=" form-inline my-2 my-lg-0 mx-5" action="" method="POST">
-                <input class="form-control mr-sm-2 searchInput icon" type="text" placeholder="Rechercher" aria-label="Search" name="query">
-                <button class="searchButton icon" type="submit" value="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
+           
+            <form class=" form my-2 my-lg-0 mx-5" action="{{path('products_main_page')}}" method="GET">
+                <div class="row mt-3 form-inline">
+                    <input class="form-control mr-sm-2 searchInput icon" id="search" type="search" placeholder="Rechercher" aria-label="Search" name= "search">
+                    <button class="searchButton icon" type="submit" value="search"><img src="{{asset('img/loupe.png')}}" width="20" alt=""></button>
+                </div>
+                <div class="row">
+                <div class="result" id="result"></div>
+                </div>
             </form>
+           
             <div class=" col-1 navcons">
                 <span class="log icon" id="loggin"><a href="{{path('fos_user_security_login')}}"><img src="{{asset('img/log.png')}}" width="40" alt=""></a></span>
                 <span class="cart icon"><a href="{{path('cart')}}"><img src="{{asset('img/cart.png')}}" width="40" alt=""></a></span>
@@ -64,43 +70,42 @@
        <li  class="subMenuD"><a href="{{path('jouets')}}">Jouets</a></li>
     </div>
     <div class=" col-1 d-flex flex-column text-center pl-4 pt-4 text-white nav2 subMenu2 infoHidden">
-        <li><a href="{{path('meubles')}}">Tables</a></li>
-        <li><a href="{{path('meubles')}}">Chaises</a></li>
-        <li><a href="{{path('meubles')}}">Bureaux</a></li>
-        <li><a href="{{path('meubles')}}">Etagères</a></li>
-        <li><a href="{{path('meubles')}}">Armoires</a></li>
+        <li><a href="{{path('tables')}}">Tables</a></li>
+        <li><a href="{{path('chaises')}}">Chaises</a></li>
+        <li><a href="{{path('bureaux')}}">Bureaux</a></li>
+        <li><a href="{{path('etageres')}}">Etagères</a></li>
+        <li><a href="{{path('armoires')}}">Armoires</a></li>
      </div>
      <div class=" col-1 d-flex flex-column pl-4 text-center text-white nav2 subMenu2b infoHidden">
-        <li><a href="{{path('decoration')}}">Poteries</a></li>
-        <li><a href="{{path('decoration')}}">Luminaires</a></li>
-        <li><a href="{{path('decoration')}}">Murales</a></li>
-        <li><a href="{{path('decoration')}}">Bougies</a></li>
+        <li><a href="{{path('poteries')}}">Poteries</a></li>
+        <li><a href="{{path('luminaires')}}">Luminaires</a></li>
+        <li><a href="{{path('murales')}}">Murales</a></li>
+        <li><a href="{{path('bougies')}}">Bougies</a></li>
      </div>
      <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2c infoHidden">
-        <li><a href="{{path('bijoux')}}">Bagues</a></li>
-        <li><a href="{{path('bijoux')}}">Bracelets</a></li>
-        <li><a href="{{path('bijoux')}}">Colliers</a></li>
-        <li><a href="{{path('bijoux')}}">Tête</a></li>
+        <li><a href="{{path('bagues')}}">Bagues</a></li>
+        <li><a href="{{path('bracelets')}}">Bracelets</a></li>
+        <li><a href="{{path('colliers')}}">Colliers</a></li>
+        <li><a href="{{path('tete')}}">Tête</a></li>
      </div>
      <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2d infoHidden">
-        <li><a href="{{path('jouets')}}">Figurines</a></li>
-        <li><a href="{{path('jouets')}}">Jeux</a></li>
-        <li><a href="{{path('jouets')}}">Peluches</a></li>
-        <li><a href="{{path('jouets')}}">Puzzle</a></li>
+        <li><a href="{{path('figurines')}}">Figurines</a></li>
+        <li><a href="{{path('jeux')}}">Jeux</a></li>
+        <li><a href="{{path('peluches')}}">Peluches</a></li>
+        <li><a href="{{path('puzzle')}}">Puzzles</a></li>
      </div>
      <!--Artisans-->
      <div class="row pl-1 testContent reveal">
-     <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2e infoHidden">
-        <li><a href="{{path('artisans')}}">Couturier</a></li>
-        <li><a href="{{path('artisans')}}">Forgeron</a></li>
-        <li><a href="{{path('artisans')}}">Peintre</a></li>
-        <li><a href="{{path('artisans')}}">Menuisier</a></li>
-        <li><a href="{{path('artisans')}}">Forgeron</a></li>
-        <li><a href="{{path('artisans')}}">Peintre</a></li>
-        <li><a href="{{path('artisans')}}">Menuisier</a></li>
-     </div>
-     </div>
-
-    
+        <div class=" col-1 d-flex flex-column pl-4 pt-4 text-center text-white nav2 subMenu2e infoHidden">
+            <li><a href="{{path('artisans')}}">Couturier</a></li>
+            <li><a href="{{path('artisans')}}">Forgeron</a></li>
+            <li><a href="{{path('artisans')}}">Peintre</a></li>
+            <li><a href="{{path('artisans')}}">Menuisier</a></li>
+            <li><a href="{{path('artisans')}}">Potier</a></li>
+            <li><a href="{{path('artisans')}}">Tapissier</a></li>
+            <li><a href="{{path('artisans')}}">Bijoutier</a></li>
+            <li><a href="{{path('artisans')}}">Autre</a></li>
+        </div>
+    </div>
 </div>
 

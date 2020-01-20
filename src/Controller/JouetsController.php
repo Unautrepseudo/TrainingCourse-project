@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Repository\ProductRepository;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -10,10 +12,11 @@ class JouetsController extends AbstractController
     /**
      * @Route("/jouets", name="jouets")
      */
-    public function index()
+    public function index(ProductRepository $productRepository): Response
     {
         return $this->render('jouets/index.html.twig', [
-            'controller_name' => 'JouetsController',
+            'products' => $productRepository->findby (array('categorie' => 'Jouets')),
+
         ]);
     }
 }

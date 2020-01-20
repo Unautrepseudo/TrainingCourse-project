@@ -11,6 +11,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class ProductType extends AbstractType
 {
@@ -22,6 +23,35 @@ class ProductType extends AbstractType
             ->add('price')
             ->add('materials')
             ->add('stock')
+            ->add('categorie', ChoiceType::class, [
+                'choices' => [
+                     'Meubles' => 'meubles',
+                     'Decoration' => 'decoration',
+                     'Bijoux' => 'bijoux',
+                     'Jouets' => 'jouets',
+                 ],
+          ])
+            ->add('type', ChoiceType::class, [
+                'choices' => [
+                     'Tables' => 'tables',
+                     'Chaises' => 'chaises',
+                     'Bureaux' => 'bureaux',
+                     'Etageres' => 'etageres',
+                     'Armoires' => 'armoires',
+                     'Poteries' => 'poteries',
+                     'Luminaires' => 'luminaires',
+                     'Murales' => 'murales',
+                     'Bougies' => 'bougies',
+                     'Bagues' => 'bagues',
+                     'Bracelets' => 'bracelets',
+                     'Colliers' => 'colliers',
+                     'Tete' => 'tete',
+                     'Figurines' => 'figurines',
+                     'Jeux' => 'jeux',
+                     'Peluches' => 'peluches',
+                     'Puzzles' => 'puzzles',
+                ],
+            ])
             ->add('description')
             ->add('user', EntityType::class, [
                 'class' => User::class,

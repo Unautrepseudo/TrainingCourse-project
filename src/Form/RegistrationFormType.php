@@ -17,77 +17,6 @@ use Vich\UploaderBundle\Form\Type\VichImageType;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class RegistrationFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
@@ -102,11 +31,10 @@ class RegistrationFormType extends AbstractType
 
         $builder
         ->add('last_name')
-        ->add('birthday')
         ->add('address')
         ->add('city')
         ->add('zip_code')
-        ->add('phone_number');
+        ;
         
         if($endofurl == 'artisan') 
         {

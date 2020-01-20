@@ -3,9 +3,12 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArtisanRepository")
+ * @Vich\Uploadable
  */
 class Artisan
 {
@@ -27,9 +30,29 @@ class Artisan
     private $last_name;
 
     /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $city;
+
+    /**
      * @ORM\Column(type="string", length=50)
      */
     private $company;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $address;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $zip_code;
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $role_user;
 
     /**
      * @ORM\Column(type="string", length=300)
@@ -37,28 +60,61 @@ class Artisan
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=500)
-     */
-    private $picture;
 
-    /**
      * @ORM\Column(type="string", length=50)
      */
     private $speciality;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(type="text")
      */
     private $about;
+
 
     /**
      * @ORM\OneToOne(targetEntity="App\Entity\User")
      */
     private $user;
 
-    public function __construct()
+    // /**
+    //  * @ORM\OneToMany(targetEntity="App\Entity\product")
+    //  */
+    // private $product;
+
+    /**
+
+     * @ORM\OneToOne(targetEntity="App\Entity\Product")
+     */
+    private $product;
+
+       /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @var string
+     */
+    private $image;
+
+    /**
+    
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
+     * @var File
+     */
+    private $imageFile;
+
+    public function setImageFile(File $image = null)
     {
-        $this->created_at = new \Datetime;
+        $this->imageFile = $image;
+    }
+
+    public function getImageFile()
+
+    {
+        return $this->imageFile;
+    }
+
+    public function __construct()
+
+    {
+        return $this->imageFile;
     }
 
     public function getId(): ?int
@@ -138,18 +194,6 @@ class Artisan
         return $this;
     }
 
-    public function getPicture(): ?string
-    {
-        return $this->picture;
-    }
-
-    public function setPicture(string $picture): self
-    {
-        $this->picture = $picture;
-
-        return $this;
-    }
-
     public function getSpeciality(): ?string
     {
         return $this->speciality;
@@ -175,6 +219,82 @@ class Artisan
     public function setUser(?User $user): self
     {
         $this->user = $user;
+
+        return $this;
+    }
+
+
+    public function getAddress(): ?string
+    {
+        return $this->address;
+    }
+
+    public function setAddress(string $address): self
+    {
+        $this->address = $address;
+
+        return $this;
+    }
+
+
+    public function getCity(): ?string
+    {
+        return $this->city;
+    }
+
+    public function setCity(string $city): self
+    {
+        $this->city = $city;
+
+        return $this;
+    }
+
+
+    public function getZipCode(): ?string
+    {
+        return $this->zip_code;
+    }
+
+    public function setZipCode(string $zip_code): self
+    {
+        $this->zip_code = $zip_code;
+
+        return $this;
+    }
+
+    public function getRoleUser(): ?string
+    {
+        return $this->role_user;
+    }
+
+    public function setRoleUser(?string $role_user): self
+    {
+        $this->role_user = $role_user;
+
+        return $this;
+    }
+
+    public function getProduct(): ?Product
+    {
+        return $this->product;
+    }
+
+    public function setProduct(?Product $product): self
+    {
+        $this->product = $product;
+
+        return $this;
+    }
+
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(?string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }

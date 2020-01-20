@@ -26,17 +26,10 @@ class User extends BaseUser
      */
     protected $id;
 
-
-
     /**
      * @ORM\Column(type="string", length=100)
      */
     private $last_name;
-
-     /**
-     * @ORM\Column(type="datetime")
-     */
-    private $birthday;
 
      /**
      * @ORM\Column(type="string", length=100)
@@ -52,11 +45,6 @@ class User extends BaseUser
      * @ORM\Column(type="string", length=100)
      */
     private $zip_code;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     */
-    private $phone_number;
 
     /**
      * @ORM\Column(type="string", length=100, nullable=true)
@@ -95,6 +83,11 @@ class User extends BaseUser
      */
     private $product;
 
+    // /**
+    //  * @ORM\OneToOne(targetEntity="App\Entity\Artisan")
+    //  */
+    // private $artisan;
+
     public function setImageFile(File $image = null)
     {
         $this->imageFile = $image;
@@ -104,8 +97,7 @@ class User extends BaseUser
     {
         return $this->imageFile;
     }
-    private $artisan_picture;
-
+ 
 
     public function __construct()
     {
@@ -126,18 +118,6 @@ class User extends BaseUser
     public function setLastName(string $last_name): self
     {
         $this->last_name = $last_name;
-
-        return $this;
-    }
-
-    public function getBirthday()
-    {
-        return $this->birthday;
-    }
-
-    public function setBirthday($birthday): self
-    {
-        $this->birthday = $birthday;
 
         return $this;
     }
@@ -174,18 +154,6 @@ class User extends BaseUser
     public function setZipCode(string $zip_code): self
     {
         $this->zip_code = $zip_code;
-
-        return $this;
-    }
-
-    public function getPhoneNumber(): ?string
-    {
-        return $this->phone_number;
-    }
-
-    public function setPhoneNumber(string $phone_number): self
-    {
-        $this->phone_number = $phone_number;
 
         return $this;
     }
@@ -258,6 +226,18 @@ class User extends BaseUser
     public function setProduct(?Product $product): self
     {
         $this->product = $product;
+
+        return $this;
+    }
+
+    public function getArtisan(): ?Artisan
+    {
+        return $this->artisan;
+    }
+
+    public function setArtisan(?Artisan $artisan): self
+    {
+        $this->artisan = $artisan;
 
         return $this;
     }

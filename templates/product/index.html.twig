@@ -16,17 +16,23 @@
                 <th>Picture_two</th>
                 <th>Picture_three</th>
                 <th>Materials</th>
+                <th>Catégories</th>
+                <th>Type</th>
                 <th>Stock</th>
                 <th>Description</th>
+
                 <th>Artisan_company</th>
                 <th>Artisan_name</th>
                 <th>Artisan_picture</th>
+
                 <th>Image</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for product in products %}
+        {% if is_granted('ROLE_ARTISAN') %}
+        {% if product.user.id == app.user.id %}
             <tr>
                 <td>{{ product.id }}</td>
                 <td>{{ product.name }}</td>
@@ -36,6 +42,8 @@
                 <td>{{ product.pictureTwo }}</td>
                 <td>{{ product.pictureThree }}</td>
                 <td>{{ product.materials }}</td>
+                <td>{{ product.categorie }}</td>
+                <td>{{ product.type }}</td>
                 <td>{{ product.stock }}</td>
                 <td>{{ product.description }}</td>
                 <td>{{ product.artisanCompany }}</td>
@@ -43,10 +51,20 @@
                 <td>{{ product.artisanPicture }}</td>
                 <td><img src="{{asset('images/product/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
                 <td>
-                    <a href="{{ path('cart_add', {'id': product.id}) }}">show</a>
-                    <a href="{{ path('cart_add', {'id': product.id}) }}">edit</a>
+
+                    <a href="{{ path('product_show', {'id': product.id}) }}">Afficher</a>
+                    <a href="{{ path('product_edit', {'id': product.id}) }}">Modifier</a>
+                    
+                   
+                    <a href="{{ path('cart_add', {'id': product.id}) }}"  class="btn btn-success float-right">ajout
+                         <i class="fas fa-shopping -cart mr-1">
+                         ajouter
+                    </a>
+
                 </td>
             </tr>
+        {% endif %}
+        {% endif %}
         {% else %}
             <tr>
                 <td colspan="14">no records found</td>
@@ -55,5 +73,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('product_new') }}">Create new</a>
+    <a href="{{ path('product_new') }}">Ajouter un nouveau produit</a>
 {% endblock %}

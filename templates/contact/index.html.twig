@@ -1,11 +1,12 @@
 {% extends 'base.html.twig' %} {% block title %}Contact{% endblock %} {% block body %}
 
+ <div class="clear2"></div>
 <div class="formul">
     <hr class="row1">
     <h1 class="contacttitle">Contactez-nous</h1>
     <hr class="row1">
     <br>
-    <form>
+    <form class='formul1'>
 
         <div class="form-group col-md-12">
             <label for="exampleFormControlInput1">Adresse e-mail</label>
@@ -26,10 +27,10 @@
         </div>
         
         <div class="form-group col-md-12 d-flex justify-content-end ">
-            <button type="submit" class=" d-flex justify-content-center btn btn-outline-secondary col-md-1"><img src="img/courrier.png" style="width:35px;max-height: 25px;" alt=""></button>
+            <button type="submit" class=" d-flex justify-content-center btn btn-outline-secondary col-md-1"><img src="img/courrier.png" style="width:35px;max-height: 25px;" alt="">Envoyer</button>
         </div>
        
     </form>
 </div>
-
+ <div class="clear2"></div>
 {% endblock %}

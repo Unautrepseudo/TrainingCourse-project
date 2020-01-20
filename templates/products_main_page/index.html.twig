@@ -3,26 +3,24 @@
 {% block title %}Product index{% endblock %}
 
 {% block body %}
-    <h1 class="titreallproduct">Tous nos Produits  </h1><hr>
 
-<div class='allproduct'>
-        {% for product in products %}
-            <div class="testproduit">
-                  <div>{{ product.name }}</div>
-                <div>{{ product.reference }}</div>
-                <div>{{ product.price }} en €</div>
-                <div>{{ product.materials }}</div>
-                <div>{{ product.stock }}</div>
-                <div>{{ product.description }}</div>
-                <div><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></div>
-               <a href="{{ path('cart_add', {'id': product.id}) }} " class="btn btn-info" >Ajouter au panier
-                   <i class="fas fa-shopping-cart mr-1"></i>
-               </a>
-            </div>
-            {% if loop.index % 3 == 0 %} <br> <br><br><br> test  {% endif %}
-     {% endfor %}
-      
-        
-</div>
+    <h1 class="titreallproduct">Tous nos Produits  </h1><br><hr>
 
+
+<div class="MainLigneTrois ">
+{% for product in products %}
+    <div class="widthcard ">
+            <div class="card-body centerbodododo reveal-2">
+                <h5 class="reveal-4">{{ product.name }}</h5> 
+                <a href="{{ path('products_main_page_show', {'id': product.id}) }}"><img src="{{asset('images/')}}{{ product.image }}"class="imagemainproduct img-responsive"></a>
+                <p class="reveal-4">Matériaux : {{ product.materials }}</p>
+                <p class="reveal-4">Créé par : {{ product.user }}</p>
+                <p class="priceproduct reveal-3">PRIX : {{ product.price }}€</p>
+             </div>
+      </div>
+    {% if loop.index % 3 == 0 %} 
+</div> <!-- Fin div mainlignetrois -->
+<hr>
+<div class="MainLigneTrois ">  {% endif %}
+{% endfor %}
 {% endblock %}
