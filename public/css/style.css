@@ -415,9 +415,10 @@ nav {
     font-size:1vw;
 }
 .projInfo {
-    margin-top: 10%;
+    margin-top: 30%;
+    padding-top:10%;
     margin-left: 10%;
-    width: 80%;
+    width: 70%;
     font-size: 1.3vw;
 }
 
@@ -425,7 +426,7 @@ nav {
     background: rgba(43, 206, 116, 0.075);
     transform: rotateZ(-6deg);
     border-radius: 3%;
-    height: 40vh;
+    height: 45vh;
     margin-top: 5vh;
     width: 90%;
 }
@@ -444,6 +445,10 @@ nav {
     margin-left: 65%;
 }
 
+.imgProjet-left{
+    width:70%;
+
+}
 
 /***fade effect**/
 
@@ -1961,5 +1966,5 @@ height: 50vh;
 
 /************************************RESPONSIVE***************************************/
 /*****************home*****/
-/*Lumiere sur*/
 
+/*footer*/
