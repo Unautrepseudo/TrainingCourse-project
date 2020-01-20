@@ -306,11 +306,26 @@ document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
 </script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script>
+
+     $(document).ready( function () {
+            jQuery( window ).on( "load",function(){
+                $('#staticBackdrop').modal('show');
+                $(window).scroll(function() {
+                    if ( $(window).scrollTop() == 0 )
+                        $('#staticBackdrop').hide();
+                    else
+                        $('#staticBackdrop').show();
+                });
+                
+            });
+        })
+        /*
         $(document).ready(function(){
             jQuery( window ).on( "load",function(){
                 $('#staticBackdrop').modal('show');
             });
         });
+        */
  </script>
 
  {% endblock %}

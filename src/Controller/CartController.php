@@ -18,10 +18,10 @@ class CartController extends AbstractController
 
         $panierData = [];
 
-        foreach($panier as $id => $stock){
+        foreach($panier as $id => $quantity){
             $panierData[] = [
                 'product' => $ProductRepository->find($id),
-                'stock'=> $stock
+                'quantity'=> $quantity
             ];
 
           
@@ -33,11 +33,10 @@ class CartController extends AbstractController
 
        foreach($panierData as $item )
        {
-           $totalitem = $item['product']->getPrice() * $item['stock'];
+           $totalitem = $item['product']->getPrice() * $item['quantity'];
            $total += $totalitem;
 
        }
-
         //dd($panierData);
 
         return $this->render('cart/index.html.twig', [
@@ -54,7 +53,6 @@ class CartController extends AbstractController
      */
 
     public function add($id, Session $session){
-        
             $panier = $session->get('panier',[]);
             
             if(!empty($panier[$id])){
@@ -62,18 +60,15 @@ class CartController extends AbstractController
             }else{
                 $panier[$id] = 1;
             }
-
-            
-          
             $session->set('panier', $panier);
 
-            return $this->redirectToRoute("cart_index");
+            return $this->redirectToRoute("cart");
     }
 
 
 
        /**
-     * @Route("/panier/remove/{id}", name="cart_remove")
+     * @Route("/panier/{id}", name="cart_remove")
      */
     public function remove($id,Session $session){
         $panier = $session->get('panier',[]);
@@ -83,7 +78,7 @@ class CartController extends AbstractController
         }
         $session->set('panier', $panier);
 
-        return $this->redirectToRoute("cart_index");
+        return $this->redirectToRoute("cart");
     }
 
 
