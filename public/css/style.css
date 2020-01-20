@@ -335,6 +335,10 @@ nav {
 
 /*************LUMIERE SUR*********/
 
+.ampoule{
+    width:50%;
+}
+
 .divLt {
     background: rgba(233, 233, 90, 0.055);
     clip-path: polygon(100% 11%, 94% 23%, 98% 44%, 99% 68%, 95% 83%, 100% 100%, 0 100%, 0 0, 100% 0);
@@ -367,7 +371,6 @@ nav {
 
 #button {
     margin-top: 2%;
-    margin-left: 75%;
     width: 15vh;
     height: 4.5vh;
     border-radius: 10%;
@@ -408,6 +411,9 @@ nav {
 
 /*********LE PROJET*****/
 
+.pProjet{
+    font-size:1vw;
+}
 .projInfo {
     margin-top: 10%;
     margin-left: 10%;
@@ -449,6 +455,7 @@ nav {
     transform: rotateZ(6deg);
     height: 36vh;
     padding: 3%;
+    font-size:1vw;
     color: rgba(0, 0, 0, 0.849);
 }
 
@@ -1953,3 +1960,6 @@ height: 50vh;
 
 
 /************************************RESPONSIVE***************************************/
+/*****************home*****/
+/*Lumiere sur*/
+
