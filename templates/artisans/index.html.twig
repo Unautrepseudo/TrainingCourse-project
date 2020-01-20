@@ -9,10 +9,20 @@
     </header>
             <div class="row1">
             {% for artisan in artisans %}
-            {% if artisan.user.id == app.user.id %}
-            {{artisan.username}}
+            {# {% if user.id == app.user.id %} #}
+                <a id="crafts1" class="card craftsman" href="http://localhost/TrainingCourse-project/public/index.php/artisansingle" style="width: 18rem;">
+                    <div class="container-img">
+                        <img src="{{asset('img/Camille.jpg')}}" class="card-img-top img-pres" alt="...">
+                    </div>
 
-            {% endif %}   
+                    <div class="card-body spacecard">
+                        <h5 class="card-title namecrafts">{{artisan.username}}</h5>
+                        <hr class="betweenlign">
+                        <p class="card-text jobtown">{{artisan.speciality}} - {{artisan.city}}</p>
+                    </div>
+                </a>
+            </div> 
+            {# {% endif %}    #}
             {% endfor %}   
 
 
