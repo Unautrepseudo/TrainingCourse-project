@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 16 jan. 2020 à 15:23
+-- Généré le :  lun. 20 jan. 2020 à 15:05
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.1.33
 
@@ -31,13 +31,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `artisan` (
   `id` int(11) NOT NULL,
   `first_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `picture` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
   `speciality` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `about` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `company` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `user_id` int(11) DEFAULT NULL
+  `user_id` int(11) DEFAULT NULL,
+  `product_id` int(11) DEFAULT NULL,
+  `address` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `city` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `zip_code` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `role_user` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -61,14 +66,6 @@ CREATE TABLE `customer` (
   `created_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Déchargement des données de la table `customer`
---
-
-INSERT INTO `customer` (`id`, `first_name`, `last_name`, `pseudo`, `gender`, `email`, `address`, `city`, `zip_code`, `phone_number`, `birthday`, `created_at`) VALUES
-(1, 'dfgfg', 'dfg', 'dfgdf', 'female', 'aboudoumounir@hotmail.fr', '4 square Pascal Grousset', 'Evry', 91000, 786825697, '2015-01-01 00:00:00', '0000-00-00 00:00:00'),
-(2, 'Mounir', 'Aboudou', 'dfgdfgdfgdfgdf', 'male', 'aboudoumounir@hotmail.fr', '4 square Pascal Grousset', 'Evry', 91000, 786825697, '2015-01-01 00:00:00', '2020-01-10 15:04:38');
-
 -- --------------------------------------------------------
 
 --
@@ -89,11 +86,9 @@ CREATE TABLE `fos_user` (
   `password_requested_at` datetime DEFAULT NULL,
   `roles` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
   `last_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `birthday` datetime NOT NULL,
   `address` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `city` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `zip_code` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone_number` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `role_user` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `company` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -106,13 +101,26 @@ CREATE TABLE `fos_user` (
 -- Déchargement des données de la table `fos_user`
 --
 
-INSERT INTO `fos_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `confirmation_token`, `password_requested_at`, `roles`, `last_name`, `birthday`, `address`, `city`, `zip_code`, `phone_number`, `role_user`, `company`, `image`, `speciality`, `about`, `product_id`) VALUES
-(19, 'jerome', 'jerome', 'jerome@hotmail.fr', 'jerome@hotmail.fr', 1, 'B9HItIiAEKNCdgPMkOI2XiSrgQSTsSJ8BtuVxlWd2vA', '$2y$13$ZBHztIY1cTXD9mKzHus07O0GAtVzGx9YT3bLynQRctXaGd0dG/Rei', NULL, NULL, NULL, 'a:0:{}', 'NomJerome', '2022-05-02 07:09:00', 'rue jerome', 'Trappes', '78000', '0102030405', 'customer', NULL, NULL, NULL, NULL, NULL),
-(20, 'julien', 'julien', 'julien@hotmail.fr', 'julien@hotmail.fr', 1, '4vbLNh2pDzjuIGiS8I/53nYam9ngojzg8nwTR8F.yNY', '$2y$13$DziHLSJ5g7reJMIGd1.LXueDvmLyc49AC7W5jlK1FEPItvf.pfjt6', NULL, NULL, NULL, 'a:0:{}', 'Nomjulien', '2020-06-08 05:05:00', 'rue julien', 'Trappes', '78000', '0102030405', 'customer', NULL, NULL, NULL, NULL, NULL),
-(21, 'Seb', 'seb', 'seb@gmail.com', 'seb@gmail.com', 1, '4qW0LJCIVEQkM0MLWCjtyCYOzqFbOC06f2J1TD8mDbw', '$2y$13$7KM27UWX8hOUiP26bX3KheMwZQ1KGLHJDWg2VcIREtunRIyjIxLdS', NULL, NULL, NULL, 'a:0:{}', 'NomSeb', '2022-11-08 00:04:00', 'rue seb', 'Trappes', '78000', '0102030405', 'customer', NULL, NULL, NULL, NULL, NULL),
-(22, 'Camille', 'camille', 'camille@gmail.com', 'camille@gmail.com', 0, 'hw8DdEOMAq3SAlGm/9jkP94o3AO9Mhvp.JIHJeojYHw', '$2y$13$idvJzMK08eh92kGEwgt4r..vOzzQQ4sIzDaJR7RgZqt3nfG1mUUj6', NULL, NULL, NULL, 'a:0:{}', 'Ellimac', '2021-07-09 08:11:00', 'rue Camille', 'Trappes', '78000', '0102030405', 'artisan', 'CamilleFirme', 'Camille.jpg', 'Ameublement', 'J\'aime créer des meubles en bois pour toute la maison', NULL),
-(23, 'Maellya', 'maellya', 'maellya@gmail.com', 'maellya@gmail.com', 0, 'WEwgbIYvOVzfjFVN/rGL1ZVnGBdHERWS5miRjF1Git8', '$2y$13$ILyfVNZngVel7sbmBn6nTOtf/NM1ZsM5fnh.GFYwIi1nK0XTTXGYe', NULL, NULL, NULL, 'a:0:{}', 'Aylleam', '2019-05-18 00:00:00', 'rue de maellya', 'Trappes', '78000', '0102030405', 'artisan', 'MaellyaFirme', 'Maellya.jpg', 'joalier', 'J\'aime créer des bijoux pour toute la famille', NULL),
-(24, 'Edouardo', 'edouardo', 'edouardo@gmail.com', 'edouardo@gmail.com', 0, 'TD/gEUnIrmd9GE382p8vKmyBUy19KKmrt5tYV3dI.4Y', '$2y$13$vICVBZWHwmc1rXpY7vi92On0d7HrgOxQRLaA3WpjRWhGC9M0viHiG', NULL, NULL, NULL, 'a:0:{}', 'Odrauode', '2025-12-29 00:00:00', 'rue edouardo', 'Trappes', '78000', '0102030405', 'artisan', 'EdouardoFirme', 'edouardo.jpg', 'potier', 'J\'aime créer des produits pour la maison', NULL);
+INSERT INTO `fos_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `confirmation_token`, `password_requested_at`, `roles`, `last_name`, `address`, `city`, `zip_code`, `role_user`, `company`, `image`, `speciality`, `about`, `product_id`) VALUES
+(28, 'Camille', 'camille', 'camille@gmail.com', 'camille@gmail.com', 1, 'u/bULc4puHt8dBX7C/X6KfT9rWh3WjSH/0oKxQfnfog', '$2y$13$uzfkU0.qIafdsTgbrvPe5.qG58Ue9D93rfdjcmY05VAUcXdMSqs/u', '2020-01-20 12:55:14', NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Dubois', 'Rue de camille', 'Toulouse', '31000', 'artisan', 'Chaise\'amille', 'Camille.jpg', 'Menusier', 'Chaise\'amille, c\'est surtout le bonheur, l\'important du sois, le travail par moi même. J\'aime le boi', NULL),
+(29, 'Edouard', 'edouard', 'edouard@gmail.com', 'edouardo@gmail.com', 1, 'lWDvdduHlplG1vd0zCMmOTBZIFqkDS1IwBaeKOHUOdQ', '$2y$13$FV5zS0J6rI.ubuV1hbYKLufUMz/h34boSS.DJtRvkF3QULMae444q', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Labour', 'Rue Edouard', 'Strasbourg', '67000', 'artisan', 'Le cabinet Cogniac', 'Edouard.jpg', 'Menusier', 'Le cabinet Cogniac, c\'est avant tout un projet fait main, par mes mains, pour vos envies ! je ne fai', NULL),
+(36, 'Edwig', 'edwig', 'edwig@gmail.com', 'edwig@gmail.com', 1, 'Sr4XTjz/XGM5yli9mCuiMu33NI2NKr9RgVPQja8kV0c', '$2y$13$U14APp3LVofRUhVX7ApYme5FofpKBLjbPk0mciHlM85.4KwjXfsfW', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Lechamp', 'rue edwig', 'Brest', '29200', 'artisan', 'Edwig familly', 'Edwig.jpg', 'Forgeron', 'Edwig family c\'est avant tout une histoire de famille. La conception de meubles nous connait depuis', NULL),
+(37, 'François', 'françois', 'francois@gmail.com', 'francois@gmail.com', 1, 'RkkyDTQxPxCCk4HqbW7xb5ENzLmQXVwS7O9HIkusgoA', '$2y$13$Ssm6dQC67k2KZepb0vkAdO8L/bEPvguFLtEjopoL2.K6J536IIxuu', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Dupont', 'Rue françois', 'Nice', '06000', 'artisan', 'Franc Azur', 'François.jpg', 'Bijoutier', 'François , 47 ans, Orphèvre depuis mes 10 ans. J\'aime faire ce métier, et je le ferrais jusqu\'a ma m', NULL),
+(38, 'Jean-Baptiste', 'jean-baptiste', 'jeanbaptiste@gmail.com', 'jeanbaptiste@gmail.com', 1, 'LndPX7zwc9ZMrXbsUa3mU9S/jPf29Y61Z2JgX3mcbu4', '$2y$13$bqP1/sH9D7AXZJ.Uwlk.V.7stPYK51WdAXCbl56gvIg55qEyARGWO', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Lavois', 'Rue Jean-Baptiste', 'Bordeaux', '33000', 'artisan', 'Eben', 'Jean Baptiste.jpg', 'Menusier', 'Jean-Baptiste ébéniste de père en fils, créant chaise et meuble à votre convenance, toute les pièces', NULL),
+(39, 'Julie', 'julie', 'julie@gmail.com', 'julie@gmail.com', 1, '2W83RtexIbVid3HG0zGeUWEpSIT3sJapHmeRA5vsnp0', '$2y$13$Qe./IYgLx9tL00KahEc5UeWP8XhkDKJD0Hr43Ic6VZsNOj0Y7pufG', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Ducroix', 'Rue de Julie', 'Lille', '59000', 'artisan', 'Forg Life', 'Julie.jpeg', 'Forgeron', 'Techniques modernes et savoir-faire traditionnel à votre service Redonnez une seconde vie à vos meub', NULL),
+(40, 'Julien', 'julien', 'julien@gmail.com', 'julien@gmail.com', 1, 'tNPe06PiCEubbot7JqUYndS7wyYQkeisEIlqFwEE6Ro', '$2y$13$/aXNh5EjOLkh/.cdZja55e.bsI2q.OBj0iRYWAIBSRo.p6nF0RWbq', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Delacroix', 'Rue de Julien', 'Evry', '91000', 'artisan', 'Jouet Main', 'Julien.jpg', 'Autre', 'Jouets fait main, fais pas le malin, tel est ton destin ! Amazon en octogone, ebay soldé ! Mort aux', NULL),
+(41, 'Luc', 'luc', 'luc@gmail.com', 'luc@gmail.com', 1, 'ZoybWVzSY2Lx4mmu88Vu0pP49h6/1IXE6wyGzTd8RJY', '$2y$13$VnUfgoD9MVTDLTHzjx5DtO9QY4EGl2hFnRRDfMfdh0rIN.NRcafVG', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Lamar', 'Rue de Luc', 'Paris', '75003', 'artisan', 'Au potier heureux', 'Luc.jpg', 'Potier', 'Au potier heureux, on est heureux et comme vous l\'avez devinez , on fait de la poterie. Tout est her', NULL),
+(42, 'Lucas', 'lucas', 'lucas@gmail.com', 'lucas@gmail.com', 1, 'xQBOE6C1MDOiVdo2zhQnEXbeOPbsGrmutRAdfprSU8U', '$2y$13$B3Pcn1K2WIhHev2kwm0wMeBQ7cwRLWdvdYVzw6NKhHjvj0y9NigDS', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Lacour', 'Rue de Lucas', 'Marseille', '13000', 'artisan', 'JouetClub', 'Lucas.jpg', 'Autre', 'Jouet club, jouet club, la passion du jouet ! Jouet club, jouet club, la passion du jouet ! Jouet cl', NULL),
+(43, 'Ludwig', 'ludwig', 'ludwig@gmail.com', 'ludwig@gmail.com', 1, 'TpDk//71mKmej7mh3uBF.ydc44kLEcUxUiFV7R4UHDU', '$2y$13$2054m1uBNCLe9sd5BCqxGe7Stgu9DAnc.agvFFFpNgrRg3ZOQx28.', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Bonhumeur', 'Rue de Ludwig', 'Lyon', '69000', 'artisan', 'Lu Jouet', 'Ludwig.jpeg', 'Autre', 'Ludwig 60 ans, 30 ans de métier', NULL),
+(44, 'Lyza', 'lyza', 'lyza@gmail.com', 'lyza@gmail.com', 1, 'GBEP2aE1jXvfv3lP8CHCcFdhQSewqkCuuK/1zyK/EZo', '$2y$13$bbzoHlptOmI1BhA1TontaulBQQqKkfF/U9lBW26LGhB1ROjvKKR8S', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Lajoie', 'Rue de Lyza', 'Cergy', '95000', 'artisan', 'Manufac Ly', 'Lyza.jpg', 'Forgeron', 'Manufacture, manufacture, tout est mure, nous ne construisons pas des murs. Manufacture, manufacture', NULL),
+(45, 'Maellya', 'maellya', 'maellya@gmail.com', 'maellya@gmail.com', 1, 'HxmWZZ8Wa2BZqS.1ur9KbqMq.Qb0pzyj8nbQv8SUDSg', '$2y$13$zmH6qXeSOI4Sba9qWl1T6u6uoy6jEuzK4UgrfMsT4UieVNJtVJZf.', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Victoire', 'rue de Maellya', 'Massy', '91300', 'artisan', 'BijouMain', 'Maellya.jpg', 'Bijoutier', 'Etre bien c\'est nous choisir', NULL),
+(46, 'Malik', 'malik', 'malik@gmail.com', 'malik@gmail.com', 1, 'QYfmdXsNVygDKDxriJ/tsaY6zUZvMxLXAZMdPOiMU0o', '$2y$13$O9S1aSJ/406l1j/bIybstePKrlm7G79FvNcJRdvSt/12ciwQ5/xeC', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Yan', 'Rue du roi', 'Gentilly', '94250', 'artisan', 'PerlBi', 'Malik.jpg', 'Bijoutier', 'perles et bijoux, Tout types de matériaux, Savoir faire mémorable, Savoir faire innégalable, La décé', NULL),
+(47, 'Mohammed', 'mohammed', 'mohammed@gmail.com', 'mohammed@gmail.com', 1, 'mTPWBTsAk56ciCA2rI4rBTFI3JPwKpWCIHGihXaW7VM', '$2y$13$pvYg6qHrp2KDh5AsdHBU8.IR.XKKjJRKWhiL3q12IkULEUnROmWoC', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Davoix', 'Rue de Mohammed', 'Rungis', '94150', 'artisan', 'Tapicour', 'Mohammed.jpg', 'Tapissier', 'la description n\'est pas utile au vu de la qualité des produits', NULL),
+(48, 'Sahmara', 'sahmara', 'sahmara@gmail.com', 'sahmara@gmail.com', 1, 'zoNbnwZadE3ipmX9IEAFsgxmoQjYrtqI3BCLrt2dlkA', '$2y$13$7PIQfe0j8CYTnDRx1OHhcuBk5ANjymg8Ay9l5yg87b2byd9A4kV8u', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Hayek', 'Rue de Sahmara', 'Rennes', '35000', 'artisan', 'Poterie et compagnie', 'Sahmara.jpg', 'Potier', 'Poterie et compagnie, un lieu conviviale, ou l\'amour est dans l\'air, l\'amour de l\'agile et du travai', NULL),
+(49, 'Youlu', 'youlu', 'youlu@gmail.com', 'youlu@gmail.com', 1, 'i3Y/E0/cgm0ibn14oPP3/7baHxuss.aHMXAHBgGS.kw', '$2y$13$tWYOMj.P5BdoCEPqQHPOqOH1oZs/SVAGjazQvSW1ylwJzWoJzdkDS', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Yana', 'Rue de Youloulou', 'Nantes', '44000', 'artisan', 'Yayou Pot', 'Youlu.jpg', 'Potier', 'La poterie c\'est ma vie et je vous partage ma passion', NULL),
+(50, 'Edgar', 'edgar', 'edgar@gmail.com', 'edgar@gmail.com', 1, '6yP7quCsLyYzgsOljay6qBup7TOU8fZlF7DlZE8Kb7Q', '$2y$13$MB2zHkzsHMvelNPaMN1UN.wZ5QLcKlPuI1zMGGsOsfR3DynLvDkNq', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Lefil', 'Rue Edgar', 'Toulon', '83000', 'artisan', 'Pita Ed', 'edgar.jpg', 'Tapissier', 'Les tapis c\'est ma passion', NULL),
+(51, 'Particia', 'particia', 'particia@gmail.com', 'particia@gmail.com', 1, 'Mt36JKE0EtsS1X4F2SifgyqVRGRT5nphGZY5EfWoi3A', '$2y$13$qYxFgfy63WFr40REvUri7u51mUPvpzolPvADI17tXuq.3qDSI.pYS', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Delacour', 'Rue de Patricia', 'Pau', '64000', 'artisan', 'Patapicia', 'Patricia.jpg', 'Tapissier', 'De beau tapis pour toute votre maison', NULL),
+(52, 'Henry', 'henry', 'henry@gmail.com', 'henry@gmail.com', 1, 'ePT8jNeEI.KSxP..EnWhaKApfsxDWwT5JtlXWXCebIc', '$2y$13$rpa.5FgS3KxGCtUN1hJXYuznHCc5P.6Mcwp3R9.Th8oB19GGD5Zk.', NULL, NULL, NULL, 'a:1:{i:0;s:12:\"ROLE_ARTISAN\";}', 'Thierry', 'Rue Henry IV', 'Melun', '77000', 'artisan', 'Arc en ciel', 'Henry.jpg', 'Peintre', 'Peindre nos vies de toutes les couleurs', NULL);
 
 -- --------------------------------------------------------
 
@@ -129,17 +137,10 @@ CREATE TABLE `product` (
   `stock` int(11) NOT NULL,
   `description` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `user_id` int(11) DEFAULT NULL
+  `user_id` int(11) DEFAULT NULL,
+  `categorie` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Déchargement des données de la table `product`
---
-
-INSERT INTO `product` (`id`, `name`, `reference`, `price`, `materials`, `stock`, `description`, `image`, `user_id`) VALUES
-(8, 'Chaise en boix', '123', 45, 'bois', 6, 'Très belle chaise en bois', 'chaise.jpg', 22),
-(9, 'Collier en or', '456', 1568, 'or', 7, 'Très beau collier en or', 'collier 1.jpg', 23),
-(10, 'Vase', '789', 25, 'plâtre', 6, 'Jolie vase', 'Robot 1.jpg', 24);
 
 --
 -- Index pour les tables déchargées
@@ -150,7 +151,8 @@ INSERT INTO `product` (`id`, `name`, `reference`, `price`, `materials`, `stock`,
 --
 ALTER TABLE `artisan`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `UNIQ_3C600AD3A76ED395` (`user_id`);
+  ADD UNIQUE KEY `UNIQ_3C600AD3A76ED395` (`user_id`),
+  ADD UNIQUE KEY `UNIQ_3C600AD34584665A` (`product_id`);
 
 --
 -- Index pour la table `customer`
@@ -195,13 +197,13 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT pour la table `fos_user`
 --
 ALTER TABLE `fos_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT pour la table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Contraintes pour les tables déchargées
@@ -211,6 +213,7 @@ ALTER TABLE `product`
 -- Contraintes pour la table `artisan`
 --
 ALTER TABLE `artisan`
+  ADD CONSTRAINT `FK_3C600AD34584665A` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`),
   ADD CONSTRAINT `FK_3C600AD3A76ED395` FOREIGN KEY (`user_id`) REFERENCES `fos_user` (`id`);
 
 --
