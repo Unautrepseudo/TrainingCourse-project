@@ -68,10 +68,10 @@ class Product
      */
     private $imageFile;
 
-    public function __construct()
-    {
-        $this->created_at = new \Datetime;
-    }
+    // /**
+    //  * @ORM\ManyToOne(targetEntity="App\Entity\Artisan")
+    //  */
+    // private $artisan;
 
 
     public function getId(): ?int

@@ -885,13 +885,13 @@ nav {
     height: AUTO;
 }
 
-/* .imgproduct {
+.imgproduct {
     width: 50vh;
     height: 50vh;
     margin-bottom: 10vh;
     margin-top: 5vh;
     margin-right: 5vh;
-} */
+}
 
 .restproduct {
     width: 40%;
@@ -1023,7 +1023,6 @@ nav {
     border-radius: 10vh;
     overflow: hidden;
     transition: 0.5s;
-    height: 4vh;
 }
 
 .butonbuton:hover {
@@ -1930,57 +1929,12 @@ a:hover {
 
 /**************************************** ProductMainPage *******************************************/
 
-<<<<<<< HEAD
-.titreallproduct
-{
-    text-align: center;
-    font-style: italic;
-}
-
-.MainLigneTrois
-{
-=======
 .testproduit {
     height: 305vh;
     background: rgb(30, 172, 96);
->>>>>>> new_page_artisan
     display: flex;
-    width: 80%;
-    justify-content: center;
-    margin: 0 auto;
 }
 
-<<<<<<< HEAD
-.widthcard
-{
-    width: 30%;
-    margin : 2vh 5vh;
-    text-align: center;
-    border: 3px solid burlywood;
-    border-radius: 3.5vh;
-}
-
-.imagemainproduct {
-    width: 50%;
-    height: 50%;
-    margin: 1vh 0;
-}
-
-
-
-.priceproduct
-{
-    font-weight: bold;
-    box-shadow: 2px 2px 5px 1px burlywood;
-
-}
-.centerbodododo {
-    text-align: center;
-    justify-content: center;
-}
-
-
-=======
 .tierdemap {
     background: deepskyblue;
     width: 50vh;
@@ -1998,4 +1952,3 @@ a:hover {
     background: red;
     width: 30%;
 }
->>>>>>> new_page_artisan
