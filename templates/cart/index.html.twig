@@ -5,39 +5,65 @@
 {% block body %}
      <div class="bg-light p-3">
        <h1>Votre panier</h1>
+   <ul class="nav ">
+         <li class="nav-item">
+            <a class="nav-link active text-dark" href="#">Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="{{path('products_main_page')}}">Product</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Artisan</a>
+         </li>
+   </ul>
      <div>
-     
-
-      {% if items | length > 0 %}
-       <table class="table">
-         <thead>
-            <tr>
-               <th>Product</th>
-               <th>Prix</th>
-               <th>Quantité</th>
-               <th>Total</th>
-               <th></th>
+       {% if items | length > 0 %}
+         <table class="table">
+            <thead>
+               <tr>
+                  <th>Produits</th>
+                  <th>Prix</th>
+                  <th>Quantité</th>
+                  <th>Reference</th>
+                  <th>Materiel</th>
+                  <th>Description</th>
+                  <th>Total</th>
+                  <th>
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+                {% for item in items %}
+                   <tr>
+                     <td>{{item.product.name}}</td>
+                     <td>{{item.product.price}}</td>
+                     <td>{{item.quantity}}</td>
+                     <td>{{item.product.reference}}</td>
+                     <td>{{item.product.materials}}</td>
+                     <td>{{item.product.description}}</td>
+                     <td>{{item.product.price}}</td>
+                     <td><a href="{{path('products_main_page')}}" class="btn btn-success">Ajouter</a></td>
+                     <td><a href="{{ path('cart_remove', {'id': item.product.id}) }} " class="btn btn-danger">Remove</a></td>
+                   </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+               <tr>
+                 <td colspan="6" class="text-right">Total :</td>
+                 <td>{{ total}}</td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+              </tr>
+              <tr>
+               <td colspan="7" class="text-right"><a href="{{path('paie_finale')}}" class="btn btn-info float-">
+               <i class="fa fa-shopping-cart"></i> Valider</a></td>
             </tr>
-         </thead>
-         <tbody>
-             {% for item in items %}
-                 <tr>
-                    <td>{{item.Product.title}}</td>
-                    <td>{{item.Product.price}}</td>
-                    <td>{{item.Product.quantity}}</td>
-                    <td>{{item.Product.price * item.quantity}}</td>
-                     <td>
-                      <a href="#" class="btn btn-danger.btn-sm">
-                         <i class="fas.fa-trash"></i>
-                      </a>
-                     </td>
-                 </tr>
-             {% endfor %}
-         <tbody>
-       </table>
-       {% else %}
-           <p>Mon panier est vide</p>
-      {% endif %}
-      
-
+            </tfoot>  
+         </table>
+        {% else %}
+            <p>Mon panier est vide</p>
+       {% endif %}
 {% endblock %}
+
