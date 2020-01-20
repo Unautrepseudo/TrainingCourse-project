@@ -557,6 +557,18 @@ nav {
     width:40%;
 }
 
+.paybuIco{
+    width:1vw;
+}
+
+/*****Bouton produits*****/
+
+.payButton{
+    border-radius:15%;
+    width: 3vw;
+}
+
+
 
 .scrollOp2{
     border-radius: 50%;
@@ -1961,3 +1973,4 @@ a:hover {
     background: red;
     width: 30%;
 }
+
