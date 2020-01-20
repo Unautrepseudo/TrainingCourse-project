@@ -39,8 +39,12 @@
                 <td>{{ product.user }}</td>
                 <td><img src="{{asset('images/')}}{{ product.image }}" style="width:75px;max-height: 75px;"></td>
                 <td>
-                    <a href="{{ path('product_show', {'id': product.id}) }}">show</a>
-                    <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>
+                    <a href="{{ path('cart_add', {'id': product.id}) }}">show</a>
+                    <a href="{{ path('cart_add', {'id': product.id}) }}">edit</a>
+                    <a href="{{ path('cart_add', {'id': product.id}) }}"  class="btn btn-success float-right">ajout
+                         <i class="fas fa-shopping -cart mr-1">
+                         ajouter
+                    </a>
                 </td>
             </tr>
         {% endif %}

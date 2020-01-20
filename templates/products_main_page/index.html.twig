@@ -1,20 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProductsMainPageController!{% endblock %}
+{% block title %}Product index{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1 class="titreallproduct">Tous nos Produits  </h1><br><hr>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'G:/Coding/htdocs/TrainingCourse-project/src/Controller/ProductsMainPageController.php'|file_link(0) }}">src/Controller/ProductsMainPageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'G:/Coding/htdocs/TrainingCourse-project/templates/products_main_page/index.html.twig'|file_link(0) }}">templates/products_main_page/index.html.twig</a></code></li>
-    </ul>
-</div>
+<div class="MainLigneTrois ">
+{% for product in products2   %}
+    <div class="widthcard ">
+            <div class="card-body centerbodododo reveal-2">
+                <h5 class="reveal-4">{{ product.name }}</h5> 
+                <a href="{{ path('products_main_page_show', {'id': product.id}) }}"><img src="{{asset('images/')}}{{ product.image }}"class="imagemainproduct img-responsive"></a>
+                <p class="reveal-4">Matériaux : {{ product.materials }}</p>
+                <p class="reveal-4">Créé par : {{ product.user }}</p>
+                <p class="priceproduct reveal-3">PRIX : {{ product.price }}€</p>
+             </div>
+      </div>
+    {% if loop.index % 3 == 0 %} 
+</div> <!-- Fin div mainlignetrois -->
+<hr>
+<div class="MainLigneTrois ">  {% endif %}
+{% endfor %}
 {% endblock %}

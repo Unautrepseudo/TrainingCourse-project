@@ -1,27 +1,65 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ModeDePaiementController!{% endblock %}
-
+{% block title %}Modes de paiement{% endblock %}
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<h1 class="center"> Modes de Paiement </h1>
-<br>
-<div class="livraison">
+<header>
+    <hr class="lign mt-5">
+    <h1 class="titleartisan">Modes de paiement</h1>
+    <hr class="lign mb-5">
+</header>
 
-    <div class="livraison1"> 
-    <img class='logoups'src="{{asset('img/cb.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"> Nous acceptons les Blues Cards, MasterCards, Visa Cards, AmericanExpressCard, en utilisant leurs systèmes ultra sécurisant et sécurisé. <br> Nous ne garderons aucune informations sur vos moyens de paiement, tout est traité directement par votre banque, pour votre banque ! 
-    </div>
-
-    <div class="livraison2"><img src="{{asset('img/bifton.png')}}" style=" box-shadow: 8px 8px 12px #aaa;">
-    </div>
-
-    <div class="livraison3">
-        <a href="https://www.paypal.com/fr/home" target="blank"><img class='logoups paypal' src="{{asset('img/paypal.png')}}" style=" box-shadow: 8px 8px 12px #aaa;"></a> Paypal est une entreprise de commerce électronique (e-commerce) qui facilite les paiements entre les parties par le biais de transferts de fonds en ligne. PayPal permet aux clients d'ouvrir un compte sur sa plateforme, qui est connecté à la carte de crédit ou au compte courant d'un utilisateur.
-    </div>
-  
+<div class="row justify-content-center">
+        <div class="col-6 d-flex">
+            <img class='delivImg mr-4 mt-1'src="{{asset('img/cb.png')}}">
+            <p>
+                Les moyens de paiement suivantss peuvent être utilisées : <br>
+                Carte bancaire
+                Visa 
+                Visa Electron
+                EuroCard/MasterCard
+                American Express
+                Carte Aurore
+                Carte prépayée
+                Prélèvement SEPA
+                Si vous réglez votre commande avec une carte de paiement, il vous sera demandé d'entrer les détails de cette carte lors du processus de commande, et de suivre les instructions fournies lorsque vous passez votre première commande.
+                Si vous souhaitez ajouter une carte de paiement dans votre compte ou modifier une carte déjà enregistrée, rendez-vous dans Votre Compte puis cliquez sur Options de paiement pour accéder à Votre Portefeuille.
+            </p>
+        </div>
 </div>
+ <div class="row justify-content-center d-flex">
+    <div class=" col-6 livraison">
+        <p> Vous avez également la possibilité de payer en plusieurs fois afin de régler vos commandes.
+            Votre carte de paiement peut être sujette au processus de vérification du paiement par votre banque. Pour obtenir des informations supplémentaires à ce sujet, rendez-vous sur notre page d'aide : Processus de vérification du mode de paiement par carte
+            Certains moyens de paiement ne peuvent pas être utilisés chez nous. Nous n'acceptons pas :
+            les chèques ou mandats postaux
+            les espèces, quelle que soit la devise
+            les bons d'achat pour des livres
+            les bons de commande
+            les transferts internationaux
+            les paiements par PayPal
+            les virements bancaires<br>
+        </p>
+        <p>
+            Livraison sûre et rapide en remise contre signature par un transporteur indépendant.Pour la France Métropolitaine, la Corse et Monaco : livraison 24hr par Chronopost pour les commandes dont le poids total est inférieur à 90kg.
+            Livré le lendemain matin avant 18h à votre domicile. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officiis quaerat velit corrupti. Unde ipsam esse error numquam atque cum!
+        </p>
+    </div>
+</div>   
+<br>  
+<div class="row justify-content-center"><br><hr>
+    <div class="col-6 d-flex">
+        <p>
+            Livraison payante pour :  Colis livré le lendemain matin avant 13h à votre domicile. La veille de la livraison, vous êtes averti par e-mail et SMS. Par Chronopost.
+            Pour la France Métropolitaine, et la Corse : nouveau transporteur UPS. COMMANDEZ AVANT 13h, SOYEZ LIVRE DEMAIN.  Livraison du Lundi au Vendredi - jours ouvrables
+            Livraison 2 à 3 jours ouvrés par transporteur pour les commandes supérieures à 90kg ou comportant des produits dont les dimensions ne permettent pas l'envoi par Chronopost.
+            Pour l’Outre Mer : livraison 4 à 8 jours ouvrables par Coliposte. * hors produits signalés exclus de l'offre transport offert
+        </p>
+        <img class='delivImg2 mr-2'src="{{asset('img/paypal.png')}}"> 
+    </div>
+ </div>   
+
+<div class="clear2"></div>
+
 {% endblock %}
+

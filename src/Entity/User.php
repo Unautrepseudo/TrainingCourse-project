@@ -83,6 +83,11 @@ class User extends BaseUser
      */
     private $product;
 
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\Artisan")
+     */
+    private $artisan;
+
     public function setImageFile(File $image = null)
     {
         $this->imageFile = $image;
@@ -221,6 +226,18 @@ class User extends BaseUser
     public function setProduct(?Product $product): self
     {
         $this->product = $product;
+
+        return $this;
+    }
+
+    public function getArtisan(): ?Artisan
+    {
+        return $this->artisan;
+    }
+
+    public function setArtisan(?Artisan $artisan): self
+    {
+        $this->artisan = $artisan;
 
         return $this;
     }
