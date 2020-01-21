@@ -42,7 +42,7 @@
            
             <div class=" col-lg-3 col-md-4 col-sm-12 col-xs-12 navcons">
                 {% if is_granted('ROLE_ARTISAN') %}
-                   <a href="/logout"><i class="far fa-times-circle logoutbutton"></i></a> 
+                   {# <a href="/logout"><i class="far fa-times-circle logoutbutton"></i></a>  #}
                     <span class="store icon"><a href="{{path('product_index')}}"><img src="{{asset('img/store.png')}}" class="loginbutton" alt=""></a></span> 
                 {% else %}
                 {% endif %}

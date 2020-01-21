@@ -73,11 +73,13 @@
 
     <div class="clear"></div>
 
-    <section class='currentProducts'>
+    
+
+        <section class='currentProducts'>
         <div class='text-center mb-5 mx-auto titleCurrent'>
             <span class= 'tCurText ml-5 reveal-1'>Produits du moment</span>
             <span class='ml-4 plusPro'>
-                <a href="{{path('products_main_page')}}"><img src="{{asset('img/iconPlus.png')}}" alt="">
+                <a href="{{path('products_main_page')}}"><img src="{{asset('img/iconPlus.png')}}" class="img-fluid" alt="">
                 <span class="plusWord ml-1 reveal-2">de produits</span>
                 </a>
             </span>
@@ -85,59 +87,11 @@
         </div>
 
         <div class="row d-flex justify-content-around mx-auto mt-5 currentCards">
-            <div class="card mt-5 ml-5 reveal" style="width: 18rem;">
-                <a class= 'cardA' href="">
-                    <div class='container-img'><img src="https://picsum.photos/id/20/800/600" class="card-img-top reveal-1 img-pres" width='100%' alt="..."></div>
-                    <div class="card-body">
-                    <span class="currentPrice reveal-2"> 60,50 € </span>
-                    <span class='note reveal-2'>
-                        <i class="fas fa-star fas1"></i>
-                        <i class="fas fa-star fas2"></i>
-                        <i class="fas fa-star fas3"></i>
-                        <i class="fas fa-star fas4"></i>
-                        <i class="fas fa-star fas5"></i>
-                    </span>
-                        <p class="card-text cCarText reveal-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="card mb-3 reveal" style="width: 18rem;">
-                <a class= 'cardA' href="">
-                    <div class='container-img'><img src="https://picsum.photos/id/15/800/600" class="card-img-top reveal-1 img-pres" alt="..."></div>
-                    <div class="card-body">
-                        <span class="currentPrice reveal-2"> 60,50 € </span>
-                        <span class='note reveal-3'>
-                            <i class="fas fa-star fas1"></i>
-                            <i class="fas fa-star fas2"></i>
-                            <i class="fas fa-star fas3"></i>
-                            <i class="fas fa-star fas4"></i>
-                            <i class="fas fa-star fas5"></i>
-                        </span>
-                        <p class="card-text cCarText reveal-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="card mt-5 reveal" style="width: 18rem;">
-                <a class= 'cardA' href="">
-                    <div class='container-img'><img src="https://picsum.photos/id/10/800/600" class="card-img-top reveal-2 img-pres"  alt="..."></div>
-                    <div class="card-body">
-                        <span class="currentPrice reveal-1"> 80,50 € </span>
-                        <span class='note reveal-4'>
-                            <i class="fas fa-star fas1"></i>
-                            <i class="fas fa-star fas2"></i>
-                            <i class="fas fa-star fas3"></i>
-                            <i class="fas fa-star fas4"></i>
-                            <i class="fas fa-star fas5"></i>
-                        </span>
-                        <p class="card-text cCarText reveal-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="card mb-3 reveal" style="width: 18rem;">
-                <a class= 'cardA' href="">
-                    <div class='container-img'><img src="https://picsum.photos/id/200/800/600" class="card-img-top reveal-4 img-pres" alt="..."></div>
-                    <div class="card-body">
-                        <span class="currentPrice reveal-3"> 90,50 € </span>
+           <div class=" col-lg-2 col-md-9 col-xs-12 col-xm-12 card mb-3 reveal" style="width: 18rem;">
+                <a class= 'cardA' href="{{path('chaises')}}">
+                    <div class='container-img'><img src="{{asset('img/chaise1.jpg')}}" class="card-img-top reveal-4 img-pres" alt="..."></div>
+                    <div class="card-body"><p>Chaise en rotin</p> 
+                        <span class="currentPrice reveal-3">90,50 €</span>
                         <span class='note reveal-2'>
                             <i class="fas fa-star fas1"></i>
                             <i class="fas fa-star fas2"></i>
@@ -145,7 +99,55 @@
                             <i class="fas fa-star fas4"></i>
                             <i class="fas fa-star fas5"></i>
                         </span>
-                        <p class="card-text cCarText reveal-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text cCarText reveal-1">Pour le confort du popotin</p>
+                    </div>
+                </a>
+            </div>
+            <div class=" col-lg-2 col-md-9 col-xs-12 col-xm-12 card mb-3 reveal" style="width: 18rem;">
+                <a class= 'cardA' href="{{path('jouets')}}">
+                    <div class='container-img'><img src="{{asset('img/jouet4.jpg')}}" class="card-img-top reveal-4 img-pres" alt="..."></div>
+                    <div class="card-body">
+                        <span class="currentPrice reveal-3"> 85,50 € </span>
+                        <span class='note reveal-2'>
+                            <i class="fas fa-star fas1"></i>
+                            <i class="fas fa-star fas2"></i>
+                            <i class="fas fa-star fas3"></i>
+                            <i class="fas fa-star fas4"></i>
+                            <i class="fas fa-star fas5"></i>
+                        </span>
+                        <p class="card-text cCarText reveal-1">Pas besoin de haute technologie pour s'amuser</p>
+                    </div>
+                </a>
+            </div>
+            <div class=" col-lg-2 col-md-9 col-xs-12 col-xm-12 card mt-5 reveal" style="width: 18rem;">
+                <a class= 'cardA' href="{{path('murales')}}">
+                    <div class='container-img'><img src="{{asset('img/murales-prez.jpg')}}" class="card-img-top reveal-2 img-pres"  alt="..."></div>
+                    <div class="card-body">
+                        <span class="currentPrice reveal-1"> 120,50 € </span>
+                        <span class='note reveal-4'>
+                            <i class="fas fa-star fas1"></i>
+                            <i class="fas fa-star fas2"></i>
+                            <i class="fas fa-star fas3"></i>
+                            <i class="fas fa-star fas4"></i>
+                            <i class="fas fa-star fas5"></i>
+                        </span>
+                        <p class="card-text cCarText reveal-3">Pour tous les goûts et tous les murs</p>
+                    </div>
+                </a>
+            </div>
+            <div class=" col-lg-2 col-md-9 col-xs-12 col-xm-12 card mb-3 reveal" style="width: 18rem;">
+                <a class= 'cardA' href="{{path('bracelets')}}">
+                    <div class='container-img'><img src="{{asset('img/bracelets-prez.jpg')}}" class="card-img-top reveal-4 img-pres" alt="..."></div>
+                    <div class="card-body">
+                        <span class="currentPrice reveal-3"> 68 € </span>
+                        <span class='note reveal-2'>
+                            <i class="fas fa-star fas1"></i>
+                            <i class="fas fa-star fas2"></i>
+                            <i class="fas fa-star fas3"></i>
+                            <i class="fas fa-star fas4"></i>
+                            <i class="fas fa-star fas5"></i>
+                        </span>
+                        <p class="card-text cCarText reveal-1">Laissez-vous passer la bague au doigt!</p>
                     </div>
                 </a>
             </div>
@@ -156,23 +158,26 @@
 
     <section class="light">
         <div class="row d-flex justify-content-around reveal">
-            <div class= 'col-3 text-center divLt'><h2 class='lightText reveal-4'>Lumière sur</h2><br>
-                <span class="ampoule"> <img class="ampoule reveal-4" src="{{asset('img/ampoule.png')}}"> </span> 
+            <div class= 'col-3 text-center divLt'><h2 class='lightText reveal-4 mb-5'>Lumière sur</h2><br>
+                <span class="ampoule"> <img class="ampoule reveal-4 img-fluid mb-5" src="{{asset('img/ampoule.png')}}"> </span> 
             </div> 
             <div class="col-4">
-                <p class='nameArt text-center reveal-2'>Edouardo</p>
+                <p class='nameArt text-center reveal-2'>Edouard</p>
                 <div class="descArt">
-                    <p class ='dedeText text-center reveal-3'> Nous sommes allés à la rencontre d'EDOUARDO. Une chose nous a frappé, il est gentil, passionné, et met tout son coeur dans l'ouvrage. Il nous as confié que ce métier était sa passion depuis tout petit, et qu'il est très content et reconnaissant envers tous ces gens qui lui achètent ses produits qui lui permettent de vivre de sa passion, et ce depuis 10 ans. <br>
+                    <p class ='dedeText text-center reveal-3'> Nous sommes allés à la rencontre d'EDOUARD. Une chose nous a frappé, il est gentil, passionné, et met tout son coeur dans l'ouvrage. Il nous as confié que ce métier était sa passion depuis tout petit, et qu'il est très content et reconnaissant envers tous ces gens qui lui achètent ses produits qui lui permettent de vivre de sa passion, et ce depuis 10 ans. <br>
                     La flamme de sa passion est toujours vive, c'est beau. N'hésitez pas à aller voir ses articles !
                     </p>
-                    <button id='button'><a href="">En savoir <img src="{{asset('img/iconPlus.png')}}" width='17' alt=""></a></button>
+                    <button id='button' class='ml-5'><a href="{{path('artisan')}}">En savoir <img src="{{asset('img/iconPlus.png')}}" width='17' alt=""></a></button>
 
                 </div>
-                
             </div>
-            <div class="col-4"><img class=' crafterImg mx-auto reveal-4 img-responsive' src="{{asset('img/edouardo.jpg')}}" alt="..."></div>
+            <div class="col-4"><img class=' crafterImg reveal-4 img-fluid w-100" ' src="{{asset('img/edouardo.jpg')}}" alt="..."></div>
         </div>
     </section>
+
+    <div class="clear"></div>
+
+    
 
     <div class="clear"></div>
 
@@ -305,7 +310,7 @@ document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
    */
 </script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- <script>
+ {# <script>
 
      $(document).ready( function () {
             jQuery( window ).on( "load",function(){
@@ -326,7 +331,7 @@ document.getElementById('infoImg3').addEventListener("mouseover", (() =>{
             });
         });
         */
- </script>
+ </script> #}
 
  {% endblock %}
 
