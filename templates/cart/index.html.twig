@@ -1,19 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CartController!{% endblock %}
+{% block title %}Panier{% endblock %}
 
 {% block body %}
      <div class="bg-light p-3">
        <h1>Votre panier</h1>
    <ul class="nav ">
          <li class="nav-item">
-            <a class="nav-link active text-dark" href="#">Home</a>
+            <a class="nav-link active text-dark" href="{{path('home')}}">Home</a>
          </li>
          <li class="nav-item">
             <a class="nav-link text-dark" href="{{path('products_main_page')}}">Product</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Artisan</a>
+            <a class="nav-link text-dark" href="{{path('artisan')}}"> Artisan</a>
          </li>
    </ul>
      <div>
