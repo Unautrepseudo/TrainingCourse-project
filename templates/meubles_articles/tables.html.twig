@@ -56,7 +56,7 @@
             <div class=" col-lg-4 col-md-9 col-xm-9 col-xs-9 card mt-5 mb-3 reveal" style="width: 18rem;">
                 
                 <div class='container-img2 reveal'><img src="{{asset('images/')}}{{ product.image }}" id='trou' class=" img-fluid d-block w-100 card-img-top img-cat reveal-1" alt="..."></div>
-                <a class= 'cardA' href="">
+                <a class= 'cardA' href="{{ path('cart_add', {'id': product.id}) }} ">
                     <div class="card-body cardDescGen">
                         <h5 class="card-title">{{ product.name }}</h5>
                         <span class="currentPrice reveal-2"> {{ product.price }}€</span>
