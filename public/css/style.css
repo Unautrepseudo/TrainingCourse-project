@@ -1,3 +1,8 @@
+@media screen and (max-width: 640px) {
+    #topPage{
+        width:1vh;
+    }
+  }
 /*********GENERAL***********/
 
 * {
@@ -7,7 +12,7 @@
 }
 
 body {
-    background-image: url(body.jpg);
+    background-image: url(body2.jpg);
     /* background:rgba(243, 240, 202, 0.555); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +21,7 @@ body {
 }
 
 .container-fluid {
-    width: 70%;
+    width: 80%;
     overflow-x: hidden;
 }
 
@@ -35,8 +40,33 @@ body {
 
 /******************NAV**************/
 
+/*login/ logout buttons**/
+
+.logoutbutton{
+    width:2,5vw;
+    color:rgba(255, 0, 0, 0.397);
+    transition:0.7s;
+
+}
+
+.loginbutton{
+    width:2vw;
+    opacity:0.4;
+    transition:0.7s;
+}
+
+.loginbutton:hover{
+    opacity:1;
+}
+.logoutbutton:hover{
+    opacity:1;
+    color:rgba(255, 0, 0, 0.692);
+
+}
+
+/**/
 nav {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     clip-path: polygon(100% 0, 100% 83%, 95% 91%, 91% 95%, 87% 97%, 82% 99%, 76% 100%, 66% 100%, 0 100%, 0 0);
     background: rgba(255, 255, 255, 0.781);
 }
@@ -46,7 +76,7 @@ nav {
     border-bottom: 1px solid rgba(66, 66, 66, 0.397);
     border-radius: 0;
     background: rgba(255, 255, 255, 0) !important;
-    width: 45vh !important;
+    width: 62% !important;
     opacity: 0.6;
 }
 
@@ -59,11 +89,12 @@ nav {
 .log,
 .cart {
     opacity: 0.3;
+    transition:0.7s;
 }
 
 .navcons {
     position: absolute;
-    right: 2%;
+    right: 1vh;
 }
 
 .icon:hover {
@@ -498,6 +529,7 @@ nav {
 .inc:hover {
     color: white;
 }
+
 
 
 /*******************************************PAGES by CATEGORIES********************/
@@ -2089,3 +2121,12 @@ a:hover {
     text-align: center;
     justify-content: center;
 }
+
+/******************************responsive*****************************/
+
+
+ /* @media screen and (max-width: 768px) {
+    #topPage{
+        display:none;
+    }
+ } */
