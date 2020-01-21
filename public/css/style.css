@@ -814,6 +814,7 @@ nav {
 
 .teamWindow {
     height: 25vw;
+    
 }
 
 .teamTof {
@@ -821,11 +822,13 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10%;
-    width: 70%;
-    height: 70%;
+    width: 32vw;
+    height: 20vw;
     margin-top: 6vh;
     margin-right: 0;
 }
+
+
 
 
 /*****right*****/
