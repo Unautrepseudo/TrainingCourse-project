@@ -3,13 +3,120 @@
 {% block title %}Hello PaieFinaleController!{% endblock %}
 
 {% block body %}
-  <h1 id="h1c" class="display-4 text-center">Finaliser ma commande<h1>
- <div class="container">
-     <div class="reca">
-        <h4 class="recaTitre text-center">Récapituatif de la commande</h4>
-         <div class="panier">
-           <h5 class="text-center">Mon panier</h5>
-         </div>
-     </div>
-</div>
+{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+<div class="bg-light p-5">
+    </label><strong> Prénom</strong> </label> : 
+    {{ app.user.username }}
+    <br>
+   </label><strong> Email</strong></label> :
+    {{ app.user.email }}
+    <br>
+   </label><strong> Adresse </strong></label> : 
+    {{ app.user.address }}
+    {{ app.user.city }}
+    <br><br>
+    <div class=" paief">
+       {% if items | length > 0 %}
+         <table class="table">
+            <thead>
+               <tr>
+                  <th>Produits</th>
+                  <th>Prix</th>
+                  <th>Quantité</th>
+                  <th>Reference</th>
+                  <th>Materiel</th>
+                  <th>Description</th>
+                  <th>Total</th>
+                  <th>
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+                {% for item in items %}
+                   <tr>
+                     <td>{{item.product.name}}</td>
+                     <td>{{item.product.price}}</td>
+                     <td>{{item.quantity}}</td>
+                     <td>{{item.product.reference}}</td>
+                     <td>{{item.product.materials}}</td>
+                     <td>{{item.product.description}}</td>
+                     <td>{{item.product.price}}</td>
+                 </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+               <tr>
+                 <td colspan="6" class="text-right">Total :</td>
+                 <td>{{ total}}</td>
+              </tr>
+            </tfoot>  
+         </table>
+        {% else %}
+            <p>Mon panier est vide</p>
+       {% endif %}
+       </div>
+    {% else %}
+    
+    <h1 id="h1c" class="display-4 text-center">DÉJÀ CLIENT ? / INSCRIPTION EXPRESS<h1>
+ 
+    <div class="page">
+
+        <div class="client text-center">
+            <h4 class>DÉJÀ CLIENT</h4>
+            <h6>Vous pouvez utiliser vos identifiants pour vous connecter</h6>
+            <br>
+               <form action="" method="post" class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto">
+
+    <div class="form-group">
+        <input type="text" class="form-control" id="Email" name="Email" required="required" placeholder="Email">
+        
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" id="logiMot de passen" name="Mot de passe" required="required" placeholder=" Mot de passe">
+    </div>
+
+
+        <button type="submit" name="submit" class="col-md-12 btn-block z-depth-0 btn btn-info mb-4">Connecter</button>
+      </form>
+        </div>
+
+        <div class="insc">
+           <h4 class=" text-center">INSCRIPTION EXPRESS</h4>
+            <h6 class=" text-center">veuillez vous inscrire</h6>
+    <form action="" method="post" class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto">
+
+    
+
+    <div class="form-group">
+        <input type="text" class="form-control" id="nom" name="nom" required="required" placeholder="Name">
+        
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="Prenom" name="Prénom" required="required" placeholder=" Prénom">
+    </div>
+
+    <div class="form-group">
+        <input type="password" class="form-control" id="Email" name="Email" required="required" placeholder=" Email">
+    </div>
+
+        <div class="form-group">
+        <input type="password" class="form-control" id="mdp" name="mdp" required="required" placeholder=" Mot de Passe">
+       
+    </div>
+        <div class="form-group">
+        <input type="password" class="form-control" id="Téléphone mobile" name="Téléphone mobile" required="required" placeholder="Téléphone mobile">
+       
+    </div>
+        <button type="submit" name="submit" class="col-md-12 btn-block z-depth-0 btn btn-info mb-4">Inscription</button>
+   </form>
+        </div>
+    </div>
+
+     <div>
+{% endif %}
+  
+
+  
+
 {% endblock %}
