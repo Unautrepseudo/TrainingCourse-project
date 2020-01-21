@@ -13,9 +13,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
-    
-
-   
 }
 
 .container-fluid {
@@ -73,119 +70,111 @@ nav {
     opacity: 1;
 }
 
+
 /***nav bis*****/
-.nav2{
+
+.nav2 {
     justify-self: center;
-    background:rgba(255, 252, 248, 0.959);
-    font-size:1.1vw;
-    border-radius:8%;
-    color:rgba(88, 86, 86, 0.849) !important;
-    
-    }
-    
-    .nav2 li a{
-        text-decoration: none;
-        color:rgba(88, 86, 86, 0.753) !important;
-    }
-    
-    .nav2 li a:hover{
-        color:rgba(88, 86, 86, 0.979) !important;
-        opacity:1;
-    }
-    
-    
-    .nav2 li{
-        list-style:none;
-        border-top:1px solid rgba(230, 227, 227, 0.253);
-        border-radius: 10px 120px / 120px;
-        transition:.2s;
-    }
-    /** color effect hover**/
-    .subMenu2 li:hover{
-        background:rgba(79, 192, 226, 0.137);
-    }
-    .subMenuA:hover{
-        background:rgba(79, 192, 226, 0.137);
-    }
-    
-    
-    .subMenu2b li:hover{
-        background:rgba(241, 72, 42, 0.137);
-    
-    }
-    
-    .subMenuB:hover{
-        background:rgba(241, 72, 42, 0.137);
-    
-    }
-    
-    .subMenu2c li:hover{
-        background:rgba(241, 238, 42, 0.233);
-    
-    }
-    
-    .subMenuC:hover{
-        background:rgba(241, 238, 42, 0.219);
-    
-    }
-    
-    .subMenu2d li:hover{
-        background:rgba(52, 238, 28, 0.137);
-    
-    }
-    
-    .subMenuD:hover{
-        background:rgba(52, 238, 28, 0.137);
-    
-    }
-    
-    .nav-item:hover{
-        background:rgba(221, 157, 37, 0.151);
-        border-radius: 10px 120px / 120px;
-    
-    }
-    
-    .subMenu2e li:hover{
-        background:rgba(221, 157, 37, 0.151);
-        border-radius: 10px 120px / 120px;
-    }
-    
-    
-    /**/
-    .testContent{
-        position:absolute;
-        top:9vh;
-        width:102%;
-        line-height:3vw;
-        z-index:10000 !important;
-        
-    }
-    
-    .subMenu2{
-        margin-top:3vh !important;
-     
-    }
-    
-    
-    .subMenu2b{
-        padding-top:6vh !important;
-    
-    }
-    
-    .subMenu2c{
-        padding-top:9.4vh !important;
-    }
-    
-    .subMenu2d{
-        padding-top:12.7vh !important;
-    }
-    
-    .subMenu2e{
-        margin-left:29%;
-        bottom: 7vh !important;
-    }
-    
-    
+    background: rgba(255, 252, 248, 0.959);
+    font-size: 1.1vw;
+    border-radius: 8%;
+    color: rgba(88, 86, 86, 0.849) !important;
+}
+
+.nav2 li a {
+    text-decoration: none;
+    color: rgba(88, 86, 86, 0.753) !important;
+}
+
+.nav2 li a:hover {
+    color: rgba(88, 86, 86, 0.979) !important;
+    opacity: 1;
+}
+
+.nav2 li {
+    list-style: none;
+    border-top: 1px solid rgba(230, 227, 227, 0.253);
+    border-radius: 10px 120px / 120px;
+    transition: .2s;
+}
+
+
+/** color effect hover**/
+
+.subMenu2 li:hover {
+    background: rgba(79, 192, 226, 0.137);
+}
+
+.subMenuA:hover {
+    background: rgba(79, 192, 226, 0.137);
+}
+
+.subMenu2b li:hover {
+    background: rgba(241, 72, 42, 0.137);
+}
+
+.subMenuB:hover {
+    background: rgba(241, 72, 42, 0.137);
+}
+
+.subMenu2c li:hover {
+    background: rgba(241, 238, 42, 0.233);
+}
+
+.subMenuC:hover {
+    background: rgba(241, 238, 42, 0.219);
+}
+
+.subMenu2d li:hover {
+    background: rgba(52, 238, 28, 0.137);
+}
+
+.subMenuD:hover {
+    background: rgba(52, 238, 28, 0.137);
+}
+
+.nav-item:hover {
+    background: rgba(221, 157, 37, 0.151);
+    border-radius: 10px 120px / 120px;
+}
+
+.subMenu2e li:hover {
+    background: rgba(221, 157, 37, 0.151);
+    border-radius: 10px 120px / 120px;
+}
+
+
+/**/
+
+.testContent {
+    position: absolute;
+    top: 9vh;
+    width: 102%;
+    line-height: 3vw;
+    z-index: 10000 !important;
+}
+
+.subMenu2 {
+    margin-top: 3vh !important;
+}
+
+.subMenu2b {
+    padding-top: 6vh !important;
+}
+
+.subMenu2c {
+    padding-top: 9.4vh !important;
+}
+
+.subMenu2d {
+    padding-top: 12.7vh !important;
+}
+
+.subMenu2e {
+    margin-left: 29%;
+    bottom: 7vh !important;
+}
+
 
 /**Button scroll up**/
 
@@ -335,8 +324,8 @@ nav {
 
 /*************LUMIERE SUR*********/
 
-.ampoule{
-    width:50%;
+.ampoule {
+    width: 50%;
 }
 
 .divLt {
@@ -411,12 +400,13 @@ nav {
 
 /*********LE PROJET*****/
 
-.pProjet{
-    font-size:1vw;
+.pProjet {
+    font-size: 1vw;
 }
+
 .projInfo {
     margin-top: 30%;
-    padding-top:10%;
+    padding-top: 10%;
     margin-left: 10%;
     width: 70%;
     font-size: 1.3vw;
@@ -445,10 +435,10 @@ nav {
     margin-left: 65%;
 }
 
-.imgProjet-left{
-    width:70%;
-
+.imgProjet-left {
+    width: 70%;
 }
+
 
 /***fade effect**/
 
@@ -460,7 +450,7 @@ nav {
     transform: rotateZ(6deg);
     height: 36vh;
     padding: 3%;
-    font-size:1vw;
+    font-size: 1vw;
     color: rgba(0, 0, 0, 0.849);
 }
 
@@ -509,85 +499,86 @@ nav {
     color: white;
 }
 
+
 /*******************************************PAGES by CATEGORIES********************/
+
+
 /*Bijoux*/
 
-
-.clear3{
-    height:10vh;
-    width:100%
-}
-.rer{
-    background:rgba(255, 255, 255, 0.582);
-    left:0;
+.clear3 {
+    height: 10vh;
+    width: 100%
 }
 
-.titleartisan2{
-    font-size:2.8vw;
+.rer {
+    background: rgba(255, 255, 255, 0.582);
+    left: 0;
 }
 
+.titleartisan2 {
+    font-size: 2.8vw;
+}
 
-.pathRef a, .pathRef li{
-    color:rgb(57, 101, 160);
-    text-decoration:none;
-    opacity:0.8;
+.pathRef a,
+.pathRef li {
+    color: rgb(57, 101, 160);
+    text-decoration: none;
+    opacity: 0.8;
     font-size: 0.9vw;
-    transition:0.3s;
-    margin-top:5px;
+    transition: 0.3s;
+    margin-top: 5px;
 }
 
-.pathRef a:hover{
-    color:rgb(49, 183, 236);
-    opacity:1;
+.pathRef a:hover {
+    color: rgb(49, 183, 236);
+    opacity: 1;
 }
 
-.arrowOp{
-    font-size:1vw;
-    opacity:0.3;
+.arrowOp {
+    font-size: 1vw;
+    opacity: 0.3;
 }
 
-.rt{
-    margin-left:12%!important;
+.rt {
+    margin-left: 12%!important;
     justify-content: space-evenly!important;
-
 }
 
-.lineCatBij{
-    border-top:1px solid rgba(128, 128, 128, 0.192);
-    width:40%;
+.lineCatBij {
+    border-top: 1px solid rgba(128, 128, 128, 0.192);
+    width: 40%;
 }
-.paybuIco{
-    width:1vw;
+
+.paybuIco {
+    width: 1vw;
 }
+
 
 /*****Bouton produits*****/
 
-.payButton{
-    border-radius:15%;
+.payButton {
+    border-radius: 15%;
     width: 3vw;
 }
 
-
-
-.scrollOp2{
+.scrollOp2 {
     border-radius: 50%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.103);
     border-top: 1px solid rgba(128, 128, 128, 0.171);
-    opacity:0;
-
-}
-.scrollOp2:hover{
-    background:rgba(235, 178, 104, 0.432);
-
+    opacity: 0;
 }
 
-.scrollOp{
-    border-left:1px solid rgba(128, 128, 128, 0.185);
+.scrollOp2:hover {
+    background: rgba(235, 178, 104, 0.432);
+}
+
+.scrollOp {
+    border-left: 1px solid rgba(128, 128, 128, 0.185);
     margin-left: 3vh;
 }
 
-.scrollOp:hover{
-    background:rgba(240, 185, 123, 0.568);
+.scrollOp:hover {
+    background: rgba(240, 185, 123, 0.568);
 }
 
 .currentPrice {
@@ -600,34 +591,32 @@ nav {
     color: rgb(240, 185, 36);
 }
 
-#trou{
-    transition:1s;
+#trou {
+    transition: 1s;
 }
 
 #trou:hover {
-   width:105%;
+    width: 105%;
 }
-
 
 .container-img2 {
     width: 30vh;
     overflow: hidden;
 }
 
-.trierbij{
-    background:rgba(238, 161, 73, 0.116);
+.trierbij {
+    background: rgba(238, 161, 73, 0.116);
     font-size: 1vw;
 }
 
-.trierTitle{
+.trierTitle {
     font-size: 1vw;
 }
 
-
-.trierbijRight{
-    background:rgba(238, 161, 73, 0.26);
-    width:10%;
-    transition:3s ease-in-out;
+.trierbijRight {
+    background: rgba(238, 161, 73, 0.26);
+    width: 10%;
+    transition: 3s ease-in-out;
 }
 
 
@@ -801,9 +790,8 @@ nav {
 /***left***/
 
 .teamWindow {
-    height:25vw;
+    height: 25vw;
 }
-
 
 .teamTof {
     background-image: url(team.jpg);
@@ -813,8 +801,7 @@ nav {
     width: 70%;
     height: 70%;
     margin-top: 6vh;
-    margin-right:0;
-
+    margin-right: 0;
 }
 
 
@@ -832,7 +819,7 @@ nav {
 .socicons {
     width: 1.1vw;
     opacity: 0.5;
-    margin-right:1px;
+    margin-right: 1px;
 }
 
 .socicons3 {
@@ -963,16 +950,15 @@ nav {
     height: 75%;
 }
 
-.logoup2{
+.logoup2 {
     width: 30%;
-    height:80%
+    height: 80%
 }
 
-.logoup3{
+.logoup3 {
     width: 60%;
-    margin-left:15%;
+    margin-left: 15%;
 }
-
 
 .paypal {
     width: 100%;
@@ -983,18 +969,17 @@ nav {
 }
 
 
-
-
 /***********************************LIVRAISON********************/
 
-.delivImg{
-width: 30%;
-height: 90%;
+.delivImg {
+    width: 30%;
+    height: 90%;
 }
 
-.delivImg2{
+.delivImg2 {
     width: 30%;
-    }
+}
+
 
 /************************************Product Single****************************************************************/
 
@@ -1614,6 +1599,7 @@ height: 90%;
     opacity: 0.8;
 }
 
+
 /******************************************************ArtisanSingle****************************************************************/
 
 .contentname {
@@ -1866,10 +1852,11 @@ a:hover {
     text-align: center;
 }
 
-.formul1{
-    background:rgba(179, 177, 173, 0.151);
-        border-radius: 20px;
+.formul1 {
+    background: rgba(179, 177, 173, 0.151);
+    border-radius: 20px;
 }
+
 
 /*****************************************************Cookie*****************************************/
 
@@ -2067,27 +2054,21 @@ a:hover {
 
 /**************************************** ProductMainPage ***********************************   ********/
 
-
-
-
-.titreallproduct
-{
+.titreallproduct {
     text-align: center;
     font-style: italic;
 }
 
-.MainLigneTrois
-{
+.MainLigneTrois {
     display: flex;
     width: 80%;
     justify-content: center;
     margin: 0 auto;
 }
 
-.widthcard
-{
+.widthcard {
     width: 30%;
-    margin : 2vh 5vh;
+    margin: 2vh 5vh;
     text-align: center;
     border: 3px solid burlywood;
     border-radius: 3.5vh;
@@ -2099,18 +2080,12 @@ a:hover {
     margin: 1vh 0;
 }
 
-
-
-.priceproduct
-{
+.priceproduct {
     font-weight: bold;
     box-shadow: 2px 2px 5px 1px burlywood;
-
 }
+
 .centerbodododo {
     text-align: center;
     justify-content: center;
 }
-
-
-
