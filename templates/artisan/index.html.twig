@@ -10,10 +10,10 @@
     </header>
     <div class="row d-flex justify-content-around mx-auto mt-5 boucle_art">
 {% for artisan in artisans %}
-            <div class="col-lg-4 col-md-5 col-xm-6 col-xs-4 card mt-5 reveal row1">
+            <div class="col-lg-4 col-md-10 col-xm-6 col-xs-4 card mt-5 reveal row1">
                 <a id="crafts1" class="card craftsman" href="{{ path('artisan_show', {'id': artisan.id}) }}" style="width: 18rem;">
-                    <div class="container-img">
-                        <img src="{{asset('images/')}}{{ artisan.image }}" class="card-img-top img-pres" alt="...">
+                    <div class=" mx-auto container-img artisanImgcon">
+                        <img src="{{asset('images/')}}{{ artisan.image }}" class="card-img-top img-pres img-fluid artisanImg" alt="...">
                     </div>
 
                     <div class="card-body spacecard">
