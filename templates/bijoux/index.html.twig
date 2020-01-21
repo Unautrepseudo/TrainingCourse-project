@@ -53,7 +53,7 @@
     <div class="row d-flex justify-content-around mx-auto mt-5 currentCards rt">
        
         {% for product in products %}
-            <div class=" col-lg-4 col-md-5 col-xm-6 col-xs-4 card mt-5 reveal" style="width: 18rem;">
+            <div class=" col-lg-4 col-md-9 col-xm-9 col-xs-9 card mt-5 mb-3 reveal" style="width: 18rem;">
                 
                 <div class='container-img2 reveal'><img src="{{asset('images/')}}{{ product.image }}" id='trou' class=" img-fluid d-block w-100 card-img-top img-cat reveal-1" alt="..."></div>
                 <a class= 'cardA' href="">
@@ -68,15 +68,14 @@
                             <i class="fas fa-star fas5"></i>
                         </span>
                         <p class="card-text cCarText reveal-4">{{ product.description }}</p>
-                        <a href="{{ path('cart_add', {'id': product.id}) }} " class="btn btn-info" >Ajouter au panier
-                 <i class="fas fa-shopping-cart mr-1"></i>
-               </a>
+                         
                     </div>
                 </a>
-                 <div class="lineCatBij"></div>
-            </div>
-           
+                <div class='d-flex justify-content-center'>
+                    <div class="lineCatBij"></div>
+                </div> 
 
+              <a href="{{ path('cart_add', {'id': product.id}) }}"> <button type="button" class="btn btn-warning payButton text-center"><i class="fas fa-cart-plus paybuIco"></i></button></div></a> 
            
         
             

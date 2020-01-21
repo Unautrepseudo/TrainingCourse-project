@@ -58,7 +58,7 @@ class JouetsArticlesController extends AbstractController
     public function puzzle(ProductRepository $productRepository): Response
     {
         return $this->render('jouets_articles/puzzle.html.twig', [
-            'products' => $productRepository->findby (array('type' => 'puzzle')),
+            'products' => $productRepository->findby (array('type' => 'puzzles')),
 
         ]);
     }

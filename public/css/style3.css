@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(body2.jpg);
+    background-image: url(body.jpg);
     /* background:rgba(243, 240, 202, 0.555); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@ body {
 }
 
 .container-fluid {
-    width: 80%;
+    width: 70%;
     overflow-x: hidden;
 }
 
@@ -35,33 +35,8 @@ body {
 
 /******************NAV**************/
 
-/*login/ logout buttons**/
-
-.logoutbutton{
-    width:2,5vw;
-    color:rgba(255, 0, 0, 0.397);
-    transition:0.7s;
-
-}
-
-.loginbutton{
-    width:2vw;
-    opacity:0.4;
-    transition:0.7s;
-}
-
-.loginbutton:hover{
-    opacity:1;
-}
-.logoutbutton:hover{
-    opacity:1;
-    color:rgba(255, 0, 0, 0.692);
-
-}
-
-/**/
 nav {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     clip-path: polygon(100% 0, 100% 83%, 95% 91%, 91% 95%, 87% 97%, 82% 99%, 76% 100%, 66% 100%, 0 100%, 0 0);
     background: rgba(255, 255, 255, 0.781);
 }
@@ -71,7 +46,7 @@ nav {
     border-bottom: 1px solid rgba(66, 66, 66, 0.397);
     border-radius: 0;
     background: rgba(255, 255, 255, 0) !important;
-    width: 62% !important;
+    width: 45vh !important;
     opacity: 0.6;
 }
 
@@ -84,12 +59,11 @@ nav {
 .log,
 .cart {
     opacity: 0.3;
-    transition:0.7s;
 }
 
 .navcons {
     position: absolute;
-    right: 1vh;
+    right: 2%;
 }
 
 .icon:hover {
@@ -198,7 +172,7 @@ nav {
 
 .subMenu2e {
     margin-left: 29%;
-    bottom: 9vh !important;
+    bottom: 7vh !important;
 }
 
 
@@ -431,8 +405,8 @@ nav {
 }
 
 .projInfo {
-    margin-top: 3vw;
-    padding-top: 1vw;
+    margin-top: 30%;
+    padding-top: 10%;
     margin-left: 10%;
     width: 70%;
     font-size: 1.3vw;
@@ -442,7 +416,7 @@ nav {
     background: rgba(43, 206, 116, 0.075);
     transform: rotateZ(-6deg);
     border-radius: 3%;
-    height: 24vw;
+    height: 45vh;
     margin-top: 5vh;
     width: 90%;
 }
@@ -486,7 +460,7 @@ nav {
 .foot {
     background: rgba(248, 166, 14, 0.13);
     clip-path: polygon(36% 100%, 69% 0, 100% 0, 100% 100%, 0 100%, 0 0, 17% 0, 69% 0, 62% 17%);
-    height: 10vw;
+    height: 20vh;
 }
 
 .foot a,
@@ -524,7 +498,6 @@ nav {
 .inc:hover {
     color: white;
 }
-
 
 
 /*******************************************PAGES by CATEGORIES********************/
@@ -567,8 +540,8 @@ nav {
 }
 
 .rt {
-    margin-left: 5vw!important;
-    justify-content: space-around!important;
+    margin-left: 12%!important;
+    justify-content: space-evenly!important;
 }
 
 .lineCatBij {
@@ -627,7 +600,7 @@ nav {
 }
 
 .container-img2 {
-    width: 20vw;
+    width: 30vh;
     overflow: hidden;
 }
 
@@ -686,6 +659,10 @@ nav {
     opacity: 0.3;
 }
 
+.rt {
+    margin-left: 12%!important;
+    justify-content: space-evenly!important;
+}
 
 .lineCatBij {
     border-top: 1px solid rgba(128, 128, 128, 0.192);
@@ -814,7 +791,6 @@ nav {
 
 .teamWindow {
     height: 25vw;
-    
 }
 
 .teamTof {
@@ -822,13 +798,11 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10%;
-    width: 32vw;
-    height: 20vw;
+    width: 70%;
+    height: 70%;
     margin-top: 6vh;
     margin-right: 0;
 }
-
-
 
 
 /*****right*****/
@@ -2115,6 +2089,3 @@ a:hover {
     text-align: center;
     justify-content: center;
 }
-
-/******************************responsive*****************************/
-
