@@ -1735,6 +1735,7 @@
         .spacecard {
             border-radius: 0px 0px 3px 3px;
             text-align: center;
+            padding-top: 0vw;
         }
         
         a:hover {
